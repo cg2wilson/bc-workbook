@@ -1,0 +1,150 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\chapter{Describing Change: Rates}
+	\addcontentsline{toc}{section}{2.1 - Measures of Change over an Interval}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs21}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 2.1}
+
+
+\section*{Measures of Change over an Interval}\label{cs21}
+	\subsection*{Formulas}
+		Let $f$ be a function with input values $x_1,x_2$ such that $x_1 < x_2$.
+		\begin{crmk}[Change]
+			\showto{ins}{\fbox{$f(x_2)-f(x_1)$}}\showto{st}{\\}
+		\end{crmk}
+		\begin{crmk}[Percent Change]
+			\showto{ins}{\fbox{$\dfrac{f(x_2)-f(x_1)}{f(x_1)}$}}\showto{st}{\\}
+		\end{crmk}
+		\begin{crmk}[Average Rate of Change (AROC)]
+			\showto{ins}{\fbox{$\dfrac{f(x_2)-f(x_1)}{x_2-x_1}$}}\showto{st}{\\}
+		\end{crmk}
+			\newpage
+			
+		When giving interpretations, we have four considerations:
+			\begin{itemize}
+				\item \textbf{When} is this event happening?  Be sure to specify the interval.
+				\item \textbf{What} is happening?  Specify the quantity which is changing.
+				\item \textbf{How} is it changing?  Specify whether or not the quantity is increasing or decreasing.
+				\item By \textbf{how much} is it changing?  Include proper units.
+			\end{itemize}
+		
+		\begin{ex}
+			If $f$ denotes the number of students enrolled in Math 1743 and $x$ is the number of academic years after the 2000-2001 academic year, interpret the expression $f(10) = 1552$.
+		\end{ex}
+			\vs{1}
+			
+	\subsection*{Examples}
+		\begin{ex}
+			The average temperature in Norman during the last week of September is given in the table below:
+				\begin{center}
+					{\renewcommand{\arraystretch}{1.2}
+					\begin{tabular}{|c|c||c|c|} \hline
+						\textbf{Time} & \textbf{Temperature} ($\dc$ F) & \textbf{Time} & \textbf{Temperature} ($\dc$ F)\\ \hline
+						7am & 49 & 1pm & 80\\ \hline
+						8am & 58 & 2pm & 80\\ \hline
+						9am & 66 & 3pm & 78\\ \hline
+						10am & 72 & 4pm & 74\\ \hline
+						11am & 76 & 5pm & 69\\ \hline
+						noon & 79 & 6pm & 62\\ \hline
+					\end{tabular}
+					}
+					\begin{enumerate}[(a)]
+						\item Give the average rate of change in temperature between 11am and 4pm.  Write a sentence interpreting your result.
+							\vs{1}
+							
+						\item Find the percent change in temperature between 9am and noon, and round your answer to the nearest hundredth.  Write a sentence interpreting your result.
+							\vs{1}
+							
+					\end{enumerate}	
+				\end{center}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Airtran posted a revenue of \$603.7 million dollars in the second quarter of 2009 compared with revenue of \$693.4 million during the second quarter of 2008.  Write a sentence interpreting each of the following:
+			\begin{enumerate}[(a)]
+				\item Find the change in revenue between the second quarter of 2008 and the second quarter of 2009.
+					\vs{1}
+				\item Find the percent change between the second quarter of 2008 and second quarter end of 2009.
+					\vs{1}
+				\item Find the average rate of change between the second quarter of 2008 and the second quarter of 2009.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+
+		\begin{ex}
+			The American Indian, Eskimo, and Aleut populations in the United States was 362 thousand in 1930, and 4.5 million in 2005.  Write a sentence interpreting each of the following, and round to two decimals if necessary:
+			\begin{enumerate}[(a)]
+				\item Find the change in population between 1930 and 2005.	
+					\vs{1}
+				\item Find the percent change between between 1930 and 2005.
+					\vs{1}
+				\item Find the average rate of change between 1930 and 2005.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+				\newpage
+				
+		\begin{ex}
+			OU Parking Services commissioned a projection of its profit (in thousands of dollars) when commuter parking passes are set certain prices.
+				\begin{center}
+					{\renewcommand{\arraystretch}{1.2}
+					\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+						\textbf{Price} (dollars) & 200 & 250 & 300 & 350 & 400 & 450\\ \hline
+						\textbf{Profit} (thousand dollars) & 2080 & 2520 & 2760 & 2820 & 2700 & 2380\\ \hline				
+					\end{tabular}
+					}
+				\end{center}	
+				\begin{enumerate}[(a)]
+					\item Find a model for the data.
+						\vs{1.5}
+					\item Calculate the average rate of change of profit when the parking pass price rises from \$200 to \$350.
+						\vs{1}
+					\item Calculate the average rate of change of profit when the parking pass price rises from \$350 to \$450.
+						\vs{1}
+						
+					\item Calculate the percent change for parts (b) and (c).
+						\vs{1}
+						
+				\end{enumerate}
+		\end{ex}	
+			\newpage
+			
+		\begin{ex}
+			The CDC modeled the number of Zika cases diagnosed in Brazil between January and July of 2016 with the formula
+				\[z(t) = 2.75(1.04^t)\text{ thousand cases}\]
+				where $t$ is the number of months since January 2016.
+			\begin{enumerate}[(a)]
+				\item Calculate and write a sentence of interpretation for the average rate of change in the number of Brazilians diagnosed with Zika between January 2016 and July 2016.
+					\vs{1}
+					
+				\item Calculate the percentage change in part (a).
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		
+		\begin{ex}
+			The function $c(t)$ represents the number of students in line at Chick-Fil-A, $t$ hours after 11:00am, and $q(t)$ represents the number of students in line at Quizno's, $t$ hours after 11:00am.  Write a sentence interpreting the following expressions.
+			\begin{enumerate}[(a)]
+				\item 
+					$c(3) = 15$
+					\vs{1}
+					
+				\item 
+					$q(1) = 8$
+					\vs{1}
+					
+				\item 
+					$(c+q)(0) = 12$
+					\vs{1}
+
+			\end{enumerate}
+		\end{ex}
+	\clearpage
+\end{document}

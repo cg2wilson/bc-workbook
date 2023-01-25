@@ -1,0 +1,123 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{3.2 - Exponential \& Logarithmic Rate of Change Formulas}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs32}} 
+	\fancyhead[LO,RE]{\bfseries  \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 3.2}
+
+
+\section*{Exponential \& Logarithmic Rate of Change Formulas}\label{cs32}
+	\subsection*{The Formulas}
+		For exponential and logarithmic functions, we have the following formulas:
+		\begin{center}
+			\tabulinesep = 1.5mm
+			\begin{tabu}{ | X[c] | X[.5,c]X[.5,c] | X[1,c]X[c] | }\hline
+				\textbf{Name} & \multicolumn{2}{c}{\textbf{Function}} & \multicolumn{2}{|c|}{\textbf{Derivative}}\\ \hline\hline
+							& & & &  \\
+				General Exponential Rule & \multicolumn{2}{c|}{$f(x) = b^x$}  & $f'(x) =$ \showto{ins}{\fbox{$\ln b\cdot b^x$}} &\\ 
+							& & & &  \\ \hline
+							& & & &  \\ 
+				Exponential Rule & \multicolumn{2}{c|}{$f(x) = e^x$} &$f'(x) =$ \showto{ins}{\fbox{$e^x$}} &\\
+							& & & &  \\ \hline
+							& & & &  \\
+				Logarithm Rule & \multicolumn{2}{c|}{$f(x) = \ln x$} & $f'(x) =$ \showto{ins}{\fbox{$\dfrac{1}{x}$}}&\\
+							& & & &  \\ \hline
+			\end{tabu}			
+		\end{center}
+		
+	\subsection*{Examples}
+		\begin{ex}  Write the formula for the derivative of the function.
+			\begin{enumerate}[(a)]
+				\item $h(x) = 3-7e^x$  
+					\vs{1}
+					
+				\item $f(x) = 6(0.8)^x$ 
+					\vs{1}
+					
+				\item $f(a) = 10\lrpar{1+\dfrac{0.05}{4}}^{4a}$ 
+					\vs{1}
+					
+				\item $g(x) = 4\ln x - e^\pi$ 
+					\vs{1}
+					\newpage
+					
+				\item $f(x) = 3.7e^x - 2\ln x$ 
+					\vs{1}
+					
+				\item $y(x) = -\ln x + 2e^x$ 
+					\vs{1}
+					
+				\item $f(g) = 4\sqrt{g} + 5(1.2)^g$ 	
+					\vs{1}
+					
+				\item $k(t) = P\lrpar{1+\dfrac{r}{n}}^{nt}$ 
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+			\newpage
+					
+		\begin{ex}
+			For the first two hours after yeast dough has been kneaded, it doubles in volume approximately every 42 minutes.  If 1 quart of yeast dough is left to rise in a warm room, its growth can be modeled as $v(h) = e^h$ quarts, where $h$ is the number of hours the dough has been allowed to rise.
+			\begin{enumerate}[(a)]
+				\item How many minutes will it take the dough to attain a volume of 2.5 quarts?  
+					\vs{.5}
+				\item Write a model for the rate of growth of the yeast dough. 
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			The weight of a laboratory mouse between 3 and 11 weeks of age can be modeled as $w(t) = 11.3 + 7.37\ln t$ grams, where the age of the mouse is $t+2$ weeks.  
+			\begin{enumerate}[(a)]
+				\item What is the weight of a 9-week-old mouse?  Round to the nearest hundredth. 
+					\vs{.5}
+					
+				\item Write a rate of change model for the weight of the mouse, and determine how rapidly its weight is changing at 9 weeks. 	
+					\vs{1}
+					\newpage
+					
+				\item What is the average rate of change in the weight of the mouse between ages 7 and 11 weeks?  Round to the nearest hundredth. 
+					\vs{1}
+					
+				\item Does the rate at which the mouse is growing increase or decrease as the mouse gets older?  Why? 
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Suppose the managers of a dairy company have modeled weekly production costs as $c(u) = 3250 + 75\ln u$ dollars for $u$ units of dairy products.  Weekly shipping cost for $u$ units is given by $s(u) = 50 u + 1500$ dollars.  
+			\begin{enumerate}[(a)]
+				\item Write the formula for the total weekly cost of production and shipping of $u$ units. 
+					\vs{.75}
+				\item Write the rate of change model of the total weekly cost of producing and shipping $u$ units. 
+					\vs{1}
+				\item Calculate the total cost to produce and ship 5000 units in 1 week. 
+					\vs{.75}
+				\item Calculate and interpret the rate of change in the total cost to produce and ship 5000 units in 1 week. 
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			An individual has \$45,000 to invest.  \$32,000 will be put into a low-risk mutual fund averaging 6.2\% interest compounded monthly, and the remainder will be invested in a high-yield bond fund averaging 9.7\% interest, compounded continuously.
+			\begin{enumerate}[(a)]
+				\item Write an equation for the total amount in the two investments, using $I(t)$ as your function. 
+					\vs{.5}
+				\item Write the rate of change model for the low-risk fund, using $L(t)$ as your function. 
+					\vs{1}
+				\item Write the rate of change model for the high-yield fund, using $H(t)$ as your function. 
+					\vs{1}
+				\item Write the rate of change model for the combined investment. 
+					\vs{1}
+				\item Calculate and interpret $\displaystyle \frac{dI}{dt}$ after 8 months, and after 18 months. 
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+	\clearpage
+\end{document}

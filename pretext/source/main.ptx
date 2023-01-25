@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="meta/docinfo.ptx"/>
+
+  <book xml:id="workbook-1743">
+    <title>1743 Workbook</title>
+
+    <xi:include href="meta/frontmatter.ptx" />
+
+    <xi:include href="ch1/main.ptx"/>
+
+  </book>
+</pretext>

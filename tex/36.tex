@@ -1,0 +1,140 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{3.5 \& 3.6 - Rate of Change of Product Functions}
+	\setcounter{section}{5}
+	\setcounter{ex}{0}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs36}} 
+	\fancyhead[LO,RE]{\bfseries  \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapters 3.5 \& 3.6}
+
+
+\section*{Rate of Change of Product Functions}\label{cs36}
+	\subsection*{Product Rule}
+		The \emph{product rule} allows us to take derivatives of product functions, i.e. functions that look like $h(x) = f(x)\cdot g(x)$.  The product rule is
+			\showto{ins}{\[h'(x) = f'(x)g(x) + f(x)g'(x)\]}\showto{st}{\[\vspace*{30pt}\]}
+			
+		\begin{ex}
+			Find the derivative of $h(x)$, where $h(x) = [4(3^x)]\cdot [5x^2]$.  
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the derivative of $g(y)=\dfrac{\ln (2y)}{1+y^2}$.   
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Compute the derivative of the function $g(x) = 3x^{-0.7}\cdot 5^x$ 
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Let $f(x) = 3\ln (2+5x)$, and $h(x) = \dfrac{1}{\ln x}$.  Find $(f\cdot h)'(x)$. 
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			The profit from the supply of a certain commodity is modeled by $P(q) = 72qe^{-0.2q}$ dollars, when $q$ units are produced.
+				\begin{enumerate}[(a)]
+					\item Write the complete rate of change model for profit.  
+						\vs{1.5}
+						
+					\item At what production level(s) is the rate of change of profit zero?  If necessary, round your answer to two decimal places.  
+						\vs{1}
+					\item What is profit at the production level for the value in part (b)?  
+						\vs{.5}
+				\end{enumerate}
+		\end{ex}
+			\newpage
+			
+	\subsection*{Quotient Rule}
+		Alternately, for a quotient function, we may employ the \emph{quotient rule}.  If $k(x) = \dfrac{f(x)}{g(x)}$, then
+			 \showto{ins}{\[k'(x) = \dfrac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}\]}\showto{st}{\vspace*{30pt}}
+			 
+		This can be remembered as
+			\showto{ins}{\[\dfrac{\text{low}\cdot d\text{(high)} - \text{high }\cdot d\text{(low)} }{\text{(low)}^2}\]}\showto{st}{\[\vspace*{50pt}\]}
+			
+		\begin{ex}
+			Use the quotient rule to find the derivative of $g(y)=\dfrac{\ln (2y)}{1+y^2}$  
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Examples}
+ 		\begin{ex}
+ 			The production level at a plant manufacturing radios can be modeled as $f(x) = 10.54x^{0.5}(2-0.13x)^{0.3}$ thousand radios, where $x$ thousand dollars has been spent on modernizing plant technology.
+			\begin{enumerate}[(a)]
+				\item Identify two functions $g$ and $h$ that, when multiplied, form the production model- one of the functions will need the chain rule.  
+					\vs{1}
+				\item Using function notation, write the notation for the production model and for the rate of change of the production model.  
+					\vs{1}
+ 				\item Write a model for the rate of change of production  
+ 					\vs{1}
+ 			\end{enumerate}
+ 		\end{ex}
+ 		
+		\begin{ex}
+			Write the product function and rate-of-change function for the given functions.
+				\begin{enumerate}[(a)]
+					\item $g(x) = 5x^2 - 3$ and $h(x) = 1.2^x$  
+						\vs{1.5}
+						
+ 					\item $g(x) = 6e^{-x}+\ln x$ and $h(x) = 4x^{2.1}$  
+ 						\vs{1.5}
+ 				\end{enumerate}
+ 		\end{ex}
+ 			\newpage
+ 			
+		\begin{ex}
+			Find the derivatives of the following functions.
+			\begin{enumerate}[(a)]
+				\item $f(x) = (\ln x)e^x$
+					\vs{1}
+					
+				\item $g(x) = (x+5)e^x$  
+					\vs{1}
+		 			
+				\item $t(x) = (5.7x^2+3.5x+2.9)^3(3.8x^2+5.2x+7)^{-2}$
+					\vs{1}
+					\newpage
+					
+				\item $f(x) = \dfrac{2x^3+3}{2.7x+15}$
+					\vs{1}
+					
+		 		\item $f(x) = (8x^2 + 13)\left(\dfrac{39}{1+15e^{-0.09x}}\right)$
+		 			\vs{1}
+		 		
+		 		\item $f(x) = [\ln (15.7x^3)]\cdot [e^{15.7x^3}]$  
+		 			\vs{1}
+		 		
+		 		\item $f(x) = \dfrac{4(3^x)}{\sqrt{x}}$  
+		 			\vs{1}
+		 			\newpage
+		 			
+		 		\item $f(x) = \dfrac{14x}{1 + 12.6e^{-0.73x}}$  
+			 		\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+ 		\begin{ex}
+ 			A store has determined that the number of cookies sold monthly is approximately $c(x) = 6250(0.929^x)$ cookies, where $x$ is the average price of a cookie (in dollars).
+ 				\begin{enumerate}[(a)]
+ 					\item Write a model for revenue as a function of price.  
+ 						\vs{1}
+ 					\item If each cookie costs the store $\$1$, write a model for profit as a function of price.  
+ 						\vs{1}
+ 					\item Write the complete rate of change model for revenue as a function of price.  
+ 						\vs{1}
+ 				\end{enumerate}
+ 		\end{ex}
+ 			\newpage
+ 			
+ 		\begin{ex}
+			Find the derivative of $t(x) = (6x^3)(\ln x)(e^{2x})$.
+		\end{ex}
+		
+	\clearpage
+\end{document}

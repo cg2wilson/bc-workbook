@@ -1,0 +1,81 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{2.5 - The Derivative, Algebraically}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs25}} 
+	\fancyhead[LO,RE]{\bfseries  \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 2.5}
+
+
+\section*{The Derivative, Algebraically}\label{cs25}
+	\begin{defn}[Derivative (Algebraic Definition)]
+		Let $f(x)$ be a function defined on the open interval $(a,b)$, and $x\in (a,b)$.  Then, the derivative of $f$ at point $x$ is given by the formula
+			\showto{ins}{\[\ds \lim_{h\to 0}\dfrac{f(x+h)-f(x)}{h}\]}\showto{st}{\[\vspace*{50pt}\]}
+	\end{defn}
+
+	\begin{question}
+		Why is this definition the same as the one in \S2.4?
+	\end{question}
+		\vs{1}
+		
+	It is useful to remember a few things from algebra when doing these calculations: \showto{st}{\\}
+	
+	\begin{itemize}
+		\item \showto{ins}{\fbox{$\sqrt{x + y}\neq \sqrt{x} + \sqrt{y}$}}\showto{st}{\blank{3}\\[10pt]}
+		\item \showto{ins}{\fbox{$(a+b)^2 \neq a^2 + b^2$}}\showto{st}{\blank{3}\\[10pt]}
+		\item \showto{ins}{\fbox{$\dfrac{a}{b+c}\neq \dfrac{a}{b} + \dfrac{a}{c}$}}\showto{st}{\blank{3}}
+	\end{itemize}
+		\vs{.25}
+		
+	When we algebraically find the derivative of a function, there is a four-step process which makes the algebra much simpler, and the derivative easier to find.  The steps are:\\
+	\begin{enumerate}
+		\item \showto{ins}{\fbox{Find and simplify $f(x+h)$}}\showto{st}{\blank{4}\\}
+		\item \showto{ins}{\fbox{Find and simplify $f(x+h)-f(x)$}}\showto{st}{\blank{4} \\}
+		\item \showto{ins}{\fbox{Find and simplify $\dfrac{f(x+h)-f(x)}{h}$}}\showto{st}{\blank{4}\\}
+		\item \showto{ins}{\fbox{Compute $\ds \lim_{h\to 0} \dfrac{f(x+h)-f(x)}{h}$}}{\blank{4}}
+	\end{enumerate}
+		\vs{.25}
+		
+	This is demonstrated below.
+		\vs{.25}
+		\newpage
+		
+	\begin{ex}
+		Algebraically find the derivative of the function $f(x) = x^2 $ using the four-step process. 
+	\end{ex}
+ 		\newpage
+ 		
+	\begin{ex} 
+		Algebraically find the derivative of the function $f(x) = 5x -2$ using the four-step process.
+	\end{ex}
+		\newpage
+		
+	\begin{ex}
+		The time it takes an average athlete to swim 100 meters freestyle at age $x$ years can be modeled as 
+		\[t(x) = 0.181x^2 - 8.463x + 147.376\text{ seconds}\]
+			\begin{enumerate}[(a)]
+				\item Calculate the swim time at age 13 to the nearest second.
+					\vs{.5}
+				\item Use the algebraic method to develop a formula for the derivative of $t$ (ie, find $t'(x)$).	
+					\vs{3}
+				\item How quickly is the time to swim 100 meters freestyle changing for an average 13-year-old athlete?  Round to the nearest hundredth and interpret the result.
+					\vs{.5}
+				\item Compute the percent rate of change of swimmers' time at age 13, to the nearest tenth.
+					\vs{.5}
+			\end{enumerate}
+	\end{ex}
+		\newpage
+		
+	\begin{ex}
+		Algebraically determine the derivative of $f(t) = \dfrac{1}{2}t^2 -\dfrac{1}{3}$, and evaluate $\dfrac{df}{dt}\bigg|_{t=1}$
+	\end{ex}
+		\newpage
+		
+	\begin{ex}
+		Algebraically determine the derivative of $k(r) = r^2-2r^3$, and evaluate $k'(0)$
+	\end{ex}
+	
+	\clearpage
+\end{document}

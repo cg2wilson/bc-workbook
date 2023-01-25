@@ -1,0 +1,245 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{1.5 - Exponential Functions \& Models}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \large \nameref{cs15}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 1.5}
+
+\section*{Exponential Functions \& Models}\label{cs15}
+	\subsection*{Exponential Functions}
+		As with the linear model, we have three descriptions of an exponential model:\\
+		\begin{itemize}
+			\item \underline{Algebraic}: An exponential model has an equation of the form \showto{ins}{\fbox{$f(x) = ab^x$}}\showto{st}{\blank{2.1}\\[15pt]}  The percentage change over one unit input is \showto{ins}{\fbox{$(b-1)\cdot 100\%$}}\showto{st}{\blank{2}}, and \showto{ins}{\fbox{$a$}}\showto{st}{\blank{.4}} is the \emph{initial value}, the output corresponding to an input of zero.\\
+			\item \underline{Verbally}: An exponential model has \showto{ins}{\fbox{a constant percent change}}\showto{st}{\blank{4}\\}.
+			\item \underline{Graphically}: An exponential model will look like the pictures below.
+		\end{itemize}
+
+	\subsection*{Exponential Models}
+		For exponential models, we have the following information:\\
+		\begin{figure}[h!]	
+		\fbox{
+		\begin{minipage}{1.1in}
+		\centering
+			$\underline{a > 0, b > 1}$\\
+			\begin{tikzpicture}[x = .5cm, y = .5cm]
+				\draw (-3,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+				\draw (0,-1)--(0,5) node[right] {\footnotesize $y$}; %y-axis
+				\draw[<->, smooth, samples = 10, domain = -3:1.5] plot (\x, {exp(\x)});	
+				\draw (.2,1) node[right] {$f(x)$};
+			\end{tikzpicture}	
+		\end{minipage}
+		\begin{minipage}{1.9in}
+			\begin{itemize}
+				\item $\ds \lim_{x\to\infty} f(x) =$ \showto{ins}{\fbox{$\infty$}}\showto{st}{}
+				\item $\ds \lim_{x\to -\infty} f(x) =$ \showto{ins}{\fbox{$0$}}\showto{st}{}
+				\item $f$ is always \showto{ins}{\fbox{increasing}}\showto{st}{}
+				\item $f$ is concave \showto{ins}{\fbox{up}}\showto{st}{}
+			\end{itemize}
+		\end{minipage}
+		}
+		\fbox{
+		\begin{minipage}{1.1in}
+		\centering
+			$\underline{a < 0, b > 1}$\\
+			\begin{tikzpicture}[x = .5cm, y = .5cm]
+				\draw (-3,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+				\draw (0,1.8)--(0,-4.25) node[right] {\footnotesize $y$}; %y-axis
+				\draw[<->, smooth, samples = 10, domain = -3:1.5] plot (\x, {-exp(\x)});
+				\draw (.2,-1) node[right] {$f(x)$};	
+			\end{tikzpicture}
+		\end{minipage}
+		\begin{minipage}{1.9in}
+			\begin{itemize}
+				\item $\ds \lim_{x\to\infty} f(x) =$ \showto{ins}{\fbox{$-\infty$}}\showto{st}{}
+				\item $\ds \lim_{x\to -\infty} f(x) =$ \showto{ins}{\fbox{$0$}}\showto{st}{}
+				\item $f$ is always \showto{ins}{\fbox{decreasing}}\showto{st}{}
+				\item $f$ is concave \showto{ins}{\fbox{down}}\showto{st}{}
+			\end{itemize}
+		\end{minipage}
+		}
+	
+		\fbox{
+		\begin{minipage}{1.1in}
+		\centering
+			$\underline{a > 0, 0 <b < 1}$\\
+			\begin{tikzpicture}[x = .5cm, y = .5cm]
+				\draw (-3,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+				\draw (0,-1)--(0,5) node[right] {\footnotesize $y$}; %y-axis
+				\draw[<->, smooth, samples = 10, domain = -1.5:3.] plot (\x, {exp(-\x)});	
+				\draw (.2,1) node[right] {$f(x)$};
+			\end{tikzpicture}
+		\end{minipage}
+		\begin{minipage}{1.85in}
+			\begin{itemize}
+				\item $\ds \lim_{x\to\infty} f(x) =$ \showto{ins}{\fbox{$0$}}\showto{st}{}
+				\item $\ds \lim_{x\to -\infty} f(x) =$ \showto{ins}{\fbox{$\infty$}}\showto{st}{}
+				\item $f$ is always \showto{ins}{\fbox{decreasing}}\showto{st}{}
+				\item $f$ is concave \showto{ins}{\fbox{up}}\showto{st}{}
+			\end{itemize}
+		\end{minipage}
+		}
+		\fbox{
+		\begin{minipage}{1.1in}
+		\centering
+			$\underline{a < 0, 0 < b < 1}$\\
+			\begin{tikzpicture}[x = .5cm, y = .5cm]
+				\draw (-3,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+				\draw (0,1.8)--(0,-4.25) node[right] {\footnotesize $y$}; %y-axis
+				\draw[<->, smooth, samples = 10, domain = -1.5:3.] plot (\x, {-exp(-\x)});
+				\draw (.2,-1) node[right] {$f(x)$};	
+			\end{tikzpicture}
+		\end{minipage}
+		\begin{minipage}{1.9in}
+			\begin{itemize}
+				\item $\ds \lim_{x\to\infty} f(x) =$ \showto{ins}{\fbox{$0$}}\showto{st}{}
+				\item $\ds \lim_{x\to -\infty} f(x) =$ \showto{ins}{\fbox{$-\infty$}}\showto{st}{}
+				\item $f$ is always \showto{ins}{\fbox{increasing}}\showto{st}{}
+				\item $f$ is concave \showto{ins}{\fbox{down}}\showto{st}{}
+			\end{itemize}
+		\end{minipage}
+		}
+		\end{figure}\\[15pt]
+			\vs{1}
+		For us, an exponential model will always have an asymptote at \showto{ins}{\fbox{$y=0$}}\showto{st}{\blank{1.5}}.
+			\vs{1}
+			\newpage
+
+	\subsection*{Formulas and Examples}
+		There are two formulas which will be useful to memorize.  For exponential models, we have a constant percent change; this is given above as
+			\begin{crmk}[Percent Change (Exponential)]
+				\showto{ins}{ \% change$ =  (b-1)\cdot 100\%$}\showto{st}{\\}
+			\end{crmk}
+		For \emph{every other model}, we calculate the percent change between two input values $x_1,x_2$ as
+			\begin{crmk}[Percent Change (Other Models)]
+				\showto{ins}{\% change$= \dfrac{f(x_2)-f(x_1)}{x_2-x_1}$}\showto{st}{\\}
+			\end{crmk}
+			
+		\begin{ex} 
+			iPod sales were 7.68 million units in 2006, and increased by $9.1\%$ each year between 2006 and 2008.  
+			\begin{enumerate}[(a)]
+				\item Write an exponential model for this situation.
+					\vs{1}
+				\item Explain why the exponential model is best.
+					\vs{.5}
+				\item Use the model to predict the number of iPods sold in 2010.
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+
+		\begin{ex}
+			The population of Northern cod in a certain body of water is given in the table below.
+			\begin{center}
+				{\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|l||c|c|c|c|c|}\hline
+					\textbf{Decade} (since 1963) & 0 & 1 & 2 & 3 & 4\\ \hline
+					\textbf{Population} (in billions) & 1.72 & 0.63 & 0.24 & 0.085 & 0.032\\ \hline
+				\end{tabular}
+				}
+			\end{center}
+			\begin{enumerate}[(a)]
+				\item Identify which model (linear/exponential) is best for this data.
+					\vs{.5}
+				\item Find the \textbf{complete} model.
+					\vs{1}			
+				\item Find the percent change of the model.
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+
+		\begin{ex} 
+			Early in the millennium, it was predicted that United States imports of petroleum products would be 4.81 quadrillion Btu, and increase by $5.47\%$ each year through 2020.
+			\begin{enumerate}[(a)]
+				\item Find the associated exponential model.
+					\vs{1}
+				\item When will imports exceed 10 quadrillion Btu?
+					\vs{.5}
+				\item Describe the end behavior of your model.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+
+		\begin{ex}
+			According to the Social Security Advisory Board, the number of workers per beneficiary of the Social Security program was 3.3 in 1995 and is projected to decline by 1.46\% each year until 2030.
+			\begin{enumerate}[(a)]
+				\item Write a model for the number of workers per beneficiary from 1995 through 2030.
+					\vs{1}
+				\item What does the model predict the number of workers per beneficiary will be in 2030?
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+
+		\begin{ex}
+			A social media website collected data on its users.  Below are the users of a certain age and gender, as a percentage of total users.
+				\begin{center}
+					{\renewcommand{\arraystretch}{1.2}
+					\begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|}\hline
+						\textbf{Age} (years) & 27 & 29 & 31 & 33 & 35 & 37 & 39 & 41 & 43 & 45  \\ \hline
+						\textbf{Females} (as \%) & 9.6 & 7.8 & 6.1 & 5.1 & 4.3 & 3.8 & 2.4 & 2.1 & 1.2 & 1.1\\ \hline
+						\textbf{Males} (as \%) & 8.8 & 7.6 & 6.0 & 4.6 & 4.0 & 4.4 & 2.7 & 1.9 & 1.5 & 1.3\\ \hline
+					\end{tabular}
+					}
+				\end{center}
+				\begin{enumerate}[(a)]
+					\item Align the input data to the number of years after 27.  Write an exponential model for the female user data.
+						\vs{1}
+					\item According to the model in part (a), what is the percentage change in your model?  Write a sentence interpreting your answer.
+						\vs{1}
+						\newpage
+
+					\item What percentage of female users are 30 years old?  What about 48 years old?  Are these interpolation or extrapolation?
+						\vs{1}
+
+					\item Write the exponential model for the male user data.
+						\vs{1}
+
+					\item According to your model in part (d), what is the percentage change in your model?  Write a sentence interpreting your answer.
+						\vs{1}
+
+					\item What percentage of male users are 30 years old?  What about 48 years old?
+						\vs{.5}
+				\end{enumerate}
+		\end{ex}
+			\newpage
+	\subsection*{Doubling Time and Half Life}
+		\begin{defn}[Doubling Time]
+			For an exponential function $f$, the \textbf{doubling time} is defined to be the amount of time it takes an initial quantity to double (or grow by 100\%).
+		\end{defn}
+		\begin{defn}[Half Life]
+			For an exponential function $f$, the \textbf{half life} is defined to be the amount of time it takes an initial quantity to decay to half of its original size (or decrease by 50\%).
+		\end{defn}
+			\vs{.5}
+		
+		\begin{ex}
+			Albuterol is used to calm bronchospasm.  It has a biological half-life of 7 hours and is normally inhaled as a 1.25 mg dose.
+			\begin{enumerate}[(a)]
+				\item Find a model for the amount of albuterol left in the body after an initial dose 1.25 mg.
+					\vs{1}
+				\item How much albuterol is left in the body after 24 hours?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			The amount of money Frank has in a particular investment is given by $f(t) = Pe^{.06t}$, where $P$ is the principal invested and $t$ is the amount of time (in years) the investment has been active.  
+			\begin{enumerate}[(a)]
+				\item If Frank began the investment 15 years ago, and currently has \$25,500 in the account, what was the principal that he invested?
+					\vs{1}
+					
+				\item If Frank currently has \$14,250 in the account and invested \$2,500 to start, how long as the investment been active?
+					\vs{1}
+					
+				\item Compute the doubling time for an investment of \$1000.
+					\vs{1}
+					
+				\item How long will it take an investment to \emph{triple} instead of double?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+	\clearpage
+\end{document}

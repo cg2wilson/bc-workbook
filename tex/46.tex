@@ -1,0 +1,114 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{4.6 - Optimization of Constructed Functions}
+	\setcounter{section}{6}
+	\setcounter{ex}{0}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs46}} 
+	\fancyhead[LO,RE]{\bfseries  \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 4.6}
+
+
+\section*{Optimization of Constructed Functions}\label{cs46}
+	\subsection*{Strategy for Optimization}
+		\begin{enumerate}[]
+			\item \textbf{Step 1}: Identify the quantity to be optimized (the output) and the quantities on which the output quantity depends (the input).
+			\item \textbf{Step 2}: Sketch and label a diagram of the situation.
+			\item \textbf{Step 3}: Construct a model with a single input variable.
+			\item \textbf{Step 4}: Locate the optimal point (minimum/maximum) for the model.
+		\end{enumerate}
+		
+	\subsection*{Examples}
+		\begin{ex}
+			 In 2009, airlines had a 45-inch restriction on the maximum linear measurement (length + width + height) of carry-on luggage with the height restricted to 10 inches.  Passengers concerned with keeping their travel costs down seek to maximize the capacity of their carry-on bag; what are the optimal measurements to maximize capacity?\\
+
+				\textbf{Step 1}: We want to maximize capacity of the carry-on, so we want to maximize volume.  Because volume is given by $V = lwh$, our input variables are $l$, $w$, and $h$.  In particular, we're told that $h = 10$; thus, $V = 10lw$.  \\
+				\textbf{Step 2}: Fill in the sketch below:
+					\vs{1}\\
+				\textbf{Step 3}: In order to write the model with a single input variable, we need a second equation to eliminate one of the variables.  We know that $V = 10lw$.  But, we are also told that the maximum linear measurement is given by $l + w + h = 45$.  Since $h = 10$, this becomes $l + w + 10 = 45$, so $l + w = 35$.  Now we can solve for either $l$ or $w$.  Choose to solve for length.  Thus, $l = 35 - w$.  We can substitute this into the equation for volume:
+					\begin{align*}
+						V &= 10lw \\
+						  &= 10(35 - w)w\\
+						  &= -10w^2 + 350w
+					\end{align*}
+			This gives us an equation in terms of a single variable, one which we can optimize.
+				\newpage
+				
+				\textbf{Step 4}: In order to optimize the equation, we want to find the max or min.  Since we want the \emph{most} volume, we're going to find the maximum.  We also have an interval, since $0 < l < 35$ (from the maximum linear measurement).  Then,
+					\[V' = -20w + 350\]
+					Solving for $w$ gives $w = 17.5$.  Plugging this in to the linear measurement, we have $l + 17.5 = 35$, so $l = 17.5$.  This means that our maximum dimensions are $17.5"\times17.5"\times10"$, and the maximized volume is $V = (17.5)(17.5)(10) = 3062.5$ in$^3$.
+		\end{ex}
+		\vs{.5}
+			
+		\begin{ex}
+			A rectangular-shaped garden has one side along the side of a house.  The other three sides are to be enclosed with 60 feet of fencing.  What is the largest possible area of such a garden?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			A mason has enough brick to build a 46 foot wall.  The homeowners want to use the wall to enclose an outdoor patio.  The patio will be along the side of the house and will include a 4-foot opening for a door.  What dimensions will maximize the area of the patio?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			A cylindrical can is made to hold one liter of oil.  Find the dimensions that will minimize the cost of the metal to manufacture the can, accurate to the nearest hundredth.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			A certain orchard in Florida has found that when 14 orange trees are planted, their yield is 80 oranges per tree.  For each tree added to the orchard, each tree's yield decreases by 2 oranges per tree.  For example, if there are 15 trees planted in the orchard, the yield per tree drops to 78 oranges per tree.  Find the number of trees needed to maximize the total number of oranges produced.
+		\end{ex}
+			\newpage
+
+			
+		\begin{ex}
+			During one calendar year, a year-round elementary school cafeteria uses 42,000 styrofoam plates/packets, each containing a fork, spoon, and napkin.  The smallest amount the cafeteria can order from the supplier is one case containing 1000 plates and packets.  Each order costs \$12, and the cost to store a case for the whole year is \$4. Use $x$ to represent the number of cases ordered at one time in the following:
+			\begin{enumerate}[(a)]
+				\item Write equations for: (1) the number of times the manager will need to order during one calendar year, and (2) the annual cost to the cafeteria.
+					\vs{1}
+				\item Assume that the average number of cases stored throughout the year is half the number of cases in each order.  Write an equation for the total storage cost for 1 year.
+					\vs{1}
+				\item Write a model for the combined ordering and storage costs for 1 year.
+					\vs{1}
+				\item What order size minimizes the total yearly cost?  How many times a year should the manager order?  What will the minimum total ordering and storage costs be for the year?
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			A student organization is planning a bus trip to the Cotton Bowl to cheer on OU football in the playoffs.  The bus they charter seats 44 and charges a flat rate of \$350 plus \$35 per person.  However, for ever empty seat on the bus, the charge per person is increased by \$2.  There is a minimum of 10 passengers.  The organization decides that each person going on the trip will pay \$35; the organization will pay the flat rate and any additional amount about \$35 per person.
+			\begin{enumerate}[(a)]
+				\item Construct a model for the revenue made by the bus company as a function of the number of passengers.
+					\vs{1}
+					
+				\item Construct a model for the amount the organization pays as a function of the number of passengers.
+					\vs{1}
+					
+				\item For what number of passengers will the bus company's revenue be greatest?  For what number of passengers will the bus company's revenue be least?
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		\begin{ex} 
+			A software developer is planning the launch of a new program.  The current version of the program could be sold for \$100.  Delaying the release will allow the developers to package add-ons with the program that will increase the selling price by \$2 for each day of delay.  However, for each day of delay, the company will lose customers.  The company could sell 400,000 copies now, but for each day that release is delayed, they will sell 2,300 fewer copies of the software.
+			\begin{enumerate}[(a)]
+				\item If $t$ is the number of days the company delays the release, write a model for $P$, the price charged for the product.
+					\vs{1}
+					
+				\item If $t$ is the number of days the company will delay the release, write a model for $Q$, the number of copies they will sell.
+					\vs{1}
+					
+				\item If $t$ is the number of days the company will delay the release, write a model for $R$, the revenue generated from the sale of the product.
+					\vs{1}
+					
+				\item How many days should the company delay the release in order to maximize revenue?  What is the maximum possible revenue?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+
+	\clearpage
+\end{document}

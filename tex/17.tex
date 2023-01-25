@@ -1,0 +1,128 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{1.7 - Constructed Functions}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs17}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 1.7}
+
+
+\section*{Constructed Functions}\label{cs17}
+	\subsection*{Definitions}
+		\begin{defn}[Fixed Cost] 
+			A \textbf{fixed cost} is a cost which remains the same, no matter how much of a product is produced.
+		\end{defn}
+
+			
+		\begin{defn}[Variable Cost] 
+			A \textbf{variable cost} is a cost which changes depending on the number of units produced.
+		\end{defn}
+
+			
+		\begin{defn}[Total Cost] 
+			The \textbf{total cost} is the sum of the fixed cost and variable cost.
+		\end{defn}
+
+			
+		\begin{defn}[Revenue] 
+			\textbf{Revenue} is the  \showto{ins}{\fbox{product of the selling price (per unit) and the number of units sold,}\\ \fbox{$R =$ price $\cdot$ quantity}}\showto{st}{\blank{5.2}\\[15pt]\blank{6.5}.}
+		\end{defn}
+
+			
+		\begin{defn}[Profit] 
+			\textbf{Profit} is \showto{ins}{\fbox{the difference between revenue and cost, $P = R-C$}}\showto{st}{\blank{5.5}}.
+		\end{defn}
+
+			
+		\begin{defn}[Break-Even Point] 
+			The \textbf{break-even point} is the point when \showto{ins}{\fbox{total cost equals total revenue, i.e. when profit }\\ \fbox{is zero}}\showto{st}{\blank{3.6}\\[15pt]\blank{5}.}
+		\end{defn}
+				
+		\vspace*{-.5in}	
+	\subsection*{Function Operations}
+		There are five operations which we will need to be familiar with in order to move on.\\
+		\begin{itemize}
+			\item \textbf{Addition}: \showto{ins}{\fbox{$h(x) = (f+g)(x) = f(x) + g(x)$}}\showto{st}{\blank{3}}, \emph{if the output units of f and g are }\showto{ins}{\\\fbox{exactly the same}}\showto{st}{\\[15pt]\blank{3}}.\\
+			
+			\item \textbf{Subtraction}: \showto{ins}{\fbox{$j(x) = (f-g)(x) = f(x) - g(x)$}}\showto{st}{\blank{3}}, \emph{if the output units of f and g are }\showto{ins}{\\ \fbox{exactly the same}}\showto{st}{\\[15pt]\blank{3}}.\\
+			
+			
+			\item \textbf{Multiplication}: \showto{ins}{\fbox{$k(x) = (f\cdot g)(x) = f(x)\cdot g(x)$}}\showto{st}{\blank{3}}, \emph{if the output units of f and g are }\showto{ins}{\fbox{compatible}}\showto{st}{\\[15pt]\blank{3}}.\\
+			
+			\item \textbf{Division}: \showto{ins}{\fbox{$\ell(x) = \lrpar{\dfrac{f}{g}}(x) = \dfrac{f(x)}{g(x)}$ ($g(x)\neq 0$)}}\showto{st}{\blank{3}}, \emph{if the output units of f and g are }\showto{ins}{\fbox{compatible}}\showto{st}{\\[15pt]\blank{3}}.\\
+			
+			\item \textbf{Composition}: \showto{ins}{\fbox{$m(x) = (f\circ g)(x) = f(g(x))$}}\showto{st}{\blank{3}}, \emph{if }\showto{ins}{\fbox{the output of $g$ is the input of $f$}}\showto{st}{\blank{2.1}\\[10pt] \blank{5}}.
+		\end{itemize}
+			\vspace*{.05in}
+			
+		Addition creates total cost from fixed and variable costs by adding the two; profit is created using subtraction.  Variable cost (and revenue) are created by multiplication, and division gives us average cost $\overline{C}$.
+		
+	\subsection*{Examples}
+		\begin{ex}
+			The number of student tickets sold for a home basketball game at OU is represented by $S(w)$ hundred tickets when $w$ is the winning percentage of the team.  The number of non student tickets sold for the same game is represented by $N(w)$ hundred tickets where $w$ is the winning percentage of the team.  Combine the functions to construct a new function giving the total number of tickets sold for a home basketball game at OU.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Sales of 12-ounce bottles of sparkling water are modeled as $D(x) = 287.411(0.266^x)$ million bottles, when the price is $x$ dollars per bottle.  Write a model for the revenue from the sale of 12-ounce bottles of sparkling water.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			The profit from the supply of a certain commodity is modeled as $P(q) = 30 + 60\ln q$ thousand dollars, where $q$ is the number of units produced in millions.  Write a model for the average profit when $q$ units are produced.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			A travel agency offers spring break cruise packages.  The agency advertises a cruise to Cancun for $\$1200$ per person.  To promote the cruise among student organizations on campus, the agency offers a discount for student groups selling the cruise to over 50 of their members.  The price per student will be discounted by \$10 for each student in excess of 50 (for example, if an organization had 55 members go on the cruise, each of those students would pay \$1150).  Write a model for the travel agency's revenue that depends on the number of students from a student organization.
+		\end{ex}
+			\vs{2}
+			
+		\begin{ex}
+			The sales of a certain brand of backpack is modeled by $f(s) = 1.56s + 4.3$ million dollars, when $s$ is the number of stores that sell the brand of backpack.  The number of stores that sell the brand of backpack is modeled by $s(t) = 3t+5.4$ stores, $t$ months since the beginning of 2000.  Write a model for the sales of a certain brand of backpack with respect to time.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			The level of contamination in groundsoil is $f(p) = \sqrt{p}$ parts per million when the population of the surrounding community if $p$ people.  The population of the surrounding community in year $t$ is modeled as $p(t) = 400t^2+2500$ people, $t$ years since 2000.
+			\begin{enumerate}[(a)]
+				\item Why can we use function composition?
+					\vs{.5}
+					
+				\item Find a model for the contamination of the groundsoil.
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+			
+			
+		\begin{ex}
+			It costs a company $\$19.50$ to produce 150 glass bottles.  Write a model for $\overline{C}(q)$, the average cost of producing a bottle when $q$ units are produced.
+		\end{ex}
+			\vs{1.5}
+			\newpage
+			
+		\begin{ex}
+			Write the following functions as composite functions, and then evaluate the composite at an input of 2.
+			\begin{enumerate}[(a)]
+				\item $f(t) = 3e^t$, $t(p) = 4p^2$
+					\vs{1}
+					
+				\item $h(p) = \dfrac{4}{p}$, $p(t) = 1 + 3e^{-0.5t}$
+					\vs{1}
+					
+				\item $g(x) = \sqrt{7x^2}$, $x(w) = 4e^w$
+					\vs{1}
+					
+				\item $c(x) = 3x^2-2x+5$, $x(t) = 2e^t$
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+	\clearpage
+\end{document}

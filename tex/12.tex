@@ -1,0 +1,205 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{1.2 - Function Behavior and End Behavior Limits}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs12}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 1.2}
+
+\section*{Function Behavior and End Behavior Limits}\label{cs12}
+	\subsection*{Descriptions of Function Behavior}
+		Especially as we consider longer-term models, we are concerned about what happens to a function as time advances. \\[5pt]
+		\begin{defn}[Increasing, Decreasing, Constant]
+			Let $f$ be a function defined over some input interval.  The function is said to be \\[15pt]
+				\tabitem \textbf{increasing} if the output values \showto{ins}{\fbox{increase on the interval}}\showto{st}{\blank{4.2}\\[5pt]} \\
+				\tabitem \textbf{decreasing} if the output values \showto{ins}{\fbox{decrease on the interval}}\showto{st}{\blank{4.2} \\[5pt]} \\
+				\tabitem \textbf{constant} if the output values \showto{ins}{\fbox{remain the same on the interval}}\showto{st}{\blank{4.3} }
+		\end{defn} 
+		
+		\begin{ex}
+			On what intervals is $g(x) = -x^3 + 16x -5$ increasing, decreasing, or constant? Use the calculator to help you find the answer.
+		\end{ex}
+			\vs{1}
+		\begin{ex}
+			Is the function given in the table below increasing, decreasing, or constant?  Why?
+			\begin{center}
+				{\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|c||c|c|c|c|c|}\hline
+					$x$ 	& 2 & 4 & 6 & 8 & 10 \\ \hline
+					$h(x)$  & 5 & 6 & 8 & 12& 20 \\ \hline
+				\end{tabular}
+				}
+			\end{center}
+		\end{ex}
+			\vs{1}
+		\begin{ex}
+			The function $f(x) = c$ is constant. Look at the graph and/or table and explain why.
+		\end{ex}
+			\vs{1}
+			\newpage
+	\subsection*{Direction and Curvature}
+		\begin{defn}[Concavity] A function $f$ defined over an input interval is said to be\\[5pt]
+				\tabitem \textbf{concave up} if a graph of the function appears to be \showto{ins}{\fbox{bending upward}}\showto{st}{\blank{2.5} \\[5pt]}\\
+				\tabitem \textbf{concave down} if a graph of the function appears to be \showto{ins}{\fbox{bending downward}}\showto{st}{\blank{2.5}\\[5pt]}\\
+			The curvature of a function is called \showto{ins}{\fbox{concavity}}\showto{st}{\blank{2}}.  
+		\end{defn}
+		
+		\begin{ex}
+			Describe the concavity of $k(t)=-t^2 + 8t -13$.  Does it appear to ever change?  If so, where? Draw a picture.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Describe the concavity of the function $f(z) = \ln z$.  Does it ever appear to change?  If so, where? Draw a picture.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Describe the concavity of the function $g(x) = -2x$. Draw a picture.
+		\end{ex}
+			\vs{1}
+			\newpage
+		\begin{ex}
+			Describe the concavity of $h(d) = d^3 - 11d^2 + 38d - 37$.  Does it ever appear to change?   Draw a picture.
+		\end{ex}
+			\vs{1}
+		\begin{defn}[Inflection Point]
+			A point on a continuous function where the concavity of the function changes is called an \textbf{inflection point}.
+		\end{defn}
+		
+		\begin{ex}
+			The function $P(t)=2t^3-10t^2-3t + 275$ describes the profit (in hundred dollars) made by a small business after a rash of bad Yelp reviews where $t$ is the number of weeks since the reviews were put online. Let $0 \leq t \leq 5$. 
+			\begin{enumerate}[(a)]
+				\item Sketch a picture of the graph.
+					\vs{1.5}
+				\item Estimate the input and output values at the inflection point(s).
+					\vs{.5}
+				\item Identify the intervals where $P$ is increasing, decreasing, and constant.
+					\vs{1}
+					\newpage
+				\item Identify the intervals where $P$ is concave up, concave down, or neither.
+					\vs{1}
+				\item Use the information from (a)-(c) to describe what was happening to the profit made by the business between the first and sixth week.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+	\subsection*{Limits and End Behavior}
+		\begin{defn}[End Behavior]
+			The \textbf{end behavior} of a function refers to the behavior of the output values of the function as the input values become larger and larger, or smaller and smaller.
+		\end{defn}
+		
+		As the input values become larger and larger (more and more positive), we say that the input \showto{ins}{\fbox{increases without bound}}\showto{st}{\\[15pt]\blank{3.5}}.  As they become smaller and smaller (more and\showto{ins}{}\showto{st}{\\[15pt]} more negative), the input \showto{ins}{\fbox{decreases without bound}}\showto{st}{\blank{3.5}}.
+		
+		\begin{ex}
+			Consider $h(d) = d^3 - 11d^2 + 38d - 37$.  
+			\begin{enumerate}[(a)]
+				\item Sketch the function on the interval $[0,6]$.
+					\vs{1.5}
+					\newpage
+				\item In a sentence, describe the end behavior of $h$ as the input increases without bound.
+					\vs{1}
+				\item In a sentence, describe the end behavior of $h$ as the input decreases without bound.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+
+		There are \textbf{three possibilities} when we consider the end behavior of a function:\\
+		\begin{itemize}
+			\item The output values may \showto{ins}{\fbox{approach or equal a certain number}}\showto{st}{\blank{4.8}}\\
+			\item The output values may \showto{ins}{\fbox{increase or decrease without bound}}\showto{st}{\blank{4.8}}\\
+			\item The output values may \showto{ins}{\fbox{oscillate and fail to approach any particular number}}\showto{st}{\blank{4.8}}
+		\end{itemize}
+		
+		\begin{ex}
+			Draw three functions that have will have each of these three end behaviors.
+		\end{ex}
+			\vs{1.5}
+			\newpage
+		\begin{ex}
+			Determine the end behavior/limit of the function $f(x) = \dfrac{2x}{x-1}$ as the input increases without bound, using numerical estimation.  Record your approximations with \textbf{full decimal accuracy}, and round the final answer to the hundredths.
+		\end{ex}
+			\begin{center}
+				\begin{minipage}{.85\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[c]|X[2,c]|}\hline
+						$x$ & $f(x) = \dfrac{2x}{x-1}$ \\ \hline
+							& \\
+						10	& \\ 
+							& \\ \hline
+							& \\
+						100	& \\
+							& \\ \hline 
+							& \\
+						1000& \\ 
+							& \\ \hline
+							& \\ 
+						10000& \\ 
+							 & \\ \hline
+							 & \\
+						100000&\\
+							  &\\ \hline\hline
+							  &\\
+						End Behavior/\newline Limit & \\
+									&\\ \hline
+					\end{tabu}
+				\end{minipage}
+			\end{center}
+		\begin{rmk}[Note]
+			When creating a table, you need to stop when the digit \textbf{after} the one you're rounding to repeats twice.
+		\end{rmk}
+		\begin{defn}[Limit]
+			A function $f(x)$ is said to have a \textbf{limit} $L$ if the \showto{ins}{\fbox{output}}\showto{st}{\blank{1.5}} of $f$\fitb{}{\\[15pt]} approaches \showto{ins}{\fbox{$L$}}\showto{st}{\blank{.6}\\[10pt]} as the \showto{ins}{\fbox{input}}\showto{st}{\blank{1.5}} approaches some (possibly infinite) value $a$.  We write this using the following notation:\\[15pt]
+				\[
+					\showto{ins}{\ds \lim_{x\to a} f(x) = L}
+					\showto{st}{\vspace*{.15in}}
+				\]
+		\end{defn}
+			\newpage
+
+		\begin{ex}
+			Rewrite the end behavior/limit from the previous example using limit notation.
+		\end{ex}
+			\vs{1}
+		\begin{defn}[Horizontal Asymptote]
+			A horizontal line with the equation \showto{ins}{\fbox{$y = L$}}\showto{st}{\blank{1.5}} is called a \textbf{horizontal asymptote}.
+		\end{defn}
+			\vs{.25}
+		\begin{ex}
+			Let $f(x) = x^2$ and $g(x) = x^3$. 
+			\begin{enumerate}[(a)]
+				\item Write the statement ``The limit of $f(x)$ as $x$ approaches $\infty$ is $\infty$'' in limit notation.
+					\vs{1}
+				\item Find $\ds \lim_{x\to -\infty} f(x)$, and write the notation in words (like in (a))
+					\vs{1}
+				\item Find the end behaviors of $g(x)$, and write them in limit notation.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		\begin{ex}
+			Sketch the following functions, and use the sketches to find the limit as the input increases without bound and decreases without bound:
+			\begin{enumerate}[(a)]
+				\item $f(x) = \ln x$
+					\vs{1}
+				\item $g(x) = e^x$
+					\vs{1}
+				\item $h(x) = \dfrac{1}{1 + e^x}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+ 		\begin{ex}
+ 			Use numerical estimation to find $\ds\lim_{x\to \infty} (1-0.6^x)$.  Make a table showing at least five inputs and the corresponding outputs; write \emph{all} decimals in the table, and round your final answer to two decimal places.  Start your input at 2 and double.
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			Use numerical estimation to find $\ds \lim_{t\to -\infty} \lrpar{1+t^{-2}}$.  Make a table showing at least five inputs, and the corresponding outputs; write \emph{all} decimals in the table, and round your final answer to the nearest integer.  Start your input at $-10$ and double.
+ 		\end{ex}
+ 			\vs{1}
+ 		\clearpage
+\end{document}

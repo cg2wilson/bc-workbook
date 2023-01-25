@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Functions and Limits</title>
+	
+	<introduction>
+		<p>
+			Chapter 1 focuses on some algebra prerequisite for differential calculus (limits, functions), but primarily focuses on properties of specific functions (linear, exponential, logarithmic, logistic, quadratic, cubic) and developing models using these functions. 
+		</p>
+		
+	</introduction>
+    <xi:include href="./11.ptx"/>   
+	<!--
+	<xi:include href="./12.ptx"/>
+    <xi:include href="./13.ptx"/>
+    <xi:include href="./14.ptx"/>
+    <xi:include href="./15.ptx"/>
+    <xi:include href="./16.ptx"/>
+	<xi:include href="./17.ptx"/>
+	<xi:include href="./18.ptx"/>
+	<xi:include href="./19.ptx"
+	-->
+</chapter>

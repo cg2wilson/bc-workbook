@@ -1,0 +1,113 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{4.3 - Absolute Extreme Points}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs43}} 
+	\fancyhead[LO,RE]{\bfseries  \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 4.3}
+
+
+
+\section*{Absolute Extreme Points}\label{cs43}
+
+	\begin{defn}[Absolute Extrema] A function $f$ has an \textbf{absolute maximum} at input $c$ if \showto{ins}{\fbox{$f(c)$ is greater than or equal to all}\\ \fbox{other outputs}}\showto{st}{\blank{2.5}\\[15pt] \blank{3.5}}.  Similarly, $f$ has an \textbf{absolute minimum}\showto{st}{\\[15pt]} at $c$ if \showto{ins}{\fbox{$f(c)$ is less than or} \fbox{equal to all other outputs}}\showto{st}{\blank{4}}.
+	\end{defn}
+		\vs{.25}
+	In practice, there is very little distinction between what we did in 4.2 and what we do here in 4.3; the key difference is determining whether or not the particular max/min is \emph{the greatest} or \emph{the least} output value.
+		\vs{.25}
+	\subsection*{Examples}
+		\begin{ex}
+			Consider the function $f(x) = 6x^4-6x^3-5x^2+5x-1$
+			\begin{enumerate}[(a)]
+				\item Locate any extreme values of the function on the interval $-2\leq x\leq 2$.
+					\vs{1}
+				\item Classify the extreme values you found in part (a)
+					\vs{1.5}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Consider the function $g(t) = -0.37t^3 + 5.34t^2 -9.66t + 96.93$
+			\begin{enumerate}[(a)]
+				\item Locate any extreme values of the function on the interval $0\leq x\leq 11$.
+					\vs{1}
+				\item Classify the extreme values you found in part (a)
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Consider the function $h(p) = (e^{2-p})(3^p-p^2)$
+			\begin{enumerate}[(a)]
+				\item Locate any extreme values of the function on the interval $-1\leq x\leq 4$.
+					\vs{1}
+				\item Classify the extreme values you found in part (a)
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Consider the function $y(x) = 0.75x^4-3.86x^2+10.18x + 22.186$
+			\begin{enumerate}[(a)] 
+				\item Locate any extreme values of the function on the interval $(-\infty,\infty)$
+					\vs{1}
+				\item Classify the extreme values you found in part (a)
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Find and classify the absolute and relative maxima/minima for the function $f(x) = 3x^4-16x^3+18x^2$ on $[-1,4]$.  If necessary, round to the nearest hundredth.
+		\end{ex}
+			\vs{2}
+			\newpage
+			
+		\begin{ex}
+			Find the absolute and relative extrema for the function $f(x) = x^3-3x^2 + 1$ on $-\dfrac{1}{2}\leq x\leq 4$.  If necessary, round to the nearest hundredth.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find and classify all extrema of the function $f(x) = 12 + 4x - x^2$ on $[0,5]$.  If necessary, round to the nearest hundredth.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find and classify all extrema of the function $f(t) = (t^2-4)^3$ on $[-2,3]$.  If necessary, round to the nearest hundredth.
+		\end{ex}
+			\vs{1}
+		\begin{ex}
+			Find the relative and absolute maxima and minima of the function $g(x) = \dfrac{x}{x^2-x+1}$ on $[0,3]$.  If necessary, round to the nearest hundredth.
+			\vs{2}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			The sales of a new Starbucks drink are approximated by the function $S(x) =  -.002 x^4 + .093 x^3 - 1.38 x^2 + 6.573 x + 5.393$ thousand dollars, $x$ months after its introduction.  Round your answers to the nearest hundredth.  
+			\begin{enumerate}[(a)]
+				\item The absolute \textbf{maximum} of drink sales between month 1 and month 15 was \makebox[1.5in]{\hrulefill} \\[20pt]
+	and occurred \makebox[2in]{\hrulefill} months after release.\\
+				\item The absolute \textbf{minimum} of drink sales between month 1 and month 15 was \makebox[1.5in]{\hrulefill} \\[20pt]
+	and occurred \makebox[2in]{\hrulefill} months after release. \\
+				\item Calculate the percent rate of change 4 months after introduction, to the nearest hundredth as a percent.  
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			The quantity of a drug in the bloodstream $t$ hours after a tablet is swallowed is given by $q(t) = 20(e^{-t}-e^{-3t})$ $\mu g$.  
+			\begin{enumerate}[(a)]
+				\item How much of the drug is in the bloodstream at time $t = 0$?
+					\vs{1}
+				\item Over the first twelve hours, at what time is the amount of drug in the bloodstream at its highest?  What is the maximum amount?
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+
+	\clearpage
+\end{document}

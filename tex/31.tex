@@ -1,0 +1,126 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\chapter{Determining Change: Derivatives}
+	\addcontentsline{toc}{section}{3.1 - Simple Rate of Change Formulas}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs31}} 
+	\fancyhead[LO,RE]{\bfseries  \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 3.1}
+
+
+\section*{Simple Rate of Change Formulas}\label{cs31}
+	\subsection*{The Formulas}
+		Instead of calculating derivatives by hand every time, we can develop sets of rules which will help us more easily calculate them.  These are given below; let $c$ be a constant, and $f(x),g(x)$ be functions: \\
+		\begin{center}
+			\tabulinesep = 1.5mm
+			\begin{tabu}{ | X[c] | X[1,c]X[1,c] | X[1,c]X[c] | }\hline
+				\textbf{Name} & \multicolumn{2}{c}{\textbf{Function}} & \multicolumn{2}{|c|}{\textbf{Derivative}}\\ \hline\hline
+							& & & &  \\
+				Constant Rule & \multicolumn{2}{c|}{$f(x) = b$}  & $f'(x) =$ \showto{ins}{\fbox{$0$}}&\\ 
+							& & & &  \\ \hline
+							& & & &  \\ 
+				Power Rule & \multicolumn{2}{c|}{$f(x) = x^n$} &$f'(x) =$ \showto{ins}{\fbox{$nx^n$}} &\\
+							& & & &  \\ \hline
+							& & & &  \\
+				Constant Multiplier Rule & \multicolumn{2}{c|}{$c\cdot f(x)$} & $f'(x) =$ \showto{ins}{\fbox{$c\cdot f'(x)$}}&\\
+							& & & &  \\ \hline
+							& & & &  \\
+				Sum Rule & \multicolumn{2}{c|}{$f(x)+ g(x)$} & \showto{ins}{\fbox{$f'(x) + g'(x)$}} &\\
+							& & & &  \\ \hline
+							& & & &  \\
+				Difference Rule & \multicolumn{2}{c|}{$f(x)- g(x)$} & \showto{ins}{\fbox{$f'(x) - g'(x)$}} &\\
+							& & & &  \\ \hline
+			\end{tabu}			
+		\end{center}
+			\newpage
+			
+	\subsection*{Examples}
+		\begin{ex} Write the formula for the derivative of the function.
+			\begin{enumerate}[(a)] 
+				\item $f(x) = x^2$ 
+					\vs{1}
+					
+				\item $g(x) = 3x^4$
+					\vs{1}
+					
+				\item $h(t) = 0.2t^{50}-10t + 1$
+					\vs{1}
+					
+				\item $x(t) = t^{2\pi}$  
+					\vs{1}
+					
+  				\item $f(x) = 3x^3$  
+  					\vs{1}
+  					\newpage
+  					
+  				\item $q(x) = z x^{n+2}$  
+  					\vs{1}
+  					
+				\item $f(x) = 12x^{0.4} + 2x^{56} + 5$  
+					\vs{1}
+					
+				\item $g(x) = -3.2x^{-3.5} + 6.1x^{5/2} - 5.3$  
+					\vs{1}
+					
+				\item $f(x) = 7x^{-3}$ 
+					\vs{1}
+					
+				\item $g(x) = -\dfrac{9}{x^2}$ 
+					\vs{1}
+					\newpage
+					
+				\item $f(x) = 4\sqrt{x} + 3.3x^5$ 
+					\vs{1}
+					
+				\item $k(x) = \dfrac{4x^2+19x+6}{x}$  
+					\vs{1}
+					
+				\item $g(t) = 5.8t^3 + 2t^{-1.2} - 5$ 
+					\vs{1}
+			\end{enumerate}
+ 		\end{ex}
+ 		
+ 		\begin{ex}
+ 			Find the derivative of $h(x) = x^2(x^3 + 1)$
+ 		\end{ex}
+ 			\vs{2}
+ 			\newpage
+ 			
+		\begin{ex}
+			The temperature (in $^\circ F$) of Norman on Wednesday can be modeled by $t(x) = -0.8x^2+11.6x+38.2$ degrees Fahrenheit, $x$ hours after 6 A.M.
+			\begin{enumerate}[(a)]
+				\item Write the \textbf{complete} rate of change model for the temperature.  
+					\vs{2}
+ 				\item By how much is the temperature changing at 10 A.M.?  Round your answer to the nearest hundredth.  
+ 					\vs{1}
+ 				\item Compute and interpret $\dfrac{dt}{dx}\bigg|_{x = 10}$. Round your answer to the nearest tenth.  
+ 					\vs{1}
+ 				\item Compute the percent rate of change of temperature at 4:00pm.  Round your answer to the nearest hundredth.  
+ 					\vs{1}
+ 			\end{enumerate}
+ 		\end{ex}
+ 			\newpage
+ 			
+		\begin{ex}
+			The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:
+			\begin{center}
+				{\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|c|c|c|c|c|c|c|c|c|}\hline
+					\textbf{Weight (lbs)} & 88 & 110 & 125 & 140 & 155 & 170 & 185 & 200 \\ \hline
+					\textbf{Metabolic Rate (kCal/day)} & 1291 & 1444 & 1551 & 1658 & 1750 & 1857 & 1964 & 2071\\ \hline
+				\end{tabular}
+				}
+			\end{center}
+			\begin{enumerate}[(a)]
+				\item Find a \textbf{complete} linear model for the metabolic rate of a typical 18- to 30-year-old male. 
+					\vs{1}
+				\item Write the derivative model for the formula in part (a).  
+					\vs{1}
+ 				\item Write a sentence which interprets the derivative of the metabolic rate model of a 26-year-old male.  Round your answer to the nearest whole number.  
+ 					\vs{1}
+ 			\end{enumerate}
+ 		\end{ex}
+	\clearpage
+\end{document}

@@ -1,0 +1,194 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{3.3 \& 3.4 - Rate of Change of Composite Functions}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs34}} 
+	\fancyhead[LO,RE]{\bfseries  \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapters 3.3 \& 3.4}
+
+
+\section*{Rate of Change of Composite Functions}\label{cs34}
+	\subsection*{Review: Composite Functions}
+	Two functions $f(x)$ and $x(t)$ can be composed \emph{if and only if} the output of $x(t)$ is the input of $f(x)$.  Notice how the notation is suggestive; $f$ inputs $x$, which is exactly what $x(t)$ outputs.  We write the composition either as $(f\circ x)(t)$ or $f(x(t))$.  The new input is now the input of $x$ (ie, $t$), and the new output is the output of $f$ (namely, $f$).  
+		\begin{ex}
+			Identify the functions which make up the composite functions given below.
+			\begin{enumerate}[(a)]
+				\item $f(x) = \dfrac{1}{x+2}$
+					\vs{1}
+					
+				\item  $g(x) = \ln (x^2)$		
+					\vs{1}
+					
+				\item  $h(t) = e^{5t}$		
+					\vs{1}
+					
+				\item  $q(x) = (2x+1)^5$		
+					\vs{1}
+					
+				\item  $n(f) = \lrpar{3+\dfrac{1}{f}}^3$		
+					\vs{1}
+					\newpage
+					
+				\item  $s(h) = \ln \left(5h^2 + \dfrac{1}{h}\right)$		
+					\vs{1}
+					
+				\item  $y(r) = \dfrac{5.317}{(2r^5 + 1.7)^2}$		
+					\vs{1}
+					
+				\item  $w(c) = \sqrt[3]{\dfrac{c}{1+c}}$		
+					\vs{1}
+					
+				\item  $f(x) = 1-\sqrt{e^x+5x}$		 
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+	\subsection*{The Chain Rule}
+		The \emph{chain rule} is a rule for finding the derivative of composite functions.  Let $h(x) = f(g(x))$, where the output of $g$ is the input of $f$.  Then,
+			\showto{ins}{\[h'(x) = f'(g(x))\cdot g'(x)\]}\showto{st}{\[\vspace*{30pt}\]}
+
+		The best way to learn the chain rule is with practice \textbf{inside and outside of class}.
+		
+	\subsection*{Examples}
+		\begin{ex} 
+			For $f(t) = 3t^2$ and $t(x) = 4+7\ln x$, find the rate of change function $(f\circ t)'(x)$ with respect to $x$.
+		\end{ex}
+			 \vs{2}
+			 
+ 		\begin{ex}
+ 			Let $c(x) = 3x^2 - 2$ and $x(t) = 4-6t$.  Find $c'(t)$
+ 		\end{ex}
+ 			 \vs{2}
+ 			 \newpage
+ 			 
+ 		\begin{ex}
+ 			Consider the following functions: 
+				\[f(g) = \ln g \qquad g(h) = 5h + 2 \qquad h(j) = e^j\qquad j(x) = 4x^{-1}\]
+			Find $f(x)$ and $f'(x)$.
+ 		\end{ex}
+ 			 \vs{2}
+ 			
+ 		\begin{ex}
+ 			Find the derivative of $f(x) = \dfrac{1}{x+2}$  
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			Find the derivative of $f(x) = \ln(x^2)$  
+ 		\end{ex}
+ 			\vs{1}
+ 			\newpage
+
+ 		\begin{ex}
+ 			Find the derivative of $f(x) = (\ln x) ^3$  
+ 		\end{ex}
+ 			\vs{1}
+ 		
+ 		\begin{ex}
+ 			Find the derivative of $f(x) = e^{5x}$  
+ 		\end{ex}
+ 			\vs{1}
+ 		
+ 		\begin{ex}
+ 			Find the derivative of $f(x) = (e^x)^4$  
+ 		\end{ex}
+ 			\vs{1}
+ 			\newpage
+ 			
+ 		\begin{ex}
+			Find the derivative of $f(x) = 7 + 5\ln (4x^2+3)$
+ 		\end{ex}
+ 		 	\vs{1}
+ 		
+ 		\begin{ex}
+ 			If $s(t) = 3e^{5t}$, find $s'(t)$
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			Find the derivative of $k(x) = 3e^{4x^2}$
+ 		\end{ex}
+ 			\vs{1}
+ 			\newpage
+ 			
+ 		\begin{ex}
+ 			Find the derivative of $p(t) = (5+6e^{2t})^3$
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			$f(x) = 6(4x^2+3)^5$
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			$f(x) = -12\ln (6x^2+3^x)$
+ 		\end{ex}
+ 			\vs{1}
+ 			\newpage
+ 			 
+ 		\begin{ex}
+ 			$f(x) = 2e^{0.5x} - 2x$
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			$f(x) = \dfrac{7.2}{(4x^3+1)^4}$
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			$f(x) = 3\sqrt{x^3 + 2\ln x}$
+ 		\end{ex}
+ 			\vs{1}
+ 			\newpage
+ 			
+ 		\begin{ex}
+ 			Find the derivative of $f(x) = e^{kx}$
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			Compute the derivative of $e^{f(x)}$
+ 		\end{ex}
+ 			\vs{1}
+ 			
+ 		\begin{ex}
+ 			Find the derivative of the function $\dfrac{1.356}{1+20.5e^{-4.6t}}$
+ 		\end{ex}
+ 			\vs{1.5}
+ 			\newpage
+ 			
+ 		\begin{ex}
+ 			Compute the derivative of $j(x) = \ln (\ln (\ln (x^2-e^{3x})))$
+ 		\end{ex}
+ 			\vs{1.5}
+ 			
+ 		\begin{ex}
+ 			The number of children under 18 living in households headed by a grandparent can be modeled as
+ 				\[p(t) = 2.111e^{0.04t}\quad \text{million children}\]
+ 				where $t$ is the number of years since 1980.
+ 			\begin{enumerate}[(a)]
+ 				\item Write the rate-of-change formula for $p$.
+ 					\vs{2}		 
+ 				\item How rapidly was the number of children living with their grandparents growing in 2010?
+ 					 \vs{1}
+ 			\end{enumerate}
+ 		\end{ex}
+			\newpage
+ 		\begin{ex}
+ 			The tuition $x$ years from now at OU is projected to be $t(x) = 24072e^{0.056x}$ dollars. 
+ 			\begin{enumerate}[(a)]
+ 				\item Write the rate-of-change formula for tuition.
+ 					 \vs{1}
+ 				\item What is the rate of change in tuition four years from now?
+ 					 \vs{1}
+ 			\end{enumerate}
+ 		\end{ex}
+ 		
+	\clearpage
+\end{document}

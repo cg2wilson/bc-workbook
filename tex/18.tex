@@ -1,0 +1,134 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{1.8 - Logarithmic Functions \& Models}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries  \large \nameref{cs18}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 1.8}
+
+\section*{Logarithmic Functions \& Models}\label{cs18}
+	\subsection*{Logarithmic Functions}
+		We have the following descriptions for a logarithmic function:
+		\begin{itemize}
+			\item \underline{Algebraically}: A logarithmic model has an equation of the form \showto{ins}{\fbox{$f(x) = a\ln x + b$}}\showto{st}{\blank{2}}, where $a,b\neq 0$ are constants, and $x > 0$.
+			\item \underline{Verbally}: A log function has a \showto{ins}{\fbox{vertical asymptote}}\showto{st}{\blank{1.75}} at $x = 0$, and continues to grow (or decay) as $x$ increases without bound.
+			\item \underline{Graphically}: The graph of a log model takes a form as below.
+		\end{itemize}
+
+	\subsection*{Logarithmic Models}
+		\begin{figure}[h!]	
+			\fbox{
+			\begin{minipage}{1.1in}
+			\centering
+				$\underline{b > 0}$\\
+				\begin{tikzpicture}[x = .5cm, y = .5cm]
+					\draw (-1,0)--(5,0) node[right] {\footnotesize $x$}; %x-axis
+					\draw (0,-3)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+					\draw[<->, smooth, samples = 100, domain = .08:5] plot (\x, {ln(\x)});	
+					\draw (.2,1) node[right] {$f(x)$};
+				\end{tikzpicture}	
+			\end{minipage}
+			\begin{minipage}{1.9in}
+				\begin{itemize}
+					\item $\ds \lim_{x\to\infty} f(x) =$ \showto{ins}{\fbox{$\infty$}}\showto{st}{}
+					\item $\ds \lim_{x\to 0^+} f(x) = $ \showto{ins}{\fbox{$-\infty$}}\showto{st}{}
+					\item $f$ is always \showto{ins}{\fbox{increasing}}\showto{st}{}
+					\item $f$ is concave \showto{ins}{\fbox{down}}\showto{st}{}
+				\end{itemize}
+			\end{minipage}
+			}
+			\fbox{
+			\begin{minipage}{1.1in}
+			\centering
+				$\underline{b < 0}$\\
+				\begin{tikzpicture}[x = .5cm, y = .5cm]
+					\draw (-1,0)--(5,0) node[right] {\footnotesize $x$}; %x-axis
+					\draw (0,-3)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+					\draw[<->, smooth, samples = 100, domain = .08:5] plot (\x, {-ln(\x)});	
+					\draw (.3,1) node[right] {$f(x)$};
+				\end{tikzpicture}
+			\end{minipage}
+			\begin{minipage}{1.9in}
+				\begin{itemize}
+					\item $\ds \lim_{x\to\infty} f(x) =$ \showto{ins}{\fbox{$-\infty$}}\showto{st}{}
+					\item $\ds \lim_{x\to 0^+} f(x) = $ \showto{ins}{\fbox{$\infty$}}\showto{st}{}
+					\item $f$ is always \showto{ins}{\fbox{decreasing}}\showto{st}{}
+					\item $f$ is concave \showto{ins}{\fbox{up}}\showto{st}{}
+				\end{itemize}
+			\end{minipage}
+			}
+		\end{figure}
+
+	\subsection*{Logarithmic Behavior}
+		\begin{ex}
+			The percentage of viewers that have watched a DVR'd show before a certain number of days have passed is give in the table below.
+			\begin{center}
+				{\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|l|c|c|c|c|c|c|c|c|}\hline
+					\textbf{Time} (in days) & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8\\ \hline
+					\textbf{Viewers} (in \%) & 46 & 62 & 76 & 84 & 91 & 95 & 98 & 100\\ \hline
+				\end{tabular}
+				}
+			\end{center}
+			\begin{enumerate}[(a)]
+				\item Why is a logarithmic model best here?  Use a scatterplot to help you develop your reasons.
+					\vs{1}
+				\item Find the model corresponding to your answer in part (a). Write the complete model.
+					\vs{1}
+				\item Explain why the exponential model does not work.
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+
+		\begin{ex}
+			The average length of the ears of men after a certain age is given in the table below.
+			\begin{center}
+				{\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|l|c|c|c|}\hline
+					\textbf{Age} (in years) & 0 & 20 & 70 \\ \hline
+					\textbf{Ear Length} (in inches) & 2.04 & 2.55 & 3.07\\ \hline
+				\end{tabular}
+				}
+			\end{center}
+			\begin{enumerate}[(a)]
+				\item Find the complete logarithmic model for the data.  Do you encounter any problems?
+					\vs{.5}
+				\item Align the data so that age 0 corresponds to an input of 10, and find the complete logarithmic model for the data.
+					\vs{1}
+				\item Use the model to find the ear length of a 45 year old man.
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			The table below shows the life expectancy for women in Ireland between 1945 and 2011
+			\begin{center}
+				{\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|c||c|c|c|c|c|c|c|c|}\hline
+					\textbf{Year} & 1945 & 1955 & 1965 & 1975 & 1985 & 1995 & 2005 & 2011\\ \hline
+					\textbf{Expectancy} (years) & 65.2 & 71.1 & 73.1 & 74.7 & 77.4 & 78.8 & 79.3 & 80.2\\ \hline
+				\end{tabular}
+				}
+			\end{center}
+			\begin{enumerate}[(a)]
+				\item Align the data so that 1940 corresponds to an input of zero.
+				\item What type of concavity does the scatter plot suggest?
+					\vs{1}
+				\item Describe the end behavior suggested by the scatterplot as the input increases without bound.
+					\vs{1}
+					\newpage
+
+				\item Find the complete logarithmic model for the data.
+					\vs{1}
+
+				\item Using your model, find the year in which the life expectancy for Irish women was exactly 76.3 years.
+					\vs{1}
+				\item What was the life expectancy of an Irish woman in the year 1979?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+	\clearpage
+\end{document}

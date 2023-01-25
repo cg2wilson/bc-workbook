@@ -1,0 +1,383 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{2.4 - Rates of Change: Numerical Limits \& Nonexistence}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries   \nameref{cs24}} 
+	\fancyhead[LO,RE]{\bfseries  \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 2.4}
+
+
+\section*{Rates of Change: Numerical Limits \& Nonexistence}\label{cs24}
+	\subsection*{Derivative: Numerical Definition}
+		Let $a$ be fixed, and let $x$ be some point on $f$ other than $a$.  Then, the slope of the secant line is given by
+			\showto{ins}{\[\dfrac{f(x)-f(a)}{x-a}\]}\showto{st}{\[\vspace*{50pt}\]}
+		Taking limits, we have the definition for the derivative of $f$ at a point $a$:
+			\showto{ins}{\[f'(a) = \ds \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}\]}\showto{st}{\[\vspace*{50pt}\]}
+			
+		\begin{ex} Find the derivative of the function $f(x) = \sqrt{2x}$ at $x = 3$ using the numerical method.  Round your final answer to the thousandths place, if necessary.\\
+		\begin{center}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+						$x$ 		& $\dfrac{f(x) - f(3)}{x-3}$ \\ \hline
+								& \\
+						2.9		& \\ 
+								& \\ \hline
+								& \\
+						2.99	& \\
+								& \\ \hline 
+								& \\
+						2.999	& \\ 
+								& \\ \hline
+								& \\ 
+						2.9999	& \\ 
+								& \\ \hline
+								& \\
+						2.99999	&\\
+								&\\ \hline\hline
+								&\\
+						$f'(3)\approx$ & \\
+								&\\ \hline
+					\end{tabu}
+				\end{minipage}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+						$x$ 		& $\dfrac{f(x) - f(3)}{x-3}$ \\ \hline
+								& \\
+						3.1		& \\ 
+								& \\ \hline
+								& \\
+						3.01	& \\
+								& \\ \hline 
+								& \\
+						3.001	& \\ 
+								& \\ \hline
+								& \\ 
+						3.0001	& \\ 
+								& \\ \hline
+								& \\
+						3.00001	&\\
+								&\\ \hline\hline
+								&\\
+						$f'(3)\approx$ & \\
+								&\\ \hline
+					\end{tabu}
+				\end{minipage}
+					\vs{1}
+				\[f'(3)\approx \makebox[3in]{\hrulefill}\]
+					
+			\end{center}					
+		\end{ex}	
+			\newpage
+			
+		\begin{ex} A multinational corporation invests \$32 billion in assets, resulting in the future value $F(t) = 32(1.12^t)$ billion dollars after $t$ years.  
+			\begin{enumerate}[(a)]
+				\item By how much is the investment growing in the fourth year?  Write a sentence interpreting your answer, and round to the nearest hundredth.
+					\begin{center}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[1.1,c]|X[1.5,c]|}\hline
+						$t$ 		& $\dfrac{F(t) - F(4)}{t-4}$ \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+							& \\
+								& \\ \hline 
+								& \\
+							& \\ 
+								& \\ \hline
+								& \\ 
+							& \\ 
+								& \\ \hline
+								& \\
+							&\\
+								&\\ \hline\hline
+								&\\
+						$\ds \lim_{x\to 4^-} \dfrac{F(t) -F(4)}{t-4}$ & \\
+								&\\ \hline
+					\end{tabu}
+				\end{minipage}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[1.1,c]|X[1.5,c]|}\hline
+						$t$ 		& $\dfrac{F(t) - F(4)}{t-4}$ \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+							& \\
+								& \\ \hline 
+								& \\
+							& \\ 
+								& \\ \hline
+								& \\ 
+							& \\ 
+								& \\ \hline
+								& \\
+							&\\
+								&\\ \hline\hline
+								&\\
+						$\ds \lim_{x\to 4^+} \dfrac{F(t) -F(4)}{t-4}$ & \\
+								&\\ \hline
+					\end{tabu}
+				\end{minipage}
+					\vs{.251}
+				\[F'(4)\approx \makebox[3in]{\hrulefill}\]
+					
+			\end{center}	
+				\item Find the percent rate of change in the fourth year.  Round to 2 decimal places.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		\newpage
+
+	\subsection*{Derivative: Existence}
+		The derivative of a function does not always exist; the definition requires that the function be smooth and continuous.  Formally, we say that a function is \emph{differentiable} when the derivative exists for all $x$ in some interval $(a,b)$.  We have three cases for nonexistence:\\
+			\begin{itemize}
+				\item \showto{ins}{\fbox{Corner/cusp}}\showto{st}{\blank{4}\\[10pt]}
+				\item \showto{ins}{\fbox{Vertical asypmtote}}\showto{st}{\blank{4}\\[10pt]}
+				\item \showto{ins}{\fbox{Discontinuity}}\showto{st}{\blank{4}}
+			\end{itemize}
+				\vs{1}
+				
+	\subsection*{Exercises}
+		\begin{ex}
+			Numerically estimate the derivative of the function $f(x) = -x^2+4x$ at $x = -1$.  Round your final answer to the nearest tenth.
+			\begin{center}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm					
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$x$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$x$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+			\end{center}	
+		\end{ex}
+			\vs{1}
+			\newpage 
+
+		\begin{ex}
+			Numerically estimate the derivative of the function $g(y) = 5\ln y$ at $x = 5$.  Round your final answer to the nearest hundredth.
+			\begin{center}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm					
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$x$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$x$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+			\end{center}	
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex} The annual number of passengers going through the Atlanta airport between 2000 and 2008 can be modeled as $p(t) = -0.102t^3 + 1.39t^2 -3.29t + 79.25$ million passengers, $t$ years since 2000.
+			\begin{enumerate}[(a)]
+				\item Estimate $p'(6)$ numerically to the nearest thousandth.
+					\begin{center}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm					
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$t$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$t$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+			\end{center}	
+					\vs{1}
+					\newpage
+
+				\item Write an interpretation of $p'(6)$.
+					\vs{1}
+
+				\item Find the percent rate of change in 2006, to the nearest hundredth.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex} The average weekly sales (in million dollars) for Abercrombie \& Fitch between 2004 and 2008 is given in the table below.
+			\begin{center}
+				{\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|c|c|c|c|c|c|}\hline
+					\textbf{Year} & 2004 & 2005 & 2006 & 2007 & 2008 \\ \hline
+					\textbf{Sales} (in million dollars) & 38.87 & 53.56 & 63.81 & 72.12 & 68.08\\ \hline
+				\end{tabular}
+				}
+			\end{center}
+			\begin{enumerate}[(a)]
+				\item Align the data so that the year 2000 corresponds to an input of 0.  Determine and write the most appropriate model for the data using this alignment.
+					\vs{1}
+					\newpage
+
+				\item Estimate the rate of change of average weekly sales in the year 2007 and interpret your answer.
+					\begin{center}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm					
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$x$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+				\begin{minipage}{.45\textwidth}
+					\tabulinesep=1mm
+					\begin{tabu}{|X[c]|X[1.5,c]|}\hline
+								& \\
+						$x$ 		& \\ 
+								& \\ \hline
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline 
+								& \\
+								& \\ 
+								& \\ \hline
+								& \\ 
+								& \\ 
+								& \\ \hline
+								& \\
+								& \\
+								& \\ \hline
+					\end{tabu}
+				\end{minipage}
+			\end{center}	
+			\end{enumerate}
+		\end{ex}
+	\clearpage
+\end{document}
