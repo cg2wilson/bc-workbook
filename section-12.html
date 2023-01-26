@@ -211,6 +211,7 @@ window.MathJax = {
 <ul class="structural">
 <li><div class="toc-item"><a href="section-12.html#section-12-descriptions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Descriptions of Function Behavior</span></a></div></li>
 <li><div class="toc-item"><a href="section-12.html#section-12-direction-curvature" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Direction and Curvature</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-limits-end-behavior" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Limits and End Behavior</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -222,27 +223,27 @@ window.MathJax = {
 <section class="subsection" id="section-12-descriptions"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.1</span> <span class="title">Descriptions of Function Behavior</span>
 </h3>
-<div class="para" id="p-111">Especially as we consider longer-term models, we are concerned about what happens to a function as time advances.</div>
+<div class="para" id="p-106">Especially as we consider longer-term models, we are concerned about what happens to a function as time advances.</div>
 <article class="definition definition-like" id="definition-2"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Increasing/Decreasing/Constant.</span>
-</h4>  <div class="para" id="p-112">Let <span class="process-math">\(f\)</span> be a function defined over some input interval. The function is said to be</div> <div class="para logical" id="p-113"><ul class="disc">
-<li id="li-60"><div class="para" id="p-114">
+</h4>  <div class="para" id="p-107">Let <span class="process-math">\(f\)</span> be a function defined over some input interval. The function is said to be</div> <div class="para logical" id="p-108"><ul class="disc">
+<li id="li-60"><div class="para" id="p-109">
 <dfn class="terminology">increasing</dfn> if the output values increase on the interval</div></li>
-<li id="li-61"><div class="para" id="p-115">
+<li id="li-61"><div class="para" id="p-110">
 <dfn class="terminology">decreasing</dfn> if the output values decrease on the interval</div></li>
-<li id="li-62"><div class="para" id="p-116">
+<li id="li-62"><div class="para" id="p-111">
 <dfn class="terminology">constant</dfn> if the output values remain the same on the interval</div></li>
 </ul></div></article><article class="example example-like" id="example-15"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-117">On what intervals is <span class="process-math">\(g(x) = -x^3 + 16x -5\)</span> increasing, decreasing, or constant? Use the calculator to help you find the answer.</div>
+<div class="para" id="p-112">On what intervals is <span class="process-math">\(g(x) = -x^3 + 16x -5\)</span> increasing, decreasing, or constant? Use the calculator to help you find the answer.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><div class="para" id="p-118">The function is increasing on <span class="process-math">\((-2.42,2.72)\)</span> and decreasing on <span class="process-math">\((-\infty,-2.42)\cup (2.72,\infty)\)</span>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><div class="para" id="p-113">The function is increasing on <span class="process-math">\((-2.42,2.72)\)</span> and decreasing on <span class="process-math">\((-\infty,-2.42)\cup (2.72,\infty)\)</span>
 </div></div></div>
 </div></article><article class="example example-like" id="example-16"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-119">Is the function given in the table below increasing, decreasing, or constant?  Why?</div> <div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-114">Is the function given in the table below increasing, decreasing, or constant?  Why?</div> <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="c m b0 r0 l0 t0 lines">2</td>
@@ -261,54 +262,312 @@ window.MathJax = {
 </tr>
 </table></div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><div class="para" id="p-120">The function is increasing; as the input increases, so does the output.</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><div class="para" id="p-115">The function is increasing; as the input increases, so does the output.</div></div></div>
 </div></article><article class="example example-like" id="example-17"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-121">The function <span class="process-math">\(f(x) = c\)</span> is constant. Look at the graph and/or table and explain why.</div>
+<div class="para" id="p-116">The function <span class="process-math">\(f(x) = c\)</span> is constant. Look at the graph and/or table and explain why.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like"><div class="para" id="p-122">Answers and explanations may vary</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like"><div class="para" id="p-117">Answers and explanations may vary</div></div></div>
 </div></article></section><section class="subsection" id="section-12-direction-curvature"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Direction and Curvature</span>
 </h3>
 <article class="definition definition-like" id="definition-3"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Concavity.</span>
-</h4>  <div class="para" id="p-123">A function <span class="process-math">\(f\)</span> defined over an input interval is said to be</div> <div class="para logical" id="p-124"><ul class="disc">
-<li id="li-63"><div class="para" id="p-125">
+</h4>  <div class="para" id="p-118">A function <span class="process-math">\(f\)</span> defined over an input interval is said to be</div> <div class="para logical" id="p-119"><ul class="disc">
+<li id="li-63"><div class="para" id="p-120">
 <dfn class="terminology">concave up</dfn> if a graph of the function appears to be bending upward</div></li>
-<li id="li-64"><div class="para" id="p-126">
+<li id="li-64"><div class="para" id="p-121">
 <dfn class="terminology">concave down</dfn> if a graph of the function appears to be bending downward</div></li>
-</ul></div> <div class="para" id="p-127">The curvature of a function is called <dfn class="terminology">concavity</dfn>.</div></article><article class="example example-like" id="example-18"><h4 class="heading">
+</ul></div> <div class="para" id="p-122">The curvature of a function is called <dfn class="terminology">concavity</dfn>.</div></article><article class="example example-like" id="example-18"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-128">Describe the concavity of <span class="process-math">\(k(t)=-t^2 + 8t -13\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
+<div class="para" id="p-123">Describe the concavity of <span class="process-math">\(k(t)=-t^2 + 8t -13\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like"><div class="para" id="p-129">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like"><div class="para" id="p-124">
 <span class="process-math">\(k\)</span> is concave down; how you choose to sketch the picture is up to you, whether it's done by hand or calculator.</div></div></div>
 </div></article><article class="example example-like" id="example-19"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-130">Describe the concavity of <span class="process-math">\(f(z) = \ln z\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
+<div class="para" id="p-125">Describe the concavity of <span class="process-math">\(f(z) = \ln z\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like"><div class="para" id="p-131">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like"><div class="para" id="p-126">
 <span class="process-math">\(f\)</span> is concave down; how you choose to sketch the picture is up to you, whether it's done by hand or calculator.</div></div></div>
 </div></article><article class="example example-like" id="example-20"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-132">Describe the concavity of <span class="process-math">\(g(x) = -2x\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
+<div class="para" id="p-127">Describe the concavity of <span class="process-math">\(g(x) = -2x\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-20"><div class="solution solution-like"><div class="para" id="p-133">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-20"><div class="solution solution-like"><div class="para" id="p-128">
 <span class="process-math">\(g\)</span> is neither concave down nor concave up; how you choose to sketch the picture is up to you, whether it's done by hand or calculator.</div></div></div>
 </div></article><article class="example example-like" id="example-21"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-134">Describe the concavity of <span class="process-math">\(h(d) = d^3 - 11d^2 + 38d - 37\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
+<div class="para" id="p-129">Describe the concavity of <span class="process-math">\(h(d) = d^3 - 11d^2 + 38d - 37\text{.}\)</span>  Does it appear to ever change?  If so, where? Draw a picture.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like"><div class="para" id="p-135">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like"><div class="para" id="p-130">
 <span class="process-math">\(h\)</span> is concave down on about <span class="process-math">\((-\infty,3.79)\)</span> and concave up on about <span class="process-math">\((3.79,\infty)\text{;}\)</span> how you choose to sketch the picture is up to you, whether it's done by hand or calculator.</div></div></div>
 </div></article><article class="definition definition-like" id="definition-4"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Inflection Point.</span>
-</h4>  <div class="para" id="p-136">A point on a continuous function where the concavity of the function changes is called an <dfn class="terminology">inflection point</dfn>.</div></article></section></section></div>
+</h4>  <div class="para" id="p-131">A point on a continuous function where the concavity of the function changes is called an <dfn class="terminology">inflection point</dfn>.</div></article><article class="example example-like" id="example-22"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-132">The function <span class="process-math">\(P(t)=2t^3-10t^2-3t + 275\)</span> describes the profit (in hundred dollars) made by a small business after a rash of bad Yelp reviews where <span class="process-math">\(t\)</span> is the number of weeks since the reviews were put online. Let <span class="process-math">\(0 \leq t \leq 5\text{.}\)</span>
+</div> <div class="para logical" id="p-133"><ol class="lower-alpha">
+<li id="li-65"><div class="para" id="p-134">Sketch a picture of the graph.</div></li>
+<li id="li-66"><div class="para" id="p-135">Estimate the input and output values at the inflection point(s).</div></li>
+<li id="li-67"><div class="para" id="p-136">Identify the intervals where <span class="process-math">\(P\)</span> is increasing, decreasing, and constant.</div></li>
+<li id="li-68"><div class="para" id="p-137">Identify the intervals where <span class="process-math">\(P\)</span> is concave up, concave down, or neither.</div></li>
+<li id="li-69"><div class="para" id="p-138">Use the information from (a)-(c) to describe what was happening to the profit made by the business between the first and sixth week.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-22"><div class="solution solution-like"><div class="para logical" id="p-139"><ol class="lower-alpha">
+<li id="li-70"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-6.svg" role="img" class="contained" alt="The graph of \(P(t)=2t^3-10t^2-3t + 275\) on \([0,5]\text{.}\)"></div></li>
+<li id="li-71"><div class="para" id="p-140">The inflection point is at about <span class="process-math">\(t=1.97\)</span> weeks, and <span class="process-math">\(P(1.97) = 245.58\)</span> hundred dollars.</div></li>
+<li id="li-72"><div class="para" id="p-141">The function appears to be decreasing on <span class="process-math">\([0,3.48)\)</span> and increasing on <span class="process-math">\((3.48,5]\)</span>
+</div></li>
+<li id="li-73"><div class="para" id="p-142">The function appears to be concave down on <span class="process-math">\([0,1.97)\)</span> and concave up on <span class="process-math">\((1.97,5]\)</span>
+</div></li>
+<li id="li-74">
+<div class="para" id="p-143">Starting at week 1, the profit is decreasing until approximately <span class="process-math">\(t=3.48\text{,}\)</span> at which point it begins increasing and stays increasing through week 6.</div>
+<div class="para" id="p-144">This is probably supposed to be either "week 1 to week 5" or "week 0 to week 5", but that will be fixed in future iterations.</div>
+</li>
+</ol></div></div></div>
+</div></article></section><section class="subsection" id="section-12-limits-end-behavior"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">Limits and End Behavior</span>
+</h3>
+<article class="definition definition-like" id="definition-5"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">End Behavior.</span>
+</h4>  <div class="para" id="p-145">The <dfn class="terminology">end behavior</dfn> of a function refers to the behavior of the output values of the function as the input values become larger and larger, or smaller and smaller.</div></article><div class="para" id="p-146">As the input values become larger and larger (more and more positive), we say that the input <dfn class="terminology">increases without bound</dfn>. As they become smaller and smaller (more and more negative), the input <dfn class="terminology">decreases without bound</dfn>.</div>
+<article class="example example-like" id="example-23"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-147">Consider <span class="process-math">\(h(d) = d^3 - 11d^2 + 38d - 37\text{.}\)</span>
+</div> <div class="para logical" id="p-148"><ol class="lower-alpha">
+<li id="li-75"><div class="para" id="p-149">Sketch the function on the interval <span class="process-math">\([0,6]\text{.}\)</span>
+</div></li>
+<li id="li-76"><div class="para" id="p-150">In a sentence, describe the end behavior of <span class="process-math">\(h\)</span> as the input increases without bound.</div></li>
+<li id="li-77"><div class="para" id="p-151">In a sentence, describe the end behavior of <span class="process-math">\(h\)</span> as the input decreases without bound.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-23" id="solution-23"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-23"><div class="solution solution-like"><div class="para logical" id="p-152"><ol class="lower-alpha">
+<li id="li-78"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-7.svg" role="img" class="contained"></div></li>
+<li id="li-79"><div class="para" id="p-153">As the input increases without bound, the output increases without bound.</div></li>
+<li id="li-80"><div class="para" id="p-154">As the input decreases without bound, the output decreases without bound.</div></li>
+</ol></div></div></div>
+</div></article><div class="para logical" id="p-155">
+<div class="para">There are three possibilities when we consider the end behavior of a function:</div>
+<ul class="disc">
+<li id="li-81"><div class="para" id="p-156">The output values may approach or equal a certain number</div></li>
+<li id="li-82"><div class="para" id="p-157">The output values may increase or decrease without bound</div></li>
+<li id="li-83"><div class="para" id="p-158">The output values may oscillate and fail to approach any particular number</div></li>
+</ul>
+</div>
+<article class="example example-like" id="example-24"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-159">Draw three functions that have will have each of these three end behaviors.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-24" id="solution-24"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-24"><div class="solution solution-like"><div class="para" id="p-160">This is up to you; it depends on what you want to emphasize.</div></div></div>
+</div></article><article class="example example-like" id="example-25"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.15</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-161">Determine the end behavior/limit of the function <span class="process-math">\(f(x) = \dfrac{2x}{x-1}\)</span> as the input increases without bound, using numerical estimation.  Record your approximations with <em class="alert">full decimal accuracy</em>, and round the final answer to the hundredths.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x) = \dfrac{2x}{x-1}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(10\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(100\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1000\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(10000\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(100000\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">End Behavior/Limit</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-25" id="solution-25"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-25"><div class="solution solution-like"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x) = \dfrac{2x}{x-1}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(10\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">2.2222222222222</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(100\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">2.020202020202</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1000\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">2.002002002002</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(10000\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">2.000200020002</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(100000\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">2.0000200002</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">End Behavior/Limit</td>
+<td class="c m b0 r0 l0 t0 lines">2.00</td>
+</tr>
+</table></div></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-1"><h4 class="heading"><span class="title">Note.</span></h4>
+<div class="para" id="p-162">When creating a table, you need to stop when the digit after the one you're rounding to repeats twice.</div></article><article class="definition definition-like" id="definition-6"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.16</span><span class="period">.</span><span class="space"> </span><span class="title">Limit.</span>
+</h4>  <div class="para logical" id="p-163">
+<div class="para">A function <span class="process-math">\(f\)</span> is said to have a <dfn class="terminology">limit</dfn> <span class="process-math">\(L\)</span> if the output of <span class="process-math">\(f\)</span> approaches <span class="process-math">\(L\)</span> as the input approaches some (possibly infinite) value <span class="process-math">\(a\text{.}\)</span> We write this using the following notation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x) = L
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="example-26"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.17</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-164">Rewrite the end behavior/limit from the previous example using limit notation.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-26" id="solution-26"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-26"><div class="solution solution-like"><div class="para" id="p-165"><span class="process-math">\(\ds \lim_{x\to \infty} \dfrac{2x}{x-1} = 2\)</span></div></div></div>
+</div></article><article class="definition definition-like" id="definition-7"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.18</span><span class="period">.</span><span class="space"> </span><span class="title">Horizontal Asymptote.</span>
+</h4>  <div class="para" id="p-166">A horizontal line with the equation <span class="process-math">\(y = L\)</span> is called a <dfn class="terminology">horizontal asymptote</dfn>.</div></article><article class="example example-like" id="example-27"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.19</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-167">Let <span class="process-math">\(f(x) = x^2\)</span> and <span class="process-math">\(g(x) = x^3\text{.}\)</span>
+</div> <div class="para logical" id="p-168"><ol class="lower-alpha">
+<li id="li-84"><div class="para" id="p-169">Write the statement "The limit of <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\)</span> approachs <span class="process-math">\(\infty\)</span> is <span class="process-math">\(\infty\)</span>" in limit notation.</div></li>
+<li id="li-85"><div class="para" id="p-170">Find <span class="process-math">\(\ds \lim_{x\to -\infty} f(x)\text{,}\)</span> and write the notation in words (like in (a))</div></li>
+<li id="li-86"><div class="para" id="p-171">Find the end behaviors of <span class="process-math">\(g(x)\text{,}\)</span> and write them in limit notation.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-27" id="solution-27"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-27"><div class="solution solution-like"><div class="para logical" id="p-172"><ol class="lower-alpha">
+<li id="li-87"><div class="para" id="p-173"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} f(x) = \infty\)</span></div></li>
+<li id="li-88"><div class="para" id="p-174">
+<span class="process-math">\(\ds \lim_{x\to -\infty} f(x) = \infty\text{;}\)</span> the limit of <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\)</span> decreases without bound is infinity.</div></li>
+<li id="li-89"><div class="para" id="p-175">
+<span class="process-math">\(\ds \lim_{x\to -\infty}g(x) = -\infty\)</span> and <span class="process-math">\(\ds \lim_{x\to \infty} g(x) = \infty\)</span>
+</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-28"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.20</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-176">Sketch the following functions, and use the sketches to find the limit as the input increases without bound and decreases without bound:</div> <div class="para logical" id="p-177"><ol class="lower-alpha">
+<li id="li-90"><div class="para" id="p-178"><span class="process-math">\(\displaystyle f(x) = \ln x\)</span></div></li>
+<li id="li-91"><div class="para" id="p-179"><span class="process-math">\(\displaystyle g(x) = e^x\)</span></div></li>
+<li id="li-92"><div class="para" id="p-180"><span class="process-math">\(\displaystyle h(x) = \dfrac{1}{1 + e^x}\)</span></div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-28" id="solution-28"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-28"><div class="solution solution-like"><div class="para logical" id="p-181"><ol class="lower-alpha">
+<li id="li-93">
+<div class="para" id="p-182"><span class="process-math">\(\ds \lim_{x\to \infty} f(x) = \infty\text{.}\)</span></div>
+<div class="para" id="p-183">There's two ways you might approach the vertical asymptote at 0 here; one way is to say that it's impossible to determine what happens as the inptu decreases without bound. The other way is to note that we can only do something like take the limit as <span class="process-math">\(x\to 0^+\text{;}\)</span> this sets up for Section 1.3, but might happen a little early for everyone to make the connection.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-8.svg" role="img" class="contained" alt="The graph of \(f(x) = \ln x\)"></div>
+</li>
+<li id="li-94">
+<div class="para" id="p-184">
+<span class="process-math">\(\ds \lim_{x\to \infty} g(x) = \infty\)</span> and <span class="process-math">\(\ds \lim_{x\to -\infty} g(x) = 0\)</span>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-9.svg" role="img" class="contained" alt="The graph of \(g(x) = e^x\)"></div>
+</li>
+<li id="li-95">
+<div class="para" id="p-185">
+<span class="process-math">\(\ds \lim_{x\to \infty} h(x) = 0\)</span> and <span class="process-math">\(\ds \lim_{x\to -\infty} g(x) = 1\)</span>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-10.svg" role="img" class="contained" alt="The graph of \(h(x) = \dfrac{1}{1+e^x}\)"></div>
+</li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-29"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.21</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-186">Use numerical estimation to find <span class="process-math">\(\ds\lim_{x\to \infty} (1-0.6^x)\text{.}\)</span>  Make a table showing at least five inputs and the corresponding outputs; write all decimals in the table, and round your final answer to two decimal places.  Start your input at 2 and double.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-29" id="solution-29"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-29"><div class="solution solution-like">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1-0.6^x\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">0.64</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">0.8704</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">8</td>
+<td class="c m b0 r0 l0 t0 lines">0.98320384</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">16</td>
+<td class="c m b0 r0 l0 t0 lines">0.99971788900926</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">32</td>
+<td class="c m b0 r0 l0 t0 lines">0.99999992041339</td>
+</tr>
+</table></div> <div class="para" id="p-187">This one converges fast, and it might be helpful to show them a graph of the exponential. If they remember the properties of exponentials from 1643, then this should be a relatively straightforward question.</div> <div class="para" id="p-188">A question students may have is why we're stopping at 32 if the input is supposed to increase without bound. I can think of two responses: 1) our rounding rules tell us to stop when the third decimal repeats twice, and this condition is met after 32; 2) students are welcome to try more numbers to play around with the behavior, but should know that if this were a test question, they would need to stop after 32.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-30"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.22</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-189">Use numerical estimation to find <span class="process-math">\(\ds \lim_{t\to -\infty} \lrpar{1+t^{-2}}\text{.}\)</span>  Make a table showing at least five inputs, and the corresponding outputs; write all decimals in the table, and round your final answer to the nearest integer.  Start your input at <span class="process-math">\(-10\)</span> and double.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-30" id="solution-30"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-30"><div class="solution solution-like">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1+t^{-2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-10\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">1.01</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-20\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">1.0025</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-40\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">1.000625</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-80\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">1.00015625</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-160\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">1.0000390625</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-320\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">1.000009765625</td>
+</tr>
+</table></div> <div class="para" id="p-190">In reality, we only need two lines here. I like to go out this far to emphasize the numerical behavior. Again, you'll want to emphasize that if this is a question on the test, they need to stop after the second line (since the first decimal place repeats after two iterations).</div>
+</div></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-11.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span>
 </div></main>
