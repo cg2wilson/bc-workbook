@@ -12,7 +12,7 @@
 			<example>
 				<statement>
 					<p>
-						The price of gas at a certain 7-11 in Norman was \$4.39 per gallon on June 26th.  Represent this data in four ways.
+						The price of gas at a certain 7-11 in Norman was $4.39 per gallon on June 26th.  Represent this data in four ways.
 					</p>
 				</statement>
 				<solution>
@@ -50,6 +50,9 @@
 										<row bottom="medium">
 											<cell halign="center" left="medium" right="medium">
 											Total Cost (in USD)
+											</cell>
+											<cell halign="center" left="medium" right="medium">
+											0
 											</cell>
 											<cell halign="center" left="medium" right="medium">
 											4.39
@@ -439,7 +442,7 @@
 						</row>
 						<row bottom="medium">
 							<cell halign="center" left="medium" right="medium">
-							<m>h(x)</m>
+							<m>k(t)</m>
 							</cell>
 							<cell halign="center" left="medium" right="medium">
 							0
@@ -602,10 +605,10 @@
 								</p>
 							</li>
 							<li>
-								<p>
+								
 									<image>
 										<description>
-										
+											A rough input/output diagram for the problem
 										</description>
 										<latex-image>
 											<![CDATA[ 
@@ -629,7 +632,7 @@
 											]]>
 										</latex-image>
 									</image>
-								</p>
+								
 							</li>
 						</ol>
 					</p>
