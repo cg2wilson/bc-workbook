@@ -197,5 +197,599 @@
                 </p>
             </statement>
         </definition>
+
+        <example>
+            <statement>
+                <p>
+                    The function <m>P(t)=2t^3-10t^2-3t + 275</m> describes the profit (in hundred dollars) made by a small business after a rash of bad Yelp reviews where <m>t</m> is the number of weeks since the reviews were put online. Let <m>0 \leq t \leq 5</m>. 
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Sketch a picture of the graph.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Estimate the input and output values at the inflection point(s).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Identify the intervals where <m>P</m> is increasing, decreasing, and constant.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Identify the intervals where <m>P</m> is concave up, concave down, or neither.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use the information from (a)-(c) to describe what was happening to the profit made by the business between the first and sixth week.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <image>
+                                <description>
+                                    The graph of <m>P(t)=2t^3-10t^2-3t + 275</m> on <m>[0,5]</m>.
+                                </description>
+                                <latex-image>
+                                    <![CDATA[ 
+                                    \begin{tikzpicture}
+                                        \begin{axis}[
+                                            axis x line = middle,
+                                                axis y line = middle,
+                                                every axis y label/.style={at={(ticklabel cs:1.1)}},
+                                                y label style={at={(axis description cs:0,1.15)},anchor=north},
+                                                    ylabel = {$P(t)$},
+                                                every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                                    x label style={at={(axis description cs:1.1,0)},anchor=east},
+                                                xlabel = {$t$},
+                                            xmin=0,xmax=5,
+                                                    ymin=227,ymax=275,
+                                                xtick = {0,1,2,3,4,5},
+                                                ytick = {227.7,275},
+                                                    ]
+                                            \addplot[smooth, thick, domain=0:5] {2*x^3 - 10*x^2 - 3*x + 275};
+                                        \end{axis}
+                                    \end{tikzpicture}
+                                    ]]>     
+                                </latex-image>
+                            </image>
+                        </li>
+                        <li>
+                            <p>
+                                The inflection point is at about <m>t=1.97</m> weeks, and <m>P(1.97) = 245.58</m> hundred dollars.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The function appears to be decreasing on <m>[0,3.48)</m> and increasing on <m>(3.48,5]</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The function appears to be concave down on <m>[0,1.97)</m> and concave up on <m>(1.97,5]</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Starting at week 1, the profit is decreasing until approximately <m>t=3.48</m>, at which point it begins increasing and stays increasing through week 6.
+                            </p>
+                            <p>
+                                This is probably supposed to be either "week 1 to week 5" or "week 0 to week 5", but that will be fixed in future iterations.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="section-12-limits-end-behavior">
+        <title>Limits and End Behavior</title>
+        
+        <definition>
+            <title>End Behavior</title>
+            <idx><h>End Behavior</h></idx>
+            <statement>
+                <p>
+                    The <term>end behavior</term> of a function refers to the behavior of the output values of the function as the input values become larger and larger, or smaller and smaller.  
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            As the input values become larger and larger (more and more positive), we say that the input <term>increases without bound</term>. As they become smaller and smaller (more and more negative), the input <term>decreases without bound</term>.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Consider <m>h(d) = d^3 - 11d^2 + 38d - 37</m>.  
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Sketch the function on the interval <m>[0,6]</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In a sentence, describe the end behavior of <m>h</m> as the input increases without bound.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In a sentence, describe the end behavior of <m>h</m> as the input decreases without bound.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <image>
+                                <description>
+                                
+                                </description>
+                                <latex-image>
+                                    <![CDATA[ 
+                                        \begin{tikzpicture}
+                                            \begin{axis}[
+                                                axis x line = middle,
+                                                    axis y line = middle,
+                                                    every axis y label/.style={at={(ticklabel cs:1.1)}},
+                                                    y label style={at={(axis description cs:0,1.15)},anchor=north},
+                                                        ylabel = {$h(d)$},
+                                                    every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                                        x label style={at={(axis description cs:1.1,.78)},anchor=east},
+                                                    xlabel = {$d$},
+                                                xmin=0,xmax=6,
+                                                        ymin=-37,ymax=11,
+                                                    xtick = {0,1,2,3,4,5,6},
+                                                    ytick = {-37, 11},
+                                                        ]
+                                                \addplot[smooth, thick, domain=0:6] {x^3 - 11*x^2 + 38*x - 37};
+                                            \end{axis}
+                                        \end{tikzpicture}
+                                    ]]>
+                                </latex-image>
+                            </image>
+                        </li>
+                        <li>
+                            <p>
+                                As the input increases without bound, the output increases without bound.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                As the input decreases without bound, the output decreases without bound.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            There are three possibilities when we consider the end behavior of a function:
+            <ul>
+                <li>
+                    <p>
+                        The output values may approach or equal a certain number
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The output values may increase or decrease without bound
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The output values may oscillate and fail to approach any particular number
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Draw three functions that have will have each of these three end behaviors.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is up to you; it depends on what you want to emphasize.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Determine the end behavior/limit of the function <m>f(x) = \dfrac{2x}{x-1}</m> as the input increases without bound, using numerical estimation.  Record your approximations with <alert>full decimal accuracy</alert>, and round the final answer to the hundredths.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center"><m>x</m></cell>
+                        <cell halign="center"><m>f(x) = \dfrac{2x}{x-1}</m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>10</m></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>100</m></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>1000</m></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>10000</m></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>100000</m></cell>
+                        <cell halign="center"></cell>
+                    </row>
+                    <row>
+                        <cell halign="center">End Behavior/Limit</cell>
+                        <cell halign="center"></cell>
+                    </row>
+                </tabular>
+            </statement>
+            <solution>
+                <tabular>
+                    <row>
+                        <cell halign="center"><m>x</m></cell>
+                        <cell halign="center"><m>f(x) = \dfrac{2x}{x-1}</m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>10</m></cell>
+                        <cell halign="center">2.2222222222222</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>100</m></cell>
+                        <cell halign="center">2.020202020202</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>1000</m></cell>
+                        <cell halign="center">2.002002002002</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>10000</m></cell>
+                        <cell halign="center">2.000200020002</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>100000</m></cell>
+                        <cell halign="center">2.0000200002</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">End Behavior/Limit</cell>
+                        <cell halign="center">2.00</cell>
+                    </row>
+                </tabular>
+            </solution>
+        </example>
+
+        <assemblage>
+            <title>Note</title>
+            <p>
+                When creating a table, you need to stop when the digit after the one you're rounding to repeats twice.
+            </p>
+        </assemblage>
+
+        <definition>
+            <title>Limit</title>
+            <idx><h>Limit</h></idx>
+            
+            <statement>
+                <p>
+                    A function <m>f</m> is said to have a <term>limit</term> <m>L</m> if the output of <m>f</m> approaches <m>L</m> as the input approaches some (possibly infinite) value <m>a</m>. We write this using the following notation:
+                    <me>
+                        \lim_{x\to a} f(x) = L
+                    </me>
+                    
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Rewrite the end behavior/limit from the previous example using limit notation.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\ds \lim_{x\to \infty} \dfrac{2x}{x-1} = 2</m>
+                </p>
+            </solution>
+        </example>
+
+        <definition>
+            <title>Horizontal Asymptote</title>
+            <idx><h>Horizontal Asymptote</h></idx>
+            
+            <statement>
+                <p>
+                    A horizontal line with the equation <m>y = L</m> is called a <term>horizontal asymptote</term>.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>f(x) = x^2</m> and <m>g(x) = x^3</m>. 
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Write the statement "The limit of <m>f(x)</m> as <m>x</m> approachs <m>\infty</m> is <m>\infty</m>" in limit notation.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find <m>\ds \lim_{x\to -\infty} f(x)</m>, and write the notation in words (like in (a))
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the end behaviors of <m>g(x)</m>, and write them in limit notation.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to \infty} f(x) = \infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -\infty} f(x) = \infty</m>; the limit of <m>f(x)</m> as <m>x</m> decreases without bound is infinity.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -\infty}g(x) = -\infty</m> and <m>\ds \lim_{x\to \infty} g(x) = \infty</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Sketch the following functions, and use the sketches to find the limit as the input increases without bound and decreases without bound:
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>f(x) = \ln x</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>g(x) = e^x</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>h(x) = \dfrac{1}{1 + e^x}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                 <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to \infty} f(x) = \infty</m>.
+                            </p>
+                            <p>
+                                 There's two ways you might approach the vertical asymptote at 0 here; one way is to say that it's impossible to determine what happens as the inptu decreases without bound. The other way is to note that we can only do something like take the limit as <m>x\to 0^+</m>; this sets up for Section 1.3, but might happen a little early for everyone to make the connection.
+                            </p>
+                            <image>
+                                <description>
+                                    The graph of <m>f(x) = \ln x</m>
+                                </description>
+                                <latex-image>
+                                    <![CDATA[ 
+                                        \begin{tikzpicture}
+                                            \begin{axis}[
+                                                axis x line = middle,
+                                                    axis y line = middle,
+                                                    every axis y label/.style={at={(ticklabel cs:1.1)}},
+                                                    y label style={at={(axis description cs:0,1.15)},anchor=north},
+                                                        ylabel = {$f(x)$},
+                                                    every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                                        x label style={at={(axis description cs:1.1,.58)},anchor=east},
+                                                    xlabel = {$x$},
+                                                xmin=0,xmax=5
+                                                        ]
+
+                                                \addplot[smooth, thick, domain=0.1:5] {ln(x)};
+                                            \end{axis}
+                                        \end{tikzpicture}
+                                    ]]>
+                                </latex-image>
+                            </image>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to \infty} g(x) = \infty</m> and <m>\ds \lim_{x\to -\infty} g(x) = 0</m>
+                            </p>
+                            <image>
+                                <description>
+                                    The graph of <m>g(x) = e^x</m>
+                                </description>
+                                <latex-image>
+                                    <![CDATA[ 
+                                        \begin{tikzpicture}
+                                            \begin{axis}[
+                                                axis x line = middle,
+                                                    axis y line = middle,
+                                                    every axis y label/.style={at={(ticklabel cs:1.1)}},
+                                                    y label style={at={(axis description cs:.5,1.15)},anchor=north},
+                                                        ylabel = {$g(x)$},
+                                                    every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                                        x label style={at={(axis description cs:1.1,0)},anchor=east},
+                                                    xlabel = {$x$},
+                                                xmin=-3,xmax=3
+                                                        ]
+
+                                                \addplot[smooth, thick, domain=-3:3] {exp(x)};
+                                            \end{axis}
+                                        \end{tikzpicture}
+                                    ]]>
+                                </latex-image>
+                            </image>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to \infty} h(x) = 0</m> and <m>\ds \lim_{x\to -\infty} g(x) = 1</m>
+                            </p>
+                            <image>
+                                <description>
+                                    The graph of <m>h(x) = \dfrac{1}{1+e^x}</m>
+                                </description>
+                                <latex-image>
+                                    <![CDATA[ 
+                                        \begin{tikzpicture}
+                                            \begin{axis}[
+                                                axis x line = middle,
+                                                    axis y line = middle,
+                                                    every axis y label/.style={at={(ticklabel cs:1.1)}},
+                                                    y label style={at={(axis description cs:.5,1.15)},anchor=north},
+                                                        ylabel = {$h(x)$},
+                                                    every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                                        x label style={at={(axis description cs:1.1,0)},anchor=east},
+                                                    xlabel = {$x$},
+                                                xmin=-6,xmax=6
+                                                        ]
+
+                                                \addplot[smooth, thick, domain=-6:6] {1/(1+exp(x))};
+                                            \end{axis}
+                                        \end{tikzpicture}
+                                    ]]>
+                                </latex-image>
+                            </image>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use numerical estimation to find <m>\ds\lim_{x\to \infty} (1-0.6^x)</m>.  Make a table showing at least five inputs and the corresponding outputs; write all decimals in the table, and round your final answer to two decimal places.  Start your input at 2 and double.
+                </p>
+            </statement>
+            <solution>
+                <tabular>
+                    <row>
+                        <cell halign="center"><m>x</m></cell>
+                        <cell halign="center"><m>1-0.6^x</m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center">2</cell>
+                        <cell halign="center">0.64</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">4</cell>
+                        <cell halign="center">0.8704</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">8</cell>
+                        <cell halign="center">0.98320384</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">16</cell>
+                        <cell halign="center">0.99971788900926</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">32</cell>
+                        <cell halign="center">0.99999992041339</cell>
+                    </row>
+                </tabular>
+                <p>
+                    This one converges fast, and it might be helpful to show them a graph of the exponential. If they remember the properties of exponentials from 1643, then this should be a relatively straightforward question.
+                </p>
+                <p>
+                    A question students may have is why we're stopping at 32 if the input is supposed to increase without bound. I can think of two responses: 1) our rounding rules tell us to stop when the third decimal repeats twice, and this condition is met after 32; 2) students are welcome to try more numbers to play around with the behavior, but should know that if this were a test question, they would need to stop after 32.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use numerical estimation to find <m>\ds \lim_{t\to -\infty} \lrpar{1+t^{-2}}</m>.  Make a table showing at least five inputs, and the corresponding outputs; write all decimals in the table, and round your final answer to the nearest integer.  Start your input at <m>-10</m> and double.
+                </p>
+            </statement>
+            <solution>
+                <tabular>
+                    <row>
+                        <cell halign="center"> <m>t</m></cell>
+                        <cell halign="center"><m>1+t^{-2}</m></cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>-10</m></cell>
+                        <cell halign="center">1.01</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>-20</m></cell>
+                        <cell halign="center">1.0025</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>-40</m></cell>
+                        <cell halign="center">1.000625</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>-80</m></cell>
+                        <cell halign="center">1.00015625</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>-160</m></cell>
+                        <cell halign="center">1.0000390625</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>-320</m></cell>
+                        <cell halign="center">1.000009765625</cell>
+                    </row>
+                </tabular>
+                <p>
+                    In reality, we only need two lines here. I like to go out this far to emphasize the numerical behavior. Again, you'll want to emphasize that if this is a question on the test, they need to stop after the second line (since the first decimal place repeats after two iterations).
+                </p>
+            </solution>
+        </example>
     </subsection>
 </section>
