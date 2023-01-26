@@ -26,7 +26,7 @@
     </target>
     <target name="subset">
       <format>html</format>
-      <source>pretext/source/main.xml</source>
+      <source>pretext/source/main.ptx</source>
       <publication>pretext/publication/publication.ptx</publication>
       <output-dir>pretext/output/subset</output-dir>
       <stringparam key="debug.skip-knowls" value="yes"/>

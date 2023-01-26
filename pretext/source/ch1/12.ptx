@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-12" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Function Behavior and End Behavior Limits</title>
+
+	<subsection xml:id="section-12-descriptions">
+		<title>Descriptions of Function Behavior</title>
+
+        <p>
+            Especially as we consider longer-term models, we are concerned about what happens to a function as time advances.
+        </p>
+
+        <definition>
+            <title>Increasing/Decreasing/Constant</title>
+            
+            
+            <idx><h>Increasing</h></idx>
+            <idx><h>Decreasing</h></idx>
+            <idx><h>Constant</h></idx>           
+            <statement>
+                <p>
+                    Let <m>f</m> be a function defined over some input interval. The function is said to be
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <term>increasing</term> if the output values increase on the interval
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <term>decreasing</term> if the output values decrease on the interval
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <term>constant</term> if the output values remain the same on the interval
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    On what intervals is <m>g(x) = -x^3 + 16x -5</m> increasing, decreasing, or constant? Use the calculator to help you find the answer.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The function is increasing on <m>(-2.42,2.72)</m> and decreasing on <m>(-\infty,-2.42)\cup (2.72,\infty)</m>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Is the function given in the table below increasing, decreasing, or constant?  Why?
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center"><m>x</m></cell>
+                        <cell halign="center">2</cell>
+                        <cell halign="center">4</cell>
+                        <cell halign="center">6</cell>
+                        <cell halign="center">8</cell>
+                        <cell halign="center">10</cell>
+                    </row>
+                    <row>
+                        <cell halign="center"><m>h(x)</m></cell>
+                        <cell halign="center">5</cell>
+                        <cell halign="center">6</cell>
+                        <cell halign="center">8</cell>
+                        <cell halign="center">12</cell>
+                        <cell halign="center">20</cell>
+                    </row>
+                </tabular>
+            </statement>
+            <solution>
+                <p>
+                    The function is increasing; as the input increases, so does the output.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The function <m>f(x) = c</m> is constant. Look at the graph and/or table and explain why.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Answers and explanations may vary
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="section-12-direction-curvature">
+        <title>Direction and Curvature</title>
+        
+        <definition>
+            <title>Concavity</title>
+            
+            
+            <idx><h>Concavity</h></idx>
+            <idx><h>Concave Up</h></idx>
+            <idx><h>Concave Down</h></idx>
+            <statement>
+                <p>
+                    A function <m>f</m> defined over an input interval is said to be
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <term>concave up</term> if a graph of the function appears to be bending upward
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <term>concave down</term> if a graph of the function appears to be bending downward
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    The curvature of a function is called <term>concavity</term>.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Describe the concavity of <m>k(t)=-t^2 + 8t -13</m>.  Does it appear to ever change?  If so, where? Draw a picture.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>k</m> is concave down; how you choose to sketch the picture is up to you, whether it's done by hand or calculator.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Describe the concavity of <m>f(z) = \ln z</m>.  Does it appear to ever change?  If so, where? Draw a picture.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>f</m> is concave down; how you choose to sketch the picture is up to you, whether it's done by hand or calculator.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Describe the concavity of <m>g(x) = -2x</m>.  Does it appear to ever change?  If so, where? Draw a picture.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>g</m> is neither concave down nor concave up; how you choose to sketch the picture is up to you, whether it's done by hand or calculator.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Describe the concavity of <m>h(d) = d^3 - 11d^2 + 38d - 37</m>.  Does it appear to ever change?  If so, where? Draw a picture.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>h</m> is concave down on about <m>(-\infty,3.79)</m> and concave up on about <m>(3.79,\infty)</m>; how you choose to sketch the picture is up to you, whether it's done by hand or calculator.
+                </p>
+            </solution>
+        </example>
+
+        <definition>
+            <title>Inflection Point</title>
+            <idx><h>Inflection Point</h></idx>
+            
+            <statement>
+                <p>
+                    A point on a continuous function where the concavity of the function changes is called an <term>inflection point</term>.
+                </p>
+            </statement>
+        </definition>
+    </subsection>
+</section>
