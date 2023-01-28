@@ -1,0 +1,1186 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-13" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Function Behavior and End Behavior Limits</title>
+
+	<subsection xml:id="section-13-motivating">
+		<title>Motivating Example</title>
+
+        <p>
+            Consider the function <m>f(x) = \dfrac{1}{x-2}</m>, graphed below:
+        </p>
+
+        <image>
+            <description>
+                A graph of the function <m>f(x) = \dfrac{1}{x-2}</m>
+            </description>
+            <latex-image>
+                <![CDATA[ 
+                    \begin{tikzpicture}
+                        \begin{axis}[
+                            scale = .8,
+                            every tick label/.append style={font=\small},
+                            axis x line = middle,
+                            axis y line = middle,
+                                every axis y label/.style={at={(ticklabel cs:1.15)}},
+                                ytick = {-3, -2, -1, 1, 2, 3, 4},
+                                y label style={at={(axis description cs:.45,1.15)},anchor=north},
+                                ylabel = {$f(x)$},
+                                ymin = -3.5, ymax = 5,
+                                every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                xtick = {-6, -4, -2,2,4,6,8},
+                                x label style={at={(axis description cs:1.1,.4)},anchor=east},
+                                xlabel = {$x$},
+                                xmin = -7, xmax = 9			
+                        ]
+                            \addplot[<->,thick, samples = 100, domain = -6.:1.7] {1/(x-2)};
+                            \addplot[<->,thick, samples = 100, domain = 2.25:7.5] {1/(x-2)};
+                            \coordinate (bottom) at (2,-3);
+                            \coordinate (top)at (2,4.5);
+                        \end{axis}
+                        \draw[densely dashed] (top)--(bottom);
+                    \end{tikzpicture}
+                ]]>
+            </latex-image>
+        </image>
+
+        <p>
+            <ol marker="a">
+                <li>
+                    <p>
+                        What happens to the output of <m>f</m> as the input increases without bound?  Write your answer in limit notation.
+                    </p>
+                    <p>
+                        <m>\ds \lim_{x\to\infty} f(x) = 0</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        What happens to the output of <m>f</m> as the input decreases without bound?  Write your answer in limit notation.
+                    </p>
+                    <p>
+                        <m>\ds \lim_{x\to-\infty} f(x) = 0</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        There is a vertical asymptote; the outputs increase or decrease without bound depending on which side of 2 that you're on.
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <p>
+            Ultimately, the idea is that the output of the function around <m>x=2</m> depends on which side you approach from; this necessitates the idea of a right and left-hand limit.
+        </p>
+    </subsection>
+
+    <subsection xml:id="section-13-left-right-limits">
+        <title>Left/Right Hand Limit</title>
+        
+        <definition>
+            <title>Left/Right Hand Limit</title>
+            <idx><h>Left Hand Limit</h></idx>
+            <idx><h>Right Hand Limit</h></idx>
+            <statement>
+                <p>
+                    Let <m>f</m> be a function defined on an interval containing some constant <m>c</m> (except possibly at <m>c</m> itself).
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                If <m>f(x)</m> approaches the value of <m>L_1</m> as <m>x</m> approaches <m>c</m> from the left, then the <term>left-hand limit</term> of <m>f</m> is <m>L_1</m>, and is written <m>\ds \lim_{x\to c^-} f(x) = L_1</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If <m>f(x)</m> approaches the value of <m>L_2</m> as <m>x</m> approaches <m>c</m> from the right, then the <term>right-hand limit</term> of <m>f</m> is <m>L_2</m>, and is written <m>\ds \lim_{x\to c^+} f(x) = L_2</m>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    For <m>f(x) = \dfrac{1}{x-2}</m>, find <m>\ds \lim_{x\to 2^-} f(x)</m> and <m>\ds \lim_{x\to 2^+} f(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\ds \lim_{x\to 2^-} f(x) = -\infty</m> and <m>\ds \lim_{x\to 2^+} f(x) = \infty</m>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use a calculator to numerically examine the limit behavior of <m>f(x) = \dfrac{1}{x-2}</m> at <m>x = 2</m>.
+                </p>
+                <sidebyside widths="40% 40%">
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>x</m></cell>
+                            <cell halign="center"><m>f(x)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.9</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.99</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.999</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.9999</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.99999</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{x\to 2^-} f(x) = </m></cell>
+                            <cell></cell>
+                        </row>
+                    </tabular>
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>x</m></cell>
+                            <cell halign="center"><m>f(x)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.1</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.01</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.001</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.0001</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.00001</cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{x\to 2^+} f(x) = </m></cell>
+                            <cell></cell>
+                        </row>
+                    </tabular>
+                </sidebyside>
+                <p>
+                    <me>
+                        \lim_{x\to 2} f(x)= 
+                    </me>
+                    
+                </p>
+            </statement>
+            <solution>
+                <sidebyside widths="40% 40%">
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>x</m></cell>
+                            <cell halign="center"><m>f(x)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.9</cell>
+                            <cell>-10</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.99</cell>
+                            <cell>-100</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.999</cell>
+                            <cell>-1000</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.9999</cell>
+                            <cell>-10000</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 1.99999</cell>
+                            <cell>-100000</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{x\to 2^-} f(x) = </m></cell>
+                            <cell><m>-\infty</m></cell>
+                        </row>
+                    </tabular>
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>x</m></cell>
+                            <cell halign="center"><m>f(x)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.1</cell>
+                            <cell>10</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.01</cell>
+                            <cell>100</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.001</cell>
+                            <cell>1000</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.0001</cell>
+                            <cell>10000</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"> 2.00001</cell>
+                            <cell>100000</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{x\to 2^+} f(x) = </m></cell>
+                            <cell><m>\infty</m></cell>
+                        </row>
+                    </tabular>
+                </sidebyside>
+                <p>
+                    <me>
+                        \lim_{x\to 2} f(x)= \text{ does not exist}
+                    </me>
+                    
+                </p>
+
+                <p>
+                    The idea behind the sequence of Example 2 and Example 3 is that we can visually tell what's happening from the picture, so we can assign values to the limit; numerical investigation confirms the visual inspection, and we can definitively say that the overall limit doesn't exist.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use the graph of <m>g</m> to answer the following.
+                </p>
+                <image>
+                    <description>
+                        The graph of the piecewise function <m>\begin{cases} -0.444x^2 + 10 &amp; 0\leq x \lt 3 \\ -3x+14 &amp; 3\leq x\leq 4 \\ 5(x-4)^2 + 2 &amp; 4\leq x\leq 6 \end{cases}</m>
+                    </description>
+                    <latex-image>
+                        <![CDATA[ 
+                            \begin{tikzpicture}
+                                \begin{axis}[
+                                    scale = .8,
+                                    axis x line = middle,
+                                    axis y line = middle,
+                                    every axis y label/.style={at={(ticklabel cs:1.15)}},
+                                    ytick = {1,2,...,10},
+                                    y label style={at={(axis description cs:0,1.15)},anchor=north},
+                                    ylabel = {$f(x)$},
+                                    ymin = 0, ymax = 11,
+                                    every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                    xtick = {1,2,3,4,5},
+                                    x label style={at={(axis description cs:1.1,0)},anchor=east},
+                                    xlabel = {$x$},
+                                    xmin = 0, xmax = 6			
+                                ]
+                                    \addplot [line width=1pt,smooth,samples=100,domain=0.:2.93] {(-.444)*x^2 + 10}; % plots first piece of function
+                                    \coordinate (circle1) at (3,6);
+                                    \addplot[line width = 1pt, smooth, samples = 100, domain = 3.0:4.0] {-3.*x + 14.}; %plot second piece
+                                    \coordinate (circle2) at (3,5);
+                                    \addplot[->,line width = 1pt, smooth, samples = 100, domain = 4.0:6.0] {5*(x - 4)^2 + 2}; %plot third piece
+                                \end{axis}
+                                \fill[white] (circle1) circle (.1);
+                                \draw (circle1) circle (.1);
+                                \fill (circle2) circle (.1);
+                            \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 4^-} g(x)=</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 4^+} g(x)=</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 4} g(x)=</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^-} g(x)=</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^+} g(x)=</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3} g(x)=</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    There's an error in the label on the graph; it's labeled <m>f(x)</m> but should be <m>g(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 4^-} g(x)=2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 4^+} g(x)=2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 4} g(x)=2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^-} g(x)=6</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^+} g(x)=5</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3} g(x)=\text{ DNE}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Examine the limit behavior of the function <m>g(t) = \dfrac{3t^2-9}{t-3}</m> at <m>t = 3</m>.  Round to the nearest tenth if necessary.
+                </p>
+            </statement>
+            <solution>
+                <sidebyside widths="40% 40%">
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>t</m></cell>
+                            <cell halign="center"><m>g(t)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.9</cell>
+                            <cell halign="center"><m>-162.3</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.99</cell>
+                            <cell halign="center"><m>-1782.03</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.999</cell>
+                            <cell halign="center"><m>-17982.003</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.9999</cell>
+                            <cell halign="center"><m>-179982.0003</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{t\to 3^-} g(t) = </m></cell>
+                            <cell halign="center"><m>-\infty</m></cell>
+                        </row>
+                    </tabular>
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>t</m></cell>
+                            <cell halign="center"><m>g(t)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">3.1</cell>
+                            <cell halign="center"><m>198.3</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">3.01</cell>
+                            <cell halign="center"><m>1818.03</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">3.001</cell>
+                            <cell halign="center"><m>18018.003</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">3.0001</cell>
+                            <cell halign="center"><m>180018.0003</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{t\to 3^+} g(t) = </m></cell>
+                            <cell halign="center"><m>\infty</m></cell>
+                        </row>
+                    </tabular>
+                    
+                </sidebyside>
+                <p>
+                    <me>
+                        \lim_{t\to 3} g(t) = \text{ DNE}
+                    </me>
+                    
+                </p>
+                <p>
+                    The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.
+                </p>
+                
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use a calculator to examine the limit behavior of the function <m>r(p) = \dfrac{p^2-64}{p+8}</m> at <m>p = -8</m>.  Round to the nearest thousandth if necessary.
+                </p>
+            </statement>
+            <solution>
+                <sidebyside widths="40% 40%">
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>p</m></cell>
+                            <cell halign="center"><m>r(p)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-8.1</m></cell>
+                            <cell halign="center"><m>-16.1</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-8.01</m></cell>
+                            <cell halign="center"><m>-16.01</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-8.001</m></cell>
+                            <cell halign="center"><m>-16.001</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-8.0001</m></cell>
+                            <cell halign="center"><m>-16.0001</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{p\to 8^-} r(p) = </m></cell>
+                            <cell halign="center"><m>-16</m></cell>
+                        </row>
+                    </tabular>
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>p</m></cell>
+                            <cell halign="center"><m>r(p)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-7.9</m></cell>
+                            <cell halign="center"><m>-15.9</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-7.99</m></cell>
+                            <cell halign="center"><m>-15.99</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-7.999</m></cell>
+                            <cell halign="center"><m>-15.999</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>-7.9999</m></cell>
+                            <cell halign="center"><m>-15.9999</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{p\to 8^+} r(p) = </m></cell>
+                            <cell halign="center"><m>-16</m></cell>
+                        </row>
+                    </tabular>
+                </sidebyside>
+                <p>
+                    <me>
+                        \lim_{p\to -8} r(p) = -16
+                    </me>
+                    
+                </p>
+                <p>
+                    The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.
+                </p>
+                <p>
+                    Students may also stumble with the appropriate numbers to use for right/left limits since the input is a negative number; for this, I think it helps to draw a number line and show them what would happen with the numbers.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use a calculator to examine the limit behavior of the function <m>P(y) = \dfrac{3^y}{2y-5}</m> at <m>y = 2.5</m>.  Round your answer to 2 decimal places.
+                </p>
+            </statement>
+            <solution>
+                <sidebyside widths="40% 40%">
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>y</m></cell>
+                            <cell halign="center"><m>P(y)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.49</cell>
+                            <cell halign="center"><m>-770.9068924523</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.499</cell>
+                            <cell halign="center"><m>-7785.670500598</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.4999</cell>
+                            <cell halign="center"><m>-77933.723975585</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.49999</cell>
+                            <cell halign="center"><m>-779414.3006177</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{y\to 2.5^-} P(y)=</m></cell>
+                            <cell halign="center"><m>-\infty</m></cell>
+                        </row>
+                    </tabular>
+                    <tabular>
+                        <row>
+                            <cell halign="center"><m>y</m></cell>
+                            <cell halign="center"><m>P(y)</m></cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.51</cell>
+                            <cell halign="center">788.03290766735</cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.501</cell>
+                            <cell halign="center">7802.796174759</cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.5001</cell>
+                            <cell halign="center">77950.849646335</cell>
+                        </row>
+                        <row>
+                            <cell halign="center">2.50001</cell>
+                            <cell halign="center">779431.4262884</cell>
+                        </row>
+                        <row>
+                            <cell halign="center"><m>\ds \lim_{y\to 2.5^+} P(y)=</m></cell>
+                            <cell halign="center"><m>\infty</m></cell>
+                        </row>
+                    </tabular>
+                </sidebyside>
+                <p>
+                    The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            There's not that many examples that approach a finite value, and that's my bad. That element is getting fixed in the next iteration
+        </p>
+
+    </subsection>
+
+    <subsection xml:id="section-13-continuity">
+        <title>Continuity</title>
+        <idx><h>Continuity</h></idx>
+        <definition>
+            <statement>
+                <p>
+                    A function <m>f(x)</m>, defined on some input interval containing <m>c</m>, is said to be <term>continuity</term> at <m>c</m> if and only if the following conditions are satisfied:
+                </p>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to c} f(x)</m> exists
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(c)</m> exists
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to c} f(x) = f(c)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    A function is continuous on any open interval <m>(a,b)</m> if it is continuous at every point inside the interval.  If a function is not continuous at the input <m>x = c</m>, then we say that <m>f</m> is <term>discontinuous</term> at <m>c</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            It's probably worthwhile to point out the explicit connection between the first condition and left/right-hand limits.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Identify any points of discontinuity in the function <m>f(x) = \dfrac{1}{x-2}</m>.  Explain why the function is discontinuous at those points.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>f(x)</m> is discontinuous at <m>x=2</m> because it fails the first and second conditions of continuity.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Identify any points of discontinuity in the function <m>g(x)</m> in Example 1.3.4. Explain why the function is discontinuous at those points.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    There's a discontinuity at <m>x=3</m> because <m>\ds \lim_{x\to 3} g(x)</m> doesn't exist.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use the graph to find the following:
+                </p>
+                <image>
+                    <description>
+                        This is a graph of the piecewise function <m>f(x) = \begin{cases} 2^x-4 &amp; -x\lt 1 \\ \dfrac{4}{x-1}-5 &amp; 1\lt x\lt 3 \\ 2 &amp; x=3 \\ x-6 &amp; x\gt 3\end{cases}</m> on <m>(-5,5)</m>
+                    </description>
+                    
+                    <latex-image>
+                        <![CDATA[ 
+                            \begin{tikzpicture}
+                                \begin{axis}[
+                                    scale = 1.5,
+                                    every tick label/.append style={font=\small},
+                                    axis x line = middle,
+                                    axis y line = middle,
+                                        every axis y label/.style={at={(ticklabel cs:1.15)}},
+                                        ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+                                    y label style={at={(axis description cs:.5,1.15)},anchor=north},
+                                        ylabel = {$f(x)$},
+                                        ymin = -5, ymax = 5,
+                                        every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                        xtick = {-4,-3,-2,-1,1,2,3,4},
+                                        x label style={at={(axis description cs:1.1,.5)},anchor=east},
+                                        xlabel = {$x$},
+                                        xmin = -5, xmax = 5			
+                                    ]
+                                    \addplot[<-,thick,smooth,domain = 1.4:3.] {4/(x-1)-5};
+                                    \addplot[->,thick,smooth,domain = 3.:4.9] {x-6};
+                                    \addplot[<-,thick,smooth, domain = -4.9:1]  {2^x -4};
+                                    \coordinate (circle1) at (1,-2);
+                                    \coordinate (circle2) at (3,-3);
+                                    \coordinate (circle3) at (3,2);
+                                \end{axis}
+                                    \fill[white] (circle1) circle (.1);
+                                    \draw[thick] (circle1) circle (.1);
+                                    \fill[white] (circle2) circle (.1);
+                                    \draw[thick] (circle2) circle (.1);
+                                    \fill (circle3) circle (.1);
+                            \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 1^+} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 1^-} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 1} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Is <m>f</m> continuous at <m>x =1 </m>?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^+} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^-} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Is <m>f</m> continuous at <m>x =3 </m>?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^+} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^-} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Is <m>f</m> continuous at <m>x =0 </m>?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 1^+} f(x) = \infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 1^-} f(x) = -2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 1} f(x) = \text{ DNE}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                No
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^+} f(x) = -3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3^-} f(x) = -3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 3} f(x) = -3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                No
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^+} f(x) = -3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^-} f(x)=-3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0} f(x)=-3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Yes
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="section-13-properties">
+        <title>Properties of Limits</title>
+        
+        <p>
+            Let <m>f(x)</m> and <m>g(x)</m> be continuous functions over some input interval containing <m>c</m>, and <m>k</m> be some arbitrary constant.  Then, we have the following properties of limits:
+        </p>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Constant Rule: <m>\ds \lim_{x\to c} k = k</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Sum Rule: <m>\ds \lim_{x\to c}\left[f(x) + g(x)\right] </m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Constant Multiple Rule: <m>\ds \lim_{x\to c} \left[k\cdot f(x)\right] = k\lim_{x\to c} f(x) </m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Replacement Rule: If <m>f(c)</m> is defined at <m>c</m>, then <m>\ds \lim_{x\to c}f(x) = f(c)</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Product Rule: <m>\ds\lim_{x\to c} \left[f(x)\cdot g(x)\right] = \left[\lim_{x\to c} f(x)\right]\cdot\left[\lim_{x\to c}g(x)\right]</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Quotient Rule: <m>\ds \lim_{x\to c} \left[\dfrac{f(x)}{g(x)}\right] = \dfrac{\ds\lim_{x\to c} f(x)}{\ds\lim_{x\to c} g(x)}</m> (as long as <m>\ds\lim_{x\to c} g(x)\neq 0</m>)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If <m>f(x)</m> can be factored as <m>f(x) = h(x)\cdot k(x)</m>, and <m>g(x)</m> can also be factored as <m>g(x) = j(x)\cdot k(x)</m>, then
+                        <me>
+                            \lim_{x\to c} \frac{f(x)}{g(x)} = \lim_{x\to c}\frac{h(x)\cdot k(x)}{j(x) \cdot k(x)} = \lim_{x\to c} \frac{h(x)}{j(x)}
+                        </me>
+                        i.e. common factors may be canceled across fractions under the limit.
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <p>
+            I don't know how I missed the "Difference Rule", but it should be lumped in with the Sum Rule.
+        </p>
+        <p>
+            I think the Replacement Rule should read "If <m>f(c)</m> is continuous" rather than "defined".
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Algebraically determine the limits of the following:
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds\lim_{x\to 5} 9</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{z\to 3} (4z-5)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{t\to -3} \dfrac{t^2-4t-21}{t+3}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{m\to 13} \dfrac{m}{m^2+4m}</m>  
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{h\to 0} \dfrac{(3+h)^2 -9}{h}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds\lim_{x\to 5} 9 = 9</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{z\to 3} (4z-5)=7</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{t\to -3} \dfrac{t^2-4t-21}{t+3}=-10</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{m\to 13} \dfrac{m}{m^2+4m}=\dfrac{1}{17}</m>  
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds\lim_{h\to 0} \dfrac{(3+h)^2 -9}{h} = 6</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    I think these are all decent tproblems, but you can probably skip the derivative question in part e if there's not time. Especially since the next question is of the same type.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Determine the limit: <m>\ds \lim_{h\to 0} \dfrac{(5+h)^2-25}{h}</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    10
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>f(x) = \begin{cases} x^2 &amp; x \lt -1 \\ 1 &amp; x\geq -1\end{cases}</m>.  Algebraically determine the following limits and answer the questions:
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -1^-} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -1^+} f(x)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(-1)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Is <m>f</m> continuous at <m>x = -1</m>?  Why?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Graph <m>f(x)</m>. Do your answers make sense?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -1^-} f(x)=1</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -1^+} f(x)=1</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(-1)=1</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Yes: <m>\ds \lim_{x\to -1} f(x) = f(-1)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <image>
+                                <description>
+                                    A graph of the piecewise function <m>f(x) = \begin{cases} x^2 &amp; x \lt -1 \\ 1 &amp; x\geq -1\end{cases}</m>
+                                </description>
+                                <latex-image>
+                                    <![CDATA[ 
+                                        \begin{tikzpicture}
+                                            \begin{axis}[
+                                                axis x line = middle,
+                                                    axis y line = middle,
+                                                    every axis y label/.style={at={(ticklabel cs:1.1)}},
+                                                    y label style={at={(axis description cs:.5,1.15)},anchor=north},
+                                                        ylabel = {$f(x)$},
+                                                    every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                                        x label style={at={(axis description cs:1.1,0)},anchor=east},
+                                                    xlabel = {$x$},
+                                                xmin=-3,xmax=3,
+                                                ymin = 0
+                                                        ]
+
+                                                \addplot[smooth, thick, domain=-3:-1] {x^2};
+                                                \addplot[smooth, thick, domain=-1:3] {1};
+                                                \coordinate (circle) at (-1,1);
+                                            \end{axis}
+                                                \fill (circle) circle (0.1);
+                                        \end{tikzpicture}
+                                    ]]>
+                                </latex-image>
+                            </image>
+                            <p>
+                                Yes they do, in fact.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>h(t) = \begin{cases} 3^t - 9 &amp; t \lt 2 \\ t^2-4 &amp; t\geq 2\end{cases}</m>.  Algebraically determine the following limits and answer the questions:
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{t\to 2^-} h(t)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                 <m>\ds \lim_{t\to 2^+} h(t)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>h(2)</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Is <m>h</m> continuous at <m>t = 2</m>?  Why?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Graph <m>f(x)</m>. Do your answers make sense?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>\ds \lim_{t\to 2^-} h(t)=0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                 <m>\ds \lim_{t\to 2^+} h(t)=0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>h(2)=0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Is <m>h</m> continuous at <m>t = 2</m>?  Why?
+                            </p>
+                        </li>
+                        <li>
+                            <image>
+                                <description>
+                                    A graph of the piecewise function <m>h(t) = \begin{cases} 3^t - 9 &amp; t \lt 2 \\ t^2-4 &amp; t\geq 2\end{cases}</m>
+                                </description>
+                                <latex-image>
+                                    <![CDATA[ 
+                                        \begin{tikzpicture}
+                                            \begin{axis}[
+                                                axis x line = middle,
+                                                    axis y line = middle,
+                                                    every axis y label/.style={at={(ticklabel cs:1.1)}},
+                                                    y label style={at={(axis description cs:.5,1.15)},anchor=north},
+                                                        ylabel = {$h(t)$},
+                                                    every axis x label/.style= {at ={(ticklabel cs:1)}},
+                                                        x label style={at={(axis description cs:1.1,.64)},anchor=east},
+                                                    xlabel = {$t$},
+                                                xmin=-3,xmax=3
+                                                        ]
+
+                                                \addplot[smooth, thick, domain=-3:2] {3^x-9};
+                                                \addplot[smooth, thick, domain=2:3] {x^2-4};
+                                                \coordinate (circle) at (2,0);
+                                            \end{axis}
+                                                \fill (circle) circle (0.1);
+                                        \end{tikzpicture}
+                                    ]]>
+                                </latex-image>
+                            </image>
+                            <p>
+                                Yes they do, in fact.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+</section>
