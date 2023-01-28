@@ -386,6 +386,150 @@ var ptx_lunr_docs = [
   "number": "1.2.22",
   "title": "",
   "body": "  Use numerical estimation to find . Make a table showing at least five inputs, and the corresponding outputs; write all decimals in the table, and round your final answer to the nearest integer. Start your input at and double.            1.01     1.0025     1.000625     1.00015625     1.0000390625     1.000009765625    In reality, we only need two lines here. I like to go out this far to emphasize the numerical behavior. Again, you'll want to emphasize that if this is a question on the test, they need to stop after the second line (since the first decimal place repeats after two iterations).   "
+},
+{
+  "id": "section-13",
+  "level": "1",
+  "url": "section-13.html",
+  "type": "Section",
+  "number": "1.3",
+  "title": "Function Behavior and End Behavior Limits",
+  "body": " Function Behavior and End Behavior Limits   Motivating Example  Consider the function , graphed below:   A graph of the function        What happens to the output of as the input increases without bound? Write your answer in limit notation.       What happens to the output of as the input decreases without bound? Write your answer in limit notation.       There is a vertical asymptote; the outputs increase or decrease without bound depending on which side of 2 that you're on.     Ultimately, the idea is that the output of the function around depends on which side you approach from; this necessitates the idea of a right and left-hand limit.    Left\/Right Hand Limit   Left\/Right Hand Limit  Left Hand Limit  Right Hand Limit   Let be a function defined on an interval containing some constant (except possibly at itself).     If approaches the value of as approaches from the left, then the left-hand limit of is , and is written     If approaches the value of as approaches from the right, then the right-hand limit of is , and is written          For , find and .     and       Use a calculator to numerically examine the limit behavior of at .         1.9     1.99     1.999     1.9999     1.99999               2.1     2.01     2.001     2.0001     2.00001                      1.9  -10    1.99  -100    1.999  -1000    1.9999  -10000    1.99999  -100000              2.1  10    2.01  100    2.001  1000    2.0001  10000    2.00001  100000            The idea behind the sequence of Example 2 and Example 3 is that we can visually tell what's happening from the picture, so we can assign values to the limit; numerical investigation confirms the visual inspection, and we can definitively say that the overall limit doesn't exist.      Use the graph of to answer the following.   The graph of the piecewise function                                       There's an error in the label on the graph; it's labeled but should be .                                          Examine the limit behavior of the function at . Round to the nearest tenth if necessary.           2.9     2.99     2.999     2.9999               3.1     3.01     3.001     3.0001             The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.      Use a calculator to examine the limit behavior of the function at . Round to the nearest thousandth if necessary.                                                             The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.  Students may also stumble with the appropriate numbers to use for right\/left limits since the input is a negative number; for this, I think it helps to draw a number line and show them what would happen with the numbers.      Use a calculator to examine the limit behavior of the function at . Round your answer to 2 decimal places.           2.49     2.499     2.4999     2.49999               2.51  788.03290766735    2.501  7802.796174759    2.5001  77950.849646335    2.50001  779431.4262884         The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.    There's not that many examples that approach a finite value, and that's my bad. That element is getting fixed in the next iteration    Continuity  Continuity    A function , defined on some input interval containing , is said to be continuity at if and only if the following conditions are satisfied:      exists     exists          A function is continuous on any open interval if it is continuous at every point inside the interval. If a function is not continuous at the input , then we say that is discontinuous at .    It's probably worthwhile to point out the explicit connection between the first condition and left\/right-hand limits.    Identify any points of discontinuity in the function . Explain why the function is discontinuous at those points.     is discontinuous at because it fails the first and second conditions of continuity.      Identify any points of discontinuity in the function in Example 1.3.4. Explain why the function is discontinuous at those points.    There's a discontinuity at because doesn't exist.      Use the graph to find the following:   This is a graph of the piecewise function on                       Is continuous at ?                   Is continuous at ?                   Is continuous at ?                         No                   No                   Yes         Properties of Limits  Let and be continuous functions over some input interval containing , and be some arbitrary constant. Then, we have the following properties of limits:     Constant Rule:     Sum Rule:     Constant Multiple Rule:     Replacement Rule: If is defined at , then .    Product Rule:     Quotient Rule: (as long as )    If can be factored as , and can also be factored as , then i.e. common factors may be canceled across fractions under the limit.     I don't know how I missed the \"Difference Rule\", but it should be lumped in with the Sum Rule.  I think the Replacement Rule should read \"If is continuous\" rather than \"defined\".    Algebraically determine the limits of the following:                                                              I think these are all decent tproblems, but you can probably skip the derivative question in part e if there's not time. Especially since the next question is of the same type.      Determine the limit:     10      Let . Algebraically determine the following limits and answer the questions:                    Is continuous at ? Why?    Graph . Do your answers make sense?                         Yes:      A graph of the piecewise function     Yes they do, in fact.         Let . Algebraically determine the following limits and answer the questions:                    Is continuous at ? Why?    Graph . Do your answers make sense?                         Is continuous at ? Why?     A graph of the piecewise function     Yes they do, in fact.        "
+},
+{
+  "id": "definition-8",
+  "level": "2",
+  "url": "section-13.html#definition-8",
+  "type": "Definition",
+  "number": "1.3.1",
+  "title": "Left\/Right Hand Limit.",
+  "body": " Left\/Right Hand Limit  Left Hand Limit  Right Hand Limit   Let be a function defined on an interval containing some constant (except possibly at itself).     If approaches the value of as approaches from the left, then the left-hand limit of is , and is written     If approaches the value of as approaches from the right, then the right-hand limit of is , and is written       "
+},
+{
+  "id": "example-31",
+  "level": "2",
+  "url": "section-13.html#example-31",
+  "type": "Example",
+  "number": "1.3.2",
+  "title": "",
+  "body": "  For , find and .     and    "
+},
+{
+  "id": "example-32",
+  "level": "2",
+  "url": "section-13.html#example-32",
+  "type": "Example",
+  "number": "1.3.3",
+  "title": "",
+  "body": "  Use a calculator to numerically examine the limit behavior of at .         1.9     1.99     1.999     1.9999     1.99999               2.1     2.01     2.001     2.0001     2.00001                      1.9  -10    1.99  -100    1.999  -1000    1.9999  -10000    1.99999  -100000              2.1  10    2.01  100    2.001  1000    2.0001  10000    2.00001  100000            The idea behind the sequence of Example 2 and Example 3 is that we can visually tell what's happening from the picture, so we can assign values to the limit; numerical investigation confirms the visual inspection, and we can definitively say that the overall limit doesn't exist.   "
+},
+{
+  "id": "example-33",
+  "level": "2",
+  "url": "section-13.html#example-33",
+  "type": "Example",
+  "number": "1.3.4",
+  "title": "",
+  "body": "  Use the graph of to answer the following.   The graph of the piecewise function                                       There's an error in the label on the graph; it's labeled but should be .                                       "
+},
+{
+  "id": "example-34",
+  "level": "2",
+  "url": "section-13.html#example-34",
+  "type": "Example",
+  "number": "1.3.5",
+  "title": "",
+  "body": "  Examine the limit behavior of the function at . Round to the nearest tenth if necessary.           2.9     2.99     2.999     2.9999               3.1     3.01     3.001     3.0001             The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.   "
+},
+{
+  "id": "example-35",
+  "level": "2",
+  "url": "section-13.html#example-35",
+  "type": "Example",
+  "number": "1.3.6",
+  "title": "",
+  "body": "  Use a calculator to examine the limit behavior of the function at . Round to the nearest thousandth if necessary.                                                             The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.  Students may also stumble with the appropriate numbers to use for right\/left limits since the input is a negative number; for this, I think it helps to draw a number line and show them what would happen with the numbers.   "
+},
+{
+  "id": "example-36",
+  "level": "2",
+  "url": "section-13.html#example-36",
+  "type": "Example",
+  "number": "1.3.7",
+  "title": "",
+  "body": "  Use a calculator to examine the limit behavior of the function at . Round your answer to 2 decimal places.           2.49     2.499     2.4999     2.49999               2.51  788.03290766735    2.501  7802.796174759    2.5001  77950.849646335    2.50001  779431.4262884         The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.   "
+},
+{
+  "id": "definition-9",
+  "level": "2",
+  "url": "section-13.html#definition-9",
+  "type": "Definition",
+  "number": "1.3.8",
+  "title": "",
+  "body": "  A function , defined on some input interval containing , is said to be continuity at if and only if the following conditions are satisfied:      exists     exists          A function is continuous on any open interval if it is continuous at every point inside the interval. If a function is not continuous at the input , then we say that is discontinuous at .   "
+},
+{
+  "id": "example-37",
+  "level": "2",
+  "url": "section-13.html#example-37",
+  "type": "Example",
+  "number": "1.3.9",
+  "title": "",
+  "body": "  Identify any points of discontinuity in the function . Explain why the function is discontinuous at those points.     is discontinuous at because it fails the first and second conditions of continuity.   "
+},
+{
+  "id": "example-38",
+  "level": "2",
+  "url": "section-13.html#example-38",
+  "type": "Example",
+  "number": "1.3.10",
+  "title": "",
+  "body": "  Identify any points of discontinuity in the function in Example 1.3.4. Explain why the function is discontinuous at those points.    There's a discontinuity at because doesn't exist.   "
+},
+{
+  "id": "example-39",
+  "level": "2",
+  "url": "section-13.html#example-39",
+  "type": "Example",
+  "number": "1.3.11",
+  "title": "",
+  "body": "  Use the graph to find the following:   This is a graph of the piecewise function on                       Is continuous at ?                   Is continuous at ?                   Is continuous at ?                         No                   No                   Yes      "
+},
+{
+  "id": "example-40",
+  "level": "2",
+  "url": "section-13.html#example-40",
+  "type": "Example",
+  "number": "1.3.12",
+  "title": "",
+  "body": "  Algebraically determine the limits of the following:                                                              I think these are all decent tproblems, but you can probably skip the derivative question in part e if there's not time. Especially since the next question is of the same type.   "
+},
+{
+  "id": "example-41",
+  "level": "2",
+  "url": "section-13.html#example-41",
+  "type": "Example",
+  "number": "1.3.13",
+  "title": "",
+  "body": "  Determine the limit:     10   "
+},
+{
+  "id": "example-42",
+  "level": "2",
+  "url": "section-13.html#example-42",
+  "type": "Example",
+  "number": "1.3.14",
+  "title": "",
+  "body": "  Let . Algebraically determine the following limits and answer the questions:                    Is continuous at ? Why?    Graph . Do your answers make sense?                         Yes:      A graph of the piecewise function     Yes they do, in fact.      "
+},
+{
+  "id": "example-43",
+  "level": "2",
+  "url": "section-13.html#example-43",
+  "type": "Example",
+  "number": "1.3.15",
+  "title": "",
+  "body": "  Let . Algebraically determine the following limits and answer the questions:                    Is continuous at ? Why?    Graph . Do your answers make sense?                         Is continuous at ? Why?     A graph of the piecewise function     Yes they do, in fact.      "
 }
 ]
 

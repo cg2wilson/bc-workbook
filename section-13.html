@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>1743 Workbook: Function Behavior and End Behavior Limits</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="1743 Workbook">
+<meta property="book:author" content="Cory Wilson">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="workbook-1743.html"><span class="title">1743 Workbook</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-12.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch1.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-11.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Functions: Four Representations</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-11.html#section-11-representations" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Representations of Change</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-functions-and-reps" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Functions &amp; Representations</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-models" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Model Output and Units of measure</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-12.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Function Behavior and End Behavior Limits</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-12.html#section-12-descriptions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Descriptions of Function Behavior</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-direction-curvature" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Direction and Curvature</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-limits-end-behavior" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Limits and End Behavior</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="section-13.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Function Behavior and End Behavior Limits</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-13.html#section-13-motivating" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Motivating Example</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-left-right-limits" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Left/Right Hand Limit</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-continuity" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Continuity</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-properties" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Properties of Limits</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-13"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Function Behavior and End Behavior Limits</span>
+</h2>
+<section class="subsection" id="section-13-motivating"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.1</span> <span class="title">Motivating Example</span>
+</h3>
+<div class="para" id="p-191">Consider the function <span class="process-math">\(f(x) = \dfrac{1}{x-2}\text{,}\)</span> graphed below:</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-11.svg" role="img" class="contained" alt="A graph of the function \(f(x) = \dfrac{1}{x-2}\)"></div>
+<div class="para logical" id="p-192"><ol class="lower-alpha">
+<li id="li-96">
+<div class="para" id="p-193">What happens to the output of <span class="process-math">\(f\)</span> as the input increases without bound?  Write your answer in limit notation.</div>
+<div class="para" id="p-194"><span class="process-math">\(\ds \lim_{x\to\infty} f(x) = 0\)</span></div>
+</li>
+<li id="li-97">
+<div class="para" id="p-195">What happens to the output of <span class="process-math">\(f\)</span> as the input decreases without bound?  Write your answer in limit notation.</div>
+<div class="para" id="p-196"><span class="process-math">\(\ds \lim_{x\to-\infty} f(x) = 0\)</span></div>
+</li>
+<li id="li-98"><div class="para" id="p-197">There is a vertical asymptote; the outputs increase or decrease without bound depending on which side of 2 that you're on.</div></li>
+</ol></div>
+<div class="para" id="p-198">Ultimately, the idea is that the output of the function around <span class="process-math">\(x=2\)</span> depends on which side you approach from; this necessitates the idea of a right and left-hand limit.</div></section><section class="subsection" id="section-13-left-right-limits"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.2</span> <span class="title">Left/Right Hand Limit</span>
+</h3>
+<article class="definition definition-like" id="definition-8"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Left/Right Hand Limit.</span>
+</h4>  <div class="para" id="p-199">Let <span class="process-math">\(f\)</span> be a function defined on an interval containing some constant <span class="process-math">\(c\)</span> (except possibly at <span class="process-math">\(c\)</span> itself).</div> <div class="para logical" id="p-200"><ul class="disc">
+<li id="li-99"><div class="para" id="p-201">If <span class="process-math">\(f(x)\)</span> approaches the value of <span class="process-math">\(L_1\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(c\)</span> from the left, then the <dfn class="terminology">left-hand limit</dfn> of <span class="process-math">\(f\)</span> is <span class="process-math">\(L_1\text{,}\)</span> and is written <span class="process-math">\(\ds \lim_{x\to c^-} f(x) = L_1\)</span>
+</div></li>
+<li id="li-100"><div class="para" id="p-202">If <span class="process-math">\(f(x)\)</span> approaches the value of <span class="process-math">\(L_2\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(c\)</span> from the right, then the <dfn class="terminology">right-hand limit</dfn> of <span class="process-math">\(f\)</span> is <span class="process-math">\(L_2\text{,}\)</span> and is written <span class="process-math">\(\ds \lim_{x\to c^+} f(x) = L_2\)</span>
+</div></li>
+</ul></div></article><article class="example example-like" id="example-31"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-203">For <span class="process-math">\(f(x) = \dfrac{1}{x-2}\text{,}\)</span> find <span class="process-math">\(\ds \lim_{x\to 2^-} f(x)\)</span> and <span class="process-math">\(\ds \lim_{x\to 2^+} f(x)\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-31" id="solution-31"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-31"><div class="solution solution-like"><div class="para" id="p-204">
+<span class="process-math">\(\ds \lim_{x\to 2^-} f(x) = -\infty\)</span> and <span class="process-math">\(\ds \lim_{x\to 2^+} f(x) = \infty\)</span>
+</div></div></div>
+</div></article><article class="example example-like" id="example-32"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-205">Use a calculator to numerically examine the limit behavior of <span class="process-math">\(f(x) = \dfrac{1}{x-2}\)</span> at <span class="process-math">\(x = 2\text{.}\)</span>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.9</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.99</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.999</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.9999</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.99999</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{x\to 2^-} f(x) = \)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.1</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.01</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.001</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.0001</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.00001</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{x\to 2^+} f(x) = \)</span></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-206"><div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 2} f(x)= 
+\end{equation*}
+</div></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-32" id="solution-32"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-32"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.9</td>
+<td class="l m b0 r0 l0 t0 lines">-10</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.99</td>
+<td class="l m b0 r0 l0 t0 lines">-100</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.999</td>
+<td class="l m b0 r0 l0 t0 lines">-1000</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.9999</td>
+<td class="l m b0 r0 l0 t0 lines">-10000</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1.99999</td>
+<td class="l m b0 r0 l0 t0 lines">-100000</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{x\to 2^-} f(x) = \)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-\infty\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.1</td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.01</td>
+<td class="l m b0 r0 l0 t0 lines">100</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.001</td>
+<td class="l m b0 r0 l0 t0 lines">1000</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.0001</td>
+<td class="l m b0 r0 l0 t0 lines">10000</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.00001</td>
+<td class="l m b0 r0 l0 t0 lines">100000</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{x\to 2^+} f(x) = \)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\infty\)</span></td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-207"><div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 2} f(x)= \text{ does not exist}
+\end{equation*}
+</div></div> <div class="para" id="p-208">The idea behind the sequence of Example 2 and Example 3 is that we can visually tell what's happening from the picture, so we can assign values to the limit; numerical investigation confirms the visual inspection, and we can definitively say that the overall limit doesn't exist.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-33"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-209">Use the graph of <span class="process-math">\(g\)</span> to answer the following.</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-12.svg" role="img" class="contained" alt="The graph of the piecewise function \(\begin{cases} -0.444x^2 + 10 &amp; 0\leq x \lt 3 \\ -3x+14 &amp; 3\leq x\leq 4 \\ 5(x-4)^2 + 2 &amp; 4\leq x\leq 6 \end{cases}\)"></div> <div class="para logical" id="p-210"><ol class="lower-alpha">
+<li id="li-101"><div class="para" id="p-211"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^-} g(x)=\)</span></div></li>
+<li id="li-102"><div class="para" id="p-212"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^+} g(x)=\)</span></div></li>
+<li id="li-103"><div class="para" id="p-213"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4} g(x)=\)</span></div></li>
+<li id="li-104"><div class="para" id="p-214"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} g(x)=\)</span></div></li>
+<li id="li-105"><div class="para" id="p-215"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} g(x)=\)</span></div></li>
+<li id="li-106"><div class="para" id="p-216"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} g(x)=\)</span></div></li>
+</ol></div> <div class="para" id="p-217">There's an error in the label on the graph; it's labeled <span class="process-math">\(f(x)\)</span> but should be <span class="process-math">\(g(x)\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-33" id="solution-33"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-33"><div class="solution solution-like"><div class="para logical" id="p-218"><ol class="lower-alpha">
+<li id="li-107"><div class="para" id="p-219"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^-} g(x)=2\)</span></div></li>
+<li id="li-108"><div class="para" id="p-220"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^+} g(x)=2\)</span></div></li>
+<li id="li-109"><div class="para" id="p-221"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4} g(x)=2\)</span></div></li>
+<li id="li-110"><div class="para" id="p-222"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} g(x)=6\)</span></div></li>
+<li id="li-111"><div class="para" id="p-223"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} g(x)=5\)</span></div></li>
+<li id="li-112"><div class="para" id="p-224"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} g(x)=\text{ DNE}\)</span></div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-34"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-225">Examine the limit behavior of the function <span class="process-math">\(g(t) = \dfrac{3t^2-9}{t-3}\)</span> at <span class="process-math">\(t = 3\text{.}\)</span>  Round to the nearest tenth if necessary.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-34" id="solution-34"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-34"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g(t)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.9</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-162.3\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.99</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-1782.03\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.999</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-17982.003\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.9999</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-179982.0003\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{t\to 3^-} g(t) = \)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\infty\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(g(t)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.1</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(198.3\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.01</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1818.03\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.001</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(18018.003\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.0001</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(180018.0003\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{t\to 3^+} g(t) = \)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\infty\)</span></td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-226"><div class="displaymath process-math">
+\begin{equation*}
+\lim_{t\to 3} g(t) = \text{ DNE}
+\end{equation*}
+</div></div> <div class="para" id="p-227">The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-35"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-228">Use a calculator to examine the limit behavior of the function <span class="process-math">\(r(p) = \dfrac{p^2-64}{p+8}\)</span> at <span class="process-math">\(p = -8\text{.}\)</span>  Round to the nearest thousandth if necessary.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-35" id="solution-35"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-35"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-8.1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-16.1\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-8.01\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-16.01\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-8.001\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-16.001\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-8.0001\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-16.0001\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{p\to 8^-} r(p) = \)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-16\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-7.9\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-15.9\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-7.99\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-15.99\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-7.999\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-15.999\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-7.9999\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-15.9999\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{p\to 8^+} r(p) = \)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-16\)</span></td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-229"><div class="displaymath process-math">
+\begin{equation*}
+\lim_{p\to -8} r(p) = -16
+\end{equation*}
+</div></div> <div class="para" id="p-230">The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.</div> <div class="para" id="p-231">Students may also stumble with the appropriate numbers to use for right/left limits since the input is a negative number; for this, I think it helps to draw a number line and show them what would happen with the numbers.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-36"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-232">Use a calculator to examine the limit behavior of the function <span class="process-math">\(P(y) = \dfrac{3^y}{2y-5}\)</span> at <span class="process-math">\(y = 2.5\text{.}\)</span>  Round your answer to 2 decimal places.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-36" id="solution-36"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-36"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(y\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(P(y)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.49</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-770.9068924523\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.499</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-7785.670500598\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.4999</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-77933.723975585\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.49999</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-779414.3006177\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{y\to 2.5^-} P(y)=\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-\infty\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(y\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(P(y)\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.51</td>
+<td class="c m b0 r0 l0 t0 lines">788.03290766735</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.501</td>
+<td class="c m b0 r0 l0 t0 lines">7802.796174759</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.5001</td>
+<td class="c m b0 r0 l0 t0 lines">77950.849646335</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.50001</td>
+<td class="c m b0 r0 l0 t0 lines">779431.4262884</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \lim_{y\to 2.5^+} P(y)=\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\infty\)</span></td>
+</tr>
+</table></div>
+</div></div> <div class="para" id="p-233">The table isn't drawn out for the students, in part so that the students can get used to identifying the point at which they should stop on something like a test.</div>
+</div></div>
+</div></article><div class="para" id="p-234">There's not that many examples that approach a finite value, and that's my bad. That element is getting fixed in the next iteration</div></section><section class="subsection" id="section-13-continuity"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.3</span> <span class="title">Continuity</span>
+</h3>
+<article class="definition definition-like" id="definition-9"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-235">A function <span class="process-math">\(f(x)\text{,}\)</span> defined on some input interval containing <span class="process-math">\(c\text{,}\)</span> is said to be <dfn class="terminology">continuity</dfn> at <span class="process-math">\(c\)</span> if and only if the following conditions are satisfied:</div> <div class="para logical" id="p-236"><ol class="decimal">
+<li id="li-113"><div class="para" id="p-237">
+<span class="process-math">\(\ds \lim_{x\to c} f(x)\)</span> exists</div></li>
+<li id="li-114"><div class="para" id="p-238">
+<span class="process-math">\(f(c)\)</span> exists</div></li>
+<li id="li-115"><div class="para" id="p-239"><span class="process-math">\(\displaystyle \ds \lim_{x\to c} f(x) = f(c)\)</span></div></li>
+</ol></div> <div class="para" id="p-240">A function is continuous on any open interval <span class="process-math">\((a,b)\)</span> if it is continuous at every point inside the interval.  If a function is not continuous at the input <span class="process-math">\(x = c\text{,}\)</span> then we say that <span class="process-math">\(f\)</span> is <dfn class="terminology">discontinuous</dfn> at <span class="process-math">\(c\text{.}\)</span>
+</div></article><div class="para" id="p-241">It's probably worthwhile to point out the explicit connection between the first condition and left/right-hand limits.</div>
+<article class="example example-like" id="example-37"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-242">Identify any points of discontinuity in the function <span class="process-math">\(f(x) = \dfrac{1}{x-2}\text{.}\)</span>  Explain why the function is discontinuous at those points.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-37" id="solution-37"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-37"><div class="solution solution-like"><div class="para" id="p-243">
+<span class="process-math">\(f(x)\)</span> is discontinuous at <span class="process-math">\(x=2\)</span> because it fails the first and second conditions of continuity.</div></div></div>
+</div></article><article class="example example-like" id="example-38"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-244">Identify any points of discontinuity in the function <span class="process-math">\(g(x)\)</span> in Example 1.3.4. Explain why the function is discontinuous at those points.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-38" id="solution-38"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-38"><div class="solution solution-like"><div class="para" id="p-245">There's a discontinuity at <span class="process-math">\(x=3\)</span> because <span class="process-math">\(\ds \lim_{x\to 3} g(x)\)</span> doesn't exist.</div></div></div>
+</div></article><article class="example example-like" id="example-39"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-246">Use the graph to find the following:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-13.svg" role="img" class="contained" alt="This is a graph of the piecewise function \(f(x) = \begin{cases} 2^x-4 &amp; -x\lt 1 \\ \dfrac{4}{x-1}-5 &amp; 1\lt x\lt 3 \\ 2 &amp; x=3 \\ x-6 &amp; x\gt 3\end{cases}\) on \((-5,5)\)"></div> <div class="para logical" id="p-247"><ol class="lower-alpha">
+<li id="li-116"><div class="para" id="p-248"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1^+} f(x)\)</span></div></li>
+<li id="li-117"><div class="para" id="p-249"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1^-} f(x)\)</span></div></li>
+<li id="li-118"><div class="para" id="p-250"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1} f(x)\)</span></div></li>
+<li id="li-119"><div class="para" id="p-251">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x =1 \text{?}\)</span>
+</div></li>
+<li id="li-120"><div class="para" id="p-252"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} f(x)\)</span></div></li>
+<li id="li-121"><div class="para" id="p-253"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} f(x)\)</span></div></li>
+<li id="li-122"><div class="para" id="p-254"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} f(x)\)</span></div></li>
+<li id="li-123"><div class="para" id="p-255">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x =3 \text{?}\)</span>
+</div></li>
+<li id="li-124"><div class="para" id="p-256"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0^+} f(x)\)</span></div></li>
+<li id="li-125"><div class="para" id="p-257"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0^-} f(x)\)</span></div></li>
+<li id="li-126"><div class="para" id="p-258"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0} f(x)\)</span></div></li>
+<li id="li-127"><div class="para" id="p-259">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x =0 \text{?}\)</span>
+</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-39" id="solution-39"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-39"><div class="solution solution-like"><div class="para logical" id="p-260"><ol class="lower-alpha">
+<li id="li-128"><div class="para" id="p-261"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1^+} f(x) = \infty\)</span></div></li>
+<li id="li-129"><div class="para" id="p-262"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1^-} f(x) = -2\)</span></div></li>
+<li id="li-130"><div class="para" id="p-263"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1} f(x) = \text{ DNE}\)</span></div></li>
+<li id="li-131"><div class="para" id="p-264">No</div></li>
+<li id="li-132"><div class="para" id="p-265"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} f(x) = -3\)</span></div></li>
+<li id="li-133"><div class="para" id="p-266"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} f(x) = -3\)</span></div></li>
+<li id="li-134"><div class="para" id="p-267"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} f(x) = -3\)</span></div></li>
+<li id="li-135"><div class="para" id="p-268">No</div></li>
+<li id="li-136"><div class="para" id="p-269"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0^+} f(x) = -3\)</span></div></li>
+<li id="li-137"><div class="para" id="p-270"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0^-} f(x)=-3\)</span></div></li>
+<li id="li-138"><div class="para" id="p-271"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0} f(x)=-3\)</span></div></li>
+<li id="li-139"><div class="para" id="p-272">Yes</div></li>
+</ol></div></div></div>
+</div></article></section><section class="subsection" id="section-13-properties"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.3.4</span> <span class="title">Properties of Limits</span>
+</h3>
+<div class="para" id="p-273">Let <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> be continuous functions over some input interval containing <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(k\)</span> be some arbitrary constant.  Then, we have the following properties of limits:</div>
+<div class="para logical" id="p-274"><ol class="decimal">
+<li id="li-140"><div class="para" id="p-275">Constant Rule: <span class="process-math">\(\ds \lim_{x\to c} k = k\)</span>
+</div></li>
+<li id="li-141"><div class="para" id="p-276">Sum Rule: <span class="process-math">\(\ds \lim_{x\to c}\left[f(x) + g(x)\right] \)</span>
+</div></li>
+<li id="li-142"><div class="para" id="p-277">Constant Multiple Rule: <span class="process-math">\(\ds \lim_{x\to c} \left[k\cdot f(x)\right] = k\lim_{x\to c} f(x) \)</span>
+</div></li>
+<li id="li-143"><div class="para" id="p-278">Replacement Rule: If <span class="process-math">\(f(c)\)</span> is defined at <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(\ds \lim_{x\to c}f(x) = f(c)\text{.}\)</span>
+</div></li>
+<li id="li-144"><div class="para" id="p-279">Product Rule: <span class="process-math">\(\ds\lim_{x\to c} \left[f(x)\cdot g(x)\right] = \left[\lim_{x\to c} f(x)\right]\cdot\left[\lim_{x\to c}g(x)\right]\)</span>
+</div></li>
+<li id="li-145"><div class="para" id="p-280">Quotient Rule: <span class="process-math">\(\ds \lim_{x\to c} \left[\dfrac{f(x)}{g(x)}\right] = \dfrac{\ds\lim_{x\to c} f(x)}{\ds\lim_{x\to c} g(x)}\)</span> (as long as <span class="process-math">\(\ds\lim_{x\to c} g(x)\neq 0\)</span>)</div></li>
+<li id="li-146"><div class="para logical" id="p-281">
+<div class="para">If <span class="process-math">\(f(x)\)</span> can be factored as <span class="process-math">\(f(x) = h(x)\cdot k(x)\text{,}\)</span> and <span class="process-math">\(g(x)\)</span> can also be factored as <span class="process-math">\(g(x) = j(x)\cdot k(x)\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to c} \frac{f(x)}{g(x)} = \lim_{x\to c}\frac{h(x)\cdot k(x)}{j(x) \cdot k(x)} = \lim_{x\to c} \frac{h(x)}{j(x)}
+\end{equation*}
+</div>
+<div class="para">i.e. common factors may be canceled across fractions under the limit.</div>
+</div></li>
+</ol></div>
+<div class="para" id="p-282">I don't know how I missed the "Difference Rule", but it should be lumped in with the Sum Rule.</div>
+<div class="para" id="p-283">I think the Replacement Rule should read "If <span class="process-math">\(f(c)\)</span> is continuous" rather than "defined".</div>
+<article class="example example-like" id="example-40"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-284">Algebraically determine the limits of the following:</div> <div class="para logical" id="p-285"><ol class="lower-alpha">
+<li id="li-147"><div class="para" id="p-286"><span class="process-math">\(\displaystyle \ds\lim_{x\to 5} 9\)</span></div></li>
+<li id="li-148"><div class="para" id="p-287"><span class="process-math">\(\displaystyle \ds\lim_{z\to 3} (4z-5)\)</span></div></li>
+<li id="li-149"><div class="para" id="p-288"><span class="process-math">\(\displaystyle \ds\lim_{t\to -3} \dfrac{t^2-4t-21}{t+3}\)</span></div></li>
+<li id="li-150"><div class="para" id="p-289"><span class="process-math">\(\displaystyle \ds\lim_{m\to 13} \dfrac{m}{m^2+4m}\)</span></div></li>
+<li id="li-151"><div class="para" id="p-290"><span class="process-math">\(\displaystyle \ds\lim_{h\to 0} \dfrac{(3+h)^2 -9}{h}\)</span></div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-40" id="solution-40"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-40"><div class="solution solution-like">
+<div class="para logical" id="p-291"><ol class="lower-alpha">
+<li id="li-152"><div class="para" id="p-292"><span class="process-math">\(\displaystyle \ds\lim_{x\to 5} 9 = 9\)</span></div></li>
+<li id="li-153"><div class="para" id="p-293"><span class="process-math">\(\displaystyle \ds\lim_{z\to 3} (4z-5)=7\)</span></div></li>
+<li id="li-154"><div class="para" id="p-294"><span class="process-math">\(\displaystyle \ds\lim_{t\to -3} \dfrac{t^2-4t-21}{t+3}=-10\)</span></div></li>
+<li id="li-155"><div class="para" id="p-295"><span class="process-math">\(\displaystyle \ds\lim_{m\to 13} \dfrac{m}{m^2+4m}=\dfrac{1}{17}\)</span></div></li>
+<li id="li-156"><div class="para" id="p-296"><span class="process-math">\(\displaystyle \ds\lim_{h\to 0} \dfrac{(3+h)^2 -9}{h} = 6\)</span></div></li>
+</ol></div> <div class="para" id="p-297">I think these are all decent tproblems, but you can probably skip the derivative question in part e if there's not time. Especially since the next question is of the same type.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-41"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-298">Determine the limit: <span class="process-math">\(\ds \lim_{h\to 0} \dfrac{(5+h)^2-25}{h}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-41" id="solution-41"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-41"><div class="solution solution-like"><div class="para" id="p-299">10</div></div></div>
+</div></article><article class="example example-like" id="example-42"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.14</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-300">Let <span class="process-math">\(f(x) = \begin{cases} x^2 &amp; x \lt -1 \\ 1 &amp; x\geq -1\end{cases}\text{.}\)</span>  Algebraically determine the following limits and answer the questions:</div> <div class="para logical" id="p-301"><ol class="lower-alpha">
+<li id="li-157"><div class="para" id="p-302"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1^-} f(x)\)</span></div></li>
+<li id="li-158"><div class="para" id="p-303"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1^+} f(x)\)</span></div></li>
+<li id="li-159"><div class="para" id="p-304"><span class="process-math">\(\displaystyle f(-1)\)</span></div></li>
+<li id="li-160"><div class="para" id="p-305">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x = -1\text{?}\)</span>  Why?</div></li>
+<li id="li-161"><div class="para" id="p-306">Graph <span class="process-math">\(f(x)\text{.}\)</span> Do your answers make sense?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-42" id="solution-42"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-42"><div class="solution solution-like"><div class="para logical" id="p-307"><ol class="lower-alpha">
+<li id="li-162"><div class="para" id="p-308"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1^-} f(x)=1\)</span></div></li>
+<li id="li-163"><div class="para" id="p-309"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1^+} f(x)=1\)</span></div></li>
+<li id="li-164"><div class="para" id="p-310"><span class="process-math">\(\displaystyle f(-1)=1\)</span></div></li>
+<li id="li-165"><div class="para" id="p-311">Yes: <span class="process-math">\(\ds \lim_{x\to -1} f(x) = f(-1)\)</span>
+</div></li>
+<li id="li-166">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-14.svg" role="img" class="contained" alt="A graph of the piecewise function \(f(x) = \begin{cases} x^2 &amp; x \lt -1 \\ 1 &amp; x\geq -1\end{cases}\)"></div>
+<div class="para" id="p-312">Yes they do, in fact.</div>
+</li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-43"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.15</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-313">Let <span class="process-math">\(h(t) = \begin{cases} 3^t - 9 &amp; t \lt 2 \\ t^2-4 &amp; t\geq 2\end{cases}\text{.}\)</span>  Algebraically determine the following limits and answer the questions:</div> <div class="para logical" id="p-314"><ol class="lower-alpha">
+<li id="li-167"><div class="para" id="p-315"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^-} h(t)\)</span></div></li>
+<li id="li-168"><div class="para" id="p-316"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^+} h(t)\)</span></div></li>
+<li id="li-169"><div class="para" id="p-317"><span class="process-math">\(\displaystyle h(2)\)</span></div></li>
+<li id="li-170"><div class="para" id="p-318">Is <span class="process-math">\(h\)</span> continuous at <span class="process-math">\(t = 2\text{?}\)</span>  Why?</div></li>
+<li id="li-171"><div class="para" id="p-319">Graph <span class="process-math">\(f(x)\text{.}\)</span> Do your answers make sense?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-43" id="solution-43"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-43"><div class="solution solution-like"><div class="para logical" id="p-320"><ol class="lower-alpha">
+<li id="li-172"><div class="para" id="p-321"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^-} h(t)=0\)</span></div></li>
+<li id="li-173"><div class="para" id="p-322"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^+} h(t)=0\)</span></div></li>
+<li id="li-174"><div class="para" id="p-323"><span class="process-math">\(\displaystyle h(2)=0\)</span></div></li>
+<li id="li-175"><div class="para" id="p-324">Is <span class="process-math">\(h\)</span> continuous at <span class="process-math">\(t = 2\text{?}\)</span>  Why?</div></li>
+<li id="li-176">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-15.svg" role="img" class="contained" alt="A graph of the piecewise function \(h(t) = \begin{cases} 3^t - 9 &amp; t \lt 2 \\ t^2-4 &amp; t\geq 2\end{cases}\)"></div>
+<div class="para" id="p-325">Yes they do, in fact.</div>
+</li>
+</ol></div></div></div>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-12.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>
