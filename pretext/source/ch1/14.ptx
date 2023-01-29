@@ -537,6 +537,13 @@
             </ol>
         </p>
 
+        <assemblage>
+            <title>ERROR IN WORKBOOK TEXT</title>
+            <p>
+                The second bullet point should read like this: The accuracy of the output must be the same as the accuracy of the original data.
+            </p>
+        </assemblage>
+
         <example>
             <statement>
                 <p>
