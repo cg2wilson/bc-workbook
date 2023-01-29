@@ -1,0 +1,892 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-14" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Linear Functions &amp; Models</title>
+
+	<subsection xml:id="section-14-linear">
+		<title>Linear Functions</title>
+
+            <p>
+                Remember that a linear function requires two pieces of information- a starting value (<m>b</m>, the <m>y</m>-intercept), and an amount of incremental change in the independent variable (<m>m</m>, the slope of the function).  This gives us three ways to describe a linear function:
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Verbally: A function with a constant rate of change
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Graphically: There are images below
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Algebraically: <m>f(x) = mx + b</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <question>
+                <statement>
+                    <p>
+                        Given two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m>, how can we find the slope of the line between them?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <m>m = \dfrac{y_2-y_1}{x_2-x_1}</m>
+                    </p>
+                    <p>
+                        It's probably worthwhile to talk about some other forms they might see slope take.
+                    </p>
+                </solution>
+            </question>
+    </subsection>
+
+    <subsection xml:id="section-14-models">
+        <title>Linear Models</title>
+            <p>
+                For our general model, <m>f(x) = ax + b</m>, we have the following characteristics:
+            </p>
+            <sidebyside widths="25% 25% 25% 25%">
+                <image>
+                    <description>
+                        A sketch of a linear function with a positive slope.
+                    </description>
+                    <latex-image>
+                        <![CDATA[ 
+                            \begin{tikzpicture}[x = .5cm, y = .5cm]
+                                \draw (-1,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+                                \draw (0,-1)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+                                \draw[<->, smooth, samples = 10, domain = -.5:2.0] plot (\x, {\x});	
+                                \draw (1,1) node[right] {$f(x)$};
+                                \draw (1.5, 4) node {$\underline{a > 0}$};
+                            \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to\infty} f(x) = \infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to -\infty} f(x) = -\infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> is always increasing
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> has no concavity
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                <image>
+                    <description>
+                        A sketch of a linear function with a negative slope.
+                    </description>
+                    <latex-image>
+                        <![CDATA[ 
+                            \begin{tikzpicture}[x = .5cm, y = .5cm]
+                                \draw (-1,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+                                \draw (0,-1)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+                                \draw[<->, smooth, samples = 10, domain = -.5:2.0] plot (\x, {-\x + 1});
+                                \draw (.2,1) node[right] {$f(x)$};	
+                                \draw (1.5, 4) node {$\underline{a < 0}$};
+                            \end{tikzpicture}	
+                        ]]>
+                    </latex-image>
+                </image>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to \infty} f(x) = -\infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to -\infty} f(x) = \infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> is always decreasing
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> has no concavity
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+            </sidebyside>
+            <sidebyside widths="25% 25% 25% 25%">
+                <image>
+                    <description>
+                        A sketch of a linear function with a constant slope.
+                    </description>
+                    <latex-image>
+                        <![CDATA[ 
+                            \begin{tikzpicture}[x = .5cm, y = .5cm]
+                                \draw (-1,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+                                \draw (0,-1)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+                                \draw[<->, smooth, samples = 10, domain = -.5:3.0] plot (\x, {1});
+                                \draw (1.5,1) node[above] {$y = b$};
+                                \draw (1.5, 4) node {$\underline{a = 0}$};
+                            \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to \infty} f(x) = b</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to -\infty} f(x) = b</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> is always constant
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> has no concavity
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                <image>
+                    <description>
+                        A sketch of a linear function with a undefined slope.
+                    </description>
+                    <latex-image>
+                        <![CDATA[ 
+                            \begin{tikzpicture}[x = .5cm, y = .5cm]
+                                \draw (-1,0)--(3,0) node[right] {\footnotesize $x$}; %x-axis
+                                \draw (0,-1)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+                                \draw[<->] (1,-.5)--(1,2.5);
+                                \draw (2,1) node[xshift = 5pt] {$x = b$};
+                                \draw (1.5, 4) node {\underline{$a$ undefined}};
+                            \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to \infty} f(x)</m> DNE
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to -\infty} f(x)</m> DNE
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Neither increasing nor decreasing
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    No concavity
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+            </sidebyside>
+
+            <p>
+                For any given graph, the scales will change; use algebra, don't trust your eyes.
+            </p>
+    </subsection>
+
+    <subsection xml:id="section-14-elements">
+        <title>Elements of a Model</title>
+        
+        <p>
+            From now on, when we refer to a model, we are referring to a specific collection of information.  These pieces are listed below; memorize them!
+        </p>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Proper and consistent function notation
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Model coefficients rounded to <term>three</term> decimal places
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Output units
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Output description
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Input units
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Input description
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    The following table gives the percentage of new companies which remained open <m>t</m> years after beginning business.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center"> Years After Opening</cell>
+                        <cell halign="center">5</cell>
+                        <cell halign="center">6</cell>
+                        <cell halign="center">7</cell>
+                        <cell halign="center">8</cell>
+                        <cell halign="center">9</cell>
+                        <cell halign="center">10</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Companies Still Open (in %)</cell>
+                        <cell halign="center">50</cell>
+                        <cell halign="center">47</cell>
+                        <cell halign="center">44</cell>
+                        <cell halign="center">41</cell>
+                        <cell halign="center">38</cell>
+                        <cell halign="center">35</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                               Fill in the new inputs if we align the data so that the fifth year corresponds to an input of zero. 
+                            </p>
+                            <tabular>
+                                <row>
+                                    <cell halign="center"> Years After Opening</cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                    <cell halign="center"></cell>
+                                </row>
+                                <row>
+                                    <cell halign="center">Companies Still Open (in %)</cell>
+                                    <cell halign="center">50</cell>
+                                    <cell halign="center">47</cell>
+                                    <cell halign="center">44</cell>
+                                    <cell halign="center">41</cell>
+                                    <cell halign="center">38</cell>
+                                    <cell halign="center">35</cell>
+                                </row>
+                            </tabular>
+                        </li>
+                        <li>
+                            <p>
+                               Use the aligned data to create a complete model. 
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                               Fill in the new inputs if we align the data so that the fifth year corresponds to an input of zero. 
+                            </p>
+                            <tabular>
+                                <row>
+                                    <cell halign="center"> Years After Opening</cell>
+                                    <cell halign="center">0</cell>
+                                    <cell halign="center">1</cell>
+                                    <cell halign="center">2</cell>
+                                    <cell halign="center">3</cell>
+                                    <cell halign="center">4</cell>
+                                    <cell halign="center">5</cell>
+                                </row>
+                                <row>
+                                    <cell halign="center">Companies Still Open (in %)</cell>
+                                    <cell halign="center">50</cell>
+                                    <cell halign="center">47</cell>
+                                    <cell halign="center">44</cell>
+                                    <cell halign="center">41</cell>
+                                    <cell halign="center">38</cell>
+                                    <cell halign="center">35</cell>
+                                </row>
+                            </tabular>
+                        </li>
+                        <li>
+                            <p>
+                               <m>C(t) = -3t + 50</m> percent of companies still open, <m>t+5</m> years after opening.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <definition>
+            <title>Extrapolation</title>
+            <idx><h>Extrapolation</h></idx>
+            
+            <statement>
+                <p>
+                    When using a model, we say that data is <term>extrapolated</term> if we find an output value from outside the model's input range.
+                </p>
+            </statement>
+        </definition>
+
+        <definition>
+            <title>Interpolation</title>
+            <idx><h>Interpolation</h></idx>
+            
+            <statement>
+                <p>
+                    When using a model, we say that data is <term>interpolated</term> if we find an output value from inside the model's input range.
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    In the example above, predict the number of companies open in the twelfth year of operation.  Is this extrapolation or interpolation?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>C(7) = 29%</m>. This is extrapolation
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Do the same, but after 8.5 years after opening.  Is this extrapolation or interpolation?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>C(3.5) = 39.5%</m>. This is interpolation
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The amount of electricity sold by a power company in year <m>x</m> is given below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Year</cell>
+                        <cell halign="center">2003</cell>
+                        <cell halign="center">2004</cell>
+                        <cell halign="center">2005</cell>
+                        <cell halign="center">2006</cell>
+                        <cell halign="center">2007</cell>
+                        <cell halign="center">2008</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Retail Sales (in quadrillion kWh)</cell>
+                        <cell halign="center">1.2</cell>
+                        <cell halign="center">1.23</cell>
+                        <cell halign="center">1.27</cell>
+                        <cell halign="center">1.3</cell>
+                        <cell halign="center">1.33</cell>
+                        <cell halign="center">1.35</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Find a <term>complete</term> linear model to fit the data.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Write an interpretation the slope of the linear model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                When did retail sales first exceed 1.4 quadrillion kWh?  Is this interpolation or extrapolation?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>S(x)=0.031x - 60.604</m> quadrillion kWh of electricity sold by a power company, in year <m>x</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The retail sales of electricity is increasing by 0.031 quadrillion kWh per year.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In 2010; this is extrapolation.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    This example should probably take a little bit of time. You're doing a few things that are (in theory) new to the students: using the calculator to create a regression, reading the values from the calculator to write the appropriate equation, writing an interpretation, and potentially using solver. 
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="section-14-alignment">
+        <title>Data Alignment</title>
+        
+        <p>
+            When using an input value of years, alignment should (usually) happen so that the first year given corresponds to an input of zero.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Find the complete linear model to fit the data of the previous example, aligning the input so that the year 2003 corresponds to an input of zero.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>S(x)=0.031x +1.203</m> quadrillion kWh of electricity sold by a power company, <m>x</m> years since 2003.
+                </p>
+                <p>
+                    This is a really good opportunity to highlight what changes and what stays the same when you modify alignments. 
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="section-14-numerical">
+        <title>Numerical Considerations</title>
+        
+        <p>
+            Since numerical approximations can vary, we will use the following guidelines:
+        </p>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Use common sense; if a model outputs something like ''2.5 people'', we would round to 3 people.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The accuracy of the output must be the same as the original model's accuracy.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        All answers must have proper units; answers without labels are useless.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If arriving at your answer requires multiple steps, do not round until the final answer.
+                    </p>
+                </li>
+            </ol>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    The world's daily demand of oil was recorded in various years, and is listed below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Year</cell>
+                        <cell halign="center">2004</cell>
+                        <cell halign="center">2005</cell>
+                        <cell halign="center">2006</cell>
+                        <cell halign="center">2007</cell>
+                        <cell halign="center">2008</cell>
+                        <cell halign="center">2009</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Oil Demand (in million barrels)</cell>
+                        <cell halign="center">82.327</cell>
+                        <cell halign="center">83.652</cell>
+                        <cell halign="center">84.622</cell>
+                        <cell halign="center">85.385</cell>
+                        <cell halign="center">86.384</cell>
+                        <cell halign="center">87.698</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Based on the scatterplot, why is a linear model best?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Align the data so that the year 2000 corresponds to an input of 0, and find the complete linear model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                 Estimate the demand in the year 2015.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                The data looks mostly like a line
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) = 1.023x + 78.360</m> million barrels of oil demanded, <m>x</m> years since 2000.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                 <m>f(15) = 93.709</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Expenditure on pets in the United States was recorded over the span of several years, and is recorded in the table below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Year</cell>
+                        <cell halign="center">1994</cell>
+                        <cell halign="center">1996</cell>
+                        <cell halign="center">1998</cell>
+                        <cell halign="center">2001</cell>
+                        <cell halign="center">2002</cell>
+                        <cell halign="center">2003</cell>
+                        <cell halign="center">2004</cell>
+                        <cell halign="center">2005</cell>
+                        <cell halign="center">2006</cell>
+                        <cell halign="center">2007</cell>
+                        <cell halign="center">2008</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Expenditure (billion USD)</cell>
+                        <cell halign="center">17</cell>
+                        <cell halign="center">21</cell>
+                        <cell halign="center">23</cell>
+                        <cell halign="center">28.5</cell>
+                        <cell halign="center">29.5</cell>
+                        <cell halign="center">32.4</cell>
+                        <cell halign="center">34.4</cell>
+                        <cell halign="center">36.3</cell>
+                        <cell halign="center">38.5</cell>
+                        <cell halign="center">41.2</cell>
+                        <cell halign="center">43.4</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Align the data so that the year 1994 corresponds to an input of zero, and find the complete linear model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use the model to estimate the expenditure in the year 2013.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>E(t) = 1.855t + 16.202</m> billion dollars (US) expenditure on pets in the United States, <m>t</m> years since 1994
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>E(19) = 51.5</m> billion dollars
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    Students tend to be confused about the rounding here; be sure to emphasize that the output needs to be rounded to the tenths place because of the data rounding.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The number of successful tax audits performed by a company between 2000 and 2006 can be modeled by <m>A(t) = -83.9t + 1063</m> audits, where <m>t</m> is the number of years since 2000.  
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Give the rate of change of <m>A</m>. Include units.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Evaluate <m>A(0)</m>.  Write a sentence interpreting your answer.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the number of successful audits in 2005.  Is this interpolation or extrapolation?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                 Find the number of successful audits in 2010.  is this interpolation or extrapolation?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>-83.9</m> audits per year
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>A(0) =1063</m>. In 2000, there were 1063 successful audits.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                644; interpolation
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                 224; extrapolation
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The population of a town in selected years is given below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Year</cell>
+                        <cell halign="center">2005</cell>
+                        <cell halign="center">2006</cell>
+                        <cell halign="center">2007</cell>
+                        <cell halign="center">2008</cell>
+                        <cell halign="center">2009</cell>
+                        <cell halign="center">2010</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Population (in thousands)</cell>
+                        <cell halign="center">125.2</cell>
+                        <cell halign="center">128.7</cell>
+                        <cell halign="center">132.4</cell>
+                        <cell halign="center">136</cell>
+                        <cell halign="center">139.8</cell>
+                        <cell halign="center">143.6</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Find a complete model for the population <m>P</m> of the town in year <m>y</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                According to your model, what is the constant rate of change of the population of the town?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use your model to predict the population of the town in 2015.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>P(y) = 3.683y + 106.662</m> thousand people gives the population of a town, <m>y</m> years since 2000.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3.683 thousand people per year
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>P(15) = 161.9</m> thousand people
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Honda engineers are designing a new car, and are measuring the distance it takes the car to come to a complete stop on dry pavement.  Their measurements are given below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Speed (mph)</cell>
+                        <cell halign="center">55</cell>
+                        <cell halign="center">60</cell>
+                        <cell halign="center">65</cell>
+                        <cell halign="center">70</cell>
+                        <cell halign="center">75</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Distance (ft)</cell>
+                        <cell halign="center">77.6</cell>
+                        <cell halign="center">131.4</cell>
+                        <cell halign="center">186.3</cell>
+                        <cell halign="center">236.7</cell>
+                        <cell halign="center">289.3</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Find a complete model for the braking distance of the car.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use your model to find the braking distance needed when the car is traveling at 77 miles per hour; write your answer using function notation.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find another complete model, aligning the data so that a speed of 50 mph corresponds to an input of 0.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Repeat part (b)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                How fast is the car traveling if it requires 156 ft to come to a complete stop?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>f(x) = 10.574x -503.05</m> feet braking distance required when the car's speed is <m>x</m> miles per hour
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(77)=311.1</m> feet
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) = 10.574x + 25.65</m> feet braking distance required when the car's speed is <m>x</m> miles per hour
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(27) = 311.1</m> feet
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                62.3 miles per hour
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+</section>
