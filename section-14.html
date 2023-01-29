@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>1743 Workbook: Linear Functions &amp; Models</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="1743 Workbook">
+<meta property="book:author" content="Cory Wilson">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="workbook-1743.html"><span class="title">1743 Workbook</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-13.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch1.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-11.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Functions: Four Representations</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-11.html#section-11-representations" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Representations of Change</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-functions-and-reps" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Functions &amp; Representations</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-models" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Model Output and Units of measure</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-12.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Function Behavior and End Behavior Limits</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-12.html#section-12-descriptions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Descriptions of Function Behavior</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-direction-curvature" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Direction and Curvature</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-limits-end-behavior" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Limits and End Behavior</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-13.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Function Behavior and End Behavior Limits</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-13.html#section-13-motivating" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Motivating Example</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-left-right-limits" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Left/Right Hand Limit</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-continuity" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Continuity</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-properties" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Properties of Limits</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="section-14.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Linear Functions &amp; Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-14.html#section-14-linear" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-models" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Linear Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-elements" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Elements of a Model</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-alignment" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Data Alignment</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-numerical" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Numerical Considerations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-14"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Linear Functions &amp; Models</span>
+</h2>
+<section class="subsection" id="section-14-linear"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.1</span> <span class="title">Linear Functions</span>
+</h3>
+<div class="para" id="p-326">Remember that a linear function requires two pieces of information- a starting value (<span class="process-math">\(b\text{,}\)</span> the <span class="process-math">\(y\)</span>-intercept), and an amount of incremental change in the independent variable (<span class="process-math">\(m\text{,}\)</span> the slope of the function).  This gives us three ways to describe a linear function:</div>
+<div class="para logical" id="p-327"><ul class="disc">
+<li id="li-177"><div class="para" id="p-328">Verbally: A function with a constant rate of change</div></li>
+<li id="li-178"><div class="para" id="p-329">Graphically: There are images below</div></li>
+<li id="li-179"><div class="para" id="p-330">Algebraically: <span class="process-math">\(f(x) = mx + b\)</span>
+</div></li>
+</ul></div>
+<article class="question example-like" id="question-1"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-331">Given two points <span class="process-math">\((x_1,y_1)\)</span> and <span class="process-math">\((x_2,y_2)\text{,}\)</span> how can we find the slope of the line between them?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like">
+<div class="para" id="p-332"><span class="process-math">\(m = \dfrac{y_2-y_1}{x_2-x_1}\)</span></div> <div class="para" id="p-333">It's probably worthwhile to talk about some other forms they might see slope take.</div>
+</div></div>
+</div></article></section><section class="subsection" id="section-14-models"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.2</span> <span class="title">Linear Models</span>
+</h3>
+<div class="para" id="p-334">For our general model, <span class="process-math">\(f(x) = ax + b\text{,}\)</span> we have the following characteristics:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:25%;"><img src="generated/latex-image/image-16.svg" role="img" class="contained" alt="A sketch of a linear function with a positive slope."></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="p-335"><ul class="disc">
+<li id="li-180"><div class="para" id="p-336"><span class="process-math">\(\displaystyle \ds \lim_{x\to\infty} f(x) = \infty\)</span></div></li>
+<li id="li-181"><div class="para" id="p-337"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} f(x) = -\infty\)</span></div></li>
+<li id="li-182"><div class="para" id="p-338">
+<span class="process-math">\(f\)</span> is always increasing</div></li>
+<li id="li-183"><div class="para" id="p-339">
+<span class="process-math">\(f\)</span> has no concavity</div></li>
+</ul></div></div>
+<div class="sbspanel top" style="width:25%;"><img src="generated/latex-image/image-17.svg" role="img" class="contained" alt="A sketch of a linear function with a negative slope."></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="p-340"><ul class="disc">
+<li id="li-184"><div class="para" id="p-341"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} f(x) = -\infty\)</span></div></li>
+<li id="li-185"><div class="para" id="p-342"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} f(x) = \infty\)</span></div></li>
+<li id="li-186"><div class="para" id="p-343">
+<span class="process-math">\(f\)</span> is always decreasing</div></li>
+<li id="li-187"><div class="para" id="p-344">
+<span class="process-math">\(f\)</span> has no concavity</div></li>
+</ul></div></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:25%;"><img src="generated/latex-image/image-18.svg" role="img" class="contained" alt="A sketch of a linear function with a constant slope."></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="p-345"><ul class="disc">
+<li id="li-188"><div class="para" id="p-346"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} f(x) = b\)</span></div></li>
+<li id="li-189"><div class="para" id="p-347"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} f(x) = b\)</span></div></li>
+<li id="li-190"><div class="para" id="p-348">
+<span class="process-math">\(f\)</span> is always constant</div></li>
+<li id="li-191"><div class="para" id="p-349">
+<span class="process-math">\(f\)</span> has no concavity</div></li>
+</ul></div></div>
+<div class="sbspanel top" style="width:25%;"><img src="generated/latex-image/image-19.svg" role="img" class="contained" alt="A sketch of a linear function with a undefined slope."></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="p-350"><ul class="disc">
+<li id="li-192"><div class="para" id="p-351">
+<span class="process-math">\(\ds \lim_{x\to \infty} f(x)\)</span> DNE</div></li>
+<li id="li-193"><div class="para" id="p-352">
+<span class="process-math">\(\ds \lim_{x\to -\infty} f(x)\)</span> DNE</div></li>
+<li id="li-194"><div class="para" id="p-353">Neither increasing nor decreasing</div></li>
+<li id="li-195"><div class="para" id="p-354">No concavity</div></li>
+</ul></div></div>
+</div></div>
+<div class="para" id="p-355">For any given graph, the scales will change; use algebra, don't trust your eyes.</div></section><section class="subsection" id="section-14-elements"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.3</span> <span class="title">Elements of a Model</span>
+</h3>
+<div class="para" id="p-356">From now on, when we refer to a model, we are referring to a specific collection of information.  These pieces are listed below; memorize them!</div>
+<div class="para logical" id="p-357"><ol class="decimal">
+<li id="li-196"><div class="para" id="p-358">Proper and consistent function notation</div></li>
+<li id="li-197"><div class="para" id="p-359">Model coefficients rounded to <dfn class="terminology">three</dfn> decimal places</div></li>
+<li id="li-198"><div class="para" id="p-360">Output units</div></li>
+<li id="li-199"><div class="para" id="p-361">Output description</div></li>
+<li id="li-200"><div class="para" id="p-362">Input units</div></li>
+<li id="li-201"><div class="para" id="p-363">Input description</div></li>
+</ol></div>
+<article class="example example-like" id="example-44"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-364">The following table gives the percentage of new companies which remained open <span class="process-math">\(t\)</span> years after beginning business.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Years After Opening</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+<td class="c m b0 r0 l0 t0 lines">7</td>
+<td class="c m b0 r0 l0 t0 lines">8</td>
+<td class="c m b0 r0 l0 t0 lines">9</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Companies Still Open (in %)</td>
+<td class="c m b0 r0 l0 t0 lines">50</td>
+<td class="c m b0 r0 l0 t0 lines">47</td>
+<td class="c m b0 r0 l0 t0 lines">44</td>
+<td class="c m b0 r0 l0 t0 lines">41</td>
+<td class="c m b0 r0 l0 t0 lines">38</td>
+<td class="c m b0 r0 l0 t0 lines">35</td>
+</tr>
+</table></div> <div class="para logical" id="p-365"><ol class="lower-alpha">
+<li id="li-202">
+<div class="para" id="p-366">Fill in the new inputs if we align the data so that the fifth year corresponds to an input of zero.</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Years After Opening</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Companies Still Open (in %)</td>
+<td class="c m b0 r0 l0 t0 lines">50</td>
+<td class="c m b0 r0 l0 t0 lines">47</td>
+<td class="c m b0 r0 l0 t0 lines">44</td>
+<td class="c m b0 r0 l0 t0 lines">41</td>
+<td class="c m b0 r0 l0 t0 lines">38</td>
+<td class="c m b0 r0 l0 t0 lines">35</td>
+</tr>
+</table></div>
+</li>
+<li id="li-203"><div class="para" id="p-367">Use the aligned data to create a complete model.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like"><div class="para logical" id="p-368"><ol class="lower-alpha">
+<li id="li-204">
+<div class="para" id="p-369">Fill in the new inputs if we align the data so that the fifth year corresponds to an input of zero.</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Years After Opening</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Companies Still Open (in %)</td>
+<td class="c m b0 r0 l0 t0 lines">50</td>
+<td class="c m b0 r0 l0 t0 lines">47</td>
+<td class="c m b0 r0 l0 t0 lines">44</td>
+<td class="c m b0 r0 l0 t0 lines">41</td>
+<td class="c m b0 r0 l0 t0 lines">38</td>
+<td class="c m b0 r0 l0 t0 lines">35</td>
+</tr>
+</table></div>
+</li>
+<li id="li-205"><div class="para" id="p-370">
+<span class="process-math">\(C(t) = -3t + 50\)</span> percent of companies still open, <span class="process-math">\(t+5\)</span> years after opening.</div></li>
+</ol></div></div></div>
+</div></article><article class="definition definition-like" id="definition-10"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Extrapolation.</span>
+</h4>  <div class="para" id="p-371">When using a model, we say that data is <dfn class="terminology">extrapolated</dfn> if we find an output value from outside the model's input range.</div></article><article class="definition definition-like" id="definition-11"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Interpolation.</span>
+</h4>  <div class="para" id="p-372">When using a model, we say that data is <dfn class="terminology">interpolated</dfn> if we find an output value from inside the model's input range.</div></article><article class="example example-like" id="example-45"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-373">In the example above, predict the number of companies open in the twelfth year of operation.  Is this extrapolation or interpolation?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-46" id="solution-46"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-46"><div class="solution solution-like"><div class="para" id="p-374">
+<span class="process-math">\(C(7) = 29%\text{.}\)</span> This is extrapolation</div></div></div>
+</div></article><article class="example example-like" id="example-46"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-375">Do the same, but after 8.5 years after opening.  Is this extrapolation or interpolation?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-47" id="solution-47"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-47"><div class="solution solution-like"><div class="para" id="p-376">
+<span class="process-math">\(C(3.5) = 39.5%\text{.}\)</span> This is interpolation</div></div></div>
+</div></article><article class="example example-like" id="example-47"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-377">The amount of electricity sold by a power company in year <span class="process-math">\(x\)</span> is given below.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Year</td>
+<td class="c m b0 r0 l0 t0 lines">2003</td>
+<td class="c m b0 r0 l0 t0 lines">2004</td>
+<td class="c m b0 r0 l0 t0 lines">2005</td>
+<td class="c m b0 r0 l0 t0 lines">2006</td>
+<td class="c m b0 r0 l0 t0 lines">2007</td>
+<td class="c m b0 r0 l0 t0 lines">2008</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Retail Sales (in quadrillion kWh)</td>
+<td class="c m b0 r0 l0 t0 lines">1.2</td>
+<td class="c m b0 r0 l0 t0 lines">1.23</td>
+<td class="c m b0 r0 l0 t0 lines">1.27</td>
+<td class="c m b0 r0 l0 t0 lines">1.3</td>
+<td class="c m b0 r0 l0 t0 lines">1.33</td>
+<td class="c m b0 r0 l0 t0 lines">1.35</td>
+</tr>
+</table></div> <div class="para logical" id="p-378"><ol class="lower-alpha">
+<li id="li-206"><div class="para" id="p-379">Find a <dfn class="terminology">complete</dfn> linear model to fit the data.</div></li>
+<li id="li-207"><div class="para" id="p-380">Write an interpretation the slope of the linear model.</div></li>
+<li id="li-208"><div class="para" id="p-381">When did retail sales first exceed 1.4 quadrillion kWh?  Is this interpolation or extrapolation?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-48" id="solution-48"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-48"><div class="solution solution-like">
+<div class="para logical" id="p-382"><ol class="lower-alpha">
+<li id="li-209"><div class="para" id="p-383">
+<span class="process-math">\(S(x)=0.031x - 60.604\)</span> quadrillion kWh of electricity sold by a power company, in year <span class="process-math">\(x\text{.}\)</span>
+</div></li>
+<li id="li-210"><div class="para" id="p-384">The retail sales of electricity is increasing by 0.031 quadrillion kWh per year.</div></li>
+<li id="li-211"><div class="para" id="p-385">In 2010; this is extrapolation.</div></li>
+</ol></div> <div class="para" id="p-386">This example should probably take a little bit of time. You're doing a few things that are (in theory) new to the students: using the calculator to create a regression, reading the values from the calculator to write the appropriate equation, writing an interpretation, and potentially using solver.</div>
+</div></div>
+</div></article></section><section class="subsection" id="section-14-alignment"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.4</span> <span class="title">Data Alignment</span>
+</h3>
+<div class="para" id="p-387">When using an input value of years, alignment should (usually) happen so that the first year given corresponds to an input of zero.</div>
+<article class="example example-like" id="example-48"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-388">Find the complete linear model to fit the data of the previous example, aligning the input so that the year 2003 corresponds to an input of zero.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-49" id="solution-49"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-49"><div class="solution solution-like">
+<div class="para" id="p-389">
+<span class="process-math">\(S(x)=0.031x +1.203\)</span> quadrillion kWh of electricity sold by a power company, <span class="process-math">\(x\)</span> years since 2003.</div> <div class="para" id="p-390">This is a really good opportunity to highlight what changes and what stays the same when you modify alignments.</div>
+</div></div>
+</div></article></section><section class="subsection" id="section-14-numerical"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.5</span> <span class="title">Numerical Considerations</span>
+</h3>
+<div class="para" id="p-391">Since numerical approximations can vary, we will use the following guidelines:</div>
+<div class="para logical" id="p-392"><ol class="decimal">
+<li id="li-212"><div class="para" id="p-393">Use common sense; if a model outputs something like ''2.5 people'', we would round to 3 people.</div></li>
+<li id="li-213"><div class="para" id="p-394">The accuracy of the output must be the same as the original model's accuracy.</div></li>
+<li id="li-214"><div class="para" id="p-395">All answers must have proper units; answers without labels are useless.</div></li>
+<li id="li-215"><div class="para" id="p-396">If arriving at your answer requires multiple steps, do not round until the final answer.</div></li>
+</ol></div>
+<article class="example example-like" id="example-49"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-397">The world's daily demand of oil was recorded in various years, and is listed below.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Year</td>
+<td class="c m b0 r0 l0 t0 lines">2004</td>
+<td class="c m b0 r0 l0 t0 lines">2005</td>
+<td class="c m b0 r0 l0 t0 lines">2006</td>
+<td class="c m b0 r0 l0 t0 lines">2007</td>
+<td class="c m b0 r0 l0 t0 lines">2008</td>
+<td class="c m b0 r0 l0 t0 lines">2009</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Oil Demand (in million barrels)</td>
+<td class="c m b0 r0 l0 t0 lines">82.327</td>
+<td class="c m b0 r0 l0 t0 lines">83.652</td>
+<td class="c m b0 r0 l0 t0 lines">84.622</td>
+<td class="c m b0 r0 l0 t0 lines">85.385</td>
+<td class="c m b0 r0 l0 t0 lines">86.384</td>
+<td class="c m b0 r0 l0 t0 lines">87.698</td>
+</tr>
+</table></div> <div class="para logical" id="p-398"><ol class="lower-alpha">
+<li id="li-216"><div class="para" id="p-399">Based on the scatterplot, why is a linear model best?</div></li>
+<li id="li-217"><div class="para" id="p-400">Align the data so that the year 2000 corresponds to an input of 0, and find the complete linear model.</div></li>
+<li id="li-218"><div class="para" id="p-401">Estimate the demand in the year 2015.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-50" id="solution-50"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-50"><div class="solution solution-like"><div class="para logical" id="p-402"><ol class="lower-alpha">
+<li id="li-219"><div class="para" id="p-403">The data looks mostly like a line</div></li>
+<li id="li-220"><div class="para" id="p-404">
+<span class="process-math">\(f(x) = 1.023x + 78.360\)</span> million barrels of oil demanded, <span class="process-math">\(x\)</span> years since 2000.</div></li>
+<li id="li-221"><div class="para" id="p-405"><span class="process-math">\(\displaystyle f(15) = 93.709\)</span></div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-50"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-406">Expenditure on pets in the United States was recorded over the span of several years, and is recorded in the table below.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Year</td>
+<td class="c m b0 r0 l0 t0 lines">1994</td>
+<td class="c m b0 r0 l0 t0 lines">1996</td>
+<td class="c m b0 r0 l0 t0 lines">1998</td>
+<td class="c m b0 r0 l0 t0 lines">2001</td>
+<td class="c m b0 r0 l0 t0 lines">2002</td>
+<td class="c m b0 r0 l0 t0 lines">2003</td>
+<td class="c m b0 r0 l0 t0 lines">2004</td>
+<td class="c m b0 r0 l0 t0 lines">2005</td>
+<td class="c m b0 r0 l0 t0 lines">2006</td>
+<td class="c m b0 r0 l0 t0 lines">2007</td>
+<td class="c m b0 r0 l0 t0 lines">2008</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Expenditure (billion USD)</td>
+<td class="c m b0 r0 l0 t0 lines">17</td>
+<td class="c m b0 r0 l0 t0 lines">21</td>
+<td class="c m b0 r0 l0 t0 lines">23</td>
+<td class="c m b0 r0 l0 t0 lines">28.5</td>
+<td class="c m b0 r0 l0 t0 lines">29.5</td>
+<td class="c m b0 r0 l0 t0 lines">32.4</td>
+<td class="c m b0 r0 l0 t0 lines">34.4</td>
+<td class="c m b0 r0 l0 t0 lines">36.3</td>
+<td class="c m b0 r0 l0 t0 lines">38.5</td>
+<td class="c m b0 r0 l0 t0 lines">41.2</td>
+<td class="c m b0 r0 l0 t0 lines">43.4</td>
+</tr>
+</table></div> <div class="para logical" id="p-407"><ol class="lower-alpha">
+<li id="li-222"><div class="para" id="p-408">Align the data so that the year 1994 corresponds to an input of zero, and find the complete linear model.</div></li>
+<li id="li-223"><div class="para" id="p-409">Use the model to estimate the expenditure in the year 2013.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-51" id="solution-51"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-51"><div class="solution solution-like">
+<div class="para logical" id="p-410"><ol class="lower-alpha">
+<li id="li-224"><div class="para" id="p-411">
+<span class="process-math">\(E(t) = 1.855t + 16.202\)</span> billion dollars (US) expenditure on pets in the United States, <span class="process-math">\(t\)</span> years since 1994</div></li>
+<li id="li-225"><div class="para" id="p-412">
+<span class="process-math">\(E(19) = 51.5\)</span> billion dollars</div></li>
+</ol></div> <div class="para" id="p-413">Students tend to be confused about the rounding here; be sure to emphasize that the output needs to be rounded to the tenths place because of the data rounding.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-51"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-414">The number of successful tax audits performed by a company between 2000 and 2006 can be modeled by <span class="process-math">\(A(t) = -83.9t + 1063\)</span> audits, where <span class="process-math">\(t\)</span> is the number of years since 2000.</div> <div class="para logical" id="p-415"><ol class="lower-alpha">
+<li id="li-226"><div class="para" id="p-416">Give the rate of change of <span class="process-math">\(A\text{.}\)</span> Include units.</div></li>
+<li id="li-227"><div class="para" id="p-417">Evaluate <span class="process-math">\(A(0)\text{.}\)</span>  Write a sentence interpreting your answer.</div></li>
+<li id="li-228"><div class="para" id="p-418">Find the number of successful audits in 2005.  Is this interpolation or extrapolation?</div></li>
+<li id="li-229"><div class="para" id="p-419">Find the number of successful audits in 2010.  is this interpolation or extrapolation?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-52" id="solution-52"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-52"><div class="solution solution-like"><div class="para logical" id="p-420"><ol class="lower-alpha">
+<li id="li-230"><div class="para" id="p-421">
+<span class="process-math">\(-83.9\)</span> audits per year</div></li>
+<li id="li-231"><div class="para" id="p-422">
+<span class="process-math">\(A(0) =1063\text{.}\)</span> In 2000, there were 1063 successful audits.</div></li>
+<li id="li-232"><div class="para" id="p-423">644; interpolation</div></li>
+<li id="li-233"><div class="para" id="p-424">224; extrapolation</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-52"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-425">The population of a town in selected years is given below.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Year</td>
+<td class="c m b0 r0 l0 t0 lines">2005</td>
+<td class="c m b0 r0 l0 t0 lines">2006</td>
+<td class="c m b0 r0 l0 t0 lines">2007</td>
+<td class="c m b0 r0 l0 t0 lines">2008</td>
+<td class="c m b0 r0 l0 t0 lines">2009</td>
+<td class="c m b0 r0 l0 t0 lines">2010</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Population (in thousands)</td>
+<td class="c m b0 r0 l0 t0 lines">125.2</td>
+<td class="c m b0 r0 l0 t0 lines">128.7</td>
+<td class="c m b0 r0 l0 t0 lines">132.4</td>
+<td class="c m b0 r0 l0 t0 lines">136</td>
+<td class="c m b0 r0 l0 t0 lines">139.8</td>
+<td class="c m b0 r0 l0 t0 lines">143.6</td>
+</tr>
+</table></div> <div class="para logical" id="p-426"><ol class="lower-alpha">
+<li id="li-234"><div class="para" id="p-427">Find a complete model for the population <span class="process-math">\(P\)</span> of the town in year <span class="process-math">\(y\text{.}\)</span>
+</div></li>
+<li id="li-235"><div class="para" id="p-428">According to your model, what is the constant rate of change of the population of the town?</div></li>
+<li id="li-236"><div class="para" id="p-429">Use your model to predict the population of the town in 2015.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-53" id="solution-53"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-53"><div class="solution solution-like"><div class="para logical" id="p-430"><ol class="lower-alpha">
+<li id="li-237"><div class="para" id="p-431">
+<span class="process-math">\(P(y) = 3.683y + 106.662\)</span> thousand people gives the population of a town, <span class="process-math">\(y\)</span> years since 2000.</div></li>
+<li id="li-238"><div class="para" id="p-432">3.683 thousand people per year</div></li>
+<li id="li-239"><div class="para" id="p-433">
+<span class="process-math">\(P(15) = 161.9\)</span> thousand people</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-53"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-434">Honda engineers are designing a new car, and are measuring the distance it takes the car to come to a complete stop on dry pavement.  Their measurements are given below.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Speed (mph)</td>
+<td class="c m b0 r0 l0 t0 lines">55</td>
+<td class="c m b0 r0 l0 t0 lines">60</td>
+<td class="c m b0 r0 l0 t0 lines">65</td>
+<td class="c m b0 r0 l0 t0 lines">70</td>
+<td class="c m b0 r0 l0 t0 lines">75</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Distance (ft)</td>
+<td class="c m b0 r0 l0 t0 lines">77.6</td>
+<td class="c m b0 r0 l0 t0 lines">131.4</td>
+<td class="c m b0 r0 l0 t0 lines">186.3</td>
+<td class="c m b0 r0 l0 t0 lines">236.7</td>
+<td class="c m b0 r0 l0 t0 lines">289.3</td>
+</tr>
+</table></div> <div class="para logical" id="p-435"><ol class="lower-alpha">
+<li id="li-240"><div class="para" id="p-436">Find a complete model for the braking distance of the car.</div></li>
+<li id="li-241"><div class="para" id="p-437">Use your model to find the braking distance needed when the car is traveling at 77 miles per hour; write your answer using function notation.</div></li>
+<li id="li-242"><div class="para" id="p-438">Find another complete model, aligning the data so that a speed of 50 mph corresponds to an input of 0.</div></li>
+<li id="li-243"><div class="para" id="p-439">Repeat part (b)</div></li>
+<li id="li-244"><div class="para" id="p-440">How fast is the car traveling if it requires 156 ft to come to a complete stop?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-54" id="solution-54"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-54"><div class="solution solution-like"><div class="para logical" id="p-441"><ol class="lower-alpha">
+<li id="li-245"><div class="para" id="p-442">
+<span class="process-math">\(f(x) = 10.574x -503.05\)</span> feet braking distance required when the car's speed is <span class="process-math">\(x\)</span> miles per hour</div></li>
+<li id="li-246"><div class="para" id="p-443">
+<span class="process-math">\(f(77)=311.1\)</span> feet</div></li>
+<li id="li-247"><div class="para" id="p-444">
+<span class="process-math">\(f(x) = 10.574x + 25.65\)</span> feet braking distance required when the car's speed is <span class="process-math">\(x\)</span> miles per hour</div></li>
+<li id="li-248"><div class="para" id="p-445">
+<span class="process-math">\(f(27) = 311.1\)</span> feet</div></li>
+<li id="li-249"><div class="para" id="p-446">62.3 miles per hour</div></li>
+</ol></div></div></div>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-13.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>
