@@ -665,6 +665,96 @@ var ptx_lunr_docs = [
   "number": "1.4.13",
   "title": "",
   "body": "  Honda engineers are designing a new car, and are measuring the distance it takes the car to come to a complete stop on dry pavement. Their measurements are given below.    Speed (mph)  55  60  65  70  75    Distance (ft)  77.6  131.4  186.3  236.7  289.3       Find a complete model for the braking distance of the car.    Use your model to find the braking distance needed when the car is traveling at 77 miles per hour; write your answer using function notation.    Find another complete model, aligning the data so that a speed of 50 mph corresponds to an input of 0.    Repeat part (b)    How fast is the car traveling if it requires 156 ft to come to a complete stop?           feet braking distance required when the car's speed is miles per hour     feet     feet braking distance required when the car's speed is miles per hour     feet    62.3 miles per hour      "
+},
+{
+  "id": "section-15",
+  "level": "1",
+  "url": "section-15.html",
+  "type": "Section",
+  "number": "1.5",
+  "title": "Exponential Functions & Models",
+  "body": " Exponential Functions & Models   Exponential Functions  As with the linear model, we have three descriptons of an exponential model:     Algebraic: An exponential model has ane quation of the form     Verbally: An exponential model has a constant percent change    Graphically: An exponetial model will look like the pictures below.       Exponential Models  For exponential models, we have the following information:    A sketch of an exponential function with a positive leading coefficient and .                  is always increasing     is concave up      A sketch of an exponential function with negative leading coefficient and                   is always decreasing     is concave down        A sketch of an exponential function with positive leading coefficient and                   is always decreasing     is concave up      A sketch of an exponential function with negative leading coefficient and                   is always increasing     is concave down      For us, an exponential model will always have an asymptote at     Formulas and Examples  There are two formulas which will be useful to memorize. For exponential models, we have a constant percent change; this is given above as   Percent Change (Exponential)  Percent Change     Percent Change (Other Models)  Percent Change      iPod sales were 7.68 million units in 2006, and increased by 9.1% each year between 2006 and 2008.     Write an exponential model for this situation.    Explain why the exponential model is best.    Use the model to predict the number of iPods sold in 2010.           million iPods sold, years since 2006    There's a constant percent change    10.88 million iPods sold         The population of Northern cod in a certain body of water is given in the table below.    Decade (since 1963)  0  1  2  3  4    Population (in billions)  1.72  0.63  0.24  0.085  0.032       Identify which model (linear\/exponential) is best for this data.    Find the complete model.    Find the percent change of the model.          Exponential     billion Northern cod in a body of water, decades since 1963              Early in the millennium, it was predicted that United States imports of petroleum products would be 4.81 quadrillion Btu, and increase by each year through 2020.     Find the associated exponential model.    When will imports exceed 10 quadrillion Btu?    Describe the end behavior of your model.           quadrillion Btu, imports of petroleum products, years since 2000.     years after 2000     and      In part (a), it might be a bit confusing that we're using 2 decimals for the initial value and 4 decimals for the base. This is because we are given a specific initial value (4.81) and specific percent change (5.47%). If we had to use the calculator to create the model, we would use 3 decimal places for both numbers.      According to the Social Security Advisory Board, the number of workers per beneficiary of the Social Security program was 3.3 in 1995 and is projected to decline by 1.46% each year until 2030.     Write a model for the number of workers per beneficiary from 1995 through 2030.    What does the model predict the number of workers per beneficiary will be in 2030?           workers per beneficiary in the Social Security program, years after 1995    1.97 workers per beneficiary         A social media website collected data on its users. Below are the users of a certain age and gender, as a percentage of total users.    Age (years)  27  29  31  33  35  37  39  41  43  45    Females (as %)  9.6  7.8  6.1  5.1  4.3  3.8  2.4  2.1  1.2  1.1    Males (as %)  8.8  7.6  6.0  4.6  4.0  4.4  2.7  1.9  1.5  1.3       Align the input data to the number of years after 27. Write an exponential model for the female user data.    According to the model in part (a), what is the percentage change in your model? Write a sentence interpreting your answer.    What percentage of female users are 30 years old? What about 48 years old? Are these interpolation or extrapolation?    Write the exponential model for the male user data.    According to your model in part (d), what is the percentage change in your model? Write a sentence interpreting your answer.    What percentage of male users are 30 years old? What about 48 years old?           percent female users on a social media website, years after age 27.          and . The first is interpolation, the second is extrapolation.     percent male users on a social media website, years after age 27.          and          Doubling Time and Half Life   Doubling Time  Doubling Time   For an exponential function , the doubling time is defined to be the amount of time it takes an initial quantity to double (or grow by 100%).     Half Life  Half Life   For an exponential function , the half life is defined to be the amount of time it takes an initial quantity to decay to half of its original size (or decrease by 50%).      Albuterol is used to calm bronchospasm. It has a biological half-life of 7 hours and is normally inhaled as a 1.25 mg dose.     Find a model for the amount of albuterol left in the body after an initial dose 1.25 mg.    How much albuterol is left in the body after 24 hours?           mg albuterol left in the body, hours after ingestion    0.12 mg         The amount of money Frank has in a particular investment is given by , where is the principal invested and is the amount of time (in years) the investment has been active.     If Frank began the investment 15 years ago, and currently has $25,500 in the account, what was the principal that he invested?    If Frank currently has $14,250 in the account and invested $2,500 to start, how long as the investment been active?    Compute the doubling time for an investment of $1000.    How long will it take an investment to triple instead of double?          $10367.53    29 years    11.55 years    18.31 years        "
+},
+{
+  "id": "example-54",
+  "level": "2",
+  "url": "section-15.html#example-54",
+  "type": "Example",
+  "number": "1.5.1",
+  "title": "",
+  "body": "  iPod sales were 7.68 million units in 2006, and increased by 9.1% each year between 2006 and 2008.     Write an exponential model for this situation.    Explain why the exponential model is best.    Use the model to predict the number of iPods sold in 2010.           million iPods sold, years since 2006    There's a constant percent change    10.88 million iPods sold      "
+},
+{
+  "id": "example-55",
+  "level": "2",
+  "url": "section-15.html#example-55",
+  "type": "Example",
+  "number": "1.5.2",
+  "title": "",
+  "body": "  The population of Northern cod in a certain body of water is given in the table below.    Decade (since 1963)  0  1  2  3  4    Population (in billions)  1.72  0.63  0.24  0.085  0.032       Identify which model (linear\/exponential) is best for this data.    Find the complete model.    Find the percent change of the model.          Exponential     billion Northern cod in a body of water, decades since 1963           "
+},
+{
+  "id": "example-56",
+  "level": "2",
+  "url": "section-15.html#example-56",
+  "type": "Example",
+  "number": "1.5.3",
+  "title": "",
+  "body": "  Early in the millennium, it was predicted that United States imports of petroleum products would be 4.81 quadrillion Btu, and increase by each year through 2020.     Find the associated exponential model.    When will imports exceed 10 quadrillion Btu?    Describe the end behavior of your model.           quadrillion Btu, imports of petroleum products, years since 2000.     years after 2000     and      In part (a), it might be a bit confusing that we're using 2 decimals for the initial value and 4 decimals for the base. This is because we are given a specific initial value (4.81) and specific percent change (5.47%). If we had to use the calculator to create the model, we would use 3 decimal places for both numbers.   "
+},
+{
+  "id": "example-57",
+  "level": "2",
+  "url": "section-15.html#example-57",
+  "type": "Example",
+  "number": "1.5.4",
+  "title": "",
+  "body": "  According to the Social Security Advisory Board, the number of workers per beneficiary of the Social Security program was 3.3 in 1995 and is projected to decline by 1.46% each year until 2030.     Write a model for the number of workers per beneficiary from 1995 through 2030.    What does the model predict the number of workers per beneficiary will be in 2030?           workers per beneficiary in the Social Security program, years after 1995    1.97 workers per beneficiary      "
+},
+{
+  "id": "example-58",
+  "level": "2",
+  "url": "section-15.html#example-58",
+  "type": "Example",
+  "number": "1.5.5",
+  "title": "",
+  "body": "  A social media website collected data on its users. Below are the users of a certain age and gender, as a percentage of total users.    Age (years)  27  29  31  33  35  37  39  41  43  45    Females (as %)  9.6  7.8  6.1  5.1  4.3  3.8  2.4  2.1  1.2  1.1    Males (as %)  8.8  7.6  6.0  4.6  4.0  4.4  2.7  1.9  1.5  1.3       Align the input data to the number of years after 27. Write an exponential model for the female user data.    According to the model in part (a), what is the percentage change in your model? Write a sentence interpreting your answer.    What percentage of female users are 30 years old? What about 48 years old? Are these interpolation or extrapolation?    Write the exponential model for the male user data.    According to your model in part (d), what is the percentage change in your model? Write a sentence interpreting your answer.    What percentage of male users are 30 years old? What about 48 years old?           percent female users on a social media website, years after age 27.          and . The first is interpolation, the second is extrapolation.     percent male users on a social media website, years after age 27.          and       "
+},
+{
+  "id": "definition-12",
+  "level": "2",
+  "url": "section-15.html#definition-12",
+  "type": "Definition",
+  "number": "1.5.6",
+  "title": "Doubling Time.",
+  "body": " Doubling Time  Doubling Time   For an exponential function , the doubling time is defined to be the amount of time it takes an initial quantity to double (or grow by 100%).   "
+},
+{
+  "id": "definition-13",
+  "level": "2",
+  "url": "section-15.html#definition-13",
+  "type": "Definition",
+  "number": "1.5.7",
+  "title": "Half Life.",
+  "body": " Half Life  Half Life   For an exponential function , the half life is defined to be the amount of time it takes an initial quantity to decay to half of its original size (or decrease by 50%).   "
+},
+{
+  "id": "example-59",
+  "level": "2",
+  "url": "section-15.html#example-59",
+  "type": "Example",
+  "number": "1.5.8",
+  "title": "",
+  "body": "  Albuterol is used to calm bronchospasm. It has a biological half-life of 7 hours and is normally inhaled as a 1.25 mg dose.     Find a model for the amount of albuterol left in the body after an initial dose 1.25 mg.    How much albuterol is left in the body after 24 hours?           mg albuterol left in the body, hours after ingestion    0.12 mg      "
+},
+{
+  "id": "example-60",
+  "level": "2",
+  "url": "section-15.html#example-60",
+  "type": "Example",
+  "number": "1.5.9",
+  "title": "",
+  "body": "  The amount of money Frank has in a particular investment is given by , where is the principal invested and is the amount of time (in years) the investment has been active.     If Frank began the investment 15 years ago, and currently has $25,500 in the account, what was the principal that he invested?    If Frank currently has $14,250 in the account and invested $2,500 to start, how long as the investment been active?    Compute the doubling time for an investment of $1000.    How long will it take an investment to triple instead of double?          $10367.53    29 years    11.55 years    18.31 years      "
 }
 ]
 
