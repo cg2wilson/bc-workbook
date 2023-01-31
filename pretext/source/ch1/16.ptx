@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-16" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Models in Finance</title>
+
+    <introduction>
+        <definition>
+            <title>Future Value/Present Value</title>
+            <idx><h>Future Value</h></idx>
+            <idx><h>Present Value</h></idx>
+            
+            <statement>
+                <p>
+                    The <term>future value</term> of an investment/loan at time <m>t</m> is the sum of the prevent value and all accumulated interest; this is denoted <m>F</m> or <m>FV</m>. The <term>present value</term>, denoted <m>F(0) = P</m> (principal) is the value `'today'', or at <m>t = 0</m>.
+                </p>
+            </statement>
+        </definition>
+    </introduction>
+
+	<subsection xml:id="section-16-simple-interest">
+		<title>Simple Interest</title>
+
+        <definition>
+            <title>Simple Interest</title>
+            <idx><h>Simple Interest</h></idx>
+            
+            <statement>
+                <p>
+                    <term>Simple interest</term> is the interest earned on the present value only. The rate (as a decimal) is called the <term>annual percentage rate (APR)</term> or <term>nominal rate</term>.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            We have two formulas for simple interest:
+            <md>
+                <mrow>I(t) \amp = Prt \text{ dollars} </mrow>
+                <mrow>F_s(t) \amp = P(1+rt) \text{ dollars} </mrow>
+            </md>
+            where <m>P</m> is the <term>principal</term>, <m>r</m> is the rate (as a decimal), and <m>t</m> is the time (in years).
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    A family friend offers to loan you $10,000 to cover your outlandishly high tuition this year.  She wants to earn 5.75% interest on the loan.
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                If you pay the loan back in 1 year, how much interest does the friend make?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                               What about if you pay the loan back in 3 years? 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What about 4 months?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                $575
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                               $1725 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $191.67
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    I invest $500 at 8.5%.  How much is the investment worth in 5 years?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    $700
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="section-16-discrete">
+        <title>Discretely Compounding Interest</title>
+        
+        <definition>
+            <title>Discretely Compounding Interest</title>
+            <idx><h>Discretely Compounding Interest</h></idx>
+            
+            <statement>
+                <p>
+                    <term>Discretely compounding interest</term> is interest earned on the balance at discrete time intervals
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            We have two formulas for discretely compounding interest:
+            <md>
+                <mrow>I \amp = \dfrac{r}{n}</mrow>
+                <mrow>F_d(t) \amp = P\lrpar{1 + \dfrac{r}{n}}^{nt} </mrow>
+            </md>
+            where <m>P</m> is the <term>principal</term>, <m>r</m> is the rate (as a decimal), <m>t</m> is the time (in years), and <m>n</m> is the number of compounds (in a years)
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    You take out a $16,750 loan for a new car.  Find the value of the loan (assuming no payments were made) with:
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>r = 12.5\%</m>, monthly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 6.2\%</m>, <m>n = 12</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 12.5\%</m>, yearly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 3.79\%</m>, quarterly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 3.79\%</m>, <m>n = 6</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 7.2\%</m>, daily
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                $27544.75
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $21450.75
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $26830.26
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $19477.98
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $19482.59
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $22339.80
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    I forgot to add the length of time for the loan. It's up to you to choose, but a 4-year note seems reasonable. So all of these answers will assume that period of time.
+                </p>
+            </solution>
+        </example>
+
+        <definition>
+            <title>Annual Percentage Yield</title>
+            <idx><h>Annual Percentage Yield</h></idx>
+            
+            <statement>
+                <p>
+                    The <term>annual percentage yield (APY)</term> of an investment (also called the <term>effective rate</term>) gives the return on investment in one year. APY for discretely compounding interest is calculated with the formula
+                    <me>
+                        APY_D = \left[\lrpar{1 + \dfrac{r}{n}}^n -1\right]\cdot 100\%
+                    </me>
+                    
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Calculate the APY for each of the situations from the last example.  Round each to the nearest tenth:
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>r = 12.5\%</m>, monthly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 6.2\%</m>, <m>n = 12</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 12.5\%</m>, yearly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 3.79\%</m>, quarterly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 3.79\%</m>, <m>n = 6</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>r = 7.2\%</m>, daily
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                13.2%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                6.4%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                12.5%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3.8%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3.9%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                7.5%
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    OU Federal Credit Union offers an APR of 6.35% (compounded monthly) for an investment opportunity, while First Fidelity offers you an APY of 5.95%.  Which option will give the highest return after one year?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The OUFCU option is best
+                </p>
+                <p>
+                    The idea here is to explicitly draw the connection that APR and APY are distinct. In future iterations, the numbers probably need to be much
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="section-16-continuous">
+        <title>Continuously Compounding Interest</title>
+        
+        <definition>
+            <title>Continuously Compounding Interest</title>
+                
+            
+            <statement>
+                <p>
+                    Interest earned on the balance at any given time <m>t</m> is called <term>continuously compounding interest</term>, and has the future value formula given by
+                    <me>
+                        F_c(t) = Pe^{rt}\text{ dollars}
+                    </me>
+                    where <m>P</m> is the principal, <m>r</m> is the rate, and <m>t</m> is the time.
+                </p>
+                <p>
+                    It's not typed out, but probably worth mentioning that <m>t</m> is still in years for this formula.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            We also have a formula for the APY of continuously compounding interest:
+            <me>
+                APY_c = (e^r-1)\cdot 100\%
+            </me>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Determine the amount that must be invested in the following situations to get $7000 payable in 4 years:
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                               <m>3\%</m> APR, compounded continuously 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>3.9\%</m> APR, compounded monthly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>15.1\%</m> APR, simple interest
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>10\%</m> APR, compounded weekly.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                               $6208.44 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $5990.43
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $4364.09
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                $4694.04
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    In these problems, it's important to stress that they have to show at least the setup work. If they choose to plug into their calculator and solve, they're probaly going to lose points.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Find the APY for the examples above, rounding to the nearest hundredth.
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                               <m>3\%</m> APR, compounded continuously 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>3.9\%</m> APR, compounded monthly
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>15.1\%</m> APR, simple interest
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>10\%</m> APR, compounded weekly.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                3.05%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3.97%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                15.1%
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                10.51%
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    In these problems, it's important to stress that they have to show at least the setup work. If they choose to plug into their calculator and solve, they're probaly going to lose points.
+                </p>
+            </solution>
+        </example>
+    </subsection>
+</section>
