@@ -216,14 +216,14 @@
         <assemblage>
             <title>Percent Change (Exponential)</title>
             <p>
-                Percent Change<m> = (b-1)\cdot 100%</m>
+                Percent Change<m> = (b-1)\cdot 100\%</m>
             </p>
         </assemblage>
 
         <assemblage>
             <title>Percent Change (Other Models)</title>
             <p>
-                Percent Change<m> = \dfrac{f(x_2)-f(x_1)}{x_2-x_1}</m>
+                Percent Change<m> = \dfrac{f(x_2)-f(x_1)}{f(x_1)}\cdot 100\%</m>
             </p>
         </assemblage>
 
