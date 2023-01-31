@@ -755,6 +755,141 @@ var ptx_lunr_docs = [
   "number": "1.5.9",
   "title": "",
   "body": "  The amount of money Frank has in a particular investment is given by , where is the principal invested and is the amount of time (in years) the investment has been active.     If Frank began the investment 15 years ago, and currently has $25,500 in the account, what was the principal that he invested?    If Frank currently has $14,250 in the account and invested $2,500 to start, how long as the investment been active?    Compute the doubling time for an investment of $1000.    How long will it take an investment to triple instead of double?          $10367.53    29 years    11.55 years    18.31 years      "
+},
+{
+  "id": "section-16",
+  "level": "1",
+  "url": "section-16.html",
+  "type": "Section",
+  "number": "1.6",
+  "title": "Models in Finance",
+  "body": " Models in Finance    Future Value\/Present Value  Future Value  Present Value   The future value of an investment\/loan at time is the sum of the prevent value and all accumulated interest; this is denoted or . The present value , denoted (principal) is the value `'today'', or at .      Simple Interest   Simple Interest  Simple Interest    Simple interest is the interest earned on the present value only. The rate (as a decimal) is called the annual percentage rate (APR) or nominal rate .    We have two formulas for simple interest: where is the principal , is the rate (as a decimal), and is the time (in years).    A family friend offers to loan you $10,000 to cover your outlandishly high tuition this year. She wants to earn 5.75% interest on the loan.     If you pay the loan back in 1 year, how much interest does the friend make?    What about if you pay the loan back in 3 years?    What about 4 months?          $575    $1725    $191.67         I invest $500 at 8.5%. How much is the investment worth in 5 years?    $700      Discretely Compounding Interest   Discretely Compounding Interest  Discretely Compounding Interest    Discretely compounding interest is interest earned on the balance at discrete time intervals    We have two formulas for discretely compounding interest: where is the principal , is the rate (as a decimal), is the time (in years), and is the number of compounds (in a years)    You take out a $16,750 loan for a new car. Find the value of the loan (assuming no payments were made) with:      , monthly     ,      , yearly     , quarterly     ,      , daily          $27544.75    $21450.75    $26830.26    $19477.98    $19482.59    $22339.80     I forgot to add the length of time for the loan. It's up to you to choose, but a 4-year note seems reasonable. So all of these answers will assume that period of time.     Annual Percentage Yield  Annual Percentage Yield   The annual percentage yield (APY) of an investment (also called the effective rate ) gives the return on investment in one year. APY for discretely compounding interest is calculated with the formula       Calculate the APY for each of the situations from the last example. Round each to the nearest tenth:      , monthly     ,      , yearly     , quarterly     ,      , daily          13.2%    6.4%    12.5%    3.8%    3.9%    7.5%         OU Federal Credit Union offers an APR of 6.35% (compounded monthly) for an investment opportunity, while First Fidelity offers you an APY of 5.95%. Which option will give the highest return after one year?    The OUFCU option is best  The idea here is to explicitly draw the connection that APR and APY are distinct. In future iterations, the numbers probably need to be much      Continuously Compounding Interest   Continuously Compounding Interest   Interest earned on the balance at any given time is called continuously compounding interest , and has the future value formula given by where is the principal, is the rate, and is the time.  It's not typed out, but probably worth mentioning that is still in years for this formula.    We also have a formula for the APY of continuously compounding interest:     Determine the amount that must be invested in the following situations to get $7000 payable in 4 years:      APR, compounded continuously     APR, compounded monthly     APR, simple interest     APR, compounded weekly.          $6208.44    $5990.43    $4364.09    $4694.04     In these problems, it's important to stress that they have to show at least the setup work. If they choose to plug into their calculator and solve, they're probaly going to lose points.      Find the APY for the examples above, rounding to the nearest hundredth.      APR, compounded continuously     APR, compounded monthly     APR, simple interest     APR, compounded weekly.          3.05%    3.97%    15.1%    10.51%     In these problems, it's important to stress that they have to show at least the setup work. If they choose to plug into their calculator and solve, they're probaly going to lose points.     "
+},
+{
+  "id": "definition-14",
+  "level": "2",
+  "url": "section-16.html#definition-14",
+  "type": "Definition",
+  "number": "1.6.1",
+  "title": "Future Value\/Present Value.",
+  "body": " Future Value\/Present Value  Future Value  Present Value   The future value of an investment\/loan at time is the sum of the prevent value and all accumulated interest; this is denoted or . The present value , denoted (principal) is the value `'today'', or at .   "
+},
+{
+  "id": "definition-15",
+  "level": "2",
+  "url": "section-16.html#definition-15",
+  "type": "Definition",
+  "number": "1.6.2",
+  "title": "Simple Interest.",
+  "body": " Simple Interest  Simple Interest    Simple interest is the interest earned on the present value only. The rate (as a decimal) is called the annual percentage rate (APR) or nominal rate .   "
+},
+{
+  "id": "p-550",
+  "level": "2",
+  "url": "section-16.html#p-550",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "principal "
+},
+{
+  "id": "example-61",
+  "level": "2",
+  "url": "section-16.html#example-61",
+  "type": "Example",
+  "number": "1.6.3",
+  "title": "",
+  "body": "  A family friend offers to loan you $10,000 to cover your outlandishly high tuition this year. She wants to earn 5.75% interest on the loan.     If you pay the loan back in 1 year, how much interest does the friend make?    What about if you pay the loan back in 3 years?    What about 4 months?          $575    $1725    $191.67      "
+},
+{
+  "id": "example-62",
+  "level": "2",
+  "url": "section-16.html#example-62",
+  "type": "Example",
+  "number": "1.6.4",
+  "title": "",
+  "body": "  I invest $500 at 8.5%. How much is the investment worth in 5 years?    $700   "
+},
+{
+  "id": "definition-16",
+  "level": "2",
+  "url": "section-16.html#definition-16",
+  "type": "Definition",
+  "number": "1.6.5",
+  "title": "Discretely Compounding Interest.",
+  "body": " Discretely Compounding Interest  Discretely Compounding Interest    Discretely compounding interest is interest earned on the balance at discrete time intervals   "
+},
+{
+  "id": "p-563",
+  "level": "2",
+  "url": "section-16.html#p-563",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "principal "
+},
+{
+  "id": "example-63",
+  "level": "2",
+  "url": "section-16.html#example-63",
+  "type": "Example",
+  "number": "1.6.6",
+  "title": "",
+  "body": "  You take out a $16,750 loan for a new car. Find the value of the loan (assuming no payments were made) with:      , monthly     ,      , yearly     , quarterly     ,      , daily          $27544.75    $21450.75    $26830.26    $19477.98    $19482.59    $22339.80     I forgot to add the length of time for the loan. It's up to you to choose, but a 4-year note seems reasonable. So all of these answers will assume that period of time.   "
+},
+{
+  "id": "definition-17",
+  "level": "2",
+  "url": "section-16.html#definition-17",
+  "type": "Definition",
+  "number": "1.6.7",
+  "title": "Annual Percentage Yield.",
+  "body": " Annual Percentage Yield  Annual Percentage Yield   The annual percentage yield (APY) of an investment (also called the effective rate ) gives the return on investment in one year. APY for discretely compounding interest is calculated with the formula    "
+},
+{
+  "id": "example-64",
+  "level": "2",
+  "url": "section-16.html#example-64",
+  "type": "Example",
+  "number": "1.6.8",
+  "title": "",
+  "body": "  Calculate the APY for each of the situations from the last example. Round each to the nearest tenth:      , monthly     ,      , yearly     , quarterly     ,      , daily          13.2%    6.4%    12.5%    3.8%    3.9%    7.5%      "
+},
+{
+  "id": "example-65",
+  "level": "2",
+  "url": "section-16.html#example-65",
+  "type": "Example",
+  "number": "1.6.9",
+  "title": "",
+  "body": "  OU Federal Credit Union offers an APR of 6.35% (compounded monthly) for an investment opportunity, while First Fidelity offers you an APY of 5.95%. Which option will give the highest return after one year?    The OUFCU option is best  The idea here is to explicitly draw the connection that APR and APY are distinct. In future iterations, the numbers probably need to be much   "
+},
+{
+  "id": "definition-18",
+  "level": "2",
+  "url": "section-16.html#definition-18",
+  "type": "Definition",
+  "number": "1.6.10",
+  "title": "Continuously Compounding Interest.",
+  "body": " Continuously Compounding Interest   Interest earned on the balance at any given time is called continuously compounding interest , and has the future value formula given by where is the principal, is the rate, and is the time.  It's not typed out, but probably worth mentioning that is still in years for this formula.   "
+},
+{
+  "id": "example-66",
+  "level": "2",
+  "url": "section-16.html#example-66",
+  "type": "Example",
+  "number": "1.6.11",
+  "title": "",
+  "body": "  Determine the amount that must be invested in the following situations to get $7000 payable in 4 years:      APR, compounded continuously     APR, compounded monthly     APR, simple interest     APR, compounded weekly.          $6208.44    $5990.43    $4364.09    $4694.04     In these problems, it's important to stress that they have to show at least the setup work. If they choose to plug into their calculator and solve, they're probaly going to lose points.   "
+},
+{
+  "id": "example-67",
+  "level": "2",
+  "url": "section-16.html#example-67",
+  "type": "Example",
+  "number": "1.6.12",
+  "title": "",
+  "body": "  Find the APY for the examples above, rounding to the nearest hundredth.      APR, compounded continuously     APR, compounded monthly     APR, simple interest     APR, compounded weekly.          3.05%    3.97%    15.1%    10.51%     In these problems, it's important to stress that they have to show at least the setup work. If they choose to plug into their calculator and solve, they're probaly going to lose points.   "
 }
 ]
 
