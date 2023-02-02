@@ -890,6 +890,78 @@ var ptx_lunr_docs = [
   "number": "1.6.12",
   "title": "",
   "body": "  Find the APY for the examples above, rounding to the nearest hundredth.      APR, compounded continuously     APR, compounded monthly     APR, simple interest     APR, compounded weekly.          3.05%    3.97%    15.1%    10.51%     In these problems, it's important to stress that they have to show at least the setup work. If they choose to plug into their calculator and solve, they're probaly going to lose points.   "
+},
+{
+  "id": "section-17",
+  "level": "1",
+  "url": "section-17.html",
+  "type": "Section",
+  "number": "1.7",
+  "title": "Constructed Functions",
+  "body": " Constructed Functions   Definitions     "
+},
+{
+  "id": "section-18",
+  "level": "1",
+  "url": "section-18.html",
+  "type": "Section",
+  "number": "1.8",
+  "title": "Logarithmic Functions & Models",
+  "body": " Logarithmic Functions & Models   Logarithmic Functions  We have three descriptons of a logarithmic model:     Algebraically: A logarithmic model has an equation of the form , where are constants and     Verbally: A log function has a vertical asymptotet at and continues to grow (or decay) as increase without bound.    Graphically: The graph of a log model takes a form as below.       Logarithmic Models    A sketch of a logarithmic function with a positive coefficient.                  is always increasing     is concave down      A sketch of a logarithmic function with a negative coefficient.                  is always decreasing     is concave up        Logarithmic Behavior    The percentage of viewers that have watched a DVR'd show before a certain number of days have passed is give in the table below.    Time (in days)  1  2  3  4  5  6  7  8    Viewers (in %)  46  62  76  84  91  95  98  100       Why is a logarithmic model best here? Use a scatterplot to help you develop your reasons.    Find the model corresponding to your answer in part (a). Write the complete model.    Explain why the exponential model does not work.             The average length of the ears of men after a certain age is given in the table below.    Age (in years)  0  20  70    Ear Length (in inches)  2.04  2.55  3.07       Find the complete logarithmic model for the data. Do you encounter any problems?    Align the data so that age 0 corresponds to an input of 10, and find the complete logarithmic model for the data.    Use the model to find the ear length of a 45 year old man.          Yes, we encounter a domain error.  This is a good place to remind them of the vertical asymptote for a logarithmic model.     inches ear length in men, at age     2.87 inches         The table below shows the life expectancy for women in Ireland between 1945 and 2011    Year  1945  1955  1965  1975  1985  1995  2005  2011    Expectancy (years)  65.2  71.1  73.1  74.7  77.4  78.8  79.3  80.2       Align the data so that 1940 corresponds to an input of 0.    What type of concavity does the scatter plot suggest?    Describe the end behavior suggested by the scatterplot as the input increases without bound.    Find the complete logarithmic model for the data.    Using your model, find the year in which the life expectancy for Irish women was exactly 76.3 years.    What was the life expectancy of an Irish woman in the year 1979?          There's not much to do for this one; you might want to run the model without aligning to show them the error that shows up on the calculator then explain why we would have to align this model.    Concave down    As the input increases without bound, the life expectancy increases without bound.     years life expectancy for Irish women, years after 1940     years after 1940    76.3 years        "
+},
+{
+  "id": "example-68",
+  "level": "2",
+  "url": "section-18.html#example-68",
+  "type": "Example",
+  "number": "1.8.1",
+  "title": "",
+  "body": "  The percentage of viewers that have watched a DVR'd show before a certain number of days have passed is give in the table below.    Time (in days)  1  2  3  4  5  6  7  8    Viewers (in %)  46  62  76  84  91  95  98  100       Why is a logarithmic model best here? Use a scatterplot to help you develop your reasons.    Find the model corresponding to your answer in part (a). Write the complete model.    Explain why the exponential model does not work.          "
+},
+{
+  "id": "example-69",
+  "level": "2",
+  "url": "section-18.html#example-69",
+  "type": "Example",
+  "number": "1.8.2",
+  "title": "",
+  "body": "  The average length of the ears of men after a certain age is given in the table below.    Age (in years)  0  20  70    Ear Length (in inches)  2.04  2.55  3.07       Find the complete logarithmic model for the data. Do you encounter any problems?    Align the data so that age 0 corresponds to an input of 10, and find the complete logarithmic model for the data.    Use the model to find the ear length of a 45 year old man.          Yes, we encounter a domain error.  This is a good place to remind them of the vertical asymptote for a logarithmic model.     inches ear length in men, at age     2.87 inches      "
+},
+{
+  "id": "example-70",
+  "level": "2",
+  "url": "section-18.html#example-70",
+  "type": "Example",
+  "number": "1.8.3",
+  "title": "",
+  "body": "  The table below shows the life expectancy for women in Ireland between 1945 and 2011    Year  1945  1955  1965  1975  1985  1995  2005  2011    Expectancy (years)  65.2  71.1  73.1  74.7  77.4  78.8  79.3  80.2       Align the data so that 1940 corresponds to an input of 0.    What type of concavity does the scatter plot suggest?    Describe the end behavior suggested by the scatterplot as the input increases without bound.    Find the complete logarithmic model for the data.    Using your model, find the year in which the life expectancy for Irish women was exactly 76.3 years.    What was the life expectancy of an Irish woman in the year 1979?          There's not much to do for this one; you might want to run the model without aligning to show them the error that shows up on the calculator then explain why we would have to align this model.    Concave down    As the input increases without bound, the life expectancy increases without bound.     years life expectancy for Irish women, years after 1940     years after 1940    76.3 years      "
+},
+{
+  "id": "section-19",
+  "level": "1",
+  "url": "section-19.html",
+  "type": "Section",
+  "number": "1.9",
+  "title": "Quadratic Functions & Models",
+  "body": " Quadratic Functions & Models   Quadratic Functions  As with the linear model, we have three descriptons of an exponential model:   "
+},
+{
+  "id": "section-110",
+  "level": "1",
+  "url": "section-110.html",
+  "type": "Section",
+  "number": "1.10",
+  "title": "Logistic Functions & Models",
+  "body": " Logistic Functions & Models   Logistic Functions  A logistic has the following descriptions:   "
+},
+{
+  "id": "section-111",
+  "level": "1",
+  "url": "section-111.html",
+  "type": "Section",
+  "number": "1.11",
+  "title": "Cubic Functions & Models",
+  "body": " Cubic Functions & Models   Cubic Models  As with the linear model, we have three descriptons of an exponential model:   "
 }
 ]
 
