@@ -9,6 +9,339 @@
             <p>
                 We have three descriptons of a logarithmic model:
             </p>
-            
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Algebraically: A logarithmic model has an equation of the form <m>f(x) = a\ln x + b</m>, where <m>a,b\neq 0</m> are constants and <m>x\gt 0</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Verbally: A log function has a vertical asymptotet at <m>x = 0</m> and continues to grow (or decay) as <m>x</m> increase without bound.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Graphically: The graph of a log model takes a form as below.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+    </subsection>
+
+    <subsection xml:id="section-18-models">
+        <title>Logarithmic Models</title>
+        
+        <sidebyside widths="25% 25% 25% 25%">
+            <image>
+                <description>
+                    A sketch of a logarithmic function with a positive coefficient.
+                </description>
+                <latex-image>
+                    <![CDATA[ 
+                        \begin{tikzpicture}[x = .5cm, y = .5cm]
+                            \draw (-1,0)--(5,0) node[right] {\footnotesize $x$}; %x-axis
+                            \draw (0,-3)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+                            \draw[<->, smooth, samples = 100, domain = .08:5] plot (\x, {ln(\x)});	
+                            \draw (.2,1) node[right] {$f(x)$};
+                            \draw (1.5, 4) node {$\underline{b > 0}$};
+                        \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to\infty} f(x) = \infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^+} f(x) = -\infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is always increasing
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is concave down
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            <image>
+                <description>
+                    A sketch of a logarithmic function with a negative coefficient.
+                </description>
+                <latex-image>
+                    <![CDATA[ 
+                        \begin{tikzpicture}[x = .5cm, y = .5cm]
+                            \draw (-1,0)--(5,0) node[right] {\footnotesize $x$}; %x-axis
+                            \draw (0,-3)--(0,3) node[right] {\footnotesize $y$}; %y-axis
+                            \draw[<->, smooth, samples = 100, domain = .08:5] plot (\x, {-ln(\x)});	
+                            \draw (.3,1) node[right] {$f(x)$};	
+                            \draw (1.5, 4) node {$\underline{b < 0}$};
+                        \end{tikzpicture}	
+                    ]]>
+                </latex-image>
+            </image>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to \infty} f(x) = -\infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^+} f(x) = \infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is always decreasing
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is concave up
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+        </sidebyside>
+    </subsection>
+
+    <subsection xml:id="section-18-behavior">
+        <title>Logarithmic Behavior</title>
+        
+        <example>
+            <statement>
+                <p>
+                    The percentage of viewers that have watched a DVR'd show before a certain number of days have passed is give in the table below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Time (in days)</cell>
+                        <cell halign="center">1</cell>
+                        <cell halign="center">2</cell>
+                        <cell halign="center">3</cell>
+                        <cell halign="center">4</cell>
+                        <cell halign="center">5</cell>
+                        <cell halign="center">6</cell>
+                        <cell halign="center">7</cell>
+                        <cell halign="center">8</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Viewers (in %)</cell>
+                        <cell halign="center">46</cell>
+                        <cell halign="center">62</cell>
+                        <cell halign="center">76</cell>
+                        <cell halign="center">84</cell>
+                        <cell halign="center">91</cell>
+                        <cell halign="center">95</cell>
+                        <cell halign="center">98</cell>
+                        <cell halign="center">100</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Why is a logarithmic model best here?  Use a scatterplot to help you develop your reasons.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the model corresponding to your answer in part (a). Write the complete model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Explain why the exponential model does not work.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The average length of the ears of men after a certain age is given in the table below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Age (in years)</cell>
+                        <cell halign="center">0</cell>
+                        <cell halign="center">20</cell>
+                        <cell halign="center">70</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Ear Length (in inches)</cell>
+                        <cell halign="center">2.04</cell>
+                        <cell halign="center">2.55</cell>
+                        <cell halign="center">3.07</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Find the complete logarithmic model for the data.  Do you encounter any problems?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Align the data so that age 0 corresponds to an input of 10, and find the complete logarithmic model for the data.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Use the model to find the ear length of a 45 year old man.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Yes, we encounter a domain error. 
+                            </p>
+                            <p>
+                                This is a good place to remind them of the vertical asymptote for a logarithmic model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>L(x) = 0.890 + 0.495\ln x</m> inches ear length in men, at age <m>x + 10</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                2.87 inches
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The table below shows the life expectancy for women in Ireland between 1945 and 2011
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Year</cell>
+                        <cell halign="center">1945</cell>
+                        <cell halign="center">1955</cell>
+                        <cell halign="center">1965</cell>
+                        <cell halign="center">1975</cell>
+                        <cell halign="center">1985</cell>
+                        <cell halign="center">1995</cell>
+                        <cell halign="center">2005</cell>
+                        <cell halign="center">2011</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Expectancy (years)</cell>
+                        <cell halign="center">65.2</cell>
+                        <cell halign="center">71.1</cell>
+                        <cell halign="center">73.1</cell>
+                        <cell halign="center">74.7</cell>
+                        <cell halign="center">77.4</cell>
+                        <cell halign="center">78.8</cell>
+                        <cell halign="center">79.3</cell>
+                        <cell halign="center">80.2</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Align the data so that 1940 corresponds to an input of 0.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What type of concavity does the scatter plot suggest?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Describe the end behavior suggested by the scatterplot as the input increases without bound.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the complete logarithmic model for the data.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Using your model, find the year in which the life expectancy for Irish women was exactly 76.3 years.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What was the life expectancy of an Irish woman in the year 1979?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        
+                        <li>
+                            <p>
+                                There's not much to do for this one; you might want to run the model without aligning to show them the error that shows up on the calculator then explain why we would have to align this model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Concave down
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                As the input increases without bound, the life expectancy increases without bound.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) =55.720 + 5.634\ln x</m> years life expectancy for Irish women, <m>x</m> years after 1940
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>x = 38.59</m> years after 1940
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                76.3 years
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
     </subsection>
 </section>
