@@ -9,6 +9,326 @@
             <p>
                 A logistic has the following descriptions:
             </p>
-           
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Algebraically: A logistic model has an equation of the form <m>f(x) = \dfrac{c}{1+ae^{bx}}</m> where <m>a,b\neq 0</m> are constants and <m>c \gt 0</m> is the <term>carrying capacity</term> or <term>limiting value</term>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Graphically: See below; logistics have two horizontal asymptotes at <m>y=0</m> and <m>y=c</m>
+                        </p>
+                    </li>
+                </ul>
+            </p> 
+    </subsection>
+
+    <subsection xml:id="section-110-models">
+        <title>Logistic Models</title>
+            <p>
+                For logistic models, we have the following information:
+            </p>
+            <sidebyside widths="25% 25% 25% 25%">
+            <image>
+                <description>
+                    A sketch of a logistic function with a <m>b \gt 0</m>.
+                </description>
+                <latex-image>
+                    <![CDATA[ 
+                        \begin{tikzpicture}[x = .55cm, y = .55cm]
+                            \draw[<->,dashed] (-2,0)--(2,0) node[above] {\footnotesize $y = 0$}; %x-axis / asymptote
+                            \draw[<->,dashed] (2,3)--(-2,3) node[below] {\footnotesize $y = c$}; %y = c asymptote
+                            \draw (0,-1)--(0,3.2) node[right] {\footnotesize $y$}; %y-axis
+                            \draw[<->, smooth, samples = 100, domain = -2.:2.] plot (\x, {3/(1 + exp((-3)*\x))});	
+                            \draw (1,2.5) node[below] {$f(x)$};
+                            \draw (0, 4) node {$\underline{b > 0}$};
+                        \end{tikzpicture}	
+                    ]]>
+                </latex-image>
+            </image>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to\infty} f(x) = c</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^+} f(x) = 0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is always increasing
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is concave up then down
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            <image>
+                <description>
+                    A sketch of a logarithmic function with <m>b \lt 0</m>.
+                </description>
+                <latex-image>
+                    <![CDATA[ 
+                        \begin{tikzpicture}[x = .5cm, y = .5cm]
+                            \draw[<->,dashed] (2,0)--(-2,0) node[above] {\footnotesize $y = 0$}; %x-axis / asymptote
+                            \draw[<->,dashed] (-2,3)--(2,3) node[below] {\footnotesize $y = c$}; %y = c asymptote
+                            \draw (0,-1)--(0,3.2) node[above] {\footnotesize $y$}; %y-axis
+                            \draw[<->, smooth, samples = 100, domain = -2.:2.] plot (\x, {3/(1 + exp((3)*\x))});	
+                            \draw (1,.5) node[above] {$f(x)$};
+                            \draw (0, 4.5) node {$\underline{b > 0}$};
+                        \end{tikzpicture}	
+                    ]]>
+                </latex-image>
+            </image>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to \infty} f(x) = 0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to 0^+} f(x) = c</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is always decreasing
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is concave down then up
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+        </sidebyside>
+    </subsection>
+
+    <subsection xml:id="section-110-examples">
+        <title>Examples</title>
+            
+        <example>
+            <statement>
+                <p>
+                    The number of NBA players taller than a given height are listed in the table below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Height (in inches)</cell>
+                        <cell halign="center">Number of Players</cell>
+                        <cell halign="center">Height (in inches)</cell>
+                        <cell halign="center">Number of Players</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">68"</cell>
+                        <cell halign="center">490</cell>
+                        <cell halign="center">80"</cell>
+                        <cell halign="center">203</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">70"</cell>
+                        <cell halign="center">487</cell>
+                        <cell halign="center">82"</cell>
+                        <cell halign="center">86</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">72"</cell>
+                        <cell halign="center">467</cell>
+                        <cell halign="center">84"</cell>
+                        <cell halign="center">13</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">74"</cell>
+                        <cell halign="center">423</cell>
+                        <cell halign="center">86"</cell>
+                        <cell halign="center">2</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">76"</cell>
+                        <cell halign="center">367</cell>
+                        <cell halign="center">88"</cell>
+                        <cell halign="center">1</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">78"</cell>
+                        <cell halign="center">293</cell>
+                        
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Using the scatterplot, explain why a logistic model is best for this data.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Align the data so that 68'' corresponds to an input of 0, and find the complete logistic model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Describe (using limit notation) the end behavior of the model as height increases.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                It looks like the concavity changes and there are horizontal asymptotes
+                            </p>
+                            <p>
+                                Eventually we'll have two models with concavity changes (logistic and cubic), so "concavity change" isn't sufficient to determine a logistic; whether you add the note about the asymptotes or not is up to you.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) = \dfrac{485.896}{1+0.007e^{0.462x}}</m> players in the NBA whose height is <m>x</m> inches taller than 68 inches
+                            </p>
+                            <p>
+                                It's worthwhile to do a handful of things here: 1) logistic models take calculators a long time to run, 2) the calculator will display the coefficients out of order from how we define the model- it shows alphabetical order rather than reading order, 3) just like with exponential models, we need to align because exponentials get large very fast and the calculator has a tough time with larger numbers
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to\infty} = 0</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The narrow band residential internet access, as a percentage of total residential internet access, is given below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Year</cell>
+                        <cell halign="center">Narrow Band Users (in %)</cell>
+                        <cell halign="center">Years</cell>
+                        <cell halign="center">Narrow Band Users (in %)</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">2000</cell>
+                        <cell halign="center">89.4</cell>
+                        <cell halign="center">2008</cell>
+                        <cell halign="center">9.6</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">2001</cell>
+                        <cell halign="center">80.7</cell>
+                        <cell halign="center">2009</cell>
+                        <cell halign="center">7.3</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">2002</cell>
+                        <cell halign="center">70.9</cell>
+                        <cell halign="center">2010</cell>
+                        <cell halign="center">4.3</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">2003</cell>
+                        <cell halign="center">58.3</cell>
+                        <cell halign="center">2011</cell>
+                        <cell halign="center">3</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">2004</cell>
+                        <cell halign="center">45.9</cell>
+                        <cell halign="center">2012</cell>
+                        <cell halign="center">2.5</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">2005</cell>
+                        <cell halign="center">35.3</cell>
+                        <cell halign="center">2013</cell>
+                        <cell halign="center">1.5</cell>                        
+                    </row>
+                    <row>
+                        <cell halign="center">2006</cell>
+                        <cell halign="center">21.5</cell>
+                        <cell halign="center">2014</cell>
+                        <cell halign="center">1.0</cell>                        
+                    </row>
+                    <row>
+                        <cell halign="center">2007</cell>
+                        <cell halign="center">12.2</cell>                     
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Based on the scatterplot, explain why a logistic model is best.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Align the model so that 2000 corresponds to an input of 0.  Find the complete logistic model for the data.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Write the equations for the two asymptotes.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Estimate the location of the inflection point
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Concavity change + horizontal asymptotes
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) = \dfrac{103.880}{1+0.167e^{0.510x}}</m> percent, narrow band internet users as a percentage of total residential internet access, <m>x</m> years after 2000
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>y = 103.880</m> and <m>y = 0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The inflection point is around <m>x=5</m>.
+                            </p>
+                            <p>
+                                Students might recall (or you could tell them) that the inflection point on a logistic occurs at <m>f(x) = c/2</m>; solver gives <m>x=5.67</m>. 
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
     </subsection>
 </section>
