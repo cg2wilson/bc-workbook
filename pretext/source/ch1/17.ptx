@@ -6,8 +6,300 @@
 	<subsection xml:id="section-17-definitions">
 		<title>Definitions</title>
 
+        <definition>
+            <title>Fixed Cost</title>
+            <idx><h>Fixed Cost</h></idx>            
+            <statement>
+                <p>
+                    A <term>fixed cost</term> is a cost which remains the same, no matter how much of a product is produced. 
+                </p>
+            </statement>
+        </definition>
+
+        <definition>
+            <title>Variable Cost</title>
+            <idx><h>Variable Cost</h></idx>       
+            <statement>
+                <p>
+                    A <term>variable cost</term> is a cost which changes depending on the number of units produced.
+                </p>
+            </statement>
+        </definition>
+
+        <definition>
+            <title>Total Cost</title>
+            <idx><h>Total Cost</h></idx>
+            <statement>
+                <p>
+                    The <term>total cost</term> is the sum of the fixed cost and variable cost.
+                </p>
+            </statement>
+        </definition>
+
+        <definition>
+            <title>Revenue</title>
+            <idx><h>Revenue</h></idx>
+            <statement>
+                <p>
+                    <term>Revenue</term> is the product of the selling price (per unit) and the number of units sold: <m>R = \text{price }\cdot \text{ quantity}</m>
+                </p>
+            </statement>
+        </definition>
+
+        <definition>
+            <title>Profit</title>
+            <idx><h>Profit</h></idx>
+            <statement>
+                <p>
+                    <term>Profit</term> is the difference between revenue and cost: <m>P = \text{revenue }-\text{ cost}</m>
+                </p>
+            </statement>
+        </definition>
+
+        <definition>
+            <title>Break-Even Point</title>
+            <idx><h>Break-even Point</h></idx>
+            <statement>
+                <p>
+                    The <term>break-even point</term> is the point when total cost equals total revenue, i.e. when profit is zero
+                </p>
+            </statement>
+        </definition>
+    </subsection>
+
+    <subsection xml:id="section-17-operations">
+        <title>Function Operations</title>
+        
         <p>
-            
+            There are five operations which we will need to be familiar with in order to move on.
         </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Addition: <m>h(x) = (f+g)(x) = f(x) + g(x)</m> if the output units of <m>f</m> and <m>g</m> are exactly the same.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Subtraction: <m>j(x) = (f-g)(x) = f(x) - g(x)</m> if the output units of <m>f</m> and <m>g</m> are exactly the same.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Multiplication: <m>k(x) = (fg)(x) = f(x)\cdot g(x)</m> if the output units of <m>f</m> and <m>g</m> are compatible.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Division: <m>\ell(x) = \lrpar{\dfrac{f}{g}}(x) = \dfrac{f(x)}{g(x)}</m> if the output units of <m>f</m> and <m>g</m> are compatible.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Composition: <m>m(x) = (f\circ g)(x) = f(g(x))</m> if the output units of <m>g</m> are the input units of <m>f</m>
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            Addition creates total cost from fixed and variable costs by adding the two; profit is created using subtraction.  Variable cost (and revenue) are created by multiplication, and division gives us average cost <m>\overline{C}</m>
+        </p>
+    </subsection>
+
+    <subsection xml:id="section-17-examples">
+        <title>Examples</title>
+        
+        <example>
+            <statement>
+                <p>
+                    The number of student tickets sold for a home basketball game at OU is represented by <m>S(w)</m> hundred tickets when <m>w</m> is the winning percentage of the team.  The number of non student tickets sold for the same game is represented by <m>N(w)</m> hundred tickets where <m>w</m> is the winning percentage of the team.  Combine the functions to construct a new function giving the total number of tickets sold for a home basketball game at OU.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>T(w) = (S+N)(w) = S(w) + N(w)</m> hundred tickets sold
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Sales of 12-ounce bottles of sparkling water are modeled as <m>D(x) = 287.411(0.266^x)</m> million bottles, when the price is <m>x</m> dollars per bottle.  Write a model for the revenue from the sale of 12-ounce bottles of sparkling water.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>R(x) = x(287.411(0.266^x))</m> million dollars gives revenue from sales of 12-ounce water bottles, when the price is <m>x</m> dollars per bottle.
+                </p>
+
+                <p>
+                    You'll likely need (or want) to discuss how to work with units in this example, since the unit "million dollars" doesn't explicitly show up in the question.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The profit from the supply of a certain commodity is modeled as <m>P(q) = 30 + 60\ln q</m> thousand dollars, where <m>q</m> is the number of units produced in millions.  Write a model for the average profit when <m>q</m> units are produced.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\overline{P}(q) = \dfrac{30+60\ln q}{q}</m> dollars per thousand units gives average profit from the supply of a commodity, when <m>q</m> units are produced.
+                </p>
+                <p>
+                    Average profit isn't explicitly mentioned earlier, which is more of a feature than a bug in the notes right now. This is a good opportunity to talk about how to create average-type functions (average profit, cost, revenue).
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    A travel agency offers spring break cruise packages.  The agency advertises a cruise to Cancun for $1200 per person.  To promote the cruise among student organizations on campus, the agency offers a discount for student groups selling the cruise to over 50 of their members.  The price per student will be discounted by $10 for each student in excess of 50 (for example, if an organization had 55 members go on the cruise, each of those students would pay $1150).  Write a model for the travel agency's revenue that depends on the number of students from a student organization.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>R(x) = (x+50)(1200-10x)</m> dollasr gives the travel agency's revenue when <m>x+50</m> students purchase cruise packages.
+                </p>
+                <p>
+                    The alignment can be modified if you think the wording is awkward
+                </p>
+                <p>
+                    This kind of question really gives students fits. I'm not sure the exact reason, but my suspicion is that it lies somewhere in the intersection of "no one likes word problems" and "there's a lot of information". It's perfectly fine to skip this problem, but there is a very similar (maybe identical?) problem in the optimization section (Section 4.6).
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The sales of a certain brand of backpack is modeled by <m>f(s) = 1.56s + 4.3</m> million dollars, when <m>s</m> is the number of stores that sell the brand of backpack.  The number of stores that sell the brand of backpack is modeled by <m>s(t) = 3t+5.4</m> stores, <m>t</m> months since the beginning of 2000.  Write a model for the sales of a certain brand of backpack with respect to time.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>f(t) = 4.68t + 12.724</m> million dollars gives the sales of a backpack brand, <m>t</m> months after the beginning of 2000.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The level of contamination in groundsoil is <m>f(p) = \sqrt{p}</m> parts per million when the population of the surrounding community if <m>p</m> people.  The population of the surrounding community in year <m>t</m> is modeled as <m>p(t) = 400t^2+2500</m> people, <m>t</m> years since 2000.
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Why can we use function composition?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find a model for the contamination of the groundsoil.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                The output units of <m>p</m> are the input units of <m>f</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(t) = \sqrt{400t^2 + 2500}</m> parts per million, concentration of groundsoil contamination, <m>t</m> years since 2000.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    It costs a company $19.50 to produce 150 glass bottles.  Write a model for <m>\overline{C}(q)</m>, the average cost of producing a bottle when <m>q</m> units are produced.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\overline{C}(q) = 0.13</m> dollars per bottle gives the average cost of producing a bottle when <m>q</m> units are produced.
+                </p>
+                <p>
+                    I'm not a big fan of this question; it's perfectly fine to skip it. It's going away in the next iteration anyway.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Write the following functions as composite functions, and then evaluate the composite at an input of 2.
+                </p>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>f(t) = 3e^t</m>, <m>t(p) = 4p^2</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>h(p) = \dfrac{4}{p}</m>, <m>p(t) = 1 + 3e^{-0.5t}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>g(x) = \sqrt{7x^2}</m>, <m>x(w) = 4e^w</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>c(x) = 3x^2-2x+5</m>, <m>x(t) = 2e^t</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                <m>f(p) = 3e^{4p^2}</m>, <m>f(2) = 26658331.56</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>h(t) = \dfrac{4}{1+3e^{-0.5t}}</m>, <m>h(2) = 1.90</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>g(w) = \sqrt{112e^{2w}}</m>, <m>g(2) = 78.20</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>c(t) = 12e^{2t}-4e^t + 5</m>, <m>c(2) = 630.62</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
     </subsection>
 </section>
