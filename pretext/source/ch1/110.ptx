@@ -13,7 +13,7 @@
                 <ul>
                     <li>
                         <p>
-                            Algebraically: A logistic model has an equation of the form <m>f(x) = \dfrac{c}{1+ae^{bx}}</m> where <m>a,b\neq 0</m> are constants and <m>c \gt 0</m> is the <term>carrying capacity</term> or <term>limiting value</term>
+                            Algebraically: A logistic model has an equation of the form <m>f(x) = \dfrac{c}{1+ae^{-bx}}</m> where <m>a,b\neq 0</m> are constants and <m>c \gt 0</m> is the <term>carrying capacity</term> or <term>limiting value</term>
                         </p>
                     </li>
                     <li>

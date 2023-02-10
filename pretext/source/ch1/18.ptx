@@ -13,7 +13,7 @@
                 <ul>
                     <li>
                         <p>
-                            Algebraically: A logarithmic model has an equation of the form <m>f(x) = a\ln x + b</m>, where <m>a,b\neq 0</m> are constants and <m>x\gt 0</m>
+                            Algebraically: A logarithmic model has an equation of the form <m>f(x) = a + b\ln x</m>, where <m>b\neq 0</m> are constants and <m>x\gt 0</m>
                         </p>
                     </li>
                     <li>
@@ -171,7 +171,32 @@
             </statement>
             <solution>
                 <p>
-                    
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Concave down only + increasing
+                            </p>
+                            <p>
+                                The appearance of a vertical asymptote would be telling, but it's not entirely clear in this scatterplot that that's happening.
+                            </p>
+                            <p>
+                                Technically, a logarithmic model isn't best here either (because there is an asymptote at <m>y=100</m>). However, since students haven't learned logistic models at this point in the class, a logarithmic is the best that we have. It could be useful to come back and analyze this question more during/after Section 1.10.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) = 45.536 + 27.131\ln x</m> viewers (in %) that have watched a DVR'd show after <m>x</m> days have passed
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Answers vary
+                            </p>
+                            <p>
+                                The answers should mention the characteristics of an exponential: concave up and always increasing. But the more important reason, based on the data, is that exponential growth is not displayed in the scatterplot.
+                            </p>
+                        </li>
+                    </ol>
                 </p>
             </solution>
         </example>
