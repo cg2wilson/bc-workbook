@@ -1069,7 +1069,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.9",
   "title": "Quadratic Functions & Models",
-  "body": " Quadratic Functions & Models   Quadratic Functions  As with the linear model, we have three descriptons of an exponential model:   "
+  "body": " Quadratic Functions & Models   Quadratic Models  The model is given by , where are constants ( ). The function has an absolute maximum if , and absolute minimum if .    A sketch of a quadratic function with a positive leading coefficient.                  is decreasing then increasing     is concave up      A sketch of a quadratic function with a negative leading coefficient.                  is increasing then decreasing     is concave down        Choosing Models  At this point, we have five models to choose from when analyzing a data set. The process of choosing a model should go as follows:     Does the scatterplot show any sort of concavity? If yes, then go to the next step. If not, try a linear model.    If the scatterplot shows concavity, does it appear to change concavity? If yes, then the model could be logistic or cubic. If not, then the model could be exponential, logarithmic, or quadratic.     If the scatterplot changes concavity, then does it have an asymptote? If yes, then the model is logistic. If no, then the model is cubic.    If the scatterplot does not change concavity, then look at the end behavior and for asymptotes. If there is an asymptote at , then the model is logarithmic; if it is at , then the model is exponential; if there is no asymptote, then it is quadratic.       If it is still difficult to determine between exponential and quadratic, then use the method of second differences (described below). If second differences gives roughly constant values, then the model is quadratic; if it does not, then, it is exponential.    If in doubt, one can develop multiple models and compare the fit of each model against the data.    It is never a bad idea to apply common sense to models.       Draw a decision tree\/diagram for choosing a model.    This is left to students  I recommend students do this one for themselves. It's helpful to have, and writing it themselves will hopefully make it stick better.      The table below shows the profit (in millions of dollars) that American Airlines makes on tickets between Dallas and Chicago when tickets are set at a certain price:    Ticket Price (dollars)  200  250  300  350  400  450    Profit (million dollars)  3.08  3.52  3.76  3.82  3.7  3.38       Give two reasons why a quadratic model is more appropriate than a log or exponential model.    Find a quadratic model for the data.    Why doesn't the airline profit increase as the ticket price increases?    At what price does the airline begin posting a loss?          Change in direction and only concave down  It's worthwhile to remind students that \"change in direction\" and \"has a vertex\/maximum\/minimum\" are considered equivalent when we ask these kinds of questions on the test.     million dollars profit from ticket sales, when tickets are dollars  I keep forgetting to put some kind of proviso like \"use 4 decimal places in your model\". It should exist.    Higher ticket prices means less people purchase tickets, so there's less profit.    $660.75         The table below gives the braking distance required for a vehicle to come to a complete stop, given the initial velocity of the vehicle.    Speed (mph)  10  20  30  40  50  60  70  80  90    Distance (feet)  27  63  109  164  229  304  388  481  584       Find the second differences of the data above.    Find a quadratic model for stopping distance.    What other factors besides the initial speed would impact the stopping distance?    What speed is the vehicle moving if its braking distance is exactly 412 feet? Round your answer to two decimal places, if needed.          10, 9, 10, 10, 9, 9, 10  Ideally you'd be writing the second differences in some sort of row-by-row pattern; I can't figure out how to make it show up here, though.     feet distance required to stop, when initial velocity is miles per hour    Answers vary    72.71 mph         The ratios of public school students to instructional computers with Internet access for years between 1998 and 2004 are given below:    Year  1998  1999  2000  2001  2002  2003  2004    Ratio  9.1  6.1  3.6  2.4  1.8  1.4  1.8       Align the input so that 1998 corresponds to an input of 0.    Write the complete quadratic model for the data.    Write the complete exponential model for the data.    Which model best fits the data: (b) or (c)?    Give two reasons why an exponential model might be best for this data.          Align the input so that 1998 corresponds to an input of 0.     gives the ratio of public school students to instructional computers with internet access, years after 1998     gives the ratio of public school students to instructional computers with internet access, years after 1998    Based on second differences, the exponential model.    1) Second differences aren't consisent, and 2) The graph is concave up only        "
+},
+{
+  "id": "example-79",
+  "level": "2",
+  "url": "section-19.html#example-79",
+  "type": "Example",
+  "number": "1.9.1",
+  "title": "",
+  "body": "  Draw a decision tree\/diagram for choosing a model.    This is left to students  I recommend students do this one for themselves. It's helpful to have, and writing it themselves will hopefully make it stick better.   "
+},
+{
+  "id": "example-80",
+  "level": "2",
+  "url": "section-19.html#example-80",
+  "type": "Example",
+  "number": "1.9.2",
+  "title": "",
+  "body": "  The table below shows the profit (in millions of dollars) that American Airlines makes on tickets between Dallas and Chicago when tickets are set at a certain price:    Ticket Price (dollars)  200  250  300  350  400  450    Profit (million dollars)  3.08  3.52  3.76  3.82  3.7  3.38       Give two reasons why a quadratic model is more appropriate than a log or exponential model.    Find a quadratic model for the data.    Why doesn't the airline profit increase as the ticket price increases?    At what price does the airline begin posting a loss?          Change in direction and only concave down  It's worthwhile to remind students that \"change in direction\" and \"has a vertex\/maximum\/minimum\" are considered equivalent when we ask these kinds of questions on the test.     million dollars profit from ticket sales, when tickets are dollars  I keep forgetting to put some kind of proviso like \"use 4 decimal places in your model\". It should exist.    Higher ticket prices means less people purchase tickets, so there's less profit.    $660.75      "
+},
+{
+  "id": "example-81",
+  "level": "2",
+  "url": "section-19.html#example-81",
+  "type": "Example",
+  "number": "1.9.3",
+  "title": "",
+  "body": "  The table below gives the braking distance required for a vehicle to come to a complete stop, given the initial velocity of the vehicle.    Speed (mph)  10  20  30  40  50  60  70  80  90    Distance (feet)  27  63  109  164  229  304  388  481  584       Find the second differences of the data above.    Find a quadratic model for stopping distance.    What other factors besides the initial speed would impact the stopping distance?    What speed is the vehicle moving if its braking distance is exactly 412 feet? Round your answer to two decimal places, if needed.          10, 9, 10, 10, 9, 9, 10  Ideally you'd be writing the second differences in some sort of row-by-row pattern; I can't figure out how to make it show up here, though.     feet distance required to stop, when initial velocity is miles per hour    Answers vary    72.71 mph      "
+},
+{
+  "id": "example-82",
+  "level": "2",
+  "url": "section-19.html#example-82",
+  "type": "Example",
+  "number": "1.9.4",
+  "title": "",
+  "body": "  The ratios of public school students to instructional computers with Internet access for years between 1998 and 2004 are given below:    Year  1998  1999  2000  2001  2002  2003  2004    Ratio  9.1  6.1  3.6  2.4  1.8  1.4  1.8       Align the input so that 1998 corresponds to an input of 0.    Write the complete quadratic model for the data.    Write the complete exponential model for the data.    Which model best fits the data: (b) or (c)?    Give two reasons why an exponential model might be best for this data.          Align the input so that 1998 corresponds to an input of 0.     gives the ratio of public school students to instructional computers with internet access, years after 1998     gives the ratio of public school students to instructional computers with internet access, years after 1998    Based on second differences, the exponential model.    1) Second differences aren't consisent, and 2) The graph is concave up only      "
 },
 {
   "id": "section-110",
@@ -1081,27 +1117,27 @@ var ptx_lunr_docs = [
   "body": " Logistic Functions & Models   Logistic Functions  A logistic has the following descriptions:     Algebraically: A logistic model has an equation of the form where are constants and is the carrying capacity or limiting value     Graphically: See below; logistics have two horizontal asymptotes at and        Logistic Models  For logistic models, we have the following information:    A sketch of a logistic function with a .                  is always increasing     is concave up then down      A sketch of a logarithmic function with .                  is always decreasing     is concave down then up        Examples    The number of NBA players taller than a given height are listed in the table below.    Height (in inches)  Number of Players  Height (in inches)  Number of Players    68\"  490  80\"  203    70\"  487  82\"  86    72\"  467  84\"  13    74\"  423  86\"  2    76\"  367  88\"  1    78\"  293       Using the scatterplot, explain why a logistic model is best for this data.    Align the data so that 68'' corresponds to an input of 0, and find the complete logistic model.    Describe (using limit notation) the end behavior of the model as height increases.          It looks like the concavity changes and there are horizontal asymptotes  Eventually we'll have two models with concavity changes (logistic and cubic), so \"concavity change\" isn't sufficient to determine a logistic; whether you add the note about the asymptotes or not is up to you.     players in the NBA whose height is inches taller than 68 inches  It's worthwhile to do a handful of things here: 1) logistic models take calculators a long time to run, 2) the calculator will display the coefficients out of order from how we define the model- it shows alphabetical order rather than reading order, 3) just like with exponential models, we need to align because exponentials get large very fast and the calculator has a tough time with larger numbers              The narrow band residential internet access, as a percentage of total residential internet access, is given below.    Year  Narrow Band Users (in %)  Years  Narrow Band Users (in %)    2000  89.4  2008  9.6    2001  80.7  2009  7.3    2002  70.9  2010  4.3    2003  58.3  2011  3    2004  45.9  2012  2.5    2005  35.3  2013  1.5    2006  21.5  2014  1.0    2007  12.2       Based on the scatterplot, explain why a logistic model is best.    Align the model so that 2000 corresponds to an input of 0. Find the complete logistic model for the data.    Write the equations for the two asymptotes.    Estimate the location of the inflection point          Concavity change + horizontal asymptotes     percent, narrow band internet users as a percentage of total residential internet access, years after 2000     and     The inflection point is around .  Students might recall (or you could tell them) that the inflection point on a logistic occurs at ; solver gives .        "
 },
 {
-  "id": "p-729",
+  "id": "p-790",
   "level": "2",
-  "url": "section-110.html#p-729",
+  "url": "section-110.html#p-790",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "carrying capacity limiting value "
 },
 {
-  "id": "example-79",
+  "id": "example-83",
   "level": "2",
-  "url": "section-110.html#example-79",
+  "url": "section-110.html#example-83",
   "type": "Example",
   "number": "1.10.1",
   "title": "",
   "body": "  The number of NBA players taller than a given height are listed in the table below.    Height (in inches)  Number of Players  Height (in inches)  Number of Players    68\"  490  80\"  203    70\"  487  82\"  86    72\"  467  84\"  13    74\"  423  86\"  2    76\"  367  88\"  1    78\"  293       Using the scatterplot, explain why a logistic model is best for this data.    Align the data so that 68'' corresponds to an input of 0, and find the complete logistic model.    Describe (using limit notation) the end behavior of the model as height increases.          It looks like the concavity changes and there are horizontal asymptotes  Eventually we'll have two models with concavity changes (logistic and cubic), so \"concavity change\" isn't sufficient to determine a logistic; whether you add the note about the asymptotes or not is up to you.     players in the NBA whose height is inches taller than 68 inches  It's worthwhile to do a handful of things here: 1) logistic models take calculators a long time to run, 2) the calculator will display the coefficients out of order from how we define the model- it shows alphabetical order rather than reading order, 3) just like with exponential models, we need to align because exponentials get large very fast and the calculator has a tough time with larger numbers           "
 },
 {
-  "id": "example-80",
+  "id": "example-84",
   "level": "2",
-  "url": "section-110.html#example-80",
+  "url": "section-110.html#example-84",
   "type": "Example",
   "number": "1.10.2",
   "title": "",

@@ -268,7 +268,10 @@ window.MathJax = {
 </li>
 <li class="active">
 <div class="toc-item"><a href="section-19.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Quadratic Functions &amp; Models</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-19.html#section-19-quadratic" class="internal"><span class="codenumber">1.9.1</span> <span class="title">Quadratic Functions</span></a></div></li></ul>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-19.html#section-19-quadratic" class="internal"><span class="codenumber">1.9.1</span> <span class="title">Quadratic Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-19.html#section-19-choosing" class="internal"><span class="codenumber">1.9.2</span> <span class="title">Choosing Models</span></a></div></li>
+</ul>
 </li>
 <li>
 <div class="toc-item"><a href="section-110.html" class="internal"><span class="codenumber">1.10</span> <span class="title">Logistic Functions &amp; Models</span></a></div>
@@ -289,9 +292,183 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">1.9</span> <span class="title">Quadratic Functions &amp; Models</span>
 </h2>
 <section class="subsection" id="section-19-quadratic"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">1.9.1</span> <span class="title">Quadratic Functions</span>
+<span class="type">Subsection</span> <span class="codenumber">1.9.1</span> <span class="title">Quadratic Models</span>
 </h3>
-<div class="para" id="p-727">As with the linear model, we have three descriptons of an exponential model:</div></section></section></div>
+<div class="para" id="p-727">The model is given by <span class="process-math">\(f(x) = ax^2 + bx + c\text{,}\)</span> where <span class="process-math">\(a,b,c\)</span> are constants (<span class="process-math">\(a\neq 0\)</span>).  The function has an absolute maximum if <span class="process-math">\(a \lt 0\text{,}\)</span> and absolute minimum if <span class="process-math">\(a \gt 0\text{.}\)</span>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:25%;"><img src="generated/latex-image/image-26.svg" role="img" class="contained" alt="A sketch of a quadratic function with a positive leading coefficient."></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="p-728"><ul class="disc">
+<li id="li-413"><div class="para" id="p-729"><span class="process-math">\(\displaystyle \ds \lim_{x\to\infty} f(x) = \infty\)</span></div></li>
+<li id="li-414"><div class="para" id="p-730"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} f(x) = \infty\)</span></div></li>
+<li id="li-415"><div class="para" id="p-731">
+<span class="process-math">\(f\)</span> is decreasing then increasing</div></li>
+<li id="li-416"><div class="para" id="p-732">
+<span class="process-math">\(f\)</span> is concave up</div></li>
+</ul></div></div>
+<div class="sbspanel top" style="width:25%;"><img src="generated/latex-image/image-27.svg" role="img" class="contained" alt="A sketch of a quadratic function with a negative leading coefficient."></div>
+<div class="sbspanel top" style="width:25%;"><div class="para logical" id="p-733"><ul class="disc">
+<li id="li-417"><div class="para" id="p-734"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} f(x) = -\infty\)</span></div></li>
+<li id="li-418"><div class="para" id="p-735"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} f(x) = -\infty\)</span></div></li>
+<li id="li-419"><div class="para" id="p-736">
+<span class="process-math">\(f\)</span> is increasing then decreasing</div></li>
+<li id="li-420"><div class="para" id="p-737">
+<span class="process-math">\(f\)</span> is concave down</div></li>
+</ul></div></div>
+</div></div></section><section class="subsection" id="section-19-choosing"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.9.2</span> <span class="title">Choosing Models</span>
+</h3>
+<div class="para" id="p-738">At this point, we have five models to choose from when analyzing a data set.  The process of choosing a model should go as follows:</div>
+<div class="para logical" id="p-739"><ol class="decimal">
+<li id="li-421"><div class="para" id="p-740">Does the scatterplot show any sort of concavity?  If yes, then go to the next step.  If not, try a linear model.</div></li>
+<li id="li-422">
+<div class="para" id="p-741">If the scatterplot shows concavity, does it appear to change concavity? If yes, then the model could be logistic or cubic.  If not, then the model could be exponential, logarithmic, or quadratic.</div>
+<div class="para logical" id="p-742"><ol class="lower-alpha">
+<li id="li-423"><div class="para" id="p-743">If the scatterplot changes concavity, then does it have an asymptote? If yes, then the model is logistic.  If no, then the model is cubic.</div></li>
+<li id="li-424"><div class="para" id="p-744">If the scatterplot does not change concavity, then look at the end behavior and for asymptotes.  If there is an asymptote at <span class="process-math">\(x = 0\text{,}\)</span> then the model is logarithmic; if it is at <span class="process-math">\(y = 0\text{,}\)</span> then the model is exponential; if there is no asymptote, then it is quadratic.</div></li>
+</ol></div>
+</li>
+<li id="li-425"><div class="para" id="p-745">If it is still difficult to determine between exponential and quadratic, then use the method of second differences (described below).  If second differences gives roughly constant values, then the model is quadratic; if it does not, then, it is exponential.</div></li>
+<li id="li-426"><div class="para" id="p-746">If in doubt, one can develop multiple models and compare the fit of each model against the data.</div></li>
+<li id="li-427"><div class="para" id="p-747">It is never a bad idea to apply common sense to models.</div></li>
+</ol></div>
+<article class="example example-like" id="example-79"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.9.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-748">Draw a decision tree/diagram for choosing a model.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-80" id="solution-80"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-80"><div class="solution solution-like">
+<div class="para" id="p-749">This is left to students</div> <div class="para" id="p-750">I recommend students do this one for themselves. It's helpful to have, and writing it themselves will hopefully make it stick better.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-80"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.9.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-751">The table below shows the profit (in millions of dollars) that American Airlines makes on tickets between Dallas and Chicago when tickets are set at a certain price:</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Ticket Price (dollars)</td>
+<td class="c m b0 r0 l0 t0 lines">200</td>
+<td class="c m b0 r0 l0 t0 lines">250</td>
+<td class="c m b0 r0 l0 t0 lines">300</td>
+<td class="c m b0 r0 l0 t0 lines">350</td>
+<td class="c m b0 r0 l0 t0 lines">400</td>
+<td class="c m b0 r0 l0 t0 lines">450</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Profit (million dollars)</td>
+<td class="c m b0 r0 l0 t0 lines">3.08</td>
+<td class="c m b0 r0 l0 t0 lines">3.52</td>
+<td class="c m b0 r0 l0 t0 lines">3.76</td>
+<td class="c m b0 r0 l0 t0 lines">3.82</td>
+<td class="c m b0 r0 l0 t0 lines">3.7</td>
+<td class="c m b0 r0 l0 t0 lines">3.38</td>
+</tr>
+</table></div> <div class="para logical" id="p-752"><ol class="lower-alpha">
+<li id="li-428"><div class="para" id="p-753">Give two reasons why a quadratic model is more appropriate than a log or exponential model.</div></li>
+<li id="li-429"><div class="para" id="p-754">Find a quadratic model for the data.</div></li>
+<li id="li-430"><div class="para" id="p-755">Why doesn't the airline profit increase as the ticket price increases?</div></li>
+<li id="li-431"><div class="para" id="p-756">At what price does the airline begin posting a loss?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-81" id="solution-81"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-81"><div class="solution solution-like"><div class="para logical" id="p-757"><ol class="lower-alpha">
+<li id="li-432">
+<div class="para" id="p-758">Change in direction and only concave down</div>
+<div class="para" id="p-759">It's worthwhile to remind students that "change in direction" and "has a vertex/maximum/minimum" are considered equivalent when we ask these kinds of questions on the test.</div>
+</li>
+<li id="li-433">
+<div class="para" id="p-760">
+<span class="process-math">\(f(x) = -0.0003x^2 + 0.026x - 0.527\)</span> million dollars profit from ticket sales, when tickets are <span class="process-math">\(x\)</span> dollars</div>
+<div class="para" id="p-761">I keep forgetting to put some kind of proviso like "use 4 decimal places in your model". It should exist.</div>
+</li>
+<li id="li-434"><div class="para" id="p-762">Higher ticket prices means less people purchase tickets, so there's less profit.</div></li>
+<li id="li-435"><div class="para" id="p-763">$660.75</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-81"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.9.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-764">The table below gives the braking distance required for a vehicle to come to a complete stop, given the initial velocity of the vehicle.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Speed (mph)</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+<td class="c m b0 r0 l0 t0 lines">20</td>
+<td class="c m b0 r0 l0 t0 lines">30</td>
+<td class="c m b0 r0 l0 t0 lines">40</td>
+<td class="c m b0 r0 l0 t0 lines">50</td>
+<td class="c m b0 r0 l0 t0 lines">60</td>
+<td class="c m b0 r0 l0 t0 lines">70</td>
+<td class="c m b0 r0 l0 t0 lines">80</td>
+<td class="c m b0 r0 l0 t0 lines">90</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Distance (feet)</td>
+<td class="c m b0 r0 l0 t0 lines">27</td>
+<td class="c m b0 r0 l0 t0 lines">63</td>
+<td class="c m b0 r0 l0 t0 lines">109</td>
+<td class="c m b0 r0 l0 t0 lines">164</td>
+<td class="c m b0 r0 l0 t0 lines">229</td>
+<td class="c m b0 r0 l0 t0 lines">304</td>
+<td class="c m b0 r0 l0 t0 lines">388</td>
+<td class="c m b0 r0 l0 t0 lines">481</td>
+<td class="c m b0 r0 l0 t0 lines">584</td>
+</tr>
+</table></div> <div class="para logical" id="p-765"><ol class="lower-alpha">
+<li id="li-436"><div class="para" id="p-766">Find the second differences of the data above.</div></li>
+<li id="li-437"><div class="para" id="p-767">Find a quadratic model for stopping distance.</div></li>
+<li id="li-438"><div class="para" id="p-768">What other factors besides the initial speed would impact the stopping distance?</div></li>
+<li id="li-439"><div class="para" id="p-769">What speed is the vehicle moving if its braking distance is exactly 412 feet?  Round your answer to two decimal places, if needed.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-82" id="solution-82"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-82"><div class="solution solution-like"><div class="para logical" id="p-770"><ol class="lower-alpha">
+<li id="li-440">
+<div class="para" id="p-771">10, 9, 10, 10, 9, 9, 10</div>
+<div class="para" id="p-772">Ideally you'd be writing the second differences in some sort of row-by-row pattern; I can't figure out how to make it show up here, though.</div>
+</li>
+<li id="li-441"><div class="para" id="p-773">
+<span class="process-math">\(f(x) = 0.048x^2 + 2.200x+0.048\)</span> feet distance required to stop, when initial velocity is <span class="process-math">\(x\)</span> miles per hour</div></li>
+<li id="li-442"><div class="para" id="p-774">Answers vary</div></li>
+<li id="li-443"><div class="para" id="p-775">72.71 mph</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-82"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.9.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-776">The ratios of public school students to instructional computers with Internet access for years between 1998 and 2004 are given below:</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Year</td>
+<td class="c m b0 r0 l0 t0 lines">1998</td>
+<td class="c m b0 r0 l0 t0 lines">1999</td>
+<td class="c m b0 r0 l0 t0 lines">2000</td>
+<td class="c m b0 r0 l0 t0 lines">2001</td>
+<td class="c m b0 r0 l0 t0 lines">2002</td>
+<td class="c m b0 r0 l0 t0 lines">2003</td>
+<td class="c m b0 r0 l0 t0 lines">2004</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Ratio</td>
+<td class="c m b0 r0 l0 t0 lines">9.1</td>
+<td class="c m b0 r0 l0 t0 lines">6.1</td>
+<td class="c m b0 r0 l0 t0 lines">3.6</td>
+<td class="c m b0 r0 l0 t0 lines">2.4</td>
+<td class="c m b0 r0 l0 t0 lines">1.8</td>
+<td class="c m b0 r0 l0 t0 lines">1.4</td>
+<td class="c m b0 r0 l0 t0 lines">1.8</td>
+</tr>
+</table></div> <div class="para logical" id="p-777"><ol class="lower-alpha">
+<li id="li-444"><div class="para" id="p-778">Align the input so that 1998 corresponds to an input of 0.</div></li>
+<li id="li-445"><div class="para" id="p-779">Write the complete quadratic model for the data.</div></li>
+<li id="li-446"><div class="para" id="p-780">Write the complete exponential model for the data.</div></li>
+<li id="li-447"><div class="para" id="p-781">Which model best fits the data: (b) or (c)?</div></li>
+<li id="li-448"><div class="para" id="p-782">Give two reasons why an exponential model might be best for this data.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-83" id="solution-83"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-83"><div class="solution solution-like"><div class="para logical" id="p-783"><ol class="lower-alpha">
+<li id="li-449"><div class="para" id="p-784">Align the input so that 1998 corresponds to an input of 0.</div></li>
+<li id="li-450"><div class="para" id="p-785">
+<span class="process-math">\(f(x) = 0.342x^2-3.232x + 8.998\)</span> gives the ratio of public school students to instructional computers with internet access, <span class="process-math">\(x\)</span> years after 1998</div></li>
+<li id="li-451"><div class="para" id="p-786">
+<span class="process-math">\(g(x) = 7.451(0.738^x)\)</span> gives the ratio of public school students to instructional computers with internet access, <span class="process-math">\(x\)</span> years after 1998</div></li>
+<li id="li-452"><div class="para" id="p-787">Based on second differences, the exponential model.</div></li>
+<li id="li-453"><div class="para" id="p-788">1) Second differences aren't consisent, and 2) The graph is concave up only</div></li>
+</ol></div></div></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-18.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-110.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
