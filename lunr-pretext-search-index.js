@@ -1150,7 +1150,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.11",
   "title": "Cubic Functions & Models",
-  "body": " Cubic Functions & Models   Cubic Models  As with the linear model, we have three descriptons of an exponential model:   "
+  "body": " Cubic Functions & Models   Cubic Models    A sketch of a cubic function with a positive leading coefficient.                  is increasing, decreasing, then increasing     is concave down then up      A sketch of a cubic function with a negative leading coefficient.                  is decreasing, increasing, then decreasing     is concave up then down        Examples    A car company's profit on SUV's is given below.    SUV's sold (in millions)  10  20  30  40  50  60  70    Profit (in trillion dollars)  0.9  3.1  4.3  5.2  5.8  6.4  6.9       Use the scatterplot to determine the best model for the data. Give two reasons for your choice.    Write the complete model.    Find the profit when 37 million SUV's are sold. Write a sentence of interpretation for your answer.          Concave down only + always increasing + (potential) asymptote at means logarithmic     trillion dollars profit from the sale of million SUVs     . When 37 million SUVs are sold, he profit from sales of SUVs is 4.9 trillion dollars         A manufacturing company recorded the production of toys when a certain amount of capital is invested in the production run.    Capital Invested (in million dollars)  6  18  24  30  42  48    Units Produced (in billions)  19  38  42  45  60  77       Use the scatterplot to determine the best model for the data. Give two reasons for your choice.    Write the complete model.    Find the capital needed to produce 50 billion units. Write a sentence interpreting your answer.          Change in concavity + no asymptotes\/unbounded end behavior means cubic     billion units of toys produced when million dollars are invested in production.     million dollars. When 35.78 million dollars are invested, 50 billion units will be produced.        "
+},
+{
+  "id": "example-85",
+  "level": "2",
+  "url": "section-111.html#example-85",
+  "type": "Example",
+  "number": "1.11.1",
+  "title": "",
+  "body": "  A car company's profit on SUV's is given below.    SUV's sold (in millions)  10  20  30  40  50  60  70    Profit (in trillion dollars)  0.9  3.1  4.3  5.2  5.8  6.4  6.9       Use the scatterplot to determine the best model for the data. Give two reasons for your choice.    Write the complete model.    Find the profit when 37 million SUV's are sold. Write a sentence of interpretation for your answer.          Concave down only + always increasing + (potential) asymptote at means logarithmic     trillion dollars profit from the sale of million SUVs     . When 37 million SUVs are sold, he profit from sales of SUVs is 4.9 trillion dollars      "
+},
+{
+  "id": "example-86",
+  "level": "2",
+  "url": "section-111.html#example-86",
+  "type": "Example",
+  "number": "1.11.2",
+  "title": "",
+  "body": "  A manufacturing company recorded the production of toys when a certain amount of capital is invested in the production run.    Capital Invested (in million dollars)  6  18  24  30  42  48    Units Produced (in billions)  19  38  42  45  60  77       Use the scatterplot to determine the best model for the data. Give two reasons for your choice.    Write the complete model.    Find the capital needed to produce 50 billion units. Write a sentence interpreting your answer.          Change in concavity + no asymptotes\/unbounded end behavior means cubic     billion units of toys produced when million dollars are invested in production.     million dollars. When 35.78 million dollars are invested, 50 billion units will be produced.      "
 }
 ]
 
