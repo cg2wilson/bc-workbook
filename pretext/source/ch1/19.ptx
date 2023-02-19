@@ -4,11 +4,421 @@
 	<title>Quadratic Functions &amp; Models</title>
 
 	<subsection xml:id="section-19-quadratic">
-		<title>Quadratic Functions</title>
+		<title>Quadratic Models</title>
 
             <p>
-                As with the linear model, we have three descriptons of an exponential model:
+                The model is given by <m>f(x) = ax^2 + bx + c</m>, where <m>a,b,c</m> are constants (<m>a\neq 0</m>).  The function has an absolute maximum if <m>a \lt 0</m>, and absolute minimum if <m>a \gt 0</m>.
             </p>
             
+            <sidebyside widths="25% 25% 25% 25%">
+                <image>
+                    <description>
+                        A sketch of a quadratic function with a positive leading coefficient.
+                    </description>
+                    <latex-image>
+                        <![CDATA[ 
+                        \begin{tikzpicture}[x = .5cm, y = .5cm]
+                            \draw (-2,0)--(2,0) node[right] {\footnotesize $x$}; %x-axis 
+                            \draw (0,-2)--(0,4) node[right] {\footnotesize $y$}; %y-axis
+                            \draw[<->, smooth, samples = 100, domain = -2.:2.] plot (\x, {(\x)^2 - 1});	
+                            \draw (1,2.5) node {$f(x)$};
+                            \draw (0, 4.75) node {$\underline{a > 0}$};
+                        \end{tikzpicture}	
+                        ]]>
+                    </latex-image>
+                </image>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to\infty} f(x) = \infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to -\infty} f(x) = \infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> is decreasing then increasing
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> is concave up
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                <image>
+                    <description>
+                        A sketch of a quadratic function with a negative leading coefficient.
+                    </description>
+                    <latex-image>
+                        <![CDATA[ 
+                            \begin{tikzpicture}[x = .5cm, y = .5cm]
+                                \draw (-2,0)--(2,0) node[right] {\footnotesize $x$}; %x-axis 
+                                \draw (0,-4)--(0,2) node[right] {\footnotesize $y$}; %y-axis
+                                \draw[<->, smooth, samples = 100, domain = -2.:2.] plot (\x, {-(\x)^2 + 1});	
+                                \draw (1,.5) node[right] {$f(x)$};
+                                \draw (0, 2.75) node {$\underline{a < 0}$};
+                            \end{tikzpicture}	
+                        ]]>
+                    </latex-image>
+                </image>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to \infty} f(x) = -\infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\ds \lim_{x\to -\infty} f(x) = -\infty</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> is increasing then decreasing
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f</m> is concave down
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+            </sidebyside>
+    </subsection>
+
+    <subsection xml:id="section-19-choosing">
+        <title>Choosing Models</title>
+        
+            <p>
+                At this point, we have five models to choose from when analyzing a data set.  The process of choosing a model should go as follows:
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Does the scatterplot show any sort of concavity?  If yes, then go to the next step.  If not, try a linear model.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If the scatterplot shows concavity, does it appear to change concavity? If yes, then the model could be logistic or cubic.  If not, then the model could be exponential, logarithmic, or quadratic.
+                        </p>
+                        <p>
+                            <ol marker="a">
+                                <li>
+                                    <p>
+                                        If the scatterplot changes concavity, then does it have an asymptote? If yes, then the model is logistic.  If no, then the model is cubic.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        If the scatterplot does not change concavity, then look at the end behavior and for asymptotes.  If there is an asymptote at <m>x = 0</m>, then the model is logarithmic; if it is at <m>y = 0</m>, then the model is exponential; if there is no asymptote, then it is quadratic.
+                                    </p>
+                                </li>
+                            </ol>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If it is still difficult to determine between exponential and quadratic, then use the method of second differences (described below).  If second differences gives roughly constant values, then the model is quadratic; if it does not, then, it is exponential.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If in doubt, one can develop multiple models and compare the fit of each model against the data.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            It is never a bad idea to apply common sense to models.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+
+            <example>
+                <statement>
+                    <p>
+                        Draw a decision tree/diagram for choosing a model.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        This is left to students
+                    </p>
+                    <p>
+                        I recommend students do this one for themselves. It's helpful to have, and writing it themselves will hopefully make it stick better.
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        The table below shows the profit (in millions of dollars) that American Airlines makes on tickets between Dallas and Chicago when tickets are set at a certain price:
+                    </p>
+                    <tabular>
+                        <row>
+                            <cell halign="center">Ticket Price (dollars)</cell>
+                            <cell halign="center">200</cell>
+                            <cell halign="center">250</cell>
+                            <cell halign="center">300</cell>
+                            <cell halign="center">350</cell>
+                            <cell halign="center">400</cell>
+                            <cell halign="center">450</cell>
+                        </row>
+                        <row>
+                            <cell halign="center">Profit (million dollars)</cell>
+                            <cell halign="center">3.08</cell>
+                            <cell halign="center">3.52</cell>
+                            <cell halign="center">3.76</cell>
+                            <cell halign="center">3.82</cell>
+                            <cell halign="center">3.7</cell>
+                            <cell halign="center">3.38</cell>
+                        </row>
+                    </tabular>
+                    <p>
+                        <ol marker="a">
+                            <li>
+                                <p>
+                                    Give two reasons why a quadratic model is more appropriate than a log or exponential model.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Find a quadratic model for the data.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Why doesn't the airline profit increase as the ticket price increases?
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    At what price does the airline begin posting a loss?
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <ol marker="a">
+                            <li>
+                                <p>
+                                    Change in direction and only concave down
+                                </p>
+                                <p>
+                                    It's worthwhile to remind students that "change in direction" and "has a vertex/maximum/minimum" are considered equivalent when we ask these kinds of questions on the test.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f(x) = -0.0003x^2 + 0.026x - 0.527</m> million dollars profit from ticket sales, when tickets are <m>x</m> dollars
+                                </p>
+                                <p>
+                                    I keep forgetting to put some kind of proviso like "use 4 decimal places in your model". It should exist.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Higher ticket prices means less people purchase tickets, so there's less profit.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    $660.75
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        The table below gives the braking distance required for a vehicle to come to a complete stop, given the initial velocity of the vehicle.
+                    </p>
+                    <tabular>
+                        <row>
+                            <cell halign="center">Speed (mph)</cell>
+                            <cell halign="center">10</cell>
+                            <cell halign="center">20</cell>
+                            <cell halign="center">30</cell>
+                            <cell halign="center">40</cell>
+                            <cell halign="center">50</cell>
+                            <cell halign="center">60</cell>
+                            <cell halign="center">70</cell>
+                            <cell halign="center">80</cell>
+                            <cell halign="center">90</cell>
+                        </row>
+                        <row>
+                            <cell halign="center">Distance (feet)</cell>
+                            <cell halign="center">27</cell>
+                            <cell halign="center">63</cell>
+                            <cell halign="center">109</cell>
+                            <cell halign="center">164</cell>
+                            <cell halign="center">229</cell>
+                            <cell halign="center">304</cell>
+                            <cell halign="center">388</cell>
+                            <cell halign="center">481</cell>
+                            <cell halign="center">584</cell>
+                        </row>
+                    </tabular>
+                    <p>
+                        <ol marker="a">
+                            <li>
+                                <p>
+                                    Find the second differences of the data above.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Find a quadratic model for stopping distance.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    What other factors besides the initial speed would impact the stopping distance?
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    What speed is the vehicle moving if its braking distance is exactly 412 feet?  Round your answer to two decimal places, if needed.
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <ol marker="a">
+                            <li>
+                                <p>
+                                    10, 9, 10, 10, 9, 9, 10
+                                </p>
+                                <p>
+                                    Ideally you'd be writing the second differences in some sort of row-by-row pattern; I can't figure out how to make it show up here, though.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f(x) = 0.048x^2 + 2.200x+0.048</m> feet distance required to stop, when initial velocity is <m>x</m> miles per hour
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Answers vary
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    72.71 mph
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
+
+            <example>
+                <statement>
+                    <p>
+                        The ratios of public school students to instructional computers with Internet access for years between 1998 and 2004 are given below:
+                    </p>
+                    <tabular>
+                        <row>
+                            <cell halign="center">Year</cell>
+                            <cell halign="center">1998</cell>
+                            <cell halign="center">1999</cell>
+                            <cell halign="center">2000</cell>
+                            <cell halign="center">2001</cell>
+                            <cell halign="center">2002</cell>
+                            <cell halign="center">2003</cell>
+                            <cell halign="center">2004</cell>
+                        </row>
+                        <row>
+                            <cell halign="center">Ratio</cell>
+                            <cell halign="center">9.1</cell>
+                            <cell halign="center">6.1</cell>
+                            <cell halign="center">3.6</cell>
+                            <cell halign="center">2.4</cell>
+                            <cell halign="center">1.8</cell>
+                            <cell halign="center">1.4</cell>
+                            <cell halign="center">1.8</cell>
+                        </row>
+                    </tabular>
+                    <p>
+                        <ol marker="a">
+                            <li>
+                                <p>
+                                    Align the input so that 1998 corresponds to an input of 0.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Write the complete quadratic model for the data.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Write the complete exponential model for the data.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Which model best fits the data: (b) or (c)?
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Give two reasons why an exponential model might be best for this data.
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <ol marker="a">
+                            <li>
+                                <p>
+                                    Align the input so that 1998 corresponds to an input of 0.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f(x) = 0.342x^2-3.232x + 8.998</m> gives the ratio of public school students to instructional computers with internet access, <m>x</m> years after 1998
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>g(x) = 7.451(0.738^x)</m> gives the ratio of public school students to instructional computers with internet access, <m>x</m> years after 1998
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Based on second differences, the exponential model.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    1) Second differences aren't consisent, and 2) The graph is concave up only
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
     </subsection>
 </section>
