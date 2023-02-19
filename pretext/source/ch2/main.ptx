@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Describing Change: Rates</title>
+	
+	<introduction>
+		<p>
+			Chapter 2 focuses on the concept of the derivative and how it and rates are used in application.
+		</p>
+		
+	</introduction>
+    <xi:include href="./21.ptx"/> 
+	<!--
+	<xi:include href="./22.ptx"/>
+    <xi:include href="./23.ptx"/>
+    <xi:include href="./24.ptx"/>
+    <xi:include href="./25.ptx"/>
+    <xi:include href="./26.ptx"/>
+	-->
+</chapter>

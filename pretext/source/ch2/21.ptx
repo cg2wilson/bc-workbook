@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-21" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Measures of Change over an Interval</title>
+
+	<subsection xml:id="section-21-formulas">
+		<title>Formulas</title>
+			<p>
+				Let <m>f</m> be a function with input values <m>x_1,x_2</m> such that <m>x_1 \lt x_2</m>.
+			</p>
+			
+			<assemblage>
+				<title>Change</title>
+				<p>
+					<m>f(x_2) - f(x_1)</m>
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Percent Change</title>
+				<p>
+					<m>\dfrac{f(x_2) - f(x_1)}{f(x_1)}\cdot 100\%</m>
+				</p>
+			</assemblage>
+			
+			<assemblage>
+				<title>Average Rate of Change (AROC)</title>
+				<p>
+					<m>\dfrac{f(x_2) - f(x_1)}{x_2-x_1}</m>
+				</p>
+			</assemblage>
+
+			<p>
+				When giving interpretations, we have four considerations:
+			</p>
+			<p>
+				<ol>
+					<li>
+						<p>
+							When is this event happening?  Be sure to specify the interval.
+						</p>
+					</li>
+					<li>
+						<p>
+							What is happening?  Specify the quantity which is changing.
+						</p>
+					</li>
+					<li>
+						<p>
+							How is it changing?  Specify whether or not the quantity is increasing or decreasing.
+						</p>
+					</li>
+					<li>
+						<p>
+							By how much is it changing?  Include proper units.
+						</p>
+					</li>
+				</ol>
+			</p>
+
+			<example>
+				<statement>
+					<p>
+						If <m>f</m> denotes the number of students enrolled in Math 1743 and <m>x</m> is the number of academic years after the 2000-2001 academic year, interpret the expression <m>f(10) = 1552</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						10 years after the 2000-2001 academic year, the number of students enrolled in Math 1743 was 1552 students
+					</p>
+				</solution>
+			</example>
+	</subsection>
+
+	<subsection xml:id="section-21-examples">
+		<title>Examples</title>
+		
+		<example>
+			<statement>
+				<p>
+					The average temperature in Norman during the last week of September is given in the table below:
+				</p>
+				<tabular>
+					<row>
+						<cell halign="center">Time</cell>
+						<cell halign="center">Temperature (<m>^\circ</m> F)</cell>
+						<cell halign="center">Time</cell>
+						<cell halign="center">Temperature (<m>^\circ</m> F)</cell>
+					</row>
+					<row>
+						<cell halign="center">7am</cell>
+						<cell halign="center">49</cell>
+						<cell halign="center">1pm</cell>
+						<cell halign="center">80</cell>
+					</row>
+					<row>
+						<cell halign="center">8am</cell>
+						<cell halign="center">58</cell>
+						<cell halign="center">2pm</cell>
+						<cell halign="center">80</cell>
+					</row>
+					<row>
+						<cell halign="center">9am</cell>
+						<cell halign="center">66</cell>
+						<cell halign="center">3pm</cell>
+						<cell halign="center">78</cell>
+					</row>
+					<row>
+						<cell halign="center">10am</cell>
+						<cell halign="center">72</cell>
+						<cell halign="center">4pm</cell>
+						<cell halign="center">74</cell>
+					</row>
+					<row>
+						<cell halign="center">11am</cell>
+						<cell halign="center">76</cell>
+						<cell halign="center">5pm</cell>
+						<cell halign="center">69</cell>
+					</row>
+					<row>
+						<cell halign="center">noon</cell>
+						<cell halign="center">79</cell>
+						<cell halign="center">6pm</cell>
+						<cell halign="center">62</cell>
+					</row>
+				</tabular>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Give the average rate of change in temperature between 11am and 4pm.  Write a sentence interpreting your result.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find the percent change in temperature between 9am and noon, and round your answer to the nearest hundredth.  Write a sentence interpreting your result.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								AROC is <m>-0.4^\circ</m> F per hour. Between 11am and 4pm, the average temperature in Norman decreased by <m>0.4^\circ</m> F per hour
+							</p>
+							<p>
+								For (a) and (b), you will want to stress the verb tense in the "how" statement. When we interpret instantaneous rates of change, the tense changes to present progressive.
+							</p>
+						</li>
+						<li>
+							<p>
+								The percent change is 19.7%. Between 9am and 12pm, the average temperature in Norman increased by 19.7%.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Airtran posted a revenue of $603.7 million dollars in the second quarter of 2009 compared with revenue of $693.4 million during the second quarter of 2008.  Write a sentence interpreting each of the following:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find the change in revenue between the second quarter of 2008 and the second quarter of 2009.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find the percent change between the second quarter of 2008 and second quarter end of 2009.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find the average rate of change between the second quarter of 2008 and the second quarter of 2009.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars
+							</p>
+						</li>
+						<li>
+							<p>
+								Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 14.86%.
+							</p>
+						</li>
+						<li>
+							<p>
+								Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars per year.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The American Indian, Eskimo, and Aleut populations in the United States was 362 thousand in 1930, and 4.5 million in 2005.  Write a sentence interpreting each of the following, and round to two decimals if necessary:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find the change in population between 1930 and 2005.	
+							</p>
+						</li>
+						<li>
+							<p>
+								Find the percent change between between 1930 and 2005.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find the average rate of change between 1930 and 2005.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 4.14 million people.
+							</p>
+							<p>
+								Be mindful that the unit in 1930 is "thousand people" not "million people", so you have to do some conversion
+							</p>
+						</li>
+						<li>
+							<p>
+								Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 1143.65%.
+							</p>
+						</li>
+						<li>
+							<p>
+								Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 0.06 million people per year.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					OU Parking Services commissioned a projection of its profit (in thousands of dollars) when commuter parking passes are set certain prices.
+				</p>
+				<tabular>
+					<row>
+						<cell halign="center">Price (dollars)</cell>
+						<cell halign="center">200</cell>
+						<cell halign="center">250</cell>
+						<cell halign="center">300</cell>
+						<cell halign="center">350</cell>
+						<cell halign="center">400</cell>
+						<cell halign="center">450</cell>
+					</row>
+					<row>
+						<cell halign="center">Profit (thousand dollars)</cell>
+						<cell halign="center">2080</cell>
+						<cell halign="center">2520</cell>
+						<cell halign="center">2760</cell>
+						<cell halign="center">2820</cell>
+						<cell halign="center">2700</cell>
+						<cell halign="center">2380</cell>
+					</row>
+				</tabular>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find a model for the data.
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate the average rate of change of profit when the parking pass price rises from $200 to $350.
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate the average rate of change of profit when the parking pass price rises from $350 to $450.
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate the percent change for parts (b) and (c).
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>P(x) = -0.037x^2 + 25.529x-1527.14</m> thousand dollars projected profit for OU parking when commuter parking passes are <m>x</m> dollars.
+							</p>
+						</li>
+						<li>
+							<p>
+								4.93 thousand dollars profit per dollar
+							</p>
+						</li>
+						<li>
+							<p>
+								-4.4 thousand dollars profit per dollar
+							</p>
+						</li>
+						<li>
+							<p>
+								In (b), it's 35.58%; in (c), it's -15.60%.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The CDC modeled the number of Zika cases diagnosed in Brazil between January and July of 2016 with the formula
+					<me>
+						z(t) = 2.75(1.04^t)\text{ thousand cases}
+					</me>
+					where <m>t</m> is the number of months since January 2016.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Calculate and write a sentence of interpretation for the average rate of change in the number of Brazilians diagnosed with Zika between January 2016 and July 2016.
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate the percentage change in part (a).
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Between January 2016 and July 2016, the number of Zika cases diagnosed in Brazil increased by 0.12 thousand cases per month.
+							</p>
+						</li>
+						<li>
+							<p>
+								26.53%
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The function <m>c(t)</m> represents the number of students in line at Chick-Fil-A, <m>t</m> hours after 11:00am, and <m>q(t)</m> represents the number of students in line at Quizno's, <m>t</m> hours after 11:00am.  Write a sentence interpreting the following expressions.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>c(3) = 15</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>q(1) = 8</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(c+q)(0) = 12</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								3 hours after 11am, the number of students in the Chick-Fil-A line was 15.
+							</p>
+						</li>
+						<li>
+							<p>
+								1 hour after 11am, the number of students in the Quizno's line was 8.
+							</p>
+						</li>
+						<li>
+							<p>
+								At 11am, the number of students in the Chick-Fil-A and Quizno's lines was 12.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+	</subsection>
+</section>
