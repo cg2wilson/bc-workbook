@@ -6,9 +6,230 @@
 	<subsection xml:id="section-111-cubic">
 		<title>Cubic Models</title>
 
-            <p>
-                As with the linear model, we have three descriptons of an exponential model:
-            </p>
+        <sidebyside widths="25% 25% 25% 25%">
+            <image>
+                <description>
+                    A sketch of a cubic function with a positive leading coefficient.
+                </description>
+                <latex-image>
+                    <![CDATA[ 
+                    \begin{tikzpicture}[x = .5cm, y = .5cm]
+                        \draw (-2,0)--(2,0) node[right] {\footnotesize $x$}; %x-axis 
+                        \draw (0,-2)--(0,2) node[right] {\footnotesize $y$}; %y-axis
+                        \draw[<->, smooth, samples = 100, domain = -1.2:1.2] plot (\x, {(\x)^3});	
+                        \draw (.6,.5) node[right] {$f(x)$};
+                        \draw (0, 2.75) node {$\underline{a > 0}$};
+                    \end{tikzpicture}	
+                    ]]>
+                </latex-image>
+            </image>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to\infty} f(x) = \infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -\infty} f(x) = -\infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is increasing, decreasing, then increasing
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is concave down then up
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            <image>
+                <description>
+                    A sketch of a cubic function with a negative leading coefficient.
+                </description>
+                <latex-image>
+                    <![CDATA[ 
+                        \begin{tikzpicture}[x = .5cm, y = .5cm]
+                            \draw (-2,0)--(2,0) node[right] {\footnotesize $x$}; %x-axis 
+                            \draw (0,-2)--(0,2) node[right] {\footnotesize $y$}; %y-axis
+                            \draw[<->, smooth, samples = 100, domain = -1.2:1.2] plot (\x, {-(\x)^3});	
+                            \draw (1,.5) node {$f(x)$};
+                            \draw (0, 2.75) node {$\underline{a < 0}$};
+                        \end{tikzpicture}	
+                    ]]>
+                </latex-image>
+            </image>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to \infty} f(x) = -\infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\ds \lim_{x\to -\infty} f(x) = \infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is decreasing, increasing, then decreasing
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f</m> is concave up then down
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+        </sidebyside>
             
+    </subsection>
+
+    <subsection xml:id="section-111-examples">
+        <title>Examples</title>
+        
+        <example>
+            <statement>
+                <p>
+                    A car company's profit on SUV's is given below.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">SUV's sold (in millions)</cell>
+                        <cell halign="center">10</cell>
+                        <cell halign="center">20</cell>
+                        <cell halign="center">30</cell>
+                        <cell halign="center">40</cell>
+                        <cell halign="center">50</cell>
+                        <cell halign="center">60</cell>
+                        <cell halign="center">70</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Profit (in trillion dollars)</cell>
+                        <cell halign="center">0.9</cell>
+                        <cell halign="center">3.1</cell>
+                        <cell halign="center">4.3</cell>
+                        <cell halign="center">5.2</cell>
+                        <cell halign="center">5.8</cell>
+                        <cell halign="center">6.4</cell>
+                        <cell halign="center">6.9</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Use the scatterplot to determine the best model for the data.  Give two reasons for your choice. 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Write the complete model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the profit when 37 million SUV's are sold.  Write a sentence of interpretation for your answer.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Concave down only + always increasing + (potential) asymptote at <m>x=0</m> means logarithmic
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) = -6.112 + 3.059\ln x</m> trillion dollars profit from the sale of <m>x</m> million SUVs
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(37) = 4.9</m>. When 37 million SUVs are sold, he profit from sales of SUVs is 4.9 trillion dollars
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    A manufacturing company recorded the production of toys when a certain amount of capital is invested in the production run.
+                </p>
+                <tabular>
+                    <row>
+                        <cell halign="center">Capital Invested (in million dollars)</cell>
+                        <cell halign="center">6</cell>
+                        <cell halign="center">18</cell>
+                        <cell halign="center">24</cell>
+                        <cell halign="center">30</cell>
+                        <cell halign="center">42</cell>
+                        <cell halign="center">48</cell>
+                    </row>
+                    <row>
+                        <cell halign="center">Units Produced (in billions)</cell>
+                        <cell halign="center">19</cell>
+                        <cell halign="center">38</cell>
+                        <cell halign="center">42</cell>
+                        <cell halign="center">45</cell>
+                        <cell halign="center">60</cell>
+                        <cell halign="center">77</cell>
+                    </row>
+                </tabular>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Use the scatterplot to determine the best model for the data.  Give two reasons for your choice.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Write the complete model.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the capital needed to produce 50 billion units.  Write a sentence interpreting your answer.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a">
+                        <li>
+                            <p>
+                                Change in concavity + no asymptotes/unbounded end behavior means cubic
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x) = 0.002x^3 - 0.149x^2 + 4.243x -1.550</m> billion units of toys produced when <m>x</m> million dollars are invested in production.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>x=35.78</m> million dollars. When 35.78 million dollars are invested, 50 billion units will be produced.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
     </subsection>
 </section>
