@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>1743 Workbook: Measures of Change over an Interval</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="1743 Workbook">
+<meta property="book:author" content="Cory Wilson">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="workbook-1743.html"><span class="title">1743 Workbook</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="ch2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-11.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Functions: Four Representations</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-11.html#section-11-representations" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Representations of Change</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-functions-and-reps" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Functions &amp; Representations</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-models" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Model Output and Units of measure</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-12.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Function Behavior and End Behavior Limits</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-12.html#section-12-descriptions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Descriptions of Function Behavior</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-direction-curvature" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Direction and Curvature</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-limits-end-behavior" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Limits and End Behavior</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-13.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Function Behavior and End Behavior Limits</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-13.html#section-13-motivating" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Motivating Example</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-left-right-limits" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Left/Right Hand Limit</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-continuity" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Continuity</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-properties" class="internal"><span class="codenumber">1.3.4</span> <span class="title">Properties of Limits</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-14.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Linear Functions &amp; Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-14.html#section-14-linear" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-models" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Linear Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-elements" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Elements of a Model</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-alignment" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Data Alignment</span></a></div></li>
+<li><div class="toc-item"><a href="section-14.html#section-14-numerical" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Numerical Considerations</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-15.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exponential Functions &amp; Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-15.html#section-15-exponential" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-15.html#section-15-models" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Exponential Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-15.html#section-15-formulas-examples" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Formulas and Examples</span></a></div></li>
+<li><div class="toc-item"><a href="section-15.html#section-15-doubling-halflife" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Doubling Time and Half Life</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-16.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Models in Finance</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-16.html#section-16-simple-interest" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="section-16.html#section-16-discrete" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Discretely Compounding Interest</span></a></div></li>
+<li><div class="toc-item"><a href="section-16.html#section-16-continuous" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Continuously Compounding Interest</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-17.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Constructed Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-17.html#section-17-definitions" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="section-17.html#section-17-operations" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Function Operations</span></a></div></li>
+<li><div class="toc-item"><a href="section-17.html#section-17-examples" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-18.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Logarithmic Functions &amp; Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-18.html#section-18-logarithmic" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Logarithmic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-18.html#section-18-models" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Logarithmic Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-18.html#section-18-behavior" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Logarithmic Behavior</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-19.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Quadratic Functions &amp; Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-19.html#section-19-quadratic" class="internal"><span class="codenumber">1.9.1</span> <span class="title">Quadratic Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-19.html#section-19-choosing" class="internal"><span class="codenumber">1.9.2</span> <span class="title">Choosing Models</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-110.html" class="internal"><span class="codenumber">1.10</span> <span class="title">Logistic Functions &amp; Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-110.html#section-110-logistic" class="internal"><span class="codenumber">1.10.1</span> <span class="title">Logistic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-110.html#section-110-models" class="internal"><span class="codenumber">1.10.2</span> <span class="title">Logistic Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-110.html#section-110-examples" class="internal"><span class="codenumber">1.10.3</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-111.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Cubic Functions &amp; Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-111.html#section-111-cubic" class="internal"><span class="codenumber">1.11.1</span> <span class="title">Cubic Models</span></a></div></li>
+<li><div class="toc-item"><a href="section-111.html#section-111-examples" class="internal"><span class="codenumber">1.11.2</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Describing Change: Rates</span></a></div>
+<ul class="structural"><li class="active">
+<div class="toc-item"><a href="section-21.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Measures of Change over an Interval</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-21.html#section-21-formulas" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="section-21.html#section-21-examples" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-21"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Measures of Change over an Interval</span>
+</h2>
+<section class="subsection" id="section-21-formulas"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.1</span> <span class="title">Formulas</span>
+</h3>
+<div class="para" id="p-856">Let <span class="process-math">\(f\)</span> be a function with input values <span class="process-math">\(x_1,x_2\)</span> such that <span class="process-math">\(x_1 \lt x_2\text{.}\)</span>
+</div>
+<article class="assemblage assemblage-like" id="assemblage-5"><h4 class="heading"><span class="title">Change.</span></h4>
+<div class="para" id="p-857"><span class="process-math">\(f(x_2) - f(x_1)\)</span></div></article><article class="assemblage assemblage-like" id="assemblage-6"><h4 class="heading"><span class="title">Percent Change.</span></h4>
+<div class="para" id="p-858"><span class="process-math">\(\dfrac{f(x_2) - f(x_1)}{f(x_1)}\cdot 100\%\)</span></div></article><article class="assemblage assemblage-like" id="assemblage-7"><h4 class="heading"><span class="title">Average Rate of Change (AROC).</span></h4>
+<div class="para" id="p-859"><span class="process-math">\(\dfrac{f(x_2) - f(x_1)}{x_2-x_1}\)</span></div></article><div class="para" id="p-860">When giving interpretations, we have four considerations:</div>
+<div class="para logical" id="p-861"><ol class="decimal">
+<li id="li-498"><div class="para" id="p-862">When is this event happening?  Be sure to specify the interval.</div></li>
+<li id="li-499"><div class="para" id="p-863">What is happening?  Specify the quantity which is changing.</div></li>
+<li id="li-500"><div class="para" id="p-864">How is it changing?  Specify whether or not the quantity is increasing or decreasing.</div></li>
+<li id="li-501"><div class="para" id="p-865">By how much is it changing?  Include proper units.</div></li>
+</ol></div>
+<article class="example example-like" id="example-87"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-866">If <span class="process-math">\(f\)</span> denotes the number of students enrolled in Math 1743 and <span class="process-math">\(x\)</span> is the number of academic years after the 2000-2001 academic year, interpret the expression <span class="process-math">\(f(10) = 1552\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like"><div class="para" id="p-867">10 years after the 2000-2001 academic year, the number of students enrolled in Math 1743 was 1552 students</div></div></div>
+</div></article></section><section class="subsection" id="section-21-examples"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.2</span> <span class="title">Examples</span>
+</h3>
+<article class="example example-like" id="example-88"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-868">The average temperature in Norman during the last week of September is given in the table below:</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Time</td>
+<td class="c m b0 r0 l0 t0 lines">Temperature (<span class="process-math">\(^\circ\)</span> F)</td>
+<td class="c m b0 r0 l0 t0 lines">Time</td>
+<td class="c m b0 r0 l0 t0 lines">Temperature (<span class="process-math">\(^\circ\)</span> F)</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">7am</td>
+<td class="c m b0 r0 l0 t0 lines">49</td>
+<td class="c m b0 r0 l0 t0 lines">1pm</td>
+<td class="c m b0 r0 l0 t0 lines">80</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">8am</td>
+<td class="c m b0 r0 l0 t0 lines">58</td>
+<td class="c m b0 r0 l0 t0 lines">2pm</td>
+<td class="c m b0 r0 l0 t0 lines">80</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">9am</td>
+<td class="c m b0 r0 l0 t0 lines">66</td>
+<td class="c m b0 r0 l0 t0 lines">3pm</td>
+<td class="c m b0 r0 l0 t0 lines">78</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">10am</td>
+<td class="c m b0 r0 l0 t0 lines">72</td>
+<td class="c m b0 r0 l0 t0 lines">4pm</td>
+<td class="c m b0 r0 l0 t0 lines">74</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">11am</td>
+<td class="c m b0 r0 l0 t0 lines">76</td>
+<td class="c m b0 r0 l0 t0 lines">5pm</td>
+<td class="c m b0 r0 l0 t0 lines">69</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">noon</td>
+<td class="c m b0 r0 l0 t0 lines">79</td>
+<td class="c m b0 r0 l0 t0 lines">6pm</td>
+<td class="c m b0 r0 l0 t0 lines">62</td>
+</tr>
+</table></div> <div class="para logical" id="p-869"><ol class="lower-alpha">
+<li id="li-502"><div class="para" id="p-870">Give the average rate of change in temperature between 11am and 4pm.  Write a sentence interpreting your result.</div></li>
+<li id="li-503"><div class="para" id="p-871">Find the percent change in temperature between 9am and noon, and round your answer to the nearest hundredth.  Write a sentence interpreting your result.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like"><div class="para logical" id="p-872"><ol class="lower-alpha">
+<li id="li-504">
+<div class="para" id="p-873">AROC is <span class="process-math">\(-0.4^\circ\)</span> F per hour. Between 11am and 4pm, the average temperature in Norman decreased by <span class="process-math">\(0.4^\circ\)</span> F per hour</div>
+<div class="para" id="p-874">For (a) and (b), you will want to stress the verb tense in the "how" statement. When we interpret instantaneous rates of change, the tense changes to present progressive.</div>
+</li>
+<li id="li-505"><div class="para" id="p-875">The percent change is 19.7%. Between 9am and 12pm, the average temperature in Norman increased by 19.7%.</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-89"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-876">Airtran posted a revenue of $603.7 million dollars in the second quarter of 2009 compared with revenue of $693.4 million during the second quarter of 2008.  Write a sentence interpreting each of the following:</div> <div class="para logical" id="p-877"><ol class="lower-alpha">
+<li id="li-506"><div class="para" id="p-878">Find the change in revenue between the second quarter of 2008 and the second quarter of 2009.</div></li>
+<li id="li-507"><div class="para" id="p-879">Find the percent change between the second quarter of 2008 and second quarter end of 2009.</div></li>
+<li id="li-508"><div class="para" id="p-880">Find the average rate of change between the second quarter of 2008 and the second quarter of 2009.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like"><div class="para logical" id="p-881"><ol class="lower-alpha">
+<li id="li-509"><div class="para" id="p-882">Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars</div></li>
+<li id="li-510"><div class="para" id="p-883">Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 14.86%.</div></li>
+<li id="li-511"><div class="para" id="p-884">Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars per year.</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-90"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-885">The American Indian, Eskimo, and Aleut populations in the United States was 362 thousand in 1930, and 4.5 million in 2005.  Write a sentence interpreting each of the following, and round to two decimals if necessary:</div> <div class="para logical" id="p-886"><ol class="lower-alpha">
+<li id="li-512"><div class="para" id="p-887">Find the change in population between 1930 and 2005.</div></li>
+<li id="li-513"><div class="para" id="p-888">Find the percent change between between 1930 and 2005.</div></li>
+<li id="li-514"><div class="para" id="p-889">Find the average rate of change between 1930 and 2005.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like"><div class="para logical" id="p-890"><ol class="lower-alpha">
+<li id="li-515">
+<div class="para" id="p-891">Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 4.14 million people.</div>
+<div class="para" id="p-892">Be mindful that the unit in 1930 is "thousand people" not "million people", so you have to do some conversion</div>
+</li>
+<li id="li-516"><div class="para" id="p-893">Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 1143.65%.</div></li>
+<li id="li-517"><div class="para" id="p-894">Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 0.06 million people per year.</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-91"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-895">OU Parking Services commissioned a projection of its profit (in thousands of dollars) when commuter parking passes are set certain prices.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Price (dollars)</td>
+<td class="c m b0 r0 l0 t0 lines">200</td>
+<td class="c m b0 r0 l0 t0 lines">250</td>
+<td class="c m b0 r0 l0 t0 lines">300</td>
+<td class="c m b0 r0 l0 t0 lines">350</td>
+<td class="c m b0 r0 l0 t0 lines">400</td>
+<td class="c m b0 r0 l0 t0 lines">450</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Profit (thousand dollars)</td>
+<td class="c m b0 r0 l0 t0 lines">2080</td>
+<td class="c m b0 r0 l0 t0 lines">2520</td>
+<td class="c m b0 r0 l0 t0 lines">2760</td>
+<td class="c m b0 r0 l0 t0 lines">2820</td>
+<td class="c m b0 r0 l0 t0 lines">2700</td>
+<td class="c m b0 r0 l0 t0 lines">2380</td>
+</tr>
+</table></div> <div class="para logical" id="p-896"><ol class="lower-alpha">
+<li id="li-518"><div class="para" id="p-897">Find a model for the data.</div></li>
+<li id="li-519"><div class="para" id="p-898">Calculate the average rate of change of profit when the parking pass price rises from $200 to $350.</div></li>
+<li id="li-520"><div class="para" id="p-899">Calculate the average rate of change of profit when the parking pass price rises from $350 to $450.</div></li>
+<li id="li-521"><div class="para" id="p-900">Calculate the percent change for parts (b) and (c).</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like"><div class="para logical" id="p-901"><ol class="lower-alpha">
+<li id="li-522"><div class="para" id="p-902">
+<span class="process-math">\(P(x) = -0.037x^2 + 25.529x-1527.14\)</span> thousand dollars projected profit for OU parking when commuter parking passes are <span class="process-math">\(x\)</span> dollars.</div></li>
+<li id="li-523"><div class="para" id="p-903">4.93 thousand dollars profit per dollar</div></li>
+<li id="li-524"><div class="para" id="p-904">-4.4 thousand dollars profit per dollar</div></li>
+<li id="li-525"><div class="para" id="p-905">In (b), it's 35.58%; in (c), it's -15.60%.</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-92"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-906">
+<div class="para">The CDC modeled the number of Zika cases diagnosed in Brazil between January and July of 2016 with the formula</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z(t) = 2.75(1.04^t)\text{ thousand cases}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(t\)</span> is the number of months since January 2016.</div>
+</div> <div class="para logical" id="p-907"><ol class="lower-alpha">
+<li id="li-526"><div class="para" id="p-908">Calculate and write a sentence of interpretation for the average rate of change in the number of Brazilians diagnosed with Zika between January 2016 and July 2016.</div></li>
+<li id="li-527"><div class="para" id="p-909">Calculate the percentage change in part (a).</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like"><div class="para logical" id="p-910"><ol class="lower-alpha">
+<li id="li-528"><div class="para" id="p-911">Between January 2016 and July 2016, the number of Zika cases diagnosed in Brazil increased by 0.12 thousand cases per month.</div></li>
+<li id="li-529"><div class="para" id="p-912">26.53%</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-93"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-913">The function <span class="process-math">\(c(t)\)</span> represents the number of students in line at Chick-Fil-A, <span class="process-math">\(t\)</span> hours after 11:00am, and <span class="process-math">\(q(t)\)</span> represents the number of students in line at Quizno's, <span class="process-math">\(t\)</span> hours after 11:00am.  Write a sentence interpreting the following expressions.</div> <div class="para logical" id="p-914"><ol class="lower-alpha">
+<li id="li-530"><div class="para" id="p-915"><span class="process-math">\(\displaystyle c(3) = 15\)</span></div></li>
+<li id="li-531"><div class="para" id="p-916"><span class="process-math">\(\displaystyle q(1) = 8\)</span></div></li>
+<li id="li-532"><div class="para" id="p-917"><span class="process-math">\(\displaystyle (c+q)(0) = 12\)</span></div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-94" id="solution-94"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-94"><div class="solution solution-like"><div class="para logical" id="p-918"><ol class="lower-alpha">
+<li id="li-533"><div class="para" id="p-919">3 hours after 11am, the number of students in the Chick-Fil-A line was 15.</div></li>
+<li id="li-534"><div class="para" id="p-920">1 hour after 11am, the number of students in the Quizno's line was 8.</div></li>
+<li id="li-535"><div class="para" id="p-921">At 11am, the number of students in the Chick-Fil-A and Quizno's lines was 12.</div></li>
+</ol></div></div></div>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

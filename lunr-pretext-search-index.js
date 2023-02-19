@@ -1169,6 +1169,78 @@ var ptx_lunr_docs = [
   "number": "1.11.2",
   "title": "",
   "body": "  A manufacturing company recorded the production of toys when a certain amount of capital is invested in the production run.    Capital Invested (in million dollars)  6  18  24  30  42  48    Units Produced (in billions)  19  38  42  45  60  77       Use the scatterplot to determine the best model for the data. Give two reasons for your choice.    Write the complete model.    Find the capital needed to produce 50 billion units. Write a sentence interpreting your answer.          Change in concavity + no asymptotes\/unbounded end behavior means cubic     billion units of toys produced when million dollars are invested in production.     million dollars. When 35.78 million dollars are invested, 50 billion units will be produced.      "
+},
+{
+  "id": "section-21",
+  "level": "1",
+  "url": "section-21.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Measures of Change over an Interval",
+  "body": " Measures of Change over an Interval   Formulas  Let be a function with input values such that .   Change       Percent Change       Average Rate of Change (AROC)      When giving interpretations, we have four considerations:     When is this event happening? Be sure to specify the interval.    What is happening? Specify the quantity which is changing.    How is it changing? Specify whether or not the quantity is increasing or decreasing.    By how much is it changing? Include proper units.       If denotes the number of students enrolled in Math 1743 and is the number of academic years after the 2000-2001 academic year, interpret the expression .    10 years after the 2000-2001 academic year, the number of students enrolled in Math 1743 was 1552 students      Examples    The average temperature in Norman during the last week of September is given in the table below:    Time  Temperature ( F)  Time  Temperature ( F)    7am  49  1pm  80    8am  58  2pm  80    9am  66  3pm  78    10am  72  4pm  74    11am  76  5pm  69    noon  79  6pm  62       Give the average rate of change in temperature between 11am and 4pm. Write a sentence interpreting your result.    Find the percent change in temperature between 9am and noon, and round your answer to the nearest hundredth. Write a sentence interpreting your result.          AROC is F per hour. Between 11am and 4pm, the average temperature in Norman decreased by F per hour  For (a) and (b), you will want to stress the verb tense in the \"how\" statement. When we interpret instantaneous rates of change, the tense changes to present progressive.    The percent change is 19.7%. Between 9am and 12pm, the average temperature in Norman increased by 19.7%.         Airtran posted a revenue of $603.7 million dollars in the second quarter of 2009 compared with revenue of $693.4 million during the second quarter of 2008. Write a sentence interpreting each of the following:     Find the change in revenue between the second quarter of 2008 and the second quarter of 2009.    Find the percent change between the second quarter of 2008 and second quarter end of 2009.    Find the average rate of change between the second quarter of 2008 and the second quarter of 2009.          Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars    Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 14.86%.    Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars per year.         The American Indian, Eskimo, and Aleut populations in the United States was 362 thousand in 1930, and 4.5 million in 2005. Write a sentence interpreting each of the following, and round to two decimals if necessary:     Find the change in population between 1930 and 2005.    Find the percent change between between 1930 and 2005.    Find the average rate of change between 1930 and 2005.          Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 4.14 million people.  Be mindful that the unit in 1930 is \"thousand people\" not \"million people\", so you have to do some conversion    Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 1143.65%.    Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 0.06 million people per year.         OU Parking Services commissioned a projection of its profit (in thousands of dollars) when commuter parking passes are set certain prices.    Price (dollars)  200  250  300  350  400  450    Profit (thousand dollars)  2080  2520  2760  2820  2700  2380       Find a model for the data.    Calculate the average rate of change of profit when the parking pass price rises from $200 to $350.    Calculate the average rate of change of profit when the parking pass price rises from $350 to $450.    Calculate the percent change for parts (b) and (c).           thousand dollars projected profit for OU parking when commuter parking passes are dollars.    4.93 thousand dollars profit per dollar    -4.4 thousand dollars profit per dollar    In (b), it's 35.58%; in (c), it's -15.60%.         The CDC modeled the number of Zika cases diagnosed in Brazil between January and July of 2016 with the formula where is the number of months since January 2016.     Calculate and write a sentence of interpretation for the average rate of change in the number of Brazilians diagnosed with Zika between January 2016 and July 2016.    Calculate the percentage change in part (a).          Between January 2016 and July 2016, the number of Zika cases diagnosed in Brazil increased by 0.12 thousand cases per month.    26.53%         The function represents the number of students in line at Chick-Fil-A, hours after 11:00am, and represents the number of students in line at Quizno's, hours after 11:00am. Write a sentence interpreting the following expressions.                          3 hours after 11am, the number of students in the Chick-Fil-A line was 15.    1 hour after 11am, the number of students in the Quizno's line was 8.    At 11am, the number of students in the Chick-Fil-A and Quizno's lines was 12.        "
+},
+{
+  "id": "example-87",
+  "level": "2",
+  "url": "section-21.html#example-87",
+  "type": "Example",
+  "number": "2.1.1",
+  "title": "",
+  "body": "  If denotes the number of students enrolled in Math 1743 and is the number of academic years after the 2000-2001 academic year, interpret the expression .    10 years after the 2000-2001 academic year, the number of students enrolled in Math 1743 was 1552 students   "
+},
+{
+  "id": "example-88",
+  "level": "2",
+  "url": "section-21.html#example-88",
+  "type": "Example",
+  "number": "2.1.2",
+  "title": "",
+  "body": "  The average temperature in Norman during the last week of September is given in the table below:    Time  Temperature ( F)  Time  Temperature ( F)    7am  49  1pm  80    8am  58  2pm  80    9am  66  3pm  78    10am  72  4pm  74    11am  76  5pm  69    noon  79  6pm  62       Give the average rate of change in temperature between 11am and 4pm. Write a sentence interpreting your result.    Find the percent change in temperature between 9am and noon, and round your answer to the nearest hundredth. Write a sentence interpreting your result.          AROC is F per hour. Between 11am and 4pm, the average temperature in Norman decreased by F per hour  For (a) and (b), you will want to stress the verb tense in the \"how\" statement. When we interpret instantaneous rates of change, the tense changes to present progressive.    The percent change is 19.7%. Between 9am and 12pm, the average temperature in Norman increased by 19.7%.      "
+},
+{
+  "id": "example-89",
+  "level": "2",
+  "url": "section-21.html#example-89",
+  "type": "Example",
+  "number": "2.1.3",
+  "title": "",
+  "body": "  Airtran posted a revenue of $603.7 million dollars in the second quarter of 2009 compared with revenue of $693.4 million during the second quarter of 2008. Write a sentence interpreting each of the following:     Find the change in revenue between the second quarter of 2008 and the second quarter of 2009.    Find the percent change between the second quarter of 2008 and second quarter end of 2009.    Find the average rate of change between the second quarter of 2008 and the second quarter of 2009.          Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars    Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 14.86%.    Between the second quarter of 2008 and the second quarter of 2009, Airtran's revenue increased by 89.7 million dollars per year.      "
+},
+{
+  "id": "example-90",
+  "level": "2",
+  "url": "section-21.html#example-90",
+  "type": "Example",
+  "number": "2.1.4",
+  "title": "",
+  "body": "  The American Indian, Eskimo, and Aleut populations in the United States was 362 thousand in 1930, and 4.5 million in 2005. Write a sentence interpreting each of the following, and round to two decimals if necessary:     Find the change in population between 1930 and 2005.    Find the percent change between between 1930 and 2005.    Find the average rate of change between 1930 and 2005.          Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 4.14 million people.  Be mindful that the unit in 1930 is \"thousand people\" not \"million people\", so you have to do some conversion    Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 1143.65%.    Between 1930 and 2005, the American Indian, Eskimo, and Aleut populations in the US increased by 0.06 million people per year.      "
+},
+{
+  "id": "example-91",
+  "level": "2",
+  "url": "section-21.html#example-91",
+  "type": "Example",
+  "number": "2.1.5",
+  "title": "",
+  "body": "  OU Parking Services commissioned a projection of its profit (in thousands of dollars) when commuter parking passes are set certain prices.    Price (dollars)  200  250  300  350  400  450    Profit (thousand dollars)  2080  2520  2760  2820  2700  2380       Find a model for the data.    Calculate the average rate of change of profit when the parking pass price rises from $200 to $350.    Calculate the average rate of change of profit when the parking pass price rises from $350 to $450.    Calculate the percent change for parts (b) and (c).           thousand dollars projected profit for OU parking when commuter parking passes are dollars.    4.93 thousand dollars profit per dollar    -4.4 thousand dollars profit per dollar    In (b), it's 35.58%; in (c), it's -15.60%.      "
+},
+{
+  "id": "example-92",
+  "level": "2",
+  "url": "section-21.html#example-92",
+  "type": "Example",
+  "number": "2.1.6",
+  "title": "",
+  "body": "  The CDC modeled the number of Zika cases diagnosed in Brazil between January and July of 2016 with the formula where is the number of months since January 2016.     Calculate and write a sentence of interpretation for the average rate of change in the number of Brazilians diagnosed with Zika between January 2016 and July 2016.    Calculate the percentage change in part (a).          Between January 2016 and July 2016, the number of Zika cases diagnosed in Brazil increased by 0.12 thousand cases per month.    26.53%      "
+},
+{
+  "id": "example-93",
+  "level": "2",
+  "url": "section-21.html#example-93",
+  "type": "Example",
+  "number": "2.1.7",
+  "title": "",
+  "body": "  The function represents the number of students in line at Chick-Fil-A, hours after 11:00am, and represents the number of students in line at Quizno's, hours after 11:00am. Write a sentence interpreting the following expressions.                          3 hours after 11am, the number of students in the Chick-Fil-A line was 15.    1 hour after 11am, the number of students in the Quizno's line was 8.    At 11am, the number of students in the Chick-Fil-A and Quizno's lines was 12.      "
 }
 ]
 
