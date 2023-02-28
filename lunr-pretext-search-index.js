@@ -1241,6 +1241,159 @@ var ptx_lunr_docs = [
   "number": "2.1.7",
   "title": "",
   "body": "  The function represents the number of students in line at Chick-Fil-A, hours after 11:00am, and represents the number of students in line at Quizno's, hours after 11:00am. Write a sentence interpreting the following expressions.                          3 hours after 11am, the number of students in the Chick-Fil-A line was 15.    1 hour after 11am, the number of students in the Quizno's line was 8.    At 11am, the number of students in the Chick-Fil-A and Quizno's lines was 12.      "
+},
+{
+  "id": "section-22",
+  "level": "1",
+  "url": "section-22.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Measures of Change at a Point - Graphical",
+  "body": " Measures of Change at a Point - Graphical   Tangent Lines and Secant Lines   Secant Line  Secant Line   Let be continuous and smooth function on the some input interval . Let be two points in . The secant line through and is the line whose slope is     The characteristic of a secant line is that it ''intentionally'' goes through in two points.    The formula for the slope of a secant line should look familiar; what's the other name we used for this?    Average rate of change      Average Change vs. Instantaneous Change  Secant lines are drawn between two points on a graph. As the distance between the points decreases, we get values of the independent axis which are closer and closer together; we can use a limiting process to find slope of the line through a single point. This is the called the tangent line to the point.   Rate of Change  Rate of Change   For smooth, continuous function , the rate of change of the function at a particular point is given by the slope of the tangent line to the graph of ; the rate of change of at point is denoted      Instantaneous Rate of Change  Instantaneous Rate of Change   The instantaneous rate of change of a function measures slope of the graph of a function at a single point.      Estimate the slope of the tangent line to the curve at by drawing successive secant lines and computing the slope.    This example is meant as a time to explore and discuss; how you choose to draw this is up to you. I find it hard to draw more than two or three lines reasonably, but I do some computations and have students conjecture a slope based on a pattern (if one exists).      For the curve below, use successive secant lines to estimate .   A graph of the function on       I'm on the fence about this one. It seemed like a good idea at the time, but I've found it hard to actually do well. I skipped it last semester, but might be a good enrichment-type activity, especially if you give them the formula for the function.     Percentage Rate of Change  Percentage Rate of Change   For smooth, continuous function , if the rate of change exists for input value and , then we define the percentage rate of change as .  The output for percentage rate of change is \"% per input\"      The rate of change of the student population at OU is 2000 students per year, and the current body is 40,000 students. Find the percent rate of change of the student population.    5% per year      For the following, use the picture:      At each labeled point, identify whether the instantaneous rate of change is positive, negative, or zero.    Is the graph steeper at point or point ?    Is the graph steeper at point or at point ?          A: negative; B: zero; C: positive; D: zero; E: positive    E    A         The number of monthly Spotify listeners of an obscure shoegaze band is given by the function , where is the number of months since the release of their first album.     If the band had 3000 listeners four months after the release of their first album, and the percent rate of change was 36\\% per month, find the rate of change of listeners in the fourth month to the nearest whole number. Give a sentence of interpretation for your answer.    A year after the release, the band had 12000 listeners. Find the average rate of change of the band's Spotify listeners between four months and a year after the release of the first album. Round to the nearest whole number, if necessary. Give a sentence of interpretation for your answer.          In the 4th month after the release of their first album, the number of Spotify listeners for the shoegaze band is increasin by 1080 listeners per month.    Between 4 and 12 months after their first album's release, the number of Spotify listeners for an obscure shoegaze band increased by 1125 listeners per month.     Two things to emphasize here: the units for rate of change and the verb tense changing depending on what the question is asking for.      For the following, use the picture below:      For a crew working 32 crew-hours, the rate of change of which two quantities are positive?    For a crew working 30 crew-hours, which two quantities can be improved by adding crew hours?    At 56 crew-hours, give a relationship between the slopes of total product, average product, and marginal product.    Starting with 24 crew-hours, which quantity has negative slope?    The slope of which quantity is positive for less than 64 hours?    For a crew working 75 crew-hours, the slope of which two quantities are nearly equal?    For a crew working 24 crew-hours, which quantity is near its greatest slope?       Shorthand for below: total product (TP), average product (AP), marginal product (MP)     TP, AP    TP, AP         MP    All    AP, MP    MP         For the picture below, do the following:      Estimate a second point on the tangent line    Calculate the rate of change of the function at the labeled point; include units and round to 2 decimal places if necessary.    Calculate the percentage rate of change of the function at the labeled point; include units and round to 2 decimal places if necessary.       Answers vary here, depending on the point you use to estimate. I tend to skip this question.     "
+},
+{
+  "id": "definition-25",
+  "level": "2",
+  "url": "section-22.html#definition-25",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "Secant Line.",
+  "body": " Secant Line  Secant Line   Let be continuous and smooth function on the some input interval . Let be two points in . The secant line through and is the line whose slope is    "
+},
+{
+  "id": "question-2",
+  "level": "2",
+  "url": "section-22.html#question-2",
+  "type": "Question",
+  "number": "2.2.2",
+  "title": "",
+  "body": "  The formula for the slope of a secant line should look familiar; what's the other name we used for this?    Average rate of change   "
+},
+{
+  "id": "definition-26",
+  "level": "2",
+  "url": "section-22.html#definition-26",
+  "type": "Definition",
+  "number": "2.2.3",
+  "title": "Rate of Change.",
+  "body": " Rate of Change  Rate of Change   For smooth, continuous function , the rate of change of the function at a particular point is given by the slope of the tangent line to the graph of ; the rate of change of at point is denoted    "
+},
+{
+  "id": "definition-27",
+  "level": "2",
+  "url": "section-22.html#definition-27",
+  "type": "Definition",
+  "number": "2.2.4",
+  "title": "Instantaneous Rate of Change.",
+  "body": " Instantaneous Rate of Change  Instantaneous Rate of Change   The instantaneous rate of change of a function measures slope of the graph of a function at a single point.   "
+},
+{
+  "id": "example-94",
+  "level": "2",
+  "url": "section-22.html#example-94",
+  "type": "Example",
+  "number": "2.2.5",
+  "title": "",
+  "body": "  Estimate the slope of the tangent line to the curve at by drawing successive secant lines and computing the slope.    This example is meant as a time to explore and discuss; how you choose to draw this is up to you. I find it hard to draw more than two or three lines reasonably, but I do some computations and have students conjecture a slope based on a pattern (if one exists).   "
+},
+{
+  "id": "example-95",
+  "level": "2",
+  "url": "section-22.html#example-95",
+  "type": "Example",
+  "number": "2.2.6",
+  "title": "",
+  "body": "  For the curve below, use successive secant lines to estimate .   A graph of the function on       I'm on the fence about this one. It seemed like a good idea at the time, but I've found it hard to actually do well. I skipped it last semester, but might be a good enrichment-type activity, especially if you give them the formula for the function.   "
+},
+{
+  "id": "definition-28",
+  "level": "2",
+  "url": "section-22.html#definition-28",
+  "type": "Definition",
+  "number": "2.2.7",
+  "title": "Percentage Rate of Change.",
+  "body": " Percentage Rate of Change  Percentage Rate of Change   For smooth, continuous function , if the rate of change exists for input value and , then we define the percentage rate of change as .  The output for percentage rate of change is \"% per input\"   "
+},
+{
+  "id": "example-96",
+  "level": "2",
+  "url": "section-22.html#example-96",
+  "type": "Example",
+  "number": "2.2.8",
+  "title": "",
+  "body": "  The rate of change of the student population at OU is 2000 students per year, and the current body is 40,000 students. Find the percent rate of change of the student population.    5% per year   "
+},
+{
+  "id": "example-97",
+  "level": "2",
+  "url": "section-22.html#example-97",
+  "type": "Example",
+  "number": "2.2.9",
+  "title": "",
+  "body": "  For the following, use the picture:      At each labeled point, identify whether the instantaneous rate of change is positive, negative, or zero.    Is the graph steeper at point or point ?    Is the graph steeper at point or at point ?          A: negative; B: zero; C: positive; D: zero; E: positive    E    A      "
+},
+{
+  "id": "example-98",
+  "level": "2",
+  "url": "section-22.html#example-98",
+  "type": "Example",
+  "number": "2.2.10",
+  "title": "",
+  "body": "  The number of monthly Spotify listeners of an obscure shoegaze band is given by the function , where is the number of months since the release of their first album.     If the band had 3000 listeners four months after the release of their first album, and the percent rate of change was 36\\% per month, find the rate of change of listeners in the fourth month to the nearest whole number. Give a sentence of interpretation for your answer.    A year after the release, the band had 12000 listeners. Find the average rate of change of the band's Spotify listeners between four months and a year after the release of the first album. Round to the nearest whole number, if necessary. Give a sentence of interpretation for your answer.          In the 4th month after the release of their first album, the number of Spotify listeners for the shoegaze band is increasin by 1080 listeners per month.    Between 4 and 12 months after their first album's release, the number of Spotify listeners for an obscure shoegaze band increased by 1125 listeners per month.     Two things to emphasize here: the units for rate of change and the verb tense changing depending on what the question is asking for.   "
+},
+{
+  "id": "example-99",
+  "level": "2",
+  "url": "section-22.html#example-99",
+  "type": "Example",
+  "number": "2.2.11",
+  "title": "",
+  "body": "  For the following, use the picture below:      For a crew working 32 crew-hours, the rate of change of which two quantities are positive?    For a crew working 30 crew-hours, which two quantities can be improved by adding crew hours?    At 56 crew-hours, give a relationship between the slopes of total product, average product, and marginal product.    Starting with 24 crew-hours, which quantity has negative slope?    The slope of which quantity is positive for less than 64 hours?    For a crew working 75 crew-hours, the slope of which two quantities are nearly equal?    For a crew working 24 crew-hours, which quantity is near its greatest slope?       Shorthand for below: total product (TP), average product (AP), marginal product (MP)     TP, AP    TP, AP         MP    All    AP, MP    MP      "
+},
+{
+  "id": "example-100",
+  "level": "2",
+  "url": "section-22.html#example-100",
+  "type": "Example",
+  "number": "2.2.12",
+  "title": "",
+  "body": "  For the picture below, do the following:      Estimate a second point on the tangent line    Calculate the rate of change of the function at the labeled point; include units and round to 2 decimal places if necessary.    Calculate the percentage rate of change of the function at the labeled point; include units and round to 2 decimal places if necessary.       Answers vary here, depending on the point you use to estimate. I tend to skip this question.   "
+},
+{
+  "id": "section-23",
+  "level": "1",
+  "url": "section-23.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Rates of Change: Notation & Interpretation",
+  "body": " Rates of Change: Notation & Interpretation   Average ROC vs. Instantaneous ROC    Notation and Terminology    Examples   "
+},
+{
+  "id": "section-24",
+  "level": "1",
+  "url": "section-24.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Rates of Change: Numerical Limits & Nonexistence",
+  "body": " Rates of Change: Numerical Limits & Nonexistence   Derivative: Numerical Definition    Derivative: Existence    Exercises   "
+},
+{
+  "id": "section-25",
+  "level": "1",
+  "url": "section-25.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "The Derivative, Algebraically",
+  "body": " The Derivative, Algebraically   The Derivative, Algebraically   "
+},
+{
+  "id": "section-26",
+  "level": "1",
+  "url": "section-26.html",
+  "type": "Section",
+  "number": "2.6",
+  "title": "Measures of Change at a Point - Graphical",
+  "body": " Measures of Change at a Point - Graphical   Rate of Change Graphs   "
 }
 ]
 
