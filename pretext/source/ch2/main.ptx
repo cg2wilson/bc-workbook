@@ -10,11 +10,10 @@
 		
 	</introduction>
     <xi:include href="./21.ptx"/> 
-	<!--
 	<xi:include href="./22.ptx"/>
     <xi:include href="./23.ptx"/>
     <xi:include href="./24.ptx"/>
     <xi:include href="./25.ptx"/>
     <xi:include href="./26.ptx"/>
-	-->
+	
 </chapter>

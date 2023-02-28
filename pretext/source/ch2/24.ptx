@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-24" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Rates of Change: Numerical Limits &amp; Nonexistence</title>
+
+	<subsection xml:id="section-24-deriv-num">
+		<title>Derivative: Numerical Definition</title>
+
+    </subsection>
+
+	<subsection xml:id="section-24-deriv-exist">
+		<title>Derivative: Existence</title>
+
+    </subsection>
+
+	<subsection xml:id="section-24-examples">
+		<title>Exercises</title>
+
+    </subsection>
+</section>
