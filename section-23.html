@@ -339,11 +339,167 @@ window.MathJax = {
 </h2>
 <section class="subsection" id="section-23-avg-inst"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.3.1</span> <span class="title">Average ROC vs. Instantaneous ROC</span>
-</h3></section><section class="subsection" id="section-23-notation"><h3 class="heading hide-type">
+</h3>
+<article class="assemblage assemblage-like" id="assemblage-8"><h4 class="heading"><span class="title">Average Rate of Change.</span></h4>
+<div class="para logical" id="p-978"><ul class="disc">
+<li id="li-563"><div class="para" id="p-979">Measures how rapidly a quantity changes over an interval</div></li>
+<li id="li-564"><div class="para" id="p-980">Slope of the secant line between two points</div></li>
+</ul></div></article><article class="assemblage assemblage-like" id="assemblage-9"><h4 class="heading"><span class="title">(Instantaneous) Rate of Change.</span></h4>
+<div class="para logical" id="p-981"><ul class="disc">
+<li id="li-565"><div class="para" id="p-982">Measures how rapidly a quantity is changing at a specific point</div></li>
+<li id="li-566"><div class="para" id="p-983">Slope of the tangent line at a single point</div></li>
+<li id="li-567"><div class="para" id="p-984">Function must be smooth and continuous</div></li>
+</ul></div></article></section><section class="subsection" id="section-23-notation"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.3.2</span> <span class="title">Notation and Terminology</span>
-</h3></section><section class="subsection" id="section-23-examples"><h3 class="heading hide-type">
+</h3>
+<div class="para" id="p-985">Rate of change at a specific point <span class="process-math">\(a\)</span> is often referred to as any of the following (given a function <span class="process-math">\(f\)</span>):</div>
+<div class="para logical" id="p-986"><ul class="disc">
+<li id="li-568"><div class="para" id="p-987">the derivative of <span class="process-math">\(f\)</span> at <span class="process-math">\(a\)</span>
+</div></li>
+<li id="li-569"><div class="para" id="p-988">the slope of a graph of <span class="process-math">\(f\)</span> at point <span class="process-math">\((a,f(a))\)</span>
+</div></li>
+<li id="li-570"><div class="para" id="p-989">the slope of the line tangent to a graph of <span class="process-math">\(f\)</span> at a point <span class="process-math">\((a,f(a))\)</span>
+</div></li>
+<li id="li-571"><div class="para" id="p-990">the rate of change of <span class="process-math">\(f\)</span> at <span class="process-math">\(a\)</span>
+</div></li>
+</ul></div>
+<div class="para" id="p-991">We also have two different notations for the derivative of <span class="process-math">\(f\)</span> at point <span class="process-math">\(a\text{:}\)</span>
+</div>
+<div class="para logical" id="p-992"><ul class="disc">
+<li id="li-572"><div class="para" id="p-993">
+<span class="process-math">\(f'(a)\text{.}\)</span>  This is read ''<span class="process-math">\(f\)</span> prime of <span class="process-math">\(a\)</span>''</div></li>
+<li id="li-573"><div class="para" id="p-994">
+<span class="process-math">\(\dfrac{df}{dx}\bigg|_{x = a}\text{.}\)</span>  This is read ''d-f d-x, evaluated at <span class="process-math">\(a\)</span>'', or as ``the derivative of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\text{,}\)</span>  evaluated at <span class="process-math">\(a\)</span>'</div></li>
+</ul></div>
+<div class="para" id="p-995">
+<em class="alert">Note</em>: We will freely interchange between any of the above terminology or notations.</div></section><section class="subsection" id="section-23-examples"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.3.3</span> <span class="title">Examples</span>
-</h3></section></section></div>
+</h3>
+<article class="example example-like" id="example-101"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-996">The function <span class="process-math">\(f\)</span> gives weekly profit, in thousands of dollars, that an airline makes on flights from Boston to Washington, D.C. when the ticket price is <span class="process-math">\(p\)</span> dollars.  Write a sentence interpreting the following:</div> <div class="para logical" id="p-997"><ol class="lower-alpha">
+<li id="li-574"><div class="para" id="p-998"><span class="process-math">\(\displaystyle f(65)=15\)</span></div></li>
+<li id="li-575"><div class="para" id="p-999"><span class="process-math">\(\displaystyle f'(65)=1.5\)</span></div></li>
+<li id="li-576"><div class="para" id="p-1000"><span class="process-math">\(\displaystyle f'(90) = -2\)</span></div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like">
+<div class="para logical" id="p-1001"><ol class="lower-alpha">
+<li id="li-577"><div class="para" id="p-1002">When the ticket price for a flight from Boston to DC is $65, the weekly profit is 15 thousand dollars</div></li>
+<li id="li-578"><div class="para" id="p-1003">When the ticket price for a flight from Boston to DC is $65, the weekly profit is increasing by 1.5 thousand dollars (profit) per dollar (ticket price)</div></li>
+<li id="li-579"><div class="para" id="p-1004">When the ticket price for a flight from Boston to DC is $90, the weekly profit is decreasing by 2 thousand dollars (profit) per dollar (ticket price)</div></li>
+</ol></div> <div class="para" id="p-1005">In parts b and c, the parenthetical descriptions aren't explicitly necessary, but might be helpful to make the unit make sense.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-102"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1006">The function <span class="process-math">\(C\)</span> gives the number of bushels of corn produced on a tract of farmland that is treated with <span class="process-math">\(f\)</span> pounds of nitrogen per acre.</div> <div class="para logical" id="p-1007"><ol class="lower-alpha">
+<li id="li-580"><div class="para" id="p-1008">Is it possible for <span class="process-math">\(C(90)\)</span> to be negative?  Why?</div></li>
+<li id="li-581"><div class="para" id="p-1009">What are the units of <span class="process-math">\(\dfrac{dC}{df}\bigg|_{f=90}\text{?}\)</span>
+</div></li>
+<li id="li-582"><div class="para" id="p-1010">Is it possible for <span class="process-math">\(\dfrac{dC}{df}\bigg|_{f=90}\)</span> to be negative?  Why?</div></li>
+<li id="li-583"><div class="para" id="p-1011">Give an alternate notation for the statement <span class="process-math">\(\dfrac{dC}{df}\bigg|_{f=90}\text{.}\)</span>
+</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-104" id="solution-104"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-104"><div class="solution solution-like">
+<div class="para logical" id="p-1012"><ol class="lower-alpha">
+<li id="li-584"><div class="para" id="p-1013">No. You can't produce negative corn.</div></li>
+<li id="li-585"><div class="para" id="p-1014">bushels of corn per pound of nitrogen (per acre)</div></li>
+<li id="li-586"><div class="para" id="p-1015">Yes. Negative derivative indicates that the rate of change of production is negative, i.e. production is decreasing (but not negative!).</div></li>
+<li id="li-587"><div class="para" id="p-1016"><span class="process-math">\(\displaystyle C'(90)\)</span></div></li>
+</ol></div> <div class="para" id="p-1017">Recently I've found myself switching the order of parts b and c; it seems to make more sense.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-103"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1018">Sketch a possible graph of <span class="process-math">\(t(x)\text{,}\)</span> given that:</div> <div class="para logical" id="p-1019"><ol class="lower-alpha">
+<li id="li-588"><div class="para" id="p-1020"><span class="process-math">\(\displaystyle t(3) = 7\)</span></div></li>
+<li id="li-589"><div class="para" id="p-1021"><span class="process-math">\(\displaystyle t(4.4) = t(8) = 0\)</span></div></li>
+<li id="li-590"><div class="para" id="p-1022"><span class="process-math">\(\displaystyle t'(6.2) = 0\)</span></div></li>
+<li id="li-591"><div class="para" id="p-1023">
+<span class="process-math">\(t\)</span> has no change in concavity</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-105" id="solution-105"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-105"><div class="solution solution-like"><div class="para" id="p-1024">Answers vary, but I always find it helpful to talk them carefully through this problem. Their issue on "draw a graph" problems usually seems to be that their freedom in overall detail becomes a liability when synthesizing the material.</div></div></div>
+</div></article><article class="example example-like" id="example-104"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1025">The function <span class="process-math">\(w\)</span> gives a certain Business Calculus instructor's weight (in pounds) <span class="process-math">\(t\)</span> weeks after he begins a diet.  Write a sentence of interpretation for each of the following statements:</div> <div class="para logical" id="p-1026"><ol class="lower-alpha">
+<li id="li-592"><div class="para" id="p-1027">
+<span class="process-math">\(w(0) = 180\)</span> and <span class="process-math">\(w(12) = 165\)</span>
+</div></li>
+<li id="li-593"><div class="para" id="p-1028">
+<span class="process-math">\(w'(1) = -2\)</span> and <span class="process-math">\(w'(9) = -1\)</span>
+</div></li>
+<li id="li-594"><div class="para" id="p-1029">
+<span class="process-math">\(\dfrac{dw}{dt}\bigg|_{t=12} = 0\)</span> and <span class="process-math">\(\dfrac{dw}{dt}\bigg|_{t=15} = 0.25\)</span>
+</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like"><div class="para logical" id="p-1030"><ol class="lower-alpha">
+<li id="li-595">
+<div class="para" id="p-1031">When the diet begins, the Business Calculus instructor weighs 180 pounds.</div>
+<div class="para" id="p-1032">12 weeks after the diet began, the Business Calculus instructor weighs 165 pounds.</div>
+</li>
+<li id="li-596">
+<div class="para" id="p-1033">1 week after the diet begins, the insructor's weight is decreasing by 2 pounds per week</div>
+<div class="para" id="p-1034">9 weeks after the diet begins, the insructor's weight is decreasing by 1 pound per week</div>
+</li>
+<li id="li-597">
+<div class="para" id="p-1035">12 weeks after the diet begins, the insructor's weight is not changing</div>
+<div class="para" id="p-1036">15 weeks after the diet begins, the instructor's weight is increasing by 0.25 pounds per week</div>
+</li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-105"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1037">Sketch a possible graph of the function <span class="process-math">\(m\)</span> with input <span class="process-math">\(t\text{,}\)</span> given that</div> <div class="para logical" id="p-1038"><ol class="lower-alpha">
+<li id="li-598"><div class="para" id="p-1039"><span class="process-math">\(\displaystyle m(4) = 8\)</span></div></li>
+<li id="li-599"><div class="para" id="p-1040">
+<span class="process-math">\(m'(4)\)</span> is greater than any other slope</div></li>
+<li id="li-600"><div class="para" id="p-1041"><span class="process-math">\(\displaystyle m'(0) = m'(6) = 0\)</span></div></li>
+<li id="li-601"><div class="para" id="p-1042">The graph of <span class="process-math">\(m\)</span> has no direction changes</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like"><div class="para" id="p-1043">Answers vary, but they may struggle in the same way as the previous example.</div></div></div>
+</div></article><article class="example example-like" id="example-106"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1044">The function <span class="process-math">\(g\)</span> gives the fuel efficiency in miles per gallon of a car traveling <span class="process-math">\(v\)</span> miles per hour.  Write a sentence of interpretation for each of the following:</div> <div class="para logical" id="p-1045"><ol class="lower-alpha">
+<li id="li-602"><div class="para" id="p-1046">
+<span class="process-math">\(g(55)=32\)</span> and <span class="process-math">\(g'(55)=-0.25\)</span>
+</div></li>
+<li id="li-603"><div class="para" id="p-1047">
+<span class="process-math">\(g'(45) = 0.15\)</span> and <span class="process-math">\(g'(51) = 0\)</span>
+</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like">
+<div class="para logical" id="p-1048"><ol class="lower-alpha">
+<li id="li-604">
+<div class="para" id="p-1049">When the car is traveling 55 miles per hour, the fuel efficiency is 32 miles per gallon</div>
+<div class="para" id="p-1050">When the car is traveling 55 miles per hour, the fuel efficiency is decreasing by 0.25 miles per gallon per mile per hour</div>
+</li>
+<li id="li-605">
+<div class="para" id="p-1051">When the car is traveling 45 miles per hour, the fuel efficiency is increasing by 0.15 miles per gallon per mile per hour</div>
+<div class="para" id="p-1052">When the car is traveling 51 miles per hour, the fuel efficiency is not changing</div>
+</li>
+</ol></div> <div class="para" id="p-1053">The unit tends to confuse people here, and that might cause some other confusions when writing derivative-style interpretations.</div>
+</div></div>
+</div></article><article class="example example-like" id="example-107"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1054">The figure below depicts the number of customers that a fast-food restaurant serves each hour on a typical weekday:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sec23-1.svg" role="img" class="contained"></div> <div class="para logical" id="p-1055"><ol class="lower-alpha">
+<li id="li-606"><div class="para" id="p-1056">Estimate the average rate of change of the number of customers between 7am and 11am.  Interpret your answer.</div></li>
+<li id="li-607"><div class="para" id="p-1057">Estimate the instantaneous rate of change and percentage rate of change of the number of customers at 4pm.  Interpret your answers.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like">
+<div class="para" id="p-1058">Both of these answers depend heavily on the other point you identify lying on the line.</div> <div class="para" id="p-1059">Students tend to be confused about how to get started, but have seemed fine after that initial push. This might be a good problem to let them try on their own, outside of class.</div>
+</div></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-22.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-24.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

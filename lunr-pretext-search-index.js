@@ -1366,7 +1366,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Rates of Change: Notation & Interpretation",
-  "body": " Rates of Change: Notation & Interpretation   Average ROC vs. Instantaneous ROC    Notation and Terminology    Examples   "
+  "body": " Rates of Change: Notation & Interpretation   Average ROC vs. Instantaneous ROC   Average Rate of Change     Measures how rapidly a quantity changes over an interval    Slope of the secant line between two points       (Instantaneous) Rate of Change     Measures how rapidly a quantity is changing at a specific point    Slope of the tangent line at a single point    Function must be smooth and continuous        Notation and Terminology  Rate of change at a specific point is often referred to as any of the following (given a function ):     the derivative of at     the slope of a graph of at point     the slope of the line tangent to a graph of at a point     the rate of change of at      We also have two different notations for the derivative of at point :      . This is read '' prime of ''     . This is read ''d-f d-x, evaluated at '', or as ``the derivative of with respect to , evaluated at '      Note : We will freely interchange between any of the above terminology or notations.    Examples    The function gives weekly profit, in thousands of dollars, that an airline makes on flights from Boston to Washington, D.C. when the ticket price is dollars. Write a sentence interpreting the following:                          When the ticket price for a flight from Boston to DC is $65, the weekly profit is 15 thousand dollars    When the ticket price for a flight from Boston to DC is $65, the weekly profit is increasing by 1.5 thousand dollars (profit) per dollar (ticket price)    When the ticket price for a flight from Boston to DC is $90, the weekly profit is decreasing by 2 thousand dollars (profit) per dollar (ticket price)     In parts b and c, the parenthetical descriptions aren't explicitly necessary, but might be helpful to make the unit make sense.      The function gives the number of bushels of corn produced on a tract of farmland that is treated with pounds of nitrogen per acre.     Is it possible for to be negative? Why?    What are the units of ?    Is it possible for to be negative? Why?    Give an alternate notation for the statement .          No. You can't produce negative corn.    bushels of corn per pound of nitrogen (per acre)    Yes. Negative derivative indicates that the rate of change of production is negative, i.e. production is decreasing (but not negative!).          Recently I've found myself switching the order of parts b and c; it seems to make more sense.      Sketch a possible graph of , given that:                     has no change in concavity       Answers vary, but I always find it helpful to talk them carefully through this problem. Their issue on \"draw a graph\" problems usually seems to be that their freedom in overall detail becomes a liability when synthesizing the material.      The function gives a certain Business Calculus instructor's weight (in pounds) weeks after he begins a diet. Write a sentence of interpretation for each of the following statements:      and      and      and           When the diet begins, the Business Calculus instructor weighs 180 pounds.  12 weeks after the diet began, the Business Calculus instructor weighs 165 pounds.    1 week after the diet begins, the insructor's weight is decreasing by 2 pounds per week  9 weeks after the diet begins, the insructor's weight is decreasing by 1 pound per week    12 weeks after the diet begins, the insructor's weight is not changing  15 weeks after the diet begins, the instructor's weight is increasing by 0.25 pounds per week         Sketch a possible graph of the function with input , given that           is greater than any other slope         The graph of has no direction changes       Answers vary, but they may struggle in the same way as the previous example.      The function gives the fuel efficiency in miles per gallon of a car traveling miles per hour. Write a sentence of interpretation for each of the following:      and      and           When the car is traveling 55 miles per hour, the fuel efficiency is 32 miles per gallon  When the car is traveling 55 miles per hour, the fuel efficiency is decreasing by 0.25 miles per gallon per mile per hour    When the car is traveling 45 miles per hour, the fuel efficiency is increasing by 0.15 miles per gallon per mile per hour  When the car is traveling 51 miles per hour, the fuel efficiency is not changing     The unit tends to confuse people here, and that might cause some other confusions when writing derivative-style interpretations.      The figure below depicts the number of customers that a fast-food restaurant serves each hour on a typical weekday:      Estimate the average rate of change of the number of customers between 7am and 11am. Interpret your answer.    Estimate the instantaneous rate of change and percentage rate of change of the number of customers at 4pm. Interpret your answers.       Both of these answers depend heavily on the other point you identify lying on the line.  Students tend to be confused about how to get started, but have seemed fine after that initial push. This might be a good problem to let them try on their own, outside of class.     "
+},
+{
+  "id": "example-101",
+  "level": "2",
+  "url": "section-23.html#example-101",
+  "type": "Example",
+  "number": "2.3.1",
+  "title": "",
+  "body": "  The function gives weekly profit, in thousands of dollars, that an airline makes on flights from Boston to Washington, D.C. when the ticket price is dollars. Write a sentence interpreting the following:                          When the ticket price for a flight from Boston to DC is $65, the weekly profit is 15 thousand dollars    When the ticket price for a flight from Boston to DC is $65, the weekly profit is increasing by 1.5 thousand dollars (profit) per dollar (ticket price)    When the ticket price for a flight from Boston to DC is $90, the weekly profit is decreasing by 2 thousand dollars (profit) per dollar (ticket price)     In parts b and c, the parenthetical descriptions aren't explicitly necessary, but might be helpful to make the unit make sense.   "
+},
+{
+  "id": "example-102",
+  "level": "2",
+  "url": "section-23.html#example-102",
+  "type": "Example",
+  "number": "2.3.2",
+  "title": "",
+  "body": "  The function gives the number of bushels of corn produced on a tract of farmland that is treated with pounds of nitrogen per acre.     Is it possible for to be negative? Why?    What are the units of ?    Is it possible for to be negative? Why?    Give an alternate notation for the statement .          No. You can't produce negative corn.    bushels of corn per pound of nitrogen (per acre)    Yes. Negative derivative indicates that the rate of change of production is negative, i.e. production is decreasing (but not negative!).          Recently I've found myself switching the order of parts b and c; it seems to make more sense.   "
+},
+{
+  "id": "example-103",
+  "level": "2",
+  "url": "section-23.html#example-103",
+  "type": "Example",
+  "number": "2.3.3",
+  "title": "",
+  "body": "  Sketch a possible graph of , given that:                     has no change in concavity       Answers vary, but I always find it helpful to talk them carefully through this problem. Their issue on \"draw a graph\" problems usually seems to be that their freedom in overall detail becomes a liability when synthesizing the material.   "
+},
+{
+  "id": "example-104",
+  "level": "2",
+  "url": "section-23.html#example-104",
+  "type": "Example",
+  "number": "2.3.4",
+  "title": "",
+  "body": "  The function gives a certain Business Calculus instructor's weight (in pounds) weeks after he begins a diet. Write a sentence of interpretation for each of the following statements:      and      and      and           When the diet begins, the Business Calculus instructor weighs 180 pounds.  12 weeks after the diet began, the Business Calculus instructor weighs 165 pounds.    1 week after the diet begins, the insructor's weight is decreasing by 2 pounds per week  9 weeks after the diet begins, the insructor's weight is decreasing by 1 pound per week    12 weeks after the diet begins, the insructor's weight is not changing  15 weeks after the diet begins, the instructor's weight is increasing by 0.25 pounds per week      "
+},
+{
+  "id": "example-105",
+  "level": "2",
+  "url": "section-23.html#example-105",
+  "type": "Example",
+  "number": "2.3.5",
+  "title": "",
+  "body": "  Sketch a possible graph of the function with input , given that           is greater than any other slope         The graph of has no direction changes       Answers vary, but they may struggle in the same way as the previous example.   "
+},
+{
+  "id": "example-106",
+  "level": "2",
+  "url": "section-23.html#example-106",
+  "type": "Example",
+  "number": "2.3.6",
+  "title": "",
+  "body": "  The function gives the fuel efficiency in miles per gallon of a car traveling miles per hour. Write a sentence of interpretation for each of the following:      and      and           When the car is traveling 55 miles per hour, the fuel efficiency is 32 miles per gallon  When the car is traveling 55 miles per hour, the fuel efficiency is decreasing by 0.25 miles per gallon per mile per hour    When the car is traveling 45 miles per hour, the fuel efficiency is increasing by 0.15 miles per gallon per mile per hour  When the car is traveling 51 miles per hour, the fuel efficiency is not changing     The unit tends to confuse people here, and that might cause some other confusions when writing derivative-style interpretations.   "
+},
+{
+  "id": "example-107",
+  "level": "2",
+  "url": "section-23.html#example-107",
+  "type": "Example",
+  "number": "2.3.7",
+  "title": "",
+  "body": "  The figure below depicts the number of customers that a fast-food restaurant serves each hour on a typical weekday:      Estimate the average rate of change of the number of customers between 7am and 11am. Interpret your answer.    Estimate the instantaneous rate of change and percentage rate of change of the number of customers at 4pm. Interpret your answers.       Both of these answers depend heavily on the other point you identify lying on the line.  Students tend to be confused about how to get started, but have seemed fine after that initial push. This might be a good problem to let them try on their own, outside of class.   "
 },
 {
   "id": "section-24",
