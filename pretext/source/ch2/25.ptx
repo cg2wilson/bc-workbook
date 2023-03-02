@@ -6,5 +6,208 @@
 	<subsection xml:id="section-25-deriv-alg">
 		<title>The Derivative, Algebraically</title>
 
+		<definition>
+			<title>Derivative (Algebraic Definition)</title>
+			<idx><h>Derivative (Algebraic)</h></idx>			
+			<statement>
+				<p>
+					Let <m>f(x)</m> be a function defined on the open interval <m>(a,b)</m>, and <m>x\in (a,b)</m>.  Then, the derivative of <m>f</m> at point <m>x</m> is given by the formula
+					<me>
+						\ds \lim_{h\to 0}\dfrac{f(x+h)-f(x)}{h}
+					</me>
+					
+				</p>
+			</statement>
+		</definition>
+
+		<question>
+			<statement>
+				<p>
+					Why is this definition the same as the one in Section 2.4?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+				<p>
+					At this point, I take time to draw some pictures to show what the earlier definition of the derivative "meant" and what the new one "means".
+				</p>
+			</solution>
+		</question>
+
+		<p>
+			It is useful to remember a few things from algebra when doing these calculations:
+		</p>
+		<p>
+			<ul>
+				<li>
+					<p>
+						<m>\sqrt{x + y}\neq \sqrt{x} + \sqrt{y}</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						<m>(a+b)^2 \neq a^2 + b^2</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						<m>\dfrac{a}{b+c}\neq \dfrac{a}{b} + \dfrac{a}{c}</m>
+					</p>
+				</li>
+			</ul>
+		</p>
+
+		<p>
+			When we algebraically find the derivative of a function, there is a four-step process which makes the algebra much simpler, and the derivative easier to find.  The steps are:
+		</p>
+		<p>
+			<ol>
+				<li>
+					<p>
+						Find and simplify <m>f(x+h)</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						Find and simplify <m>f(x+h)-f(x)</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						Find and simplify <m>\dfrac{f(x+h)-f(x)}{h}</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						Compute <m>\ds \lim_{h\to 0} \dfrac{f(x+h)-f(x)}{h}</m>
+					</p>
+				</li>
+			</ol>
+		</p>
+
+		<p>
+			This is demonstrated below.
+		</p>
+
+		<example>
+			<statement>
+				<p>
+					Algebraically find the derivative of the function <m>f(x) = x^2 </m> using the four-step process. 
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f(x) = 2x</m>
+				</p>
+				<p>
+					Algebra tends not to be a strength for many students. Go deliberately and carefully; handling the notation of <m>f(x+h)</m> is a common tripping point.
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Algebraically find the derivative of the function <m>f(x) = 5x -2</m> using the four-step process.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) =5</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The time it takes an average athlete to swim 100 meters freestyle at age <m>x</m> years can be modeled as 
+					<me>
+						t(x) = 0.181x^2 - 8.463x + 147.376\text{ seconds}
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Calculate the swim time at age 13 to the nearest second.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use the algebraic method to develop a formula for the derivative of <m>t</m> (ie, find <m>t'(x)</m>).	
+							</p>
+						</li>
+						<li>
+							<p>
+								How quickly is the time to swim 100 meters freestyle changing for an average 13-year-old athlete?  Round to the nearest hundredth and interpret the result.
+							</p>
+						</li>
+						<li>
+							<p>
+								Compute the percent rate of change of swimmers' time at age 13, to the nearest tenth.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>t(13) = 68</m> seconds
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>t'(x) = 0.362x-8.463</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>t'(13) = -3.76</m> seconds per year. At age 13, the average athlete's 100m freestyle swim time is decreasing by 3.76 seconds per year
+							</p>
+						</li>
+						<li>
+							<p>
+								-5.5% per year
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Algebraically determine the derivative of <m>f(t) = \dfrac{1}{2}t^2 -\dfrac{1}{3}</m>, and evaluate <m>\dfrac{df}{dt}\bigg|_{t=1}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(1) = 1</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Algebraically determine the derivative of <m>k(r) = r^2-2r^3</m>, and evaluate <m>k'(0)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					I usually leave this one as practice, explicitly because there's a lot of algebra that they have to navigate, but I do give the answers so that they can verify their work.
+				</p>
+				<p>
+					<m>k'(r) = 2r-6r^2</m>; <m>k'(0) = 0</m>
+				</p>
+			</solution>
+		</example>
     </subsection>
 </section>

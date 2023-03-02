@@ -5,16 +5,359 @@
 
 	<subsection xml:id="section-24-deriv-num">
 		<title>Derivative: Numerical Definition</title>
+			<p>
+				Let <m>a</m> be fixed, and let <m>x</m> be some point on <m>f</m> other than <m>a</m>.  Then, the slope of the secant line is given by
+				<me>
+					\dfrac{f(x)-f(a)}{x-a}
+				</me>
+				Taking limits, we have the definition of the derivative of <m>f</m> at a point <m>a</m>:
+				<me>
+					f'(a) = \ds \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}
+				</me>
+			</p>
 
+			<example>
+				<statement>
+					<p>
+						Find the derivative of the function <m>f(x) = \sqrt{2x}</m> at <m>x = 3</m> using the numerical method.  Round your final answer to the thousandths place, if necessary
+					</p>
+					<sidebyside>
+						<tabular>
+							<row>
+								<cell halign="center"><m>x</m></cell>
+								<cell halign="center"><m>\dfrac{f(x) - f(3)}{x-3}</m></cell>
+							</row>
+							<row>
+								<cell halign="center">2.9</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">2.99</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">2.999</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">2.9999</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">2.99999</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center"><m>f'(3)\approx</m></cell>
+								<cell halign="center"></cell>
+							</row>
+						</tabular>
+						<tabular>
+							<row>
+								<cell halign="center"><m>x</m></cell>
+								<cell halign="center"><m>\dfrac{f(x) - f(3)}{x-3}</m></cell>
+							</row>
+							<row>
+								<cell halign="center">3.1</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">3.01</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">3.001</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">3.0001</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center">3.00001</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center"><m>f'(3)\approx</m></cell>
+								<cell halign="center"></cell>
+							</row>
+						</tabular>
+					</sidebyside>	
+					<p>
+						<me>
+							f'(3)\approx
+						</me>
+						
+					</p>				
+				</statement>
+				<solution>
+					<p>
+						The final line is a red herring and is unnecessary; I use it to emphasize the rules for how far students are supposed to take numerical answers in a table.
+					</p>
+					<sidebyside>
+						<tabular>
+							<row>
+								<cell halign="center"><m>x</m></cell>
+								<cell halign="center"><m>\dfrac{f(x) - f(3)}{x-3}</m></cell>
+							</row>
+							<row>
+								<cell halign="center">2.9</cell>
+								<cell halign="center">0.41770827047</cell>
+							</row>
+							<row>
+								<cell halign="center">2.99</cell>
+								<cell halign="center">0.40858906557</cell>
+							</row>
+							<row>
+								<cell halign="center">2.999</cell>
+								<cell halign="center">0.4082823168</cell>
+							</row>
+							<row>
+								<cell halign="center">2.9999</cell>
+								<cell halign="center">0.408251693</cell>
+							</row>
+							<row>
+								<cell halign="center">2.99999</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center"><m>f'(3)\approx</m></cell>
+								<cell halign="center">0.408</cell>
+							</row>
+						</tabular>
+						<tabular>
+							<row>
+								<cell halign="center"><m>x</m></cell>
+								<cell halign="center"><m>\dfrac{f(x) - f(3)}{x-3}</m></cell>
+							</row>
+							<row>
+								<cell halign="center">3.1</cell>
+								<cell halign="center">0.404901768145</cell>
+							</row>
+							<row>
+								<cell halign="center">3.01</cell>
+								<cell halign="center">0.40790864939</cell>
+							</row>
+							<row>
+								<cell halign="center">3.001</cell>
+								<cell halign="center">0.4082142754</cell>
+							</row>
+							<row>
+								<cell halign="center">3.0001</cell>
+								<cell halign="center">0.408244888</cell>
+							</row>
+							<row>
+								<cell halign="center">3.00001</cell>
+								<cell halign="center"></cell>
+							</row>
+							<row>
+								<cell halign="center"><m>f'(3)\approx</m></cell>
+								<cell halign="center">0.408</cell>
+							</row>
+						</tabular>
+					</sidebyside>
+					<p>
+						<me>
+							f'(3)\approx 0.408
+						</me>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						A multinational corporation invests $32 billion in assets, resulting in the future value <m>F(t) = 32(1.12^t)</m> billion dollars after <m>t</m> years.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									By how much is the investment growing in the fourth year?  Write a sentence interpreting your answer, and round to the nearest hundredth.
+								</p>
+							</li>
+							<li>
+								<p>
+									Find the percent rate of change in the fourth year.  Round to 2 decimal places.
+								</p>
+							</li>
+						</ol>							
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol>
+							<li>
+								<p>
+									<m>F'(4) = 5.71</m> billion dollars per year. 4 years after investment, the value of the investment is increasing by 5.71 billion dollars per year.
+								</p>
+							</li>
+							<li>
+								<p>
+									11.34% per year
+								</p>
+							</li>
+						</ol>
+						
+					</p>
+				</solution>
+			</example>
     </subsection>
 
 	<subsection xml:id="section-24-deriv-exist">
 		<title>Derivative: Existence</title>
 
+			<p>
+				The derivative of a function does not always exist; the definition requires that the function be smooth and continuous.  Formally, we say that a function is <term>differentiable</term> when the derivative exists for all <m>x</m> in some interval <m>(a,b)</m>.  We have three cases for nonexistence:
+			</p>
+			<p>
+				<ul>
+					<li>
+						<p>
+							Corner/cusp
+						</p>
+					</li>
+					<li>
+						<p>
+							Vertical asymptote
+						</p>
+					</li>
+					<li>
+						<p>
+							Discontinuity
+						</p>
+					</li>
+				</ul>
+			</p>
     </subsection>
 
 	<subsection xml:id="section-24-examples">
 		<title>Exercises</title>
 
+			<example>
+				<statement>
+					<p>
+						Numerically estimate the derivative of the function <m>f(x) = -x^2+4x</m> at <m>x = -1</m>.  Round your final answer to the nearest tenth.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(-1) = 6</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Numerically estimate the derivative of the function <m>g(y) = 5\ln y</m> at <m>x = 5</m>.  Round your final answer to the nearest hundredth.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>g'(5) = 1</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						The annual number of passengers going through the Atlanta airport between 2000 and 2008 can be modeled as <m>p(t) = -0.102t^3 + 1.39t^2 -3.29t + 79.25</m> million passengers, <m>t</m> years since 2000.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Estimate <m>p'(6)</m> numerically to the nearest thousandth.
+								</p>
+							</li>
+							<li>
+								<p>
+									Write an interpretation of <m>p'(6)</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									Find the percent rate of change in 2006, to the nearest hundredth.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>p'(6) = 2.374</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									6 years after 2000, the annual number passengers going through the Atlanta airport is increasing by 2.374 million passengers per year
+								</p>
+							</li>
+							<li>
+								<p>
+									2.71% per year
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						The average weekly sales (in million dollars) for Abercrombie &amp; Fitch between 2004 and 2008 is given in the table below.
+					</p>
+					<tabular>
+						<row>
+							<cell halign="center"></cell>
+							<cell halign="center"></cell>
+							<cell halign="center"></cell>
+							<cell halign="center"></cell>
+							<cell halign="center"></cell>
+							<cell halign="center"></cell>
+						</row>
+					</tabular>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Align the data so that the year 2000 corresponds to an input of 0.  Determine and write the most appropriate model for the data using this alignment.
+								</p>
+							</li>
+							<li>
+								<p>
+									Estimate the rate of change of average weekly sales in the year 2007 and interpret your answer.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						At this point, they pretty well get the concept. So, I tend to leave this one for practice. There's also no specific "round to x place" instruction, but students are expected to understand that since the output goes to the hundredths, they can only go to the hundredths.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>f(x) = -2.814x^2+41.469x-82.586</m> million dollars in sales for Abercrombie &amp; Fitch, <m>x</m> years after 2000.
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>f'(7) = 2.07</m> million dollars per year. 7 years after 2000, the average weekly sales for Abercrombie &amp; Fitch were increasing by 2.07 million dollars per year.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
     </subsection>
 </section>
