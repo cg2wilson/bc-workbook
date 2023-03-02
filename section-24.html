@@ -339,11 +339,235 @@ window.MathJax = {
 </h2>
 <section class="subsection" id="section-24-deriv-num"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Derivative: Numerical Definition</span>
-</h3></section><section class="subsection" id="section-24-deriv-exist"><h3 class="heading hide-type">
+</h3>
+<div class="para logical" id="p-1060">
+<div class="para">Let <span class="process-math">\(a\)</span> be fixed, and let <span class="process-math">\(x\)</span> be some point on <span class="process-math">\(f\)</span> other than <span class="process-math">\(a\text{.}\)</span>  Then, the slope of the secant line is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{f(x)-f(a)}{x-a}
+\end{equation*}
+</div>
+<div class="para">Taking limits, we have the definition of the derivative of <span class="process-math">\(f\)</span> at a point <span class="process-math">\(a\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f'(a) = \ds \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}
+\end{equation*}
+</div>
+</div>
+<article class="example example-like" id="example-108"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1061">Find the derivative of the function <span class="process-math">\(f(x) = \sqrt{2x}\)</span> at <span class="process-math">\(x = 3\)</span> using the numerical method.  Round your final answer to the thousandths place, if necessary</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{f(x) - f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.9</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.99</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.999</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.9999</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.99999</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'(3)\approx\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{f(x) - f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.1</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.01</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.001</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.0001</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.00001</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'(3)\approx\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-1062"><div class="displaymath process-math">
+\begin{equation*}
+f'(3)\approx
+\end{equation*}
+</div></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like">
+<div class="para" id="p-1063">The final line is a red herring and is unnecessary; I use it to emphasize the rules for how far students are supposed to take numerical answers in a table.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{f(x) - f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.9</td>
+<td class="c m b0 r0 l0 t0 lines">0.41770827047</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.99</td>
+<td class="c m b0 r0 l0 t0 lines">0.40858906557</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.999</td>
+<td class="c m b0 r0 l0 t0 lines">0.4082823168</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.9999</td>
+<td class="c m b0 r0 l0 t0 lines">0.408251693</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2.99999</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'(3)\approx\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">0.408</td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:50%;"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\dfrac{f(x) - f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.1</td>
+<td class="c m b0 r0 l0 t0 lines">0.404901768145</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.01</td>
+<td class="c m b0 r0 l0 t0 lines">0.40790864939</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.001</td>
+<td class="c m b0 r0 l0 t0 lines">0.4082142754</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.0001</td>
+<td class="c m b0 r0 l0 t0 lines">0.408244888</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3.00001</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f'(3)\approx\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">0.408</td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-1064"><div class="displaymath process-math">
+\begin{equation*}
+f'(3)\approx 0.408
+\end{equation*}
+</div></div>
+</div></div>
+</div></article><article class="example example-like" id="example-109"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1065">A multinational corporation invests $32 billion in assets, resulting in the future value <span class="process-math">\(F(t) = 32(1.12^t)\)</span> billion dollars after <span class="process-math">\(t\)</span> years.</div> <div class="para logical" id="p-1066"><ol class="lower-alpha">
+<li id="li-608"><div class="para" id="p-1067">By how much is the investment growing in the fourth year?  Write a sentence interpreting your answer, and round to the nearest hundredth.</div></li>
+<li id="li-609"><div class="para" id="p-1068">Find the percent rate of change in the fourth year.  Round to 2 decimal places.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-111" id="solution-111"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-111"><div class="solution solution-like"><div class="para logical" id="p-1069"><ol class="decimal">
+<li id="li-610"><div class="para" id="p-1070">
+<span class="process-math">\(F'(4) = 5.71\)</span> billion dollars per year. 4 years after investment, the value of the investment is increasing by 5.71 billion dollars per year.</div></li>
+<li id="li-611"><div class="para" id="p-1071">11.34% per year</div></li>
+</ol></div></div></div>
+</div></article></section><section class="subsection" id="section-24-deriv-exist"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Derivative: Existence</span>
-</h3></section><section class="subsection" id="section-24-examples"><h3 class="heading hide-type">
+</h3>
+<div class="para" id="p-1072">The derivative of a function does not always exist; the definition requires that the function be smooth and continuous.  Formally, we say that a function is <dfn class="terminology">differentiable</dfn> when the derivative exists for all <span class="process-math">\(x\)</span> in some interval <span class="process-math">\((a,b)\text{.}\)</span>  We have three cases for nonexistence:</div>
+<div class="para logical" id="p-1073"><ul class="disc">
+<li id="li-612"><div class="para" id="p-1074">Corner/cusp</div></li>
+<li id="li-613"><div class="para" id="p-1075">Vertical asymptote</div></li>
+<li id="li-614"><div class="para" id="p-1076">Discontinuity</div></li>
+</ul></div></section><section class="subsection" id="section-24-examples"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.4.3</span> <span class="title">Exercises</span>
-</h3></section></section></div>
+</h3>
+<article class="example example-like" id="example-110"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1077">Numerically estimate the derivative of the function <span class="process-math">\(f(x) = -x^2+4x\)</span> at <span class="process-math">\(x = -1\text{.}\)</span>  Round your final answer to the nearest tenth.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-112" id="solution-112"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-112"><div class="solution solution-like"><div class="para" id="p-1078"><span class="process-math">\(f'(-1) = 6\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-111"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1079">Numerically estimate the derivative of the function <span class="process-math">\(g(y) = 5\ln y\)</span> at <span class="process-math">\(x = 5\text{.}\)</span>  Round your final answer to the nearest hundredth.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-113" id="solution-113"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-113"><div class="solution solution-like"><div class="para" id="p-1080"><span class="process-math">\(g'(5) = 1\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-112"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1081">The annual number of passengers going through the Atlanta airport between 2000 and 2008 can be modeled as <span class="process-math">\(p(t) = -0.102t^3 + 1.39t^2 -3.29t + 79.25\)</span> million passengers, <span class="process-math">\(t\)</span> years since 2000.</div> <div class="para logical" id="p-1082"><ol class="lower-alpha">
+<li id="li-615"><div class="para" id="p-1083">Estimate <span class="process-math">\(p'(6)\)</span> numerically to the nearest thousandth.</div></li>
+<li id="li-616"><div class="para" id="p-1084">Write an interpretation of <span class="process-math">\(p'(6)\text{.}\)</span>
+</div></li>
+<li id="li-617"><div class="para" id="p-1085">Find the percent rate of change in 2006, to the nearest hundredth.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-114" id="solution-114"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-114"><div class="solution solution-like"><div class="para logical" id="p-1086"><ol class="lower-alpha">
+<li id="li-618"><div class="para" id="p-1087"><span class="process-math">\(\displaystyle p'(6) = 2.374\)</span></div></li>
+<li id="li-619"><div class="para" id="p-1088">6 years after 2000, the annual number passengers going through the Atlanta airport is increasing by 2.374 million passengers per year</div></li>
+<li id="li-620"><div class="para" id="p-1089">2.71% per year</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-113"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1090">The average weekly sales (in million dollars) for Abercrombie &amp; Fitch between 2004 and 2008 is given in the table below.</div> <div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr></table></div> <div class="para logical" id="p-1091"><ol class="lower-alpha">
+<li id="li-621"><div class="para" id="p-1092">Align the data so that the year 2000 corresponds to an input of 0.  Determine and write the most appropriate model for the data using this alignment.</div></li>
+<li id="li-622"><div class="para" id="p-1093">Estimate the rate of change of average weekly sales in the year 2007 and interpret your answer.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-115" id="solution-115"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-115"><div class="solution solution-like">
+<div class="para" id="p-1094">At this point, they pretty well get the concept. So, I tend to leave this one for practice. There's also no specific "round to x place" instruction, but students are expected to understand that since the output goes to the hundredths, they can only go to the hundredths.</div> <div class="para logical" id="p-1095"><ol class="lower-alpha">
+<li id="li-623"><div class="para" id="p-1096">
+<span class="process-math">\(f(x) = -2.814x^2+41.469x-82.586\)</span> million dollars in sales for Abercrombie &amp; Fitch, <span class="process-math">\(x\)</span> years after 2000.</div></li>
+<li id="li-624"><div class="para" id="p-1097">
+<span class="process-math">\(f'(7) = 2.07\)</span> million dollars per year. 7 years after 2000, the average weekly sales for Abercrombie &amp; Fitch were increasing by 2.07 million dollars per year.</div></li>
+</ol></div>
+</div></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-23.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-25.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

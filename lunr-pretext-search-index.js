@@ -1438,7 +1438,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Rates of Change: Numerical Limits & Nonexistence",
-  "body": " Rates of Change: Numerical Limits & Nonexistence   Derivative: Numerical Definition    Derivative: Existence    Exercises   "
+  "body": " Rates of Change: Numerical Limits & Nonexistence   Derivative: Numerical Definition  Let be fixed, and let be some point on other than . Then, the slope of the secant line is given by Taking limits, we have the definition of the derivative of at a point :     Find the derivative of the function at using the numerical method. Round your final answer to the thousandths place, if necessary         2.9     2.99     2.999     2.9999     2.99999               3.1     3.01     3.001     3.0001     3.00001               The final line is a red herring and is unnecessary; I use it to emphasize the rules for how far students are supposed to take numerical answers in a table.         2.9  0.41770827047    2.99  0.40858906557    2.999  0.4082823168    2.9999  0.408251693    2.99999      0.408          3.1  0.404901768145    3.01  0.40790864939    3.001  0.4082142754    3.0001  0.408244888    3.00001      0.408            A multinational corporation invests $32 billion in assets, resulting in the future value billion dollars after years.     By how much is the investment growing in the fourth year? Write a sentence interpreting your answer, and round to the nearest hundredth.    Find the percent rate of change in the fourth year. Round to 2 decimal places.           billion dollars per year. 4 years after investment, the value of the investment is increasing by 5.71 billion dollars per year.    11.34% per year         Derivative: Existence  The derivative of a function does not always exist; the definition requires that the function be smooth and continuous. Formally, we say that a function is differentiable when the derivative exists for all in some interval . We have three cases for nonexistence:     Corner\/cusp    Vertical asymptote    Discontinuity       Exercises    Numerically estimate the derivative of the function at . Round your final answer to the nearest tenth.           Numerically estimate the derivative of the function at . Round your final answer to the nearest hundredth.           The annual number of passengers going through the Atlanta airport between 2000 and 2008 can be modeled as million passengers, years since 2000.     Estimate numerically to the nearest thousandth.    Write an interpretation of .    Find the percent rate of change in 2006, to the nearest hundredth.               6 years after 2000, the annual number passengers going through the Atlanta airport is increasing by 2.374 million passengers per year    2.71% per year         The average weekly sales (in million dollars) for Abercrombie & Fitch between 2004 and 2008 is given in the table below.               Align the data so that the year 2000 corresponds to an input of 0. Determine and write the most appropriate model for the data using this alignment.    Estimate the rate of change of average weekly sales in the year 2007 and interpret your answer.       At this point, they pretty well get the concept. So, I tend to leave this one for practice. There's also no specific \"round to x place\" instruction, but students are expected to understand that since the output goes to the hundredths, they can only go to the hundredths.      million dollars in sales for Abercrombie & Fitch, years after 2000.     million dollars per year. 7 years after 2000, the average weekly sales for Abercrombie & Fitch were increasing by 2.07 million dollars per year.        "
+},
+{
+  "id": "example-108",
+  "level": "2",
+  "url": "section-24.html#example-108",
+  "type": "Example",
+  "number": "2.4.1",
+  "title": "",
+  "body": "  Find the derivative of the function at using the numerical method. Round your final answer to the thousandths place, if necessary         2.9     2.99     2.999     2.9999     2.99999               3.1     3.01     3.001     3.0001     3.00001               The final line is a red herring and is unnecessary; I use it to emphasize the rules for how far students are supposed to take numerical answers in a table.         2.9  0.41770827047    2.99  0.40858906557    2.999  0.4082823168    2.9999  0.408251693    2.99999      0.408          3.1  0.404901768145    3.01  0.40790864939    3.001  0.4082142754    3.0001  0.408244888    3.00001      0.408         "
+},
+{
+  "id": "example-109",
+  "level": "2",
+  "url": "section-24.html#example-109",
+  "type": "Example",
+  "number": "2.4.2",
+  "title": "",
+  "body": "  A multinational corporation invests $32 billion in assets, resulting in the future value billion dollars after years.     By how much is the investment growing in the fourth year? Write a sentence interpreting your answer, and round to the nearest hundredth.    Find the percent rate of change in the fourth year. Round to 2 decimal places.           billion dollars per year. 4 years after investment, the value of the investment is increasing by 5.71 billion dollars per year.    11.34% per year      "
+},
+{
+  "id": "p-1072",
+  "level": "2",
+  "url": "section-24.html#p-1072",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "differentiable "
+},
+{
+  "id": "example-110",
+  "level": "2",
+  "url": "section-24.html#example-110",
+  "type": "Example",
+  "number": "2.4.3",
+  "title": "",
+  "body": "  Numerically estimate the derivative of the function at . Round your final answer to the nearest tenth.        "
+},
+{
+  "id": "example-111",
+  "level": "2",
+  "url": "section-24.html#example-111",
+  "type": "Example",
+  "number": "2.4.4",
+  "title": "",
+  "body": "  Numerically estimate the derivative of the function at . Round your final answer to the nearest hundredth.        "
+},
+{
+  "id": "example-112",
+  "level": "2",
+  "url": "section-24.html#example-112",
+  "type": "Example",
+  "number": "2.4.5",
+  "title": "",
+  "body": "  The annual number of passengers going through the Atlanta airport between 2000 and 2008 can be modeled as million passengers, years since 2000.     Estimate numerically to the nearest thousandth.    Write an interpretation of .    Find the percent rate of change in 2006, to the nearest hundredth.               6 years after 2000, the annual number passengers going through the Atlanta airport is increasing by 2.374 million passengers per year    2.71% per year      "
+},
+{
+  "id": "example-113",
+  "level": "2",
+  "url": "section-24.html#example-113",
+  "type": "Example",
+  "number": "2.4.6",
+  "title": "",
+  "body": "  The average weekly sales (in million dollars) for Abercrombie & Fitch between 2004 and 2008 is given in the table below.               Align the data so that the year 2000 corresponds to an input of 0. Determine and write the most appropriate model for the data using this alignment.    Estimate the rate of change of average weekly sales in the year 2007 and interpret your answer.       At this point, they pretty well get the concept. So, I tend to leave this one for practice. There's also no specific \"round to x place\" instruction, but students are expected to understand that since the output goes to the hundredths, they can only go to the hundredths.      million dollars in sales for Abercrombie & Fitch, years after 2000.     million dollars per year. 7 years after 2000, the average weekly sales for Abercrombie & Fitch were increasing by 2.07 million dollars per year.      "
 },
 {
   "id": "section-25",
@@ -1447,7 +1510,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "The Derivative, Algebraically",
-  "body": " The Derivative, Algebraically   The Derivative, Algebraically   "
+  "body": " The Derivative, Algebraically   The Derivative, Algebraically   Derivative (Algebraic Definition)  Derivative (Algebraic)   Let be a function defined on the open interval , and . Then, the derivative of at point is given by the formula       Why is this definition the same as the one in Section 2.4?    Answers vary  At this point, I take time to draw some pictures to show what the earlier definition of the derivative \"meant\" and what the new one \"means\".    It is useful to remember a few things from algebra when doing these calculations:                     When we algebraically find the derivative of a function, there is a four-step process which makes the algebra much simpler, and the derivative easier to find. The steps are:     Find and simplify     Find and simplify     Find and simplify     Compute      This is demonstrated below.    Algebraically find the derivative of the function using the four-step process.       Algebra tends not to be a strength for many students. Go deliberately and carefully; handling the notation of is a common tripping point.      Algebraically find the derivative of the function using the four-step process.           The time it takes an average athlete to swim 100 meters freestyle at age years can be modeled as      Calculate the swim time at age 13 to the nearest second.    Use the algebraic method to develop a formula for the derivative of (ie, find ).    How quickly is the time to swim 100 meters freestyle changing for an average 13-year-old athlete? Round to the nearest hundredth and interpret the result.    Compute the percent rate of change of swimmers' time at age 13, to the nearest tenth.           seconds          seconds per year. At age 13, the average athlete's 100m freestyle swim time is decreasing by 3.76 seconds per year    -5.5% per year         Algebraically determine the derivative of , and evaluate            Algebraically determine the derivative of , and evaluate     I usually leave this one as practice, explicitly because there's a lot of algebra that they have to navigate, but I do give the answers so that they can verify their work.   ;      "
+},
+{
+  "id": "definition-29",
+  "level": "2",
+  "url": "section-25.html#definition-29",
+  "type": "Definition",
+  "number": "2.5.1",
+  "title": "Derivative (Algebraic Definition).",
+  "body": " Derivative (Algebraic Definition)  Derivative (Algebraic)   Let be a function defined on the open interval , and . Then, the derivative of at point is given by the formula    "
+},
+{
+  "id": "question-3",
+  "level": "2",
+  "url": "section-25.html#question-3",
+  "type": "Question",
+  "number": "2.5.2",
+  "title": "",
+  "body": "  Why is this definition the same as the one in Section 2.4?    Answers vary  At this point, I take time to draw some pictures to show what the earlier definition of the derivative \"meant\" and what the new one \"means\".   "
+},
+{
+  "id": "example-114",
+  "level": "2",
+  "url": "section-25.html#example-114",
+  "type": "Example",
+  "number": "2.5.3",
+  "title": "",
+  "body": "  Algebraically find the derivative of the function using the four-step process.       Algebra tends not to be a strength for many students. Go deliberately and carefully; handling the notation of is a common tripping point.   "
+},
+{
+  "id": "example-115",
+  "level": "2",
+  "url": "section-25.html#example-115",
+  "type": "Example",
+  "number": "2.5.4",
+  "title": "",
+  "body": "  Algebraically find the derivative of the function using the four-step process.        "
+},
+{
+  "id": "example-116",
+  "level": "2",
+  "url": "section-25.html#example-116",
+  "type": "Example",
+  "number": "2.5.5",
+  "title": "",
+  "body": "  The time it takes an average athlete to swim 100 meters freestyle at age years can be modeled as      Calculate the swim time at age 13 to the nearest second.    Use the algebraic method to develop a formula for the derivative of (ie, find ).    How quickly is the time to swim 100 meters freestyle changing for an average 13-year-old athlete? Round to the nearest hundredth and interpret the result.    Compute the percent rate of change of swimmers' time at age 13, to the nearest tenth.           seconds          seconds per year. At age 13, the average athlete's 100m freestyle swim time is decreasing by 3.76 seconds per year    -5.5% per year      "
+},
+{
+  "id": "example-117",
+  "level": "2",
+  "url": "section-25.html#example-117",
+  "type": "Example",
+  "number": "2.5.6",
+  "title": "",
+  "body": "  Algebraically determine the derivative of , and evaluate         "
+},
+{
+  "id": "example-118",
+  "level": "2",
+  "url": "section-25.html#example-118",
+  "type": "Example",
+  "number": "2.5.7",
+  "title": "",
+  "body": "  Algebraically determine the derivative of , and evaluate     I usually leave this one as practice, explicitly because there's a lot of algebra that they have to navigate, but I do give the answers so that they can verify their work.   ;    "
 },
 {
   "id": "section-26",
