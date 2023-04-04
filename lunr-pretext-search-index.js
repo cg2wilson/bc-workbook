@@ -1690,7 +1690,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Exponential & Logarithmic Rate of Change Formulas",
-  "body": " Exponential & Logarithmic Rate of Change Formulas   The Formulas      Examples             "
+  "body": " Exponential & Logarithmic Rate of Change Formulas   The Formulas  For exponential and logarithmic functions, we have the following formulas:    Name  Function  Derivative    General Exponential Rule      Exponential Rule      Logarithm Rule        Examples    Write the formula for the derivative of the function.                                                                                                For the first two hours after yeast dough has been kneaded, it doubles in volume approximately every 42 minutes. If 1 quart of yeast dough is left to rise in a warm room, its growth can be modeled as quarts, where is the number of hours the dough has been allowed to rise.     How many minutes will it take the dough to attain a volume of 2.5 quarts?    Write a model for the rate of growth of the yeast dough.          54.96 minutes     quarts per hour, rate of change of dough growth, hours after the dough has been allowed to rise         The weight of a laboratory mouse between 3 and 11 weeks of age can be modeled as grams, where the age of the mouse is weeks.     What is the weight of a 9-week-old mouse? Round to the nearest hundredth.    Write a rate of change model for the weight of the mouse, and determine how rapidly its weight is changing at 9 weeks.    What is the average rate of change in the weight of the mouse between ages 7 and 11 weeks? Round to the nearest hundredth.    Does the rate at which the mouse is growing increase or decrease as the mouse gets older? Why?          25.64 grams     grams per week gives the rate of change of a lab mouse's weight, at age weeks   grams per week  The second part gives people fits, because the alignment is unusual; be careful here.    1.08 grams per week    The rate decreases. The output of the derivative goes down as time increases.         Suppose the managers of a dairy company have modeled weekly production costs as dollars for units of dairy products. Weekly shipping cost for units is given by dollars.     Write the formula for the total weekly cost of production and shipping of units.    Write the rate of change model of the total weekly cost of producing and shipping units.    Calculate the total cost to produce and ship 5000 units in 1 week.    Calculate and interpret the rate of change in the total cost to produce and ship 5000 units in 1 week.                dollars per unit, rate of change of weekly cos, when units are produced.         When 5000 units are produced, the weekly toatl cost of shipping and production is increasing by 50.02 dollars per unit.         An individual has $45,000 to invest. $32,000 will be put into a low-risk mutual fund averaging 6.2% interest compounded monthly, and the remainder will be invested in a high-yield bond fund averaging 9.7% interest, compounded continuously.     Write an equation for the total amount in the two investments, using as your function.    Write the rate of change model for the low-risk fund, using as your function.    Write the rate of change model for the high-yield fund, using as your function.    Write the rate of change model for the combined investment.    Calculate and interpret after 8 months, and after 18 months.           thousand dollars in the two investments, years after investment     thousand dollars per year, rate of change of the low-risk investment, years after investment     thousand dollars per year, rate of change of the high-risk investment, years after investment     thousand dollars per year, rate of change of total investment, years after investment    8 months after initial investment, the value is increasing by 3.41 thousand dollars per year.  18 months after initial investment, the value is increasing by 3.63 thousand dollars per year.        "
 },
 {
   "id": "example-129",
@@ -1699,7 +1699,43 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.1",
   "title": "",
-  "body": "         "
+  "body": "  Write the formula for the derivative of the function.                                                                                             "
+},
+{
+  "id": "example-130",
+  "level": "2",
+  "url": "section-32.html#example-130",
+  "type": "Example",
+  "number": "3.2.2",
+  "title": "",
+  "body": "  For the first two hours after yeast dough has been kneaded, it doubles in volume approximately every 42 minutes. If 1 quart of yeast dough is left to rise in a warm room, its growth can be modeled as quarts, where is the number of hours the dough has been allowed to rise.     How many minutes will it take the dough to attain a volume of 2.5 quarts?    Write a model for the rate of growth of the yeast dough.          54.96 minutes     quarts per hour, rate of change of dough growth, hours after the dough has been allowed to rise      "
+},
+{
+  "id": "example-131",
+  "level": "2",
+  "url": "section-32.html#example-131",
+  "type": "Example",
+  "number": "3.2.3",
+  "title": "",
+  "body": "  The weight of a laboratory mouse between 3 and 11 weeks of age can be modeled as grams, where the age of the mouse is weeks.     What is the weight of a 9-week-old mouse? Round to the nearest hundredth.    Write a rate of change model for the weight of the mouse, and determine how rapidly its weight is changing at 9 weeks.    What is the average rate of change in the weight of the mouse between ages 7 and 11 weeks? Round to the nearest hundredth.    Does the rate at which the mouse is growing increase or decrease as the mouse gets older? Why?          25.64 grams     grams per week gives the rate of change of a lab mouse's weight, at age weeks   grams per week  The second part gives people fits, because the alignment is unusual; be careful here.    1.08 grams per week    The rate decreases. The output of the derivative goes down as time increases.      "
+},
+{
+  "id": "example-132",
+  "level": "2",
+  "url": "section-32.html#example-132",
+  "type": "Example",
+  "number": "3.2.4",
+  "title": "",
+  "body": "  Suppose the managers of a dairy company have modeled weekly production costs as dollars for units of dairy products. Weekly shipping cost for units is given by dollars.     Write the formula for the total weekly cost of production and shipping of units.    Write the rate of change model of the total weekly cost of producing and shipping units.    Calculate the total cost to produce and ship 5000 units in 1 week.    Calculate and interpret the rate of change in the total cost to produce and ship 5000 units in 1 week.                dollars per unit, rate of change of weekly cos, when units are produced.         When 5000 units are produced, the weekly toatl cost of shipping and production is increasing by 50.02 dollars per unit.      "
+},
+{
+  "id": "example-133",
+  "level": "2",
+  "url": "section-32.html#example-133",
+  "type": "Example",
+  "number": "3.2.5",
+  "title": "",
+  "body": "  An individual has $45,000 to invest. $32,000 will be put into a low-risk mutual fund averaging 6.2% interest compounded monthly, and the remainder will be invested in a high-yield bond fund averaging 9.7% interest, compounded continuously.     Write an equation for the total amount in the two investments, using as your function.    Write the rate of change model for the low-risk fund, using as your function.    Write the rate of change model for the high-yield fund, using as your function.    Write the rate of change model for the combined investment.    Calculate and interpret after 8 months, and after 18 months.           thousand dollars in the two investments, years after investment     thousand dollars per year, rate of change of the low-risk investment, years after investment     thousand dollars per year, rate of change of the high-risk investment, years after investment     thousand dollars per year, rate of change of total investment, years after investment    8 months after initial investment, the value is increasing by 3.41 thousand dollars per year.  18 months after initial investment, the value is increasing by 3.63 thousand dollars per year.      "
 },
 {
   "id": "section-33",
@@ -1720,9 +1756,9 @@ var ptx_lunr_docs = [
   "body": " Ratet of Change of Composite Functions   Review: Composite Functions      The Chain Rule      Examples             "
 },
 {
-  "id": "example-130",
+  "id": "example-134",
   "level": "2",
-  "url": "section-3334.html#example-130",
+  "url": "section-3334.html#example-134",
   "type": "Example",
   "number": "3.4.1",
   "title": "",
@@ -1747,18 +1783,18 @@ var ptx_lunr_docs = [
   "body": " Rate of Change of Product Functions   Product Rule              Quotient Rule      Examples             "
 },
 {
-  "id": "example-131",
+  "id": "example-135",
   "level": "2",
-  "url": "section-3536.html#example-131",
+  "url": "section-3536.html#example-135",
   "type": "Example",
   "number": "3.6.1",
   "title": "",
   "body": "         "
 },
 {
-  "id": "example-132",
+  "id": "example-136",
   "level": "2",
-  "url": "section-3536.html#example-132",
+  "url": "section-3536.html#example-136",
   "type": "Example",
   "number": "3.6.2",
   "title": "",
@@ -1855,9 +1891,9 @@ var ptx_lunr_docs = [
   "body": " Optimization of Constructed Functions   Strategy for Optimization            Examples             "
 },
 {
-  "id": "example-133",
+  "id": "example-137",
   "level": "2",
-  "url": "section-46.html#example-133",
+  "url": "section-46.html#example-137",
   "type": "Example",
   "number": "4.6.1",
   "title": "",
