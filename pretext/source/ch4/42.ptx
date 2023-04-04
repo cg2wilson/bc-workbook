@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-42" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Relative Extreme Points</title>
+
+	<subsection xml:id="section-42-definitions">
+		<title>Definitions</title>
+
+		<definition>
+			<title>Relative Extrema</title>
+			<idx><h>Relative Maximum</h></idx>
+			<idx><h>Relative Minimum</h></idx>			
+			<statement>
+				<p>
+					
+				</p>
+			</statement>
+		</definition>
+	</subsection>
+
+	<subsection xml:id="section-42-methods">
+		<title>Methods of Finding Extrema</title>
+		
+		<p>
+			Let <m>f(x)</m> be differenttiable on an open interval <m>(a,b)</m>.
+		</p>
+	</subsection>
+
+	<subsection xml:id="section-42-examples">
+		<title>Examples</title>
+		
+		<p>
+			Let <m>f(x)</m> be differentiable on an open interval <m>(a,b)</m>.
+		</p>
+	</subsection>
+</section>

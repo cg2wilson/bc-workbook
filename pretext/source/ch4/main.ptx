@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch4" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Analyzing Change: Applications of Derivatives</title>
+	
+	<introduction>
+		<p>
+			Chapter 4 focuses on the application of derivatives to problems.
+		</p>
+		
+	</introduction>
+
+	<xi:include href="./41.ptx"/>
+    <xi:include href="./42.ptx"/> 
+	<xi:include href="./43.ptx"/>
+    <xi:include href="./44.ptx"/>
+	<xi:include href="./45.ptx"/>
+    <xi:include href="./46.ptx"/>
+
+	
+</chapter>

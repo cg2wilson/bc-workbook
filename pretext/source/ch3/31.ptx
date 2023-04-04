@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-31" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Simple Rate of Change Formulas</title>
+
+	<subsection xml:id="section-31-formulas">
+		<title>The Formulas</title>
+
+		<p>
+			Instead of calculating derivatives by hand every time, we can develop sets of rules which will help us more easily calculate them.  These are given below; let <m>c</m> be a constant, and <m>f(x),g(x)</m> be functions:
+		</p>
+
+		<tabular>
+			<row>
+				<cell>Name</cell>
+				<cell>Function</cell>
+				<cell>Derivative</cell>
+			</row>
+			<row>
+				<cell>Constant Rule</cell>
+				<cell><m>f(x)=b</m></cell>
+				<cell><m>f'(x) = 0</m></cell>
+			</row>
+			<row>
+				<cell>Power Rule</cell>
+				<cell><m>f(x) = x^n</m></cell>
+				<cell><m>f'(x) = nx^{n-1}</m></cell>
+			</row>
+			<row>
+				<cell>Constant Multiplier Rule</cell>
+				<cell><m>c\cdot f(x)</m></cell>
+				<cell><m>c\cdot f'(x)</m></cell>
+			</row>
+			<row>
+				<cell>Sum Rule</cell>
+				<cell><m>f(x) + g(x)</m></cell>
+				<cell><m>f'(x) + g'(x)</m></cell>
+			</row>
+			<row>
+				<cell>Difference Rule</cell>
+				<cell><m>f(x) - g(x)</m></cell>
+				<cell><m>f'(x)- g'(x)</m></cell>
+			</row>
+		</tabular>
+	</subsection>
+
+	<subsection xml:id="section-31-examples">
+		<title>Examples</title>
+		
+		<example>
+			<statement>
+				<p>
+					Write the formula for the derivative of the function.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f(x) = x^2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g(x) = 3x^4</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>h(t) = 0.2t^{50}-10t + 1</m>	
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>x(t) = t^{2\pi}</m>  	
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = 3x^3</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>q(x) = z x^{n+2}</m>  
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = 12x^{0.4} + 2x^{56} + 5</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g(x) = -3.2x^{-3.5} + 6.1x^{5/2} - 5.3</m>  
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = 7x^{-3}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g(x) = -\dfrac{9}{x^2}</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = 4\sqrt{x} + 3.3x^5</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>k(x) = \dfrac{4x^2+19x+6}{x}</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g(t) = 5.8t^3 + 2t^{-1.2} - 5</m>
+							</p>
+						</li>	
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f'(x) = 2x</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g'(x) = 12x^3</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>h'(t) = 10t^49-10</m>	
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>x'(t) = 2\pi t^{2\pi - 1}</m>  	
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) = 9x^2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>q'(x) = z(n+2)x^{n+1}</m>  
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) =4.8x^{-0.6} + 112x^5</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g'(x) = 11.2x^{-4.5} + 15.25x^{3/2}</m>  
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) = -21x^{-4}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g'(x) = 18x^{-3}</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) = 2x^{-1/2}+16.5x^4</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>k'(x) = 4-6x^{-2}</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g'(t) = 17.4t^2-2.4t^{-2.2</m>
+							</p>
+						</li>	
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>h(x) = x^2(x^3 + 1)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>h'(x) = 5x^4 + 2x</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The temperature (in <m>^\circ F</m>) of Norman on Wednesday can be modeled by <m>t(x) = -0.8x^2+11.6x+38.2</m> degrees Fahrenheit, <m>x</m> hours after 6 A.M.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the complete rate of change model for the temperature.  
+							</p>
+						</li>
+						<li>
+							<p>
+								By how much is the temperature changing at 10 A.M.?  Round your answer to the nearest hundredth.  
+							</p>
+						</li>
+						<li>
+							<p>
+								Compute and interpret <m>\dfrac{dt}{dx}\bigg|_{x = 10}</m>. Round your answer to the nearest tenth.  
+							</p>
+						</li>
+						<li>
+							<p>
+								Compute the percent rate of change of temperature at 4:00pm.  Round your answer to the nearest hundredth.  
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>t'(x) = -1.6x + 11.6</m> degrees Fahrenheit per hour, rate of change of temperature in Norman on Wednesday, <m>x</m> hours after 6am.
+							</p>
+						</li>
+						<li>
+							<p>
+								5.2 <m>^\circ F</m>/hour  
+							</p>
+						</li>
+						<li>
+							<p>
+								10 hours after 6am, the temperature is decreasing by 4.4 <m>^\circ F</m>/hour
+							</p>
+						</li>
+						<li>
+							<p>
+								-5.93% per hour
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:
+				</p>
+				<tabular>
+					<row>
+						<cell>Weight (lbs)</cell>
+						<cell>88</cell>
+						<cell>110</cell>
+						<cell>125</cell>
+						<cell>140</cell>
+						<cell>155</cell>
+						<cell>170</cell>
+						<cell>185</cell>
+						<cell>200</cell>
+					</row>
+					<row>
+						<cell>Metabolic Rate (kCal/day)</cell>
+						<cell>1291</cell>
+						<cell>1444</cell>
+						<cell>1551</cell>
+						<cell>1658</cell>
+						<cell>1750</cell>
+						<cell>1857</cell>
+						<cell>1964</cell>
+						<cell>2071</cell>
+					</row>
+				</tabular>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find a complete linear model for the metabolic rate of a typical 18- to 30-year-old male.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write the derivative model for the formula in part (a).
+							</p>
+						</li>
+						<li>
+							<p>
+								Write a sentence which interprets the derivative of the metabolic rate model of a 26-year-old male.  Round your answer to the nearest whole number.  
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Part c is not written correctly; it gives an age, not a weight. Fill it in with whatever you'd prefer.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f(x) = 6.930x + 682.188</m> kCal/day, metabolic rate of a typical 18- to 30-year-old male when his weight is <m>x</m> lbs.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) = 6.930</m> kCal/day per pound, rate of change of metabolic rate of a typical 18- to 30-year-old male when his weight is <m>x</m> lbs.
+							</p>
+						</li>
+						<li>
+							<p>
+								FIXED IN NEXT EDITION
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+	</subsection>
+</section>

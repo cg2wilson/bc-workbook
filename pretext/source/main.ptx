@@ -13,5 +13,9 @@
 
     <xi:include href="ch2/main.ptx"/>
 
+    <xi:include href="ch3/main.ptx"/>
+
+    <xi:include href="ch4/main.ptx"/>
+
   </book>
 </pretext>

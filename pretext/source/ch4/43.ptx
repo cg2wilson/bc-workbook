@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-43" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Absolute Extreme Points</title>
+
+	<introduction>
+		<definition>
+			<title>Absolute Extrema</title>
+			<idx><h>Absolute Maximum</h></idx>
+			<idx><h>Absolute Minimum</h></idx>
+			<statement>
+				<p>
+					
+				</p>
+			</statement>
+		</definition>
+	</introduction>
+	<subsection xml:id="section-43-examples">
+		<title>Examples</title>
+
+		<definition>
+			<title>Relative Extrema</title>
+			<idx><h>Relative Maximum</h></idx>
+			<idx><h>Relative Minimum</h></idx>			
+			<statement>
+				<p>
+					
+				</p>
+			</statement>
+		</definition>
+	</subsection>
+
+</section>

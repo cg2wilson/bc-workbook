@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch3" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Determining Change: Derivatives</title>
+	
+	<introduction>
+		<p>
+			Chapter 3 focuses on the methods of computing derivatives using shortcuts.
+		</p>
+		
+	</introduction>
+    <xi:include href="./31.ptx"/> 
+	<xi:include href="./32.ptx"/>
+	<xi:include href="./33.ptx"/>
+    <xi:include href="./3334.ptx"/>
+	<xi:include href="./35.ptx" />
+    <xi:include href="./3536.ptx"/>
+
+	
+</chapter>
