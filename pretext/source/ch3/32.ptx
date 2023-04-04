@@ -7,8 +7,31 @@
 		<title>The Formulas</title>
 
 		<p>
-			
+			For exponential and logarithmic functions, we have the following formulas:
 		</p>
+
+		<tabular>
+			<row>
+				<cell>Name</cell>
+				<cell>Function</cell>
+				<cell>Derivative</cell>
+			</row>
+			<row>
+				<cell>General Exponential Rule</cell>
+				<cell><m>f(x) = b^x</m></cell>
+				<cell><m>f'(x) = \ln b\cdot b^x</m></cell>
+			</row>
+			<row>
+				<cell>Exponential Rule</cell>
+				<cell><m>f(x) = e^x</m></cell>
+				<cell><m>f'(x) = e^x</m></cell>
+			</row>
+			<row>
+				<cell>Logarithm Rule</cell>
+				<cell><m>f(x) = \ln x</m></cell>
+				<cell><m>f'(x) = \dfrac{1}{x}</m></cell>
+			</row>
+		</tabular>
 	</subsection>
 
 	<subsection xml:id="section-32-examples">
@@ -17,12 +40,328 @@
 		<example>
 			<statement>
 				<p>
-					
+					Write the formula for the derivative of the function.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>h(x) = 3-7e^x</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = 6(0.8)^x</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(a) = 10\lrpar{1+\dfrac{0.05}{4}}^{4a}</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g(x) = 4\ln x - e^\pi</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = 3.7e^x - 2\ln x</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>y(x) = -\ln x + 2e^x</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(g) = 4\sqrt{g} + 5(1.2)^g</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>k(t) = P\lrpar{1+\dfrac{r}{n}}^{nt}</m> 
+							</p>
+						</li>
+					</ol>
 				</p>
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>h'(x) = -7e^x</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) = 6\cdot \ln(0.8)\cdot (0.8)^x</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(a) = 10\cdot \lrpar{\ln\lrpar{\lrpar{1+\dfrac{0.05}{4}}^4}}\lrpar{\lrpar{1+\dfrac{0.05}{4}}^4}^a</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g'(x) = \dfrac{4}{x}</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) = 3.7e^x - \dfrac{2}{x}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>y'(x) = -\dfrac{1}{x} + 2e^x</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(g) = 2g^{-1/2} + 5\cdot \ln(1.2)\cdot (1.2)^g</m> 
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>k'(t) = P\cdot \ln\lrpar{\lrpar{1+\dfrac{r}{n}}^n}\cdot \lrpar{\lrpar{1+\dfrac{r}{n}}^n}^t</m> 
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					For the first two hours after yeast dough has been kneaded, it doubles in volume approximately every 42 minutes.  If 1 quart of yeast dough is left to rise in a warm room, its growth can be modeled as <m>v(h) = e^h</m> quarts, where <m>h</m> is the number of hours the dough has been allowed to rise.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								How many minutes will it take the dough to attain a volume of 2.5 quarts? 
+							</p>
+						</li>
+						<li>
+							<p>
+								Write a model for the rate of growth of the yeast dough. 
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								54.96 minutes
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>v'(h) = e^h</m> quarts per hour, rate of change of dough growth, <m>h</m> hours after the dough has been allowed to rise
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The weight of a laboratory mouse between 3 and 11 weeks of age can be modeled as <m>w(t) = 11.3 + 7.37\ln t</m> grams, where the age of the mouse is <m>t+2</m> weeks.  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								What is the weight of a 9-week-old mouse?  Round to the nearest hundredth.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write a rate of change model for the weight of the mouse, and determine how rapidly its weight is changing at 9 weeks.
+							</p>
+						</li>
+						<li>
+							<p>
+								What is the average rate of change in the weight of the mouse between ages 7 and 11 weeks?  Round to the nearest hundredth.
+							</p>
+						</li>
+						<li>
+							<p>
+								Does the rate at which the mouse is growing increase or decrease as the mouse gets older?  Why?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								25.64 grams
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>w'(t) = \dfrac{7.37}{t}</m> grams per week gives the rate of change of a lab mouse's weight, at age <m>t+2</m> weeks
+							</p>
+							<p>
+								<m>w'(7) = 1.05</m> grams per week
+							</p>
+							<p>
+								The second part gives people fits, because the alignment is unusual; be careful here.
+							</p>
+						</li>
+						<li>
+							<p>
+								1.08 grams per week
+							</p>
+						</li>
+						<li>
+							<p>
+								The rate decreases. The output of the derivative goes down as time increases.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Suppose the managers of a dairy company have modeled weekly production costs as <m>c(u) = 3250 + 75\ln u</m> dollars for <m>u</m> units of dairy products.  Weekly shipping cost for <m>u</m> units is given by <m>s(u) = 50 u + 1500</m> dollars.  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the formula for the total weekly cost of production and shipping of <m>u</m> units. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Write the rate of change model of the total weekly cost of producing and shipping <m>u</m> units. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate the total cost to produce and ship 5000 units in 1 week. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate and interpret the rate of change in the total cost to produce and ship 5000 units in 1 week. 
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>t(u) = 4750 + 75\ln u + 50u</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>t'(u) =\dfrac{75}{u} + 50</m> dollars per unit, rate of change of weekly cos, when <m>u</m> units are produced.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>t(5000) = $255388.79</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								When 5000 units are produced, the weekly toatl cost of shipping and production is increasing by 50.02 dollars per unit.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					An individual has $45,000 to invest.  $32,000 will be put into a low-risk mutual fund averaging 6.2% interest compounded monthly, and the remainder will be invested in a high-yield bond fund averaging 9.7% interest, compounded continuously.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write an equation for the total amount in the two investments, using <m>I(t)</m> as your function. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Write the rate of change model for the low-risk fund, using <m>L(t)</m> as your function. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Write the rate of change model for the high-yield fund, using <m>H(t)</m> as your function.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write the rate of change model for the combined investment. 
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate and interpret <m>\dfrac{dI}{dt}</m> after 8 months, and after 18 months. 
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>I(t) = 32\lrpar{1+\dfrac{0.062}{12}}^{12t} + 13e^{.097t}</m> thousand dollars in the two investments, <m>t</m> years after investment
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>L'(t) = 32\cdot \lrpar{\ln\lrpar{1+\dfrac{0.062}{12}^{12}}}\cdot \lrpar{1+\dfrac{0.062}{12}}^{12t}</m> thousand dollars per year, rate of change of the low-risk investment, <m>t</m> years after investment
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>H'(t) = 13\cdot \ln\lrpar{e^{0.097}}\cdot e^{0.097t}</m> thousand dollars per year, rate of change of the high-risk investment, <m>t</m> years after investment
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>I'(t) = 32\cdot \lrpar{\ln\lrpar{1+\dfrac{0.062}{12}^{12}}}\cdot \lrpar{1+\dfrac{0.062}{12}}^{12t} + 13\cdot \ln\lrpar{e^{0.097}}\cdot e^{0.097t}</m> thousand dollars per year, rate of change of total investment, <m>t</m> years after investment
+							</p>
+						</li>
+						<li>
+							<p>
+								8 months after initial investment, the value is increasing by 3.41 thousand dollars per year.
+							</p>
+							<p>
+								18 months after initial investment, the value is increasing by 3.63 thousand dollars per year.
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
