@@ -1637,6 +1637,231 @@ var ptx_lunr_docs = [
   "number": "2.6.6",
   "title": "",
   "body": "  Sketch the slope graph of a function with input that meets these criteria:      does not exist          for      is concave down for      for      is concave up for                  This one may best be left as practice  Answers vary   "
+},
+{
+  "id": "section-31",
+  "level": "1",
+  "url": "section-31.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "Simple Rate of Change Formulas",
+  "body": " Simple Rate of Change Formulas   The Formulas  Instead of calculating derivatives by hand every time, we can develop sets of rules which will help us more easily calculate them. These are given below; let be a constant, and be functions:    Name  Function  Derivative    Constant Rule      Power Rule      Constant Multiplier Rule      Sum Rule      Difference Rule        Examples    Write the formula for the derivative of the function.                                                                                                                                                  Find the derivative of            The temperature (in ) of Norman on Wednesday can be modeled by degrees Fahrenheit, hours after 6 A.M.     Write the complete rate of change model for the temperature.    By how much is the temperature changing at 10 A.M.? Round your answer to the nearest hundredth.    Compute and interpret . Round your answer to the nearest tenth.    Compute the percent rate of change of temperature at 4:00pm. Round your answer to the nearest hundredth.           degrees Fahrenheit per hour, rate of change of temperature in Norman on Wednesday, hours after 6am.    5.2 \/hour    10 hours after 6am, the temperature is decreasing by 4.4 \/hour    -5.93% per hour         The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:    Weight (lbs)  88  110  125  140  155  170  185  200    Metabolic Rate (kCal\/day)  1291  1444  1551  1658  1750  1857  1964  2071       Find a complete linear model for the metabolic rate of a typical 18- to 30-year-old male.    Write the derivative model for the formula in part (a).    Write a sentence which interprets the derivative of the metabolic rate model of a 26-year-old male. Round your answer to the nearest whole number.       Part c is not written correctly; it gives an age, not a weight. Fill it in with whatever you'd prefer.      kCal\/day, metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.     kCal\/day per pound, rate of change of metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.    FIXED IN NEXT EDITION        "
+},
+{
+  "id": "example-125",
+  "level": "2",
+  "url": "section-31.html#example-125",
+  "type": "Example",
+  "number": "3.1.1",
+  "title": "",
+  "body": "  Write the formula for the derivative of the function.                                                                                                                                               "
+},
+{
+  "id": "example-126",
+  "level": "2",
+  "url": "section-31.html#example-126",
+  "type": "Example",
+  "number": "3.1.2",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-127",
+  "level": "2",
+  "url": "section-31.html#example-127",
+  "type": "Example",
+  "number": "3.1.3",
+  "title": "",
+  "body": "  The temperature (in ) of Norman on Wednesday can be modeled by degrees Fahrenheit, hours after 6 A.M.     Write the complete rate of change model for the temperature.    By how much is the temperature changing at 10 A.M.? Round your answer to the nearest hundredth.    Compute and interpret . Round your answer to the nearest tenth.    Compute the percent rate of change of temperature at 4:00pm. Round your answer to the nearest hundredth.           degrees Fahrenheit per hour, rate of change of temperature in Norman on Wednesday, hours after 6am.    5.2 \/hour    10 hours after 6am, the temperature is decreasing by 4.4 \/hour    -5.93% per hour      "
+},
+{
+  "id": "example-128",
+  "level": "2",
+  "url": "section-31.html#example-128",
+  "type": "Example",
+  "number": "3.1.4",
+  "title": "",
+  "body": "  The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:    Weight (lbs)  88  110  125  140  155  170  185  200    Metabolic Rate (kCal\/day)  1291  1444  1551  1658  1750  1857  1964  2071       Find a complete linear model for the metabolic rate of a typical 18- to 30-year-old male.    Write the derivative model for the formula in part (a).    Write a sentence which interprets the derivative of the metabolic rate model of a 26-year-old male. Round your answer to the nearest whole number.       Part c is not written correctly; it gives an age, not a weight. Fill it in with whatever you'd prefer.      kCal\/day, metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.     kCal\/day per pound, rate of change of metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.    FIXED IN NEXT EDITION      "
+},
+{
+  "id": "section-32",
+  "level": "1",
+  "url": "section-32.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Exponential & Logarithmic Rate of Change Formulas",
+  "body": " Exponential & Logarithmic Rate of Change Formulas   The Formulas      Examples             "
+},
+{
+  "id": "example-129",
+  "level": "2",
+  "url": "section-32.html#example-129",
+  "type": "Example",
+  "number": "3.2.1",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "section-33",
+  "level": "1",
+  "url": "section-33.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "(X) Rates of Changes for Functions That Can Be Composed",
+  "body": " (X) Rates of Changes for Functions That Can Be Composed  We combine this section with Section 3.4.  "
+},
+{
+  "id": "section-3334",
+  "level": "1",
+  "url": "section-3334.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Ratet of Change of Composite Functions",
+  "body": " Ratet of Change of Composite Functions   Review: Composite Functions      The Chain Rule      Examples             "
+},
+{
+  "id": "example-130",
+  "level": "2",
+  "url": "section-3334.html#example-130",
+  "type": "Example",
+  "number": "3.4.1",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "section-35",
+  "level": "1",
+  "url": "section-35.html",
+  "type": "Section",
+  "number": "3.5",
+  "title": "(X) Rates of Changes for Functions That Can Be Multiplied",
+  "body": " (X) Rates of Changes for Functions That Can Be Multiplied  We combine this section with Section 3.6.  "
+},
+{
+  "id": "section-3536",
+  "level": "1",
+  "url": "section-3536.html",
+  "type": "Section",
+  "number": "3.6",
+  "title": "Rate of Change of Product Functions",
+  "body": " Rate of Change of Product Functions   Product Rule              Quotient Rule      Examples             "
+},
+{
+  "id": "example-131",
+  "level": "2",
+  "url": "section-3536.html#example-131",
+  "type": "Example",
+  "number": "3.6.1",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "example-132",
+  "level": "2",
+  "url": "section-3536.html#example-132",
+  "type": "Example",
+  "number": "3.6.2",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "section-41",
+  "level": "1",
+  "url": "section-41.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "(X) Linearization and Estimates",
+  "body": " (X) Linearization and Estimates  We don't cover this section; feel free to read it though!  "
+},
+{
+  "id": "section-42",
+  "level": "1",
+  "url": "section-42.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Relative Extreme Points",
+  "body": " Relative Extreme Points   Definitions   Relative Extrema  Relative Maximum  Relative Minimum         Methods of Finding Extrema  Let be differenttiable on an open interval .    Examples  Let be differentiable on an open interval .   "
+},
+{
+  "id": "definition-30",
+  "level": "2",
+  "url": "section-42.html#definition-30",
+  "type": "Definition",
+  "number": "4.2.1",
+  "title": "Relative Extrema.",
+  "body": " Relative Extrema  Relative Maximum  Relative Minimum      "
+},
+{
+  "id": "section-43",
+  "level": "1",
+  "url": "section-43.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Absolute Extreme Points",
+  "body": " Absolute Extreme Points    Absolute Extrema  Absolute Maximum  Absolute Minimum         Examples   Relative Extrema  Relative Maximum  Relative Minimum        "
+},
+{
+  "id": "definition-31",
+  "level": "2",
+  "url": "section-43.html#definition-31",
+  "type": "Definition",
+  "number": "4.3.1",
+  "title": "Absolute Extrema.",
+  "body": " Absolute Extrema  Absolute Maximum  Absolute Minimum      "
+},
+{
+  "id": "definition-32",
+  "level": "2",
+  "url": "section-43.html#definition-32",
+  "type": "Definition",
+  "number": "4.3.2",
+  "title": "Relative Extrema.",
+  "body": " Relative Extrema  Relative Maximum  Relative Minimum      "
+},
+{
+  "id": "section-44",
+  "level": "1",
+  "url": "section-44.html",
+  "type": "Section",
+  "number": "4.4",
+  "title": "Inflection Points & Second Derivatives",
+  "body": " Inflection Points & Second Derivatives   Definitions   Inflection Point  Inflection Point         Examples   "
+},
+{
+  "id": "definition-33",
+  "level": "2",
+  "url": "section-44.html#definition-33",
+  "type": "Definition",
+  "number": "4.4.1",
+  "title": "Inflection Point.",
+  "body": " Inflection Point  Inflection Point      "
+},
+{
+  "id": "section-45",
+  "level": "1",
+  "url": "section-45.html",
+  "type": "Section",
+  "number": "4.5",
+  "title": "(X) Marginal Analysis",
+  "body": " (X) Marginal Analysis  We don't cover this section; feel free to read it though!  "
+},
+{
+  "id": "section-46",
+  "level": "1",
+  "url": "section-46.html",
+  "type": "Section",
+  "number": "4.6",
+  "title": "Optimization of Constructed Functions",
+  "body": " Optimization of Constructed Functions   Strategy for Optimization            Examples             "
+},
+{
+  "id": "example-133",
+  "level": "2",
+  "url": "section-46.html#example-133",
+  "type": "Example",
+  "number": "4.6.1",
+  "title": "",
+  "body": "         "
 }
 ]
 
