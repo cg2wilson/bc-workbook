@@ -1752,8 +1752,8 @@ var ptx_lunr_docs = [
   "url": "section-3334.html",
   "type": "Section",
   "number": "3.4",
-  "title": "Ratet of Change of Composite Functions",
-  "body": " Ratet of Change of Composite Functions   Review: Composite Functions      The Chain Rule      Examples             "
+  "title": "Rate of Change of Composite Functions",
+  "body": " Rate of Change of Composite Functions   Review: Composite Functions  Two functions and can be composed if and only if the output of is the input of . Notice how the notation is suggestive; inputs , which is exactly what outputs. We write the composition either as or . The new input is now the input of (ie, ), and the new output is the output of (namely, ).    Identify the functions which make up the composite functions given below.                                                        If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and          The Chain Rule  The chain rule is a rule for finding the derivative of composite functions. Let , where the output of is the input of . Then, The best way to learn the chain rule is with practice inside and outside of class .    Examples    For and , find the rate of change function with respect to .           Let and . Find            Consider the following functions: Find and .     and       Find the derivative of            Find the derivative of            Find the derivative of            Find the derivative of            Find the derivative of            Find the derivative of            If , find            Find the derivative of            Find the derivative of                                                                        Find the derivative of            Compute the derivative of            Find the derivative of the function            Compute the derivative of            The number of children under 18 living in households headed by a grandparent can be modeled as where is the number of years since 1980     Write the rate-of-change formula for .    How rapidly was the number of children living with their grandparents growing in 2010?                million children per year         The tuition years from now at OU is projected to be dollars.     Write the rate-of-change formula for tuition.    What is the rate of change in tuition four years from now?                dollars per year        "
 },
 {
   "id": "example-134",
@@ -1762,7 +1762,223 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.4.1",
   "title": "",
-  "body": "         "
+  "body": "  Identify the functions which make up the composite functions given below.                                                        If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and       "
+},
+{
+  "id": "p-1330",
+  "level": "2",
+  "url": "section-3334.html#p-1330",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "chain rule "
+},
+{
+  "id": "example-135",
+  "level": "2",
+  "url": "section-3334.html#example-135",
+  "type": "Example",
+  "number": "3.4.2",
+  "title": "",
+  "body": "  For and , find the rate of change function with respect to .        "
+},
+{
+  "id": "example-136",
+  "level": "2",
+  "url": "section-3334.html#example-136",
+  "type": "Example",
+  "number": "3.4.3",
+  "title": "",
+  "body": "  Let and . Find         "
+},
+{
+  "id": "example-137",
+  "level": "2",
+  "url": "section-3334.html#example-137",
+  "type": "Example",
+  "number": "3.4.4",
+  "title": "",
+  "body": "  Consider the following functions: Find and .     and    "
+},
+{
+  "id": "example-138",
+  "level": "2",
+  "url": "section-3334.html#example-138",
+  "type": "Example",
+  "number": "3.4.5",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-139",
+  "level": "2",
+  "url": "section-3334.html#example-139",
+  "type": "Example",
+  "number": "3.4.6",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-140",
+  "level": "2",
+  "url": "section-3334.html#example-140",
+  "type": "Example",
+  "number": "3.4.7",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-141",
+  "level": "2",
+  "url": "section-3334.html#example-141",
+  "type": "Example",
+  "number": "3.4.8",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-142",
+  "level": "2",
+  "url": "section-3334.html#example-142",
+  "type": "Example",
+  "number": "3.4.9",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-143",
+  "level": "2",
+  "url": "section-3334.html#example-143",
+  "type": "Example",
+  "number": "3.4.10",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-144",
+  "level": "2",
+  "url": "section-3334.html#example-144",
+  "type": "Example",
+  "number": "3.4.11",
+  "title": "",
+  "body": "  If , find         "
+},
+{
+  "id": "example-145",
+  "level": "2",
+  "url": "section-3334.html#example-145",
+  "type": "Example",
+  "number": "3.4.12",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-146",
+  "level": "2",
+  "url": "section-3334.html#example-146",
+  "type": "Example",
+  "number": "3.4.13",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-147",
+  "level": "2",
+  "url": "section-3334.html#example-147",
+  "type": "Example",
+  "number": "3.4.14",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-148",
+  "level": "2",
+  "url": "section-3334.html#example-148",
+  "type": "Example",
+  "number": "3.4.15",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-149",
+  "level": "2",
+  "url": "section-3334.html#example-149",
+  "type": "Example",
+  "number": "3.4.16",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-150",
+  "level": "2",
+  "url": "section-3334.html#example-150",
+  "type": "Example",
+  "number": "3.4.17",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-151",
+  "level": "2",
+  "url": "section-3334.html#example-151",
+  "type": "Example",
+  "number": "3.4.18",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-152",
+  "level": "2",
+  "url": "section-3334.html#example-152",
+  "type": "Example",
+  "number": "3.4.19",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-153",
+  "level": "2",
+  "url": "section-3334.html#example-153",
+  "type": "Example",
+  "number": "3.4.20",
+  "title": "",
+  "body": "  Compute the derivative of         "
+},
+{
+  "id": "example-154",
+  "level": "2",
+  "url": "section-3334.html#example-154",
+  "type": "Example",
+  "number": "3.4.21",
+  "title": "",
+  "body": "  Find the derivative of the function         "
+},
+{
+  "id": "example-155",
+  "level": "2",
+  "url": "section-3334.html#example-155",
+  "type": "Example",
+  "number": "3.4.22",
+  "title": "",
+  "body": "  Compute the derivative of         "
+},
+{
+  "id": "example-156",
+  "level": "2",
+  "url": "section-3334.html#example-156",
+  "type": "Example",
+  "number": "3.4.23",
+  "title": "",
+  "body": "  The number of children under 18 living in households headed by a grandparent can be modeled as where is the number of years since 1980     Write the rate-of-change formula for .    How rapidly was the number of children living with their grandparents growing in 2010?                million children per year      "
+},
+{
+  "id": "example-157",
+  "level": "2",
+  "url": "section-3334.html#example-157",
+  "type": "Example",
+  "number": "3.4.24",
+  "title": "",
+  "body": "  The tuition years from now at OU is projected to be dollars.     Write the rate-of-change formula for tuition.    What is the rate of change in tuition four years from now?                dollars per year      "
 },
 {
   "id": "section-35",
@@ -1783,18 +1999,18 @@ var ptx_lunr_docs = [
   "body": " Rate of Change of Product Functions   Product Rule              Quotient Rule      Examples             "
 },
 {
-  "id": "example-135",
+  "id": "example-158",
   "level": "2",
-  "url": "section-3536.html#example-135",
+  "url": "section-3536.html#example-158",
   "type": "Example",
   "number": "3.6.1",
   "title": "",
   "body": "         "
 },
 {
-  "id": "example-136",
+  "id": "example-159",
   "level": "2",
-  "url": "section-3536.html#example-136",
+  "url": "section-3536.html#example-159",
   "type": "Example",
   "number": "3.6.2",
   "title": "",
@@ -1891,9 +2107,9 @@ var ptx_lunr_docs = [
   "body": " Optimization of Constructed Functions   Strategy for Optimization            Examples             "
 },
 {
-  "id": "example-137",
+  "id": "example-160",
   "level": "2",
-  "url": "section-46.html#example-137",
+  "url": "section-46.html#example-160",
   "type": "Example",
   "number": "4.6.1",
   "title": "",
