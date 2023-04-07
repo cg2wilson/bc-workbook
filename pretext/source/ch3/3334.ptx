@@ -1,21 +1,133 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="section-3334" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Ratet of Change of Composite Functions</title>
+	<title>Rate of Change of Composite Functions</title>
 
 	<subsection xml:id="section-3334-review">
 		<title>Review: Composite Functions</title>
 
 		<p>
-			
+			Two functions <m>f(x)</m> and <m>x(t)</m> can be composed if and only if the output of <m>x(t)</m> is the input of <m>f(x)</m>.  Notice how the notation is suggestive; <m>f</m> inputs <m>x</m>, which is exactly what <m>x(t)</m> outputs.  We write the composition either as <m>(f\circ x)(t)</m> or <m>f(x(t))</m>.  The new input is now the input of <m>x</m> (ie, <m>t</m>), and the new output is the output of <m>f</m> (namely, <m>f</m>).  
 		</p>
+
+		<example>
+			<statement>
+				<p>
+					Identify the functions which make up the composite functions given below.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f(x) = \dfrac{1}{x+2}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>g(x) = \ln (x^2)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>h(t) = e^{5t}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>q(x) = (2x+1)^5</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>n(f) = \lrpar{3+\dfrac{1}{f}}^3</m>	
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>s(h) = \ln \left(5h^2 + \dfrac{1}{h}\right)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>y(r) = \dfrac{5.317}{(2r^5 + 1.7)^2}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>w(c) = \sqrt[3]{\dfrac{c}{1+c}}</m>	
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = 1-\sqrt{e^x+5x}</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								If <m>f(x) = a(b(x))</m>, we'll pick <m>a(x) = \dfrac{1}{x}</m> and <m>b(x) = x+2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>g(x) = a(b(x))</m>, we'll pick <m>a(x) = \ln (x)</m> and <m>b(x) = x^2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>h(t) = a(b(t))</m>, we'll pick <m>a(t) = e^t</m> and <m>b(t) = 5t</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>q(x) = a(b(x))</m>, we'll pick <m>a(x) = x^5</m> and <m>b(x) = 2x+1</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>n(f) = a(b(g))</m>, we'll pick <m>a(f) = f^3</m> and <m>b(g) = 3+\dfrac{1}{f}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>s(h) = a(b(h))</m>, we'll pick <m>a(h) = \ln h</m> and <m>b(h) = 5h^2 + \dfrac{1}{h}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>y(r) = a(b(r))</m>, we'll pick <m>a(r) = \dfrac{5.317}{r^2}</m> and <m>b(r) = 2r^5 + 1.7</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>w(c) = a(b(c))</m>, we'll pick <m>a(c) = \sqrt[3]{c}</m> and <m>b(c) = \dfrac{c}{1+c}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f(x) = a(b(x))</m>, we'll pick <m>a(x) = 1-\sqrt{x}</m> and <m>b(x) = e^x+5x</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 	<subsection xml:id="section-3334-chain">
 		<title>The Chain Rule</title>
 		
 		<p>
-			
+			The <term>chain rule</term> is a rule for finding the derivative of composite functions.  Let <m>h(x) = f(g(x))</m>, where the output of <m>g</m> is the input of <m>f</m>.  Then,
+			<me>
+				h'(x) = f'(g(x))\cdot g'(x)
+			</me>
+			The best way to learn the chain rule is with practice <alert>inside and outside of class</alert>.
 		</p>
 	</subsection>
 
@@ -25,12 +137,355 @@
 		<example>
 			<statement>
 				<p>
-					
+					For <m>f(t) = 3t^2</m> and <m>t(x) = 4+7\ln x</m>, find the rate of change function <m>(f\circ t)'(x)</m> with respect to <m>x</m>.
 				</p>
 			</statement>
 			<solution>
 				<p>
-					
+					<m>(f\circ t)'(x) = 6(4+7\ln x)\cdot \dfrac{7}{x}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Let <m>c(x) = 3x^2 - 2</m> and <m>x(t) = 4-6t</m>.  Find <m>c'(t)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>c'(tO = 6(4-6t)\cdot (-6)</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the following functions: 
+					<me>
+						f(g) = \ln g \qquad g(h) = 5h + 2 \qquad h(j) = e^j\qquad j(x) = 4x^{-1}
+					</me>
+					Find <m>f(x)</m> and <m>f'(x)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f(x) = \ln\lrpar{5e^{4x^{-1}}+2}</m> and <m>f'(x) = \dfrac{5e^{4x^{-1}}\cdot -4x^{-2}}{5e^{4x^{-1}}+2}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>f(x) = \dfrac{1}{x+2}</m> 
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = -(x+2)^{-2}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>f(x) = \ln(x^2)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = \dfrac{1}{x^2}\cdot 2x = \dfrac{2}{x}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>f(x) = (\ln x) ^3</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = 3(\ln x)^2\cdot \dfrac{1}{x}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>f(x) = e^{5x}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = 5e^{5x}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>f(x) = (e^x)^4</m> 
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = 4e^{4x}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>f(x) = 7 + 5\ln (4x^2+3)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = \dfrac{5}{4x^2+3}\cdot 8x</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					If <m>s(t) = 3e^{5t}</m>, find <m>s'(t)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>s'(t) = 15e^{5t}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>k(x) = 3e^{4x^2}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>k'(x) = 3e^{4x^2}\cdot 8x</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>p(t) = (5+6e^{2t})^3</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>p'(t) = 3(5+6e^{2t})^2\cdot 12e^{2t}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					<m>f(x) = 6(4x^2+3)^5</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = 30(4x^2+3)^4\cdot 8x</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					<m>f(x) = -12\ln (6x^2+3^x)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = \dfrac{-12}{6x^2+3^x}\cdot (12x + \ln 3\cdot 3^x)</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					<m>f(x) = 2e^{0.5x} - 2x</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = e^{0.5x} - 2</m>
+				</p>
+			</solution>
+		</example>
+		<example>
+			<statement>
+				<p>
+					<m>f(x) = \dfrac{7.2}{(4x^3+1)^4}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = 7.2\cdot 4(4x^3+1)^3\cdot 12x^2</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					<m>f(x) = 3\sqrt{x^3 + 2\ln x}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = \dfrac{3}{2}\lrpar{x^3+2\ln x}^{-1/2}\cdot \lrpar{3x^2 + \dfrac{2}{x}}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of <m>f(x) = e^{kx}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x) = ke^{kx}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute the derivative of <m>e^{f(x)}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>f'(x)e^{f(x)}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the derivative of the function <m>\dfrac{1.356}{1+20.5e^{-4.6t}}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>1.356\cdot -(1+20.5e^{-4.6t})^{-2}\cdot (20.5e^{-4.6t}\cdot -4.6)</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute the derivative of <m>j(x) = \ln (\ln (\ln (x^2-e^{3x})))</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>j'(x) = \dfrac{1}{\ln (\ln (x^2-e^{3x}))}\cdot \dfrac{1}{\ln (x^2-e^{3x})}\cdot \dfrac{1}{x^2-e^{3x}}\cdot (2x-3e^{3x})</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The number of children under 18 living in households headed by a grandparent can be modeled as
+					<me>
+						p(t) = 2.111e^{0.04t}\quad \text{million children}
+					</me>
+					where <m>t</m> is the number of years since 1980
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the rate-of-change formula for <m>p</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								How rapidly was the number of children living with their grandparents growing in 2010?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>p'(t) = 2.111\cdot 0.04e^{0.04t}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>p'(30) = 0.28</m> million children per year
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The tuition <m>x</m> years from now at OU is projected to be <m>t(x) = 24072e^{0.056x}</m> dollars. 
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the rate-of-change formula for tuition.
+							</p>
+						</li>
+						<li>
+							<p>
+								What is the rate of change in tuition four years from now?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>t'(x) = 24072\cdot 0.056e^{0.056x}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>t'(4) = 1686.48</m> dollars per year
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
