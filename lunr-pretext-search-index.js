@@ -1996,7 +1996,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.6",
   "title": "Rate of Change of Product Functions",
-  "body": " Rate of Change of Product Functions   Product Rule              Quotient Rule      Examples             "
+  "body": " Rate of Change of Product Functions   Product Rule  The product rule allows us to take derivatives of product functions, i.e. functions that look like . The product rule is     Find the derivative of , where            Find the derivative of .           Compute the derivative of the function            Let , and . Find .           The profit from the supply of a certain commodity is modeled by dollars, when units are produced.     Write the complete rate of change model for profit.    At what production level(s) is the rate of change of profit zero? If necessary, round your answer to two decimal places.    What is profit at the production level for the value in part (b)?           dollars per unit, rate of change of profit from supply of a commodity, when units are produced.     units    132.44 dollars         Quotient Rule  Alternately, for a quotient function, we may employ the quotient rule . If , then This can be remembered as     Use the quotient rule to find the derivative of            Examples    The production level at a plant manufacturing radios can be modeled as thousand radios, where thousand dollars has been spent on modernizing plant technology.     Identify two functions and that, when multiplied, form the production model- one of the functions will need the chain rule    Using function notation, write the notation for the production model and for the rate of change of the production model.    Write a model for the rate of change of production          Choose and     The production model is and the rate of change model is      thousand radios per thousand dollars, rate of change of production, where thousand dollars has been spent on modernizing plant technology.         Write the product function and rate-of-change function for the given functions.      and      and            and      and          Find the derivatives of the following functions.                                                                                                A store has determined that the number of cookies sold monthly is approximately cookies, where is the average price of a cookie (in dollars).     Write a model for revenue as a function of price.    If each cookie costs the store $1, write a model for profit as a function of price.    Write the complete rate of change model for revenue as a function of price.           dollars, revenue from cookie sales, where is the average price of a cookie (in dollars).     dollars, profit from cookie sales, where is the average price of a cookie (in dollars).     dollars revenue per dollar cookie price, rate of change of revenue from cookie sales, where is the average price of a cookie (in dollars).         Find the derivative of .          "
+},
+{
+  "id": "p-1388",
+  "level": "2",
+  "url": "section-3536.html#p-1388",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "product rule "
 },
 {
   "id": "example-158",
@@ -2005,7 +2014,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.6.1",
   "title": "",
-  "body": "         "
+  "body": "  Find the derivative of , where         "
 },
 {
   "id": "example-159",
@@ -2014,7 +2023,97 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.6.2",
   "title": "",
-  "body": "         "
+  "body": "  Find the derivative of .        "
+},
+{
+  "id": "example-160",
+  "level": "2",
+  "url": "section-3536.html#example-160",
+  "type": "Example",
+  "number": "3.6.3",
+  "title": "",
+  "body": "  Compute the derivative of the function         "
+},
+{
+  "id": "example-161",
+  "level": "2",
+  "url": "section-3536.html#example-161",
+  "type": "Example",
+  "number": "3.6.4",
+  "title": "",
+  "body": "  Let , and . Find .        "
+},
+{
+  "id": "example-162",
+  "level": "2",
+  "url": "section-3536.html#example-162",
+  "type": "Example",
+  "number": "3.6.5",
+  "title": "",
+  "body": "  The profit from the supply of a certain commodity is modeled by dollars, when units are produced.     Write the complete rate of change model for profit.    At what production level(s) is the rate of change of profit zero? If necessary, round your answer to two decimal places.    What is profit at the production level for the value in part (b)?           dollars per unit, rate of change of profit from supply of a commodity, when units are produced.     units    132.44 dollars      "
+},
+{
+  "id": "p-1406",
+  "level": "2",
+  "url": "section-3536.html#p-1406",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "quotient rule "
+},
+{
+  "id": "example-163",
+  "level": "2",
+  "url": "section-3536.html#example-163",
+  "type": "Example",
+  "number": "3.6.6",
+  "title": "",
+  "body": "  Use the quotient rule to find the derivative of         "
+},
+{
+  "id": "example-164",
+  "level": "2",
+  "url": "section-3536.html#example-164",
+  "type": "Example",
+  "number": "3.6.7",
+  "title": "",
+  "body": "  The production level at a plant manufacturing radios can be modeled as thousand radios, where thousand dollars has been spent on modernizing plant technology.     Identify two functions and that, when multiplied, form the production model- one of the functions will need the chain rule    Using function notation, write the notation for the production model and for the rate of change of the production model.    Write a model for the rate of change of production          Choose and     The production model is and the rate of change model is      thousand radios per thousand dollars, rate of change of production, where thousand dollars has been spent on modernizing plant technology.      "
+},
+{
+  "id": "example-165",
+  "level": "2",
+  "url": "section-3536.html#example-165",
+  "type": "Example",
+  "number": "3.6.8",
+  "title": "",
+  "body": "  Write the product function and rate-of-change function for the given functions.      and      and            and      and       "
+},
+{
+  "id": "example-166",
+  "level": "2",
+  "url": "section-3536.html#example-166",
+  "type": "Example",
+  "number": "3.6.9",
+  "title": "",
+  "body": "  Find the derivatives of the following functions.                                                                                             "
+},
+{
+  "id": "example-167",
+  "level": "2",
+  "url": "section-3536.html#example-167",
+  "type": "Example",
+  "number": "3.6.10",
+  "title": "",
+  "body": "  A store has determined that the number of cookies sold monthly is approximately cookies, where is the average price of a cookie (in dollars).     Write a model for revenue as a function of price.    If each cookie costs the store $1, write a model for profit as a function of price.    Write the complete rate of change model for revenue as a function of price.           dollars, revenue from cookie sales, where is the average price of a cookie (in dollars).     dollars, profit from cookie sales, where is the average price of a cookie (in dollars).     dollars revenue per dollar cookie price, rate of change of revenue from cookie sales, where is the average price of a cookie (in dollars).      "
+},
+{
+  "id": "example-168",
+  "level": "2",
+  "url": "section-3536.html#example-168",
+  "type": "Example",
+  "number": "3.6.11",
+  "title": "",
+  "body": "  Find the derivative of .        "
 },
 {
   "id": "section-41",
@@ -2107,9 +2206,9 @@ var ptx_lunr_docs = [
   "body": " Optimization of Constructed Functions   Strategy for Optimization            Examples             "
 },
 {
-  "id": "example-160",
+  "id": "example-169",
   "level": "2",
-  "url": "section-46.html#example-160",
+  "url": "section-46.html#example-169",
   "type": "Example",
   "number": "4.6.1",
   "title": "",
