@@ -2131,7 +2131,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Relative Extreme Points",
-  "body": " Relative Extreme Points   Definitions   Relative Extrema  Relative Maximum  Relative Minimum         Methods of Finding Extrema  Let be differenttiable on an open interval .    Examples  Let be differentiable on an open interval .   "
+  "body": " Relative Extreme Points   Definitions   Relative Extrema  Relative Maximum  Relative Minimum  Relative Extremum   Let be a function defined on an input interval . Let .  We say that has a relative maximum at if the output is bigger than any other output in some interval around . Likewise, has a relative minimum at if the output is smaller than any other output in some interval around .    Relative maxima\/minima are also referred to as local maxima\/minima or local extrema .   Critical Point  Critical Point  Critical Input   A critical point of a continuous function is a pair at which is either not differentiable or has . The input value of of a critical point is called the critical input .      Find the critical points of on the interval .    From the calculator, we get and as the critical inputs; the critical points can be found by plugging these back into .     First Derivative Test   Suppose is a critical input of a continuous function .     If changes from positive to negative at , then has a relative maximum at .    If changes from negative to positive at , then has a relative minimum at .    If does not change its sign at , then has a horizontal tangent line at .        Conditions Where Extreme Points Exist   For a function with input , a relative extremum can occur at only if exists\/is defined. Further,     A relative extremum exists where and the graph of crosses the input axis at     A relative extremum can exist where exists, but does nto exist; further investigation will be needed.        Old Derivative Facts   Let be a function defined on an input interval and let      If , then is increasing at .    If , then is decreasing at .    If , then the line tangent to at is horizontal.         Methods of Finding Extrema  Let be differenttiable on an open interval .  Algebraic Method:     Calculate the derivative     Set and solve for . All solutions will be horizontal asymptotes; individual analysis (corresponding to 1st Derivative Test) will determine if is a maximum, minimum, or neither.     Calculator, Method 1     Input into     Plot , and do Zoom 0:ZoomFit     If you are finding a local maximum, press 2nd Trace 4:maximum . If you are finding a local minimum, press 2nd Trace 3:minimum .     The calculator will prompt for a left bound. Input a number slightly less than where you expect the maximum\/minimum to be.    The calculator will then prompt for a right bound. Input a number slightly greater than where you expect the maximum\/minimum to be.    The calculator will then prompt for a guess. Input a guess, or press enter.    The max\/min will be displayed as a coordinate pair. If the pair is needed, use appropriate rounding guidelines.    If you forget the value of the max\/min, the calculator will store the coordinate in the variable . In order to recall it, on the home screen, press and the calculator will return the appropriate value.        Calculator, Method 2     Input into     In , use the nDeriv command by pressing Math nDeriv( . The complete entry must look like Y_2 = nDeriv(Y1(X),X,X) This will have the calculator graph the derivative as well as the original function    The local extrema are given by wherever the derivative graph touches the axis. According to 1st Derivative Test, a local max occurs when the derivative crosses from positive to negative, and a local min occurs when the derivative crosses from negative to positive.       Examples    The percentage of people in the United States (aged 15 and above) who are sleeping at a given time of night can be modeled as      Find the critical input values of on the interval , and calculate the output value for any critical point.    Graph and . Label and interpret the critical inputs.          The input is at , and the critical point is     The graphing can and should be done on the calculator. This is a good place to really emphasize the interval given, so that you set up what happens in Section 4.3.  5.61 hours after 9pm, the percentage of people age 15 and above in the US who are sleeping is at a maximum, 96.36%         Sketch a graph such that      has a relative maximum at      has a relative minimum at      for and      for             Answers vary, but the easiest solution is a downward quadratic whose vertex is at .      Consider the function .     Write the derivative formula    Locate and classify each critical point.                is a relative minimum         Consider the function .     Write the derivative formula    Locate and classify each critical point.               The critical point is a relative max and is a relative min.         Consider the function (for ).     Write the derivative formula    Locate and classify each critical point.               The critical point is a relative max and is a relative min         Consider the function .     Write the derivative formula    Locate and classify each critical point.               None         For the following graphs, determine which of the following statements are true:      for      for      for            9 satisfies 1, 2, and 3    10 satisfies 1 and 2    11 satisfies 2 and 3    12 satisfies 1 and 2        "
 },
 {
   "id": "definition-30",
@@ -2140,7 +2140,124 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "4.2.1",
   "title": "Relative Extrema.",
-  "body": " Relative Extrema  Relative Maximum  Relative Minimum      "
+  "body": " Relative Extrema  Relative Maximum  Relative Minimum  Relative Extremum   Let be a function defined on an input interval . Let .  We say that has a relative maximum at if the output is bigger than any other output in some interval around . Likewise, has a relative minimum at if the output is smaller than any other output in some interval around .   "
+},
+{
+  "id": "p-1459",
+  "level": "2",
+  "url": "section-42.html#p-1459",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "local maxima\/minima local extrema "
+},
+{
+  "id": "definition-31",
+  "level": "2",
+  "url": "section-42.html#definition-31",
+  "type": "Definition",
+  "number": "4.2.2",
+  "title": "Critical Point.",
+  "body": " Critical Point  Critical Point  Critical Input   A critical point of a continuous function is a pair at which is either not differentiable or has . The input value of of a critical point is called the critical input .   "
+},
+{
+  "id": "example-169",
+  "level": "2",
+  "url": "section-42.html#example-169",
+  "type": "Example",
+  "number": "4.2.3",
+  "title": "",
+  "body": "  Find the critical points of on the interval .    From the calculator, we get and as the critical inputs; the critical points can be found by plugging these back into .   "
+},
+{
+  "id": "theorem-1",
+  "level": "2",
+  "url": "section-42.html#theorem-1",
+  "type": "Theorem",
+  "number": "4.2.4",
+  "title": "First Derivative Test.",
+  "body": " First Derivative Test   Suppose is a critical input of a continuous function .     If changes from positive to negative at , then has a relative maximum at .    If changes from negative to positive at , then has a relative minimum at .    If does not change its sign at , then has a horizontal tangent line at .      "
+},
+{
+  "id": "theorem-2",
+  "level": "2",
+  "url": "section-42.html#theorem-2",
+  "type": "Theorem",
+  "number": "4.2.5",
+  "title": "Conditions Where Extreme Points Exist.",
+  "body": " Conditions Where Extreme Points Exist   For a function with input , a relative extremum can occur at only if exists\/is defined. Further,     A relative extremum exists where and the graph of crosses the input axis at     A relative extremum can exist where exists, but does nto exist; further investigation will be needed.      "
+},
+{
+  "id": "theorem-3",
+  "level": "2",
+  "url": "section-42.html#theorem-3",
+  "type": "Theorem",
+  "number": "4.2.6",
+  "title": "Old Derivative Facts.",
+  "body": " Old Derivative Facts   Let be a function defined on an input interval and let      If , then is increasing at .    If , then is decreasing at .    If , then the line tangent to at is horizontal.      "
+},
+{
+  "id": "example-170",
+  "level": "2",
+  "url": "section-42.html#example-170",
+  "type": "Example",
+  "number": "4.2.7",
+  "title": "",
+  "body": "  The percentage of people in the United States (aged 15 and above) who are sleeping at a given time of night can be modeled as      Find the critical input values of on the interval , and calculate the output value for any critical point.    Graph and . Label and interpret the critical inputs.          The input is at , and the critical point is     The graphing can and should be done on the calculator. This is a good place to really emphasize the interval given, so that you set up what happens in Section 4.3.  5.61 hours after 9pm, the percentage of people age 15 and above in the US who are sleeping is at a maximum, 96.36%      "
+},
+{
+  "id": "example-171",
+  "level": "2",
+  "url": "section-42.html#example-171",
+  "type": "Example",
+  "number": "4.2.8",
+  "title": "",
+  "body": "  Sketch a graph such that      has a relative maximum at      has a relative minimum at      for and      for             Answers vary, but the easiest solution is a downward quadratic whose vertex is at .   "
+},
+{
+  "id": "example-172",
+  "level": "2",
+  "url": "section-42.html#example-172",
+  "type": "Example",
+  "number": "4.2.9",
+  "title": "",
+  "body": "  Consider the function .     Write the derivative formula    Locate and classify each critical point.                is a relative minimum      "
+},
+{
+  "id": "example-173",
+  "level": "2",
+  "url": "section-42.html#example-173",
+  "type": "Example",
+  "number": "4.2.10",
+  "title": "",
+  "body": "  Consider the function .     Write the derivative formula    Locate and classify each critical point.               The critical point is a relative max and is a relative min.      "
+},
+{
+  "id": "example-174",
+  "level": "2",
+  "url": "section-42.html#example-174",
+  "type": "Example",
+  "number": "4.2.11",
+  "title": "",
+  "body": "  Consider the function (for ).     Write the derivative formula    Locate and classify each critical point.               The critical point is a relative max and is a relative min      "
+},
+{
+  "id": "example-175",
+  "level": "2",
+  "url": "section-42.html#example-175",
+  "type": "Example",
+  "number": "4.2.12",
+  "title": "",
+  "body": "  Consider the function .     Write the derivative formula    Locate and classify each critical point.               None      "
+},
+{
+  "id": "example-176",
+  "level": "2",
+  "url": "section-42.html#example-176",
+  "type": "Example",
+  "number": "4.2.13",
+  "title": "",
+  "body": "  For the following graphs, determine which of the following statements are true:      for      for      for            9 satisfies 1, 2, and 3    10 satisfies 1 and 2    11 satisfies 2 and 3    12 satisfies 1 and 2      "
 },
 {
   "id": "section-43",
@@ -2152,18 +2269,18 @@ var ptx_lunr_docs = [
   "body": " Absolute Extreme Points    Absolute Extrema  Absolute Maximum  Absolute Minimum         Examples   Relative Extrema  Relative Maximum  Relative Minimum        "
 },
 {
-  "id": "definition-31",
+  "id": "definition-32",
   "level": "2",
-  "url": "section-43.html#definition-31",
+  "url": "section-43.html#definition-32",
   "type": "Definition",
   "number": "4.3.1",
   "title": "Absolute Extrema.",
   "body": " Absolute Extrema  Absolute Maximum  Absolute Minimum      "
 },
 {
-  "id": "definition-32",
+  "id": "definition-33",
   "level": "2",
-  "url": "section-43.html#definition-32",
+  "url": "section-43.html#definition-33",
   "type": "Definition",
   "number": "4.3.2",
   "title": "Relative Extrema.",
@@ -2179,9 +2296,9 @@ var ptx_lunr_docs = [
   "body": " Inflection Points & Second Derivatives   Definitions   Inflection Point  Inflection Point         Examples   "
 },
 {
-  "id": "definition-33",
+  "id": "definition-34",
   "level": "2",
-  "url": "section-44.html#definition-33",
+  "url": "section-44.html#definition-34",
   "type": "Definition",
   "number": "4.4.1",
   "title": "Inflection Point.",
@@ -2206,9 +2323,9 @@ var ptx_lunr_docs = [
   "body": " Optimization of Constructed Functions   Strategy for Optimization            Examples             "
 },
 {
-  "id": "example-169",
+  "id": "example-177",
   "level": "2",
-  "url": "section-46.html#example-169",
+  "url": "section-46.html#example-177",
   "type": "Example",
   "number": "4.6.1",
   "title": "",
