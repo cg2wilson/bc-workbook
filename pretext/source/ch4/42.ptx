@@ -9,13 +9,127 @@
 		<definition>
 			<title>Relative Extrema</title>
 			<idx><h>Relative Maximum</h></idx>
-			<idx><h>Relative Minimum</h></idx>			
+			<idx><h>Relative Minimum</h></idx>		
+			<idx><h>Relative Extremum</h></idx>	
 			<statement>
 				<p>
-					
+					Let <m>f(x)</m> be a function defined on an input interval <m>[a,b]</m>. Let <m>a\lt c\lt b</m>.
+				</p>
+				<p>
+					We say that <m>f</m> has a <term>relative maximum</term> at <m>c</m> if the output <m>f(c)</m> is bigger than any other output in some interval around <m>c</m>. Likewise, <m>f</m> has a <term>relative minimum</term> at <m>c</m> if the output <m>f(c)</m> is smaller than any other output in some interval around <m>c</m>.
 				</p>
 			</statement>
 		</definition>
+
+		<p>
+			Relative maxima/minima are also referred to as <term>local maxima/minima</term> or <term>local extrema</term>.
+		</p>
+
+		<definition>
+			<title>Critical Point</title>			
+			<idx><h>Critical Point</h></idx>
+			<idx><h>Critical Input</h></idx>
+			<statement>
+				<p>
+					A <term>critical point</term> of a continuous function <m>f</m> is a pair <m>(c,f(c))</m> at which <m>f</m> is either not differentiable or has <m>f'(c) = 0</m>. The input value of <m>c</m> of a critical point is called the <term>critical input</term>.
+				</p>
+			</statement>
+		</definition>
+
+		<example>
+			<statement>
+				<p>
+					Find the critical points of <m>f(x) = 4x^3 + 8x^2 - 20x - 21</m> on the interval <m>[-5,5]</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					From the calculator, we get <m>x=-2.12</m> and <m>x = 0.79</m> as the critical inputs; the critical points can be found by plugging these back into <m>f(x)</m>.
+				</p>
+			</solution>
+		</example>
+
+		<theorem>
+			<title>First Derivative Test</title>
+			<statement>
+				<p>
+					Suppose <m>c</m> is a critical input of a continuous function <m>f</m>.
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								If <m>f'</m> changes from positive to negative at <m>c</m>, then <m>f</m> has a relative maximum at <m>c</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f'</m> changes from negative to positive at <m>c</m>, then <m>f</m> has a relative minimum at <m>c</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f'</m> does not change its sign at <m>c</m>, then <m>f </m> has a horizontal tangent line at <m>c</m>.
+							</p>
+						</li>
+					</ul>
+				</p>
+			</statement>
+		</theorem>
+
+		<theorem>
+			<title>Conditions Where Extreme Points Exist</title>		
+			<statement>
+				<p>
+					For a function <m>f</m> with input <m>x</m>, a relative extremum can occur at <m>x=c</m> only if <m>f(c)</m> exists/is defined. Further,
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								A relative extremum exists where <m>f'(c) = 0</m> and the graph of <m>f'(x)</m> crosses the input axis at <m>x=c</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								A relative extremum can exist where <m>f(x)</m> exists, but <m>f'(x)</m> does nto exist; further investigation will be needed.
+							</p>
+						</li>
+					</ul>
+				</p>
+			</statement>
+		</theorem>
+
+		<theorem>
+			<title>Old Derivative Facts</title>
+			<statement>
+				<p>
+					Let <m>f(x)</m> be a function defined on an input interval <m>[a,b]</m> and let <m>a\lt c\lt b</m>
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								If <m>f'(x) \gt 0</m>, then <m>f(x)</m> is increasing at <m>x=c</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f'(x) \lt 0</m>, then <m>f(x)</m> is decreasing at <m>x=c</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f'(x) = 0</m>, then the line tangent to <m>f(x)</m> at <m>x=c</m> is horizontal.
+							</p>
+						</li>
+					</ul>
+				</p>
+			</statement>
+		</theorem>
+		
+		
+		
 	</subsection>
 
 	<subsection xml:id="section-42-methods">
@@ -24,13 +138,397 @@
 		<p>
 			Let <m>f(x)</m> be differenttiable on an open interval <m>(a,b)</m>.
 		</p>
+
+		<p>
+			Algebraic Method:
+		</p>
+		<p>
+			<ol>
+				<li>
+					<p>
+						Calculate the derivative <m>f'(x)</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						Set <m>f'(x) = 0</m> and solve for <m>x</m>.  All solutions will be horizontal asymptotes; individual analysis (corresponding to 1st Derivative Test) will determine if <m>f'(c)</m> is a maximum, minimum, or neither.
+					</p>
+				</li>
+			</ol>
+		</p>
+		<p>
+			Calculator, Method 1
+		</p>
+		<p>
+			<ol>
+				<li>
+					<p>
+						Input <m>f(x)</m> into <m>Y_1</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						Plot <m>f(x)</m>, and do <c>Zoom</c><m>\rightarrow</m><c>0:ZoomFit</c>
+					</p>
+				</li>
+				<li>
+					<p>
+						If you are finding a local maximum, press <c>2nd</c><m>\to</m><c>Trace</c><m>\to</m><c>4:maximum</c>.  If you are finding a local minimum, press <c>2nd</c><m>\to</m><c>Trace</c><m>\to</m><c>3:minimum</c>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									The calculator will prompt for a left bound.  Input a number <alert>slightly less than</alert> where you expect the maximum/minimum to be.
+								</p>
+							</li>
+							<li>
+								<p>
+									The calculator will then prompt for a right bound.  Input a number <alert>slightly greater than</alert> where you expect the maximum/minimum to be.
+								</p>
+							</li>
+							<li>
+								<p>
+									The calculator will then prompt for a guess.  Input a guess, or press enter.
+								</p>
+							</li>
+							<li>
+								<p>
+									The max/min will be displayed as a coordinate pair.  If the pair is needed, use appropriate rounding guidelines.
+								</p>
+							</li>
+							<li>
+								<p>
+									If you forget the value of the max/min, the calculator will store the <m>x-</m>coordinate in the variable <m>X</m>.  In order to recall it, on the home screen, press <m>X</m> and the calculator will return the appropriate value.  
+								</p>
+							</li>
+						</ol>
+					</p>
+				</li>
+			</ol>
+		</p>
+		<p>
+			Calculator, Method 2
+		</p>
+		<p>
+			<ol>
+				<li>
+					<p>
+						Input <m>f(x)</m> into <m>Y_1</m>
+					</p>
+				</li>
+				<li>
+					<p>
+						In <m>Y_2</m>, use the <c>nDeriv</c> command by pressing <c>Math</c><m>\to</m><c>nDeriv(</c>.  The complete entry must look like
+						<cd>
+							Y_2 = nDeriv(Y1(X),X,X)
+						</cd>
+						This will have the calculator graph the derivative as well as the original function
+					</p>
+				</li>
+				<li>
+					<p>
+						The local extrema are given by wherever the derivative graph touches the <m>x-</m>axis.  According to 1st Derivative Test, a local max occurs when the derivative crosses from positive to negative, and a local min occurs when the derivative crosses from negative to positive.
+					</p>
+				</li>
+			</ol>
+		</p>
 	</subsection>
 
 	<subsection xml:id="section-42-examples">
 		<title>Examples</title>
 		
-		<p>
-			Let <m>f(x)</m> be differentiable on an open interval <m>(a,b)</m>.
-		</p>
+		<example>
+			<statement>
+				<p>
+					The percentage of people in the United States (aged 15 and above) who are sleeping at a given time of night can be modeled as 
+					<me>
+						s(t) = -2.63t^2 + 29.52t + 13.52\text{ percent, }t\text{ number of hours after 9pm}
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find the critical input values of <m>s</m> on the interval <m>0\leq t\leq 11</m>, and calculate the output value for any critical point.
+							</p>
+						</li>
+						<li>
+							<p>
+								Graph <m>s(t)</m> and <m>s'(t)</m>.  Label and interpret the critical inputs.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								The input is at <m>t=5.61</m>, and the critical point is <m>(5.61,96.36)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The graphing can and should be done on the calculator. This is a good place to really emphasize the interval given, so that you set up what happens in Section 4.3.
+							</p>
+							<p>
+								5.61 hours after 9pm, the percentage of people age 15 and above in the US who are sleeping is at a maximum, 96.36%
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Sketch a graph such that
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								<m>f</m> has a relative maximum at <m>x = 3</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f</m> has a relative minimum at <m>x = -1</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) \lt 0</m> for <m>x \lt -1</m> and <m>x \gt 3</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) \gt 0</m> for <m>-1 \lt x \lt 3</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(-1) = f'(3) = 0</m>
+							</p>
+						</li>
+					</ul>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary, but the easiest solution is a downward quadratic whose vertex is at <m>x=-1</m>.
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the function <m>f(x) = x^2 + 2.5x - 6</m>.  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the derivative formula
+							</p>
+						</li>
+						<li>
+							<p>
+								Locate and classify each critical point.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f'(x) = 2x+2.5</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(-1.25,-7.56)</m> is a relative minimum
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the function <m>f(x) = 0.3x^3 + 1.2x^2 - 6x + 4</m>.  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the derivative formula
+							</p>
+						</li>
+						<li>
+							<p>
+								Locate and classify each critical point.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f'(x) = 0.9x^2+4.2x-6</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The critical point <m>(-4.24,28.15)</m> is a relative max and <m>(1.57,-1.30)</m> is a relative min.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the function <m>f(x) = 5e^{-x} + \ln x</m> (for <m>x \gt 0</m>).  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the derivative formula
+							</p>
+						</li>
+						<li>
+							<p>
+								Locate and classify each critical point.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f'(x) = -5e^{-x} + \dfrac{1}{x}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The critical point <m>(0.3,2.51)</m> is a relative max and <m>(2.54,1.33)</m> is a relative min
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the function <m>f(x) = \dfrac{10}{1 + 2e^{-0.5x}}</m>.  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the derivative formula
+							</p>
+						</li>
+						<li>
+							<p>
+								Locate and classify each critical point.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f'(x) = -10(1+2e^{-0.5x})^{-2}(-e^{-0.5x})</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								None
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					For the following graphs, determine which of the following statements are true:
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								<m>f'(x) \gt 0</m> for <m>x \lt 2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) \gt 0</m> for <m>x \gt 2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f'(x) = 0</m> for <m>x = 2</m>
+							</p>
+						</li>
+					</ul>
+				</p>
+				<image source="sec42-1.png"/>
+			</statement>
+			<solution>
+				<p>
+					<ul>
+						<li>
+							<p>
+								9 satisfies 1, 2, and 3
+							</p>
+						</li>
+						<li>
+							<p>
+								10 satisfies 1 and 2
+							</p>
+						</li>
+						<li>
+							<p>
+								11 satisfies 2 and 3
+							</p>
+						</li>
+						<li>
+							<p>
+								12 satisfies 1 and 2
+							</p>
+						</li>
+					</ul>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>
