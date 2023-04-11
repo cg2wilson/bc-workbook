@@ -51,18 +51,18 @@
 				<p>
 					Step 3: In order to write the model with a single input variable, we need a second equation to eliminate one of the variables.  We know that <m>V = 10lw</m>.  But, we are also told that the maximum linear measurement is given by <m>l + w + h = 45</m>.  Since <m>h = 10</m>, this becomes <m>l + w + 10 = 45</m>, so <m>l + w = 35</m>.  Now we can solve for either <m>l</m> or <m>w</m>.  Choose to solve for length.  Thus, <m>l = 35 - w</m>.  We can substitute this into the equation for volume:
 					<md>
-						<mrow>V \amp 10lw</mrow>
-						<mrow> \amp 10(35-w)w </mrow>
-						<mrow> \amp -10w^2+350w</mrow>
+						<mrow>V \amp =10lw</mrow>
+						<mrow> \amp =10(35-w)w </mrow>
+						<mrow> \amp =-10w^2+350w</mrow>
 					</md>
 					This gives us an equation in terms of a single variable, one which we can optimize.
 				</p>
 				<p>
-					Step 4: In order to optimize the equation, we want to find the max or min.  Since we want the most volume, we're going to find the maximum.  We also have an interval, since <m>0 \lt l \gt 35</m> (from the maximum linear measurement).  Then,
+					Step 4: In order to optimize the equation, we want to find the max or min.  Since we want the most volume, we're going to find the maximum.  We also have an interval, since <m>0 \gt l \lt 35</m> (from the maximum linear measurement).  Then,
 					<me>
 						V' = -20w + 350
 					</me>
-					Solving for <m>w</m> gives <m>w = 17.5</m>.  Plugging this in to the linear measurement, we have <m>l + 17.5 = 35</m>, so <m>l = 17.5</m>.  This means that our maximum dimensions are <m>17.5"\times17.5"\times10"</m>, and the maximized volume is <m>V = (17.5)(17.5)(10) = 3062.5</m> in<m>^3</m>.
+					Solving for <m>w</m> gives <m>w = 17.5</m>.  Plugging this in to the linear measurement, we have <m>l + 17.5 = 35</m>, so <m>l = 17.5</m>.  This means that our maximum dimensions are <m>17.5''\times17.5''\times10''</m>, and the maximized volume is <m>V = (17.5)(17.5)(10) = 3062.5</m> in<m>^3</m>.
 				</p>
 			</solution>
 		</example>
