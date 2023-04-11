@@ -410,15 +410,98 @@ window.MathJax = {
 <section class="subsection" id="section-46-strategy"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.6.1</span> <span class="title">Strategy for Optimization</span>
 </h3>
-<div class="para logical" id="p-1556"><ol class="lower-alpha"><li id="li-877"><div class="para" id="p-1557"></div></li></ol></div></section><section class="subsection" id="section-46-examples"><h3 class="heading hide-type">
+<div class="para logical" id="p-1673"><ol class="decimal">
+<li id="li-930"><div class="para" id="p-1674">Step 1: Identify the quantity to be optimized (the output) and the quantities on which the output quantity depends (the input).</div></li>
+<li id="li-931"><div class="para" id="p-1675">Step 2: Sketch and label a diagram of the situation.</div></li>
+<li id="li-932"><div class="para" id="p-1676">Step 3: Construct a model with a single input variable.</div></li>
+<li id="li-933"><div class="para" id="p-1677">Step 4: Locate the optimal point (minimum/maximum) for the model.</div></li>
+</ol></div></section><section class="subsection" id="section-46-examples"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.6.2</span> <span class="title">Examples</span>
 </h3>
-<article class="example example-like" id="example-177"><h4 class="heading">
+<article class="example example-like" id="example-197"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-1558"></div>
+<div class="para" id="p-1678">In 2009, airlines had a 45-inch restriction on the maximum linear measurement (length + width + height) of carry-on luggage with the height restricted to 10 inches.  Passengers concerned with keeping their travel costs down seek to maximize the capacity of their carry-on bag; what are the optimal measurements to maximize capacity?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-180" id="solution-180"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-180"><div class="solution solution-like"><div class="para" id="p-1559"></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-200" id="solution-200"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-200"><div class="solution solution-like">
+<div class="para" id="p-1679">Step 1: We want to maximize capacity of the carry-on, so we want to maximize volume.  Because volume is given by <span class="process-math">\(V = lwh\text{,}\)</span> our input variables are <span class="process-math">\(l\text{,}\)</span> <span class="process-math">\(w\text{,}\)</span> and <span class="process-math">\(h\text{.}\)</span>  In particular, we're told that <span class="process-math">\(h = 10\text{;}\)</span> thus, <span class="process-math">\(V = 10lw\text{.}\)</span>
+</div> <div class="para" id="p-1680">Step 2: Fill in the sketch below: NEED TO FILL IN SKETCH HERE</div> <div class="para logical" id="p-1681">
+<div class="para">Step 3: In order to write the model with a single input variable, we need a second equation to eliminate one of the variables.  We know that <span class="process-math">\(V = 10lw\text{.}\)</span>  But, we are also told that the maximum linear measurement is given by <span class="process-math">\(l + w + h = 45\text{.}\)</span>  Since <span class="process-math">\(h = 10\text{,}\)</span> this becomes <span class="process-math">\(l + w + 10 = 45\text{,}\)</span> so <span class="process-math">\(l + w = 35\text{.}\)</span>  Now we can solve for either <span class="process-math">\(l\)</span> or <span class="process-math">\(w\text{.}\)</span>  Choose to solve for length.  Thus, <span class="process-math">\(l = 35 - w\text{.}\)</span>  We can substitute this into the equation for volume:</div>
+<div class="displaymath process-math" id="md-3">
+\begin{align*}
+V \amp 10lw\\
+\amp 10(35-w)w \\
+\amp -10w^2+350w
+\end{align*}
+</div>
+<div class="para">This gives us an equation in terms of a single variable, one which we can optimize.</div>
+</div> <div class="para logical" id="p-1682">
+<div class="para">Step 4: In order to optimize the equation, we want to find the max or min.  Since we want the most volume, we're going to find the maximum.  We also have an interval, since <span class="process-math">\(0 \lt l \gt 35\)</span> (from the maximum linear measurement).  Then,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V' = -20w + 350
+\end{equation*}
+</div>
+<div class="para">Solving for <span class="process-math">\(w\)</span> gives <span class="process-math">\(w = 17.5\text{.}\)</span>  Plugging this in to the linear measurement, we have <span class="process-math">\(l + 17.5 = 35\text{,}\)</span> so <span class="process-math">\(l = 17.5\text{.}\)</span>  This means that our maximum dimensions are <span class="process-math">\(17.5"\times17.5"\times10"\text{,}\)</span> and the maximized volume is <span class="process-math">\(V = (17.5)(17.5)(10) = 3062.5\)</span> in<span class="process-math">\(^3\text{.}\)</span>
+</div>
+</div>
+</div></div>
+</div></article><article class="example example-like" id="example-198"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1683">A rectangular-shaped garden has one side along the side of a house.  The other three sides are to be enclosed with 60 feet of fencing.  What is the largest possible area of such a garden?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-201" id="solution-201"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-201"><div class="solution solution-like"><div class="para" id="p-1684"></div></div></div>
+</div></article><article class="example example-like" id="example-199"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1685">A mason has enough brick to build a 46 foot wall.  The homeowners want to use the wall to enclose an outdoor patio.  The patio will be along the side of the house and will include a 4-foot opening for a door.  What dimensions will maximize the area of the patio?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-202" id="solution-202"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-202"><div class="solution solution-like"><div class="para" id="p-1686"></div></div></div>
+</div></article><article class="example example-like" id="example-200"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1687">A cylindrical can is made to hold one liter of oil.  Find the dimensions that will minimize the cost of the metal to manufacture the can, accurate to the nearest hundredth.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-203" id="solution-203"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-203"><div class="solution solution-like"><div class="para" id="p-1688"></div></div></div>
+</div></article><article class="example example-like" id="example-201"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1689">A certain orchard in Florida has found that when 14 orange trees are planted, their yield is 80 oranges per tree.  For each tree added to the orchard, each tree's yield decreases by 2 oranges per tree.  For example, if there are 15 trees planted in the orchard, the yield per tree drops to 78 oranges per tree.  Find the number of trees needed to maximize the total number of oranges produced.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-204" id="solution-204"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-204"><div class="solution solution-like"><div class="para" id="p-1690"></div></div></div>
+</div></article><article class="example example-like" id="example-202"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1691">During one calendar year, a year-round elementary school cafeteria uses 42,000 styrofoam plates/packets, each containing a fork, spoon, and napkin.  The smallest amount the cafeteria can order from the supplier is one case containing 1000 plates and packets.  Each order costs $12, and the cost to store a case for the whole year is $4. Use <span class="process-math">\(x\)</span> to represent the number of cases ordered at one time in the following:</div> <div class="para logical" id="p-1692"><ol class="lower-alpha">
+<li id="li-934"><div class="para" id="p-1693">Write equations for: (1) the number of times the manager will need to order during one calendar year, and (2) the annual cost to the cafeteria.</div></li>
+<li id="li-935"><div class="para" id="p-1694">Assume that the average number of cases stored throughout the year is half the number of cases in each order.  Write an equation for the total storage cost for 1 year.</div></li>
+<li id="li-936"><div class="para" id="p-1695">Write a model for the combined ordering and storage costs for 1 year.</div></li>
+<li id="li-937"><div class="para" id="p-1696">What order size minimizes the total yearly cost?  How many times a year should the manager order?  What will the minimum total ordering and storage costs be for the year?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-205" id="solution-205"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-205"><div class="solution solution-like"><div class="para" id="p-1697"></div></div></div>
+</div></article><article class="example example-like" id="example-203"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1698">A student organization is planning a bus trip to the Cotton Bowl to cheer on OU football in the playoffs.  The bus they charter seats 44 and charges a flat rate of $350 plus $35 per person.  However, for ever empty seat on the bus, the charge per person is increased by $2.  There is a minimum of 10 passengers.  The organization decides that each person going on the trip will pay $35; the organization will pay the flat rate and any additional amount about $35 per person.</div> <div class="para logical" id="p-1699"><ol class="lower-alpha">
+<li id="li-938"><div class="para" id="p-1700">Construct a model for the revenue made by the bus company as a function of the number of passengers.</div></li>
+<li id="li-939"><div class="para" id="p-1701">Construct a model for the amount the organization pays as a function of the number of passengers.</div></li>
+<li id="li-940"><div class="para" id="p-1702">For what number of passengers will the bus company's revenue be greatest?  For what number of passengers will the bus company's revenue be least?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-206" id="solution-206"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-206"><div class="solution solution-like"><div class="para" id="p-1703"></div></div></div>
+</div></article><article class="example example-like" id="example-204"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1704">A software developer is planning the launch of a new program.  The current version of the program could be sold for $100.  Delaying the release will allow the developers to package add-ons with the program that will increase the selling price by $2 for each day of delay.  However, for each day of delay, the company will lose customers.  The company could sell 400,000 copies now, but for each day that release is delayed, they will sell 2,300 fewer copies of the software.</div> <div class="para logical" id="p-1705"><ol class="lower-alpha">
+<li id="li-941"><div class="para" id="p-1706">If <span class="process-math">\(t\)</span> is the number of days the company delays the release, write a model for <span class="process-math">\(P\text{,}\)</span> the price charged for the product.</div></li>
+<li id="li-942"><div class="para" id="p-1707">If <span class="process-math">\(t\)</span> is the number of days the company will delay the release, write a model for <span class="process-math">\(Q\text{,}\)</span> the number of copies they will sell.</div></li>
+<li id="li-943"><div class="para" id="p-1708">If <span class="process-math">\(t\)</span> is the number of days the company will delay the release, write a model for <span class="process-math">\(R\text{,}\)</span> the revenue generated from the sale of the product.</div></li>
+<li id="li-944"><div class="para" id="p-1709">How many days should the company delay the release in order to maximize revenue?  What is the maximum possible revenue?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-207" id="solution-207"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-207"><div class="solution solution-like"><div class="para" id="p-1710"></div></div></div>
 </div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-45.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon">&gt;</span></span>

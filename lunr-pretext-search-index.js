@@ -2266,7 +2266,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Absolute Extreme Points",
-  "body": " Absolute Extreme Points    Absolute Extrema  Absolute Maximum  Absolute Minimum         Examples   Relative Extrema  Relative Maximum  Relative Minimum        "
+  "body": " Absolute Extreme Points    Absolute Extrema  Absolute Maximum  Absolute Minimum   A function has an absolute maximum at input if is greater than or equal to all other outputs. Similarly, has an absolute minmium at if is less than or equal to all other outputs.    In practice, there is very little distinction between what we did in 4.2 and what we do here in 4.3; the key difference is determining whether or not the particular max\/min is the greatest or the least output value.    Examples    Consider the function      Locate any extreme values of the function on the interval     Classify the extreme values you found in part (a)       In this question (and in this section), students will confuse the procedure in Section 4.2 with the procedure in this section. Be very clear about setting the input interval\/viewing window appropriately in the calculator.      Consider the function      Locate any extreme values of the function on the interval .    Classify the extreme values you found in part (a)             Consider the function      Locate any extreme values of the function on the interval .    Classify the extreme values you found in part (a)             Consider the function      Locate any extreme values of the function on the interval     Classify the extreme values you found in part (a)             Find and classify the absolute and relative maxima\/minima for the function on . If necessary, round to the nearest hundredth.          Find the absolute and relative extrema for the function on . If necessary, round to the nearest hundredth.          Find and classify all extrema of the function on . If necessary, round to the nearest hundredth.          Find and classify all extrema of the function on . If necessary, round to the nearest hundredth.          Find the relative and absolute maxima and minima of the function on . If necessary, round to the nearest hundredth.          The sales of a new Starbucks drink are approximated by the function thousand dollars, months after its introduction. Round your answers to the nearest hundredth.     The absolute maximum of drink sales between month 1 and month 15 was BLANK and occurred BLANK months after release.    The absolute minimum of drink sales between month 1 and month 15 was BLANK and occurred BLANK months after release.    Calculate the percent rate of change 4 months after introduction, to the nearest hundredth as a percent.       The exam often has questions phrased like this; ensuring that they are used to the phrasing should help them when it comes to the exam.      The quantity of a drug in the bloodstream hours after a tablet is swallowed is given by  .     How much of the drug is in the bloodstream at time ?    Over the first twelve hours, at what time is the amount of drug in the bloodstream at its highest? What is the maximum amount?            "
 },
 {
   "id": "definition-32",
@@ -2275,16 +2275,106 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "4.3.1",
   "title": "Absolute Extrema.",
-  "body": " Absolute Extrema  Absolute Maximum  Absolute Minimum      "
+  "body": " Absolute Extrema  Absolute Maximum  Absolute Minimum   A function has an absolute maximum at input if is greater than or equal to all other outputs. Similarly, has an absolute minmium at if is less than or equal to all other outputs.   "
 },
 {
-  "id": "definition-33",
+  "id": "example-177",
   "level": "2",
-  "url": "section-43.html#definition-33",
-  "type": "Definition",
+  "url": "section-43.html#example-177",
+  "type": "Example",
   "number": "4.3.2",
-  "title": "Relative Extrema.",
-  "body": " Relative Extrema  Relative Maximum  Relative Minimum      "
+  "title": "",
+  "body": "  Consider the function      Locate any extreme values of the function on the interval     Classify the extreme values you found in part (a)       In this question (and in this section), students will confuse the procedure in Section 4.2 with the procedure in this section. Be very clear about setting the input interval\/viewing window appropriately in the calculator.   "
+},
+{
+  "id": "example-178",
+  "level": "2",
+  "url": "section-43.html#example-178",
+  "type": "Example",
+  "number": "4.3.3",
+  "title": "",
+  "body": "  Consider the function      Locate any extreme values of the function on the interval .    Classify the extreme values you found in part (a)          "
+},
+{
+  "id": "example-179",
+  "level": "2",
+  "url": "section-43.html#example-179",
+  "type": "Example",
+  "number": "4.3.4",
+  "title": "",
+  "body": "  Consider the function      Locate any extreme values of the function on the interval .    Classify the extreme values you found in part (a)          "
+},
+{
+  "id": "example-180",
+  "level": "2",
+  "url": "section-43.html#example-180",
+  "type": "Example",
+  "number": "4.3.5",
+  "title": "",
+  "body": "  Consider the function      Locate any extreme values of the function on the interval     Classify the extreme values you found in part (a)          "
+},
+{
+  "id": "example-181",
+  "level": "2",
+  "url": "section-43.html#example-181",
+  "type": "Example",
+  "number": "4.3.6",
+  "title": "",
+  "body": "  Find and classify the absolute and relative maxima\/minima for the function on . If necessary, round to the nearest hundredth.       "
+},
+{
+  "id": "example-182",
+  "level": "2",
+  "url": "section-43.html#example-182",
+  "type": "Example",
+  "number": "4.3.7",
+  "title": "",
+  "body": "  Find the absolute and relative extrema for the function on . If necessary, round to the nearest hundredth.       "
+},
+{
+  "id": "example-183",
+  "level": "2",
+  "url": "section-43.html#example-183",
+  "type": "Example",
+  "number": "4.3.8",
+  "title": "",
+  "body": "  Find and classify all extrema of the function on . If necessary, round to the nearest hundredth.       "
+},
+{
+  "id": "example-184",
+  "level": "2",
+  "url": "section-43.html#example-184",
+  "type": "Example",
+  "number": "4.3.9",
+  "title": "",
+  "body": "  Find and classify all extrema of the function on . If necessary, round to the nearest hundredth.       "
+},
+{
+  "id": "example-185",
+  "level": "2",
+  "url": "section-43.html#example-185",
+  "type": "Example",
+  "number": "4.3.10",
+  "title": "",
+  "body": "  Find the relative and absolute maxima and minima of the function on . If necessary, round to the nearest hundredth.       "
+},
+{
+  "id": "example-186",
+  "level": "2",
+  "url": "section-43.html#example-186",
+  "type": "Example",
+  "number": "4.3.11",
+  "title": "",
+  "body": "  The sales of a new Starbucks drink are approximated by the function thousand dollars, months after its introduction. Round your answers to the nearest hundredth.     The absolute maximum of drink sales between month 1 and month 15 was BLANK and occurred BLANK months after release.    The absolute minimum of drink sales between month 1 and month 15 was BLANK and occurred BLANK months after release.    Calculate the percent rate of change 4 months after introduction, to the nearest hundredth as a percent.       The exam often has questions phrased like this; ensuring that they are used to the phrasing should help them when it comes to the exam.   "
+},
+{
+  "id": "example-187",
+  "level": "2",
+  "url": "section-43.html#example-187",
+  "type": "Example",
+  "number": "4.3.12",
+  "title": "",
+  "body": "  The quantity of a drug in the bloodstream hours after a tablet is swallowed is given by  .     How much of the drug is in the bloodstream at time ?    Over the first twelve hours, at what time is the amount of drug in the bloodstream at its highest? What is the maximum amount?          "
 },
 {
   "id": "section-44",
@@ -2293,16 +2383,115 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Inflection Points & Second Derivatives",
-  "body": " Inflection Points & Second Derivatives   Definitions   Inflection Point  Inflection Point         Examples   "
+  "body": " Inflection Points & Second Derivatives   Definitions   Inflection Point  Inflection Point   An inflection point is the point on the graph of a function where the function changes concavity    An inflection point gives the point of most\/least rapid change of the function.   Properties of the Second Derivative   Let be a twice-differentiable function defined on input interval with       has an inflection point at if and only if and changes sign    If is positive, then is concave up    If is positive, then is increasing    If is negative, then is concave down    If is negative, tthen is decreasing        Second Derivative Test   Let be a twice-differentiable function defined on input interval with      If and , then has a relative minimum at .    If and , then has a relative maximum at .         Examples    The percentage of people living in California in 2007 who were born in the state can be modeled as where is the age of the resident.     Find the inflection point of the function .    Give a sentence of interpretation for the age between 20 and 70 at which the percentage of California residents who were born in the state was decreasing least rapidly.       There are several ways of identifying inflection points on a calculator. My opinion is that the easiest (for them) thing to do is to graph the derivative and identify maxes\/mins on the derivative graph rather than graphing the second derivative.  Whichever method you choose, I suggest showing them one and having them stick with it, in order to minimize confusion between the processes they have to learn in Chapter 4.                  For the function      Write the first and second derivative    Identify any inflection points, and label them as the point of least rapid or most rapid change.             The percentage of new material that an average college student will retain after studying for hours without a break can be modeled as      Find when the retention rate is increasing most rapidly.    Determine the rate of change of retention as well as the percentage of retention at the input found in item (a).    Describe the difference between the direction of and to the right of the input found in item (a).    Explain what happens to the student's retention rate after the input found in item (a)             For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.             For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.             For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.             For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.             The table below shows the monthly revenue levels associated with various monthly levels of advertising by a furniture store.    Advertising (in hundreds of dollars)  1  4  7  10  13  16  19    Revenue (in thousands of dollars)  114  210  265  299  338  449  632       Find the complete cubic model for the data (do not align the input).    Write the complete rate of change model for .    Find .    Find the inflection point of on the interval . Round both coordinates to the hundredths place and be sure to label them with units.    Find the rate of change at the inflection point. Round to the hundredths place and include units in your answer.             Consider the following graphs:          Write \"True\" or \"False\" to the left of the following statements:     The graph of the derivative of A will have no intercepts    The graph of the derivative of B will have exactly one intercept    The graph of the second derivaive of C will have exactly two intercepts    The graph of the second derivative of A will always be negative       Which of the following describes the relationship between these three graphs? Mark an X to the left of your choice.     B is , C is , and A is     A is , C is , and B is     C is , A is , and B is     B is , A is , and C is                "
 },
 {
-  "id": "definition-34",
+  "id": "definition-33",
   "level": "2",
-  "url": "section-44.html#definition-34",
+  "url": "section-44.html#definition-33",
   "type": "Definition",
   "number": "4.4.1",
   "title": "Inflection Point.",
-  "body": " Inflection Point  Inflection Point      "
+  "body": " Inflection Point  Inflection Point   An inflection point is the point on the graph of a function where the function changes concavity   "
+},
+{
+  "id": "theorem-4",
+  "level": "2",
+  "url": "section-44.html#theorem-4",
+  "type": "Theorem",
+  "number": "4.4.2",
+  "title": "Properties of the Second Derivative.",
+  "body": " Properties of the Second Derivative   Let be a twice-differentiable function defined on input interval with       has an inflection point at if and only if and changes sign    If is positive, then is concave up    If is positive, then is increasing    If is negative, then is concave down    If is negative, tthen is decreasing      "
+},
+{
+  "id": "theorem-5",
+  "level": "2",
+  "url": "section-44.html#theorem-5",
+  "type": "Theorem",
+  "number": "4.4.3",
+  "title": "Second Derivative Test.",
+  "body": " Second Derivative Test   Let be a twice-differentiable function defined on input interval with      If and , then has a relative minimum at .    If and , then has a relative maximum at .      "
+},
+{
+  "id": "example-188",
+  "level": "2",
+  "url": "section-44.html#example-188",
+  "type": "Example",
+  "number": "4.4.4",
+  "title": "",
+  "body": "  The percentage of people living in California in 2007 who were born in the state can be modeled as where is the age of the resident.     Find the inflection point of the function .    Give a sentence of interpretation for the age between 20 and 70 at which the percentage of California residents who were born in the state was decreasing least rapidly.       There are several ways of identifying inflection points on a calculator. My opinion is that the easiest (for them) thing to do is to graph the derivative and identify maxes\/mins on the derivative graph rather than graphing the second derivative.  Whichever method you choose, I suggest showing them one and having them stick with it, in order to minimize confusion between the processes they have to learn in Chapter 4.               "
+},
+{
+  "id": "example-189",
+  "level": "2",
+  "url": "section-44.html#example-189",
+  "type": "Example",
+  "number": "4.4.5",
+  "title": "",
+  "body": "  For the function      Write the first and second derivative    Identify any inflection points, and label them as the point of least rapid or most rapid change.          "
+},
+{
+  "id": "example-190",
+  "level": "2",
+  "url": "section-44.html#example-190",
+  "type": "Example",
+  "number": "4.4.6",
+  "title": "",
+  "body": "  The percentage of new material that an average college student will retain after studying for hours without a break can be modeled as      Find when the retention rate is increasing most rapidly.    Determine the rate of change of retention as well as the percentage of retention at the input found in item (a).    Describe the difference between the direction of and to the right of the input found in item (a).    Explain what happens to the student's retention rate after the input found in item (a)          "
+},
+{
+  "id": "example-191",
+  "level": "2",
+  "url": "section-44.html#example-191",
+  "type": "Example",
+  "number": "4.4.7",
+  "title": "",
+  "body": "  For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.          "
+},
+{
+  "id": "example-192",
+  "level": "2",
+  "url": "section-44.html#example-192",
+  "type": "Example",
+  "number": "4.4.8",
+  "title": "",
+  "body": "  For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.          "
+},
+{
+  "id": "example-193",
+  "level": "2",
+  "url": "section-44.html#example-193",
+  "type": "Example",
+  "number": "4.4.9",
+  "title": "",
+  "body": "  For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.          "
+},
+{
+  "id": "example-194",
+  "level": "2",
+  "url": "section-44.html#example-194",
+  "type": "Example",
+  "number": "4.4.10",
+  "title": "",
+  "body": "  For the function      Write the first and second derivative.    Identify any inflection points, and label them as the point of least rapid or most rapid change.          "
+},
+{
+  "id": "example-195",
+  "level": "2",
+  "url": "section-44.html#example-195",
+  "type": "Example",
+  "number": "4.4.11",
+  "title": "",
+  "body": "  The table below shows the monthly revenue levels associated with various monthly levels of advertising by a furniture store.    Advertising (in hundreds of dollars)  1  4  7  10  13  16  19    Revenue (in thousands of dollars)  114  210  265  299  338  449  632       Find the complete cubic model for the data (do not align the input).    Write the complete rate of change model for .    Find .    Find the inflection point of on the interval . Round both coordinates to the hundredths place and be sure to label them with units.    Find the rate of change at the inflection point. Round to the hundredths place and include units in your answer.          "
+},
+{
+  "id": "example-196",
+  "level": "2",
+  "url": "section-44.html#example-196",
+  "type": "Example",
+  "number": "4.4.12",
+  "title": "",
+  "body": "  Consider the following graphs:          Write \"True\" or \"False\" to the left of the following statements:     The graph of the derivative of A will have no intercepts    The graph of the derivative of B will have exactly one intercept    The graph of the second derivaive of C will have exactly two intercepts    The graph of the second derivative of A will always be negative       Which of the following describes the relationship between these three graphs? Mark an X to the left of your choice.     B is , C is , and A is     A is , C is , and B is     C is , A is , and B is     B is , A is , and C is              "
 },
 {
   "id": "section-45",
@@ -2320,16 +2509,79 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.6",
   "title": "Optimization of Constructed Functions",
-  "body": " Optimization of Constructed Functions   Strategy for Optimization            Examples             "
+  "body": " Optimization of Constructed Functions   Strategy for Optimization     Step 1: Identify the quantity to be optimized (the output) and the quantities on which the output quantity depends (the input).    Step 2: Sketch and label a diagram of the situation.    Step 3: Construct a model with a single input variable.    Step 4: Locate the optimal point (minimum\/maximum) for the model.       Examples    In 2009, airlines had a 45-inch restriction on the maximum linear measurement (length + width + height) of carry-on luggage with the height restricted to 10 inches. Passengers concerned with keeping their travel costs down seek to maximize the capacity of their carry-on bag; what are the optimal measurements to maximize capacity?    Step 1: We want to maximize capacity of the carry-on, so we want to maximize volume. Because volume is given by , our input variables are , , and . In particular, we're told that ; thus, .  Step 2: Fill in the sketch below: NEED TO FILL IN SKETCH HERE  Step 3: In order to write the model with a single input variable, we need a second equation to eliminate one of the variables. We know that . But, we are also told that the maximum linear measurement is given by . Since , this becomes , so . Now we can solve for either or . Choose to solve for length. Thus, . We can substitute this into the equation for volume: This gives us an equation in terms of a single variable, one which we can optimize.  Step 4: In order to optimize the equation, we want to find the max or min. Since we want the most volume, we're going to find the maximum. We also have an interval, since (from the maximum linear measurement). Then, Solving for gives . Plugging this in to the linear measurement, we have , so . This means that our maximum dimensions are , and the maximized volume is in .      A rectangular-shaped garden has one side along the side of a house. The other three sides are to be enclosed with 60 feet of fencing. What is the largest possible area of such a garden?          A mason has enough brick to build a 46 foot wall. The homeowners want to use the wall to enclose an outdoor patio. The patio will be along the side of the house and will include a 4-foot opening for a door. What dimensions will maximize the area of the patio?          A cylindrical can is made to hold one liter of oil. Find the dimensions that will minimize the cost of the metal to manufacture the can, accurate to the nearest hundredth.          A certain orchard in Florida has found that when 14 orange trees are planted, their yield is 80 oranges per tree. For each tree added to the orchard, each tree's yield decreases by 2 oranges per tree. For example, if there are 15 trees planted in the orchard, the yield per tree drops to 78 oranges per tree. Find the number of trees needed to maximize the total number of oranges produced.          During one calendar year, a year-round elementary school cafeteria uses 42,000 styrofoam plates\/packets, each containing a fork, spoon, and napkin. The smallest amount the cafeteria can order from the supplier is one case containing 1000 plates and packets. Each order costs $12, and the cost to store a case for the whole year is $4. Use to represent the number of cases ordered at one time in the following:     Write equations for: (1) the number of times the manager will need to order during one calendar year, and (2) the annual cost to the cafeteria.    Assume that the average number of cases stored throughout the year is half the number of cases in each order. Write an equation for the total storage cost for 1 year.    Write a model for the combined ordering and storage costs for 1 year.    What order size minimizes the total yearly cost? How many times a year should the manager order? What will the minimum total ordering and storage costs be for the year?             A student organization is planning a bus trip to the Cotton Bowl to cheer on OU football in the playoffs. The bus they charter seats 44 and charges a flat rate of $350 plus $35 per person. However, for ever empty seat on the bus, the charge per person is increased by $2. There is a minimum of 10 passengers. The organization decides that each person going on the trip will pay $35; the organization will pay the flat rate and any additional amount about $35 per person.     Construct a model for the revenue made by the bus company as a function of the number of passengers.    Construct a model for the amount the organization pays as a function of the number of passengers.    For what number of passengers will the bus company's revenue be greatest? For what number of passengers will the bus company's revenue be least?             A software developer is planning the launch of a new program. The current version of the program could be sold for $100. Delaying the release will allow the developers to package add-ons with the program that will increase the selling price by $2 for each day of delay. However, for each day of delay, the company will lose customers. The company could sell 400,000 copies now, but for each day that release is delayed, they will sell 2,300 fewer copies of the software.     If is the number of days the company delays the release, write a model for , the price charged for the product.    If is the number of days the company will delay the release, write a model for , the number of copies they will sell.    If is the number of days the company will delay the release, write a model for , the revenue generated from the sale of the product.    How many days should the company delay the release in order to maximize revenue? What is the maximum possible revenue?            "
 },
 {
-  "id": "example-177",
+  "id": "example-197",
   "level": "2",
-  "url": "section-46.html#example-177",
+  "url": "section-46.html#example-197",
   "type": "Example",
   "number": "4.6.1",
   "title": "",
-  "body": "         "
+  "body": "  In 2009, airlines had a 45-inch restriction on the maximum linear measurement (length + width + height) of carry-on luggage with the height restricted to 10 inches. Passengers concerned with keeping their travel costs down seek to maximize the capacity of their carry-on bag; what are the optimal measurements to maximize capacity?    Step 1: We want to maximize capacity of the carry-on, so we want to maximize volume. Because volume is given by , our input variables are , , and . In particular, we're told that ; thus, .  Step 2: Fill in the sketch below: NEED TO FILL IN SKETCH HERE  Step 3: In order to write the model with a single input variable, we need a second equation to eliminate one of the variables. We know that . But, we are also told that the maximum linear measurement is given by . Since , this becomes , so . Now we can solve for either or . Choose to solve for length. Thus, . We can substitute this into the equation for volume: This gives us an equation in terms of a single variable, one which we can optimize.  Step 4: In order to optimize the equation, we want to find the max or min. Since we want the most volume, we're going to find the maximum. We also have an interval, since (from the maximum linear measurement). Then, Solving for gives . Plugging this in to the linear measurement, we have , so . This means that our maximum dimensions are , and the maximized volume is in .   "
+},
+{
+  "id": "example-198",
+  "level": "2",
+  "url": "section-46.html#example-198",
+  "type": "Example",
+  "number": "4.6.2",
+  "title": "",
+  "body": "  A rectangular-shaped garden has one side along the side of a house. The other three sides are to be enclosed with 60 feet of fencing. What is the largest possible area of such a garden?       "
+},
+{
+  "id": "example-199",
+  "level": "2",
+  "url": "section-46.html#example-199",
+  "type": "Example",
+  "number": "4.6.3",
+  "title": "",
+  "body": "  A mason has enough brick to build a 46 foot wall. The homeowners want to use the wall to enclose an outdoor patio. The patio will be along the side of the house and will include a 4-foot opening for a door. What dimensions will maximize the area of the patio?       "
+},
+{
+  "id": "example-200",
+  "level": "2",
+  "url": "section-46.html#example-200",
+  "type": "Example",
+  "number": "4.6.4",
+  "title": "",
+  "body": "  A cylindrical can is made to hold one liter of oil. Find the dimensions that will minimize the cost of the metal to manufacture the can, accurate to the nearest hundredth.       "
+},
+{
+  "id": "example-201",
+  "level": "2",
+  "url": "section-46.html#example-201",
+  "type": "Example",
+  "number": "4.6.5",
+  "title": "",
+  "body": "  A certain orchard in Florida has found that when 14 orange trees are planted, their yield is 80 oranges per tree. For each tree added to the orchard, each tree's yield decreases by 2 oranges per tree. For example, if there are 15 trees planted in the orchard, the yield per tree drops to 78 oranges per tree. Find the number of trees needed to maximize the total number of oranges produced.       "
+},
+{
+  "id": "example-202",
+  "level": "2",
+  "url": "section-46.html#example-202",
+  "type": "Example",
+  "number": "4.6.6",
+  "title": "",
+  "body": "  During one calendar year, a year-round elementary school cafeteria uses 42,000 styrofoam plates\/packets, each containing a fork, spoon, and napkin. The smallest amount the cafeteria can order from the supplier is one case containing 1000 plates and packets. Each order costs $12, and the cost to store a case for the whole year is $4. Use to represent the number of cases ordered at one time in the following:     Write equations for: (1) the number of times the manager will need to order during one calendar year, and (2) the annual cost to the cafeteria.    Assume that the average number of cases stored throughout the year is half the number of cases in each order. Write an equation for the total storage cost for 1 year.    Write a model for the combined ordering and storage costs for 1 year.    What order size minimizes the total yearly cost? How many times a year should the manager order? What will the minimum total ordering and storage costs be for the year?          "
+},
+{
+  "id": "example-203",
+  "level": "2",
+  "url": "section-46.html#example-203",
+  "type": "Example",
+  "number": "4.6.7",
+  "title": "",
+  "body": "  A student organization is planning a bus trip to the Cotton Bowl to cheer on OU football in the playoffs. The bus they charter seats 44 and charges a flat rate of $350 plus $35 per person. However, for ever empty seat on the bus, the charge per person is increased by $2. There is a minimum of 10 passengers. The organization decides that each person going on the trip will pay $35; the organization will pay the flat rate and any additional amount about $35 per person.     Construct a model for the revenue made by the bus company as a function of the number of passengers.    Construct a model for the amount the organization pays as a function of the number of passengers.    For what number of passengers will the bus company's revenue be greatest? For what number of passengers will the bus company's revenue be least?          "
+},
+{
+  "id": "example-204",
+  "level": "2",
+  "url": "section-46.html#example-204",
+  "type": "Example",
+  "number": "4.6.8",
+  "title": "",
+  "body": "  A software developer is planning the launch of a new program. The current version of the program could be sold for $100. Delaying the release will allow the developers to package add-ons with the program that will increase the selling price by $2 for each day of delay. However, for each day of delay, the company will lose customers. The company could sell 400,000 copies now, but for each day that release is delayed, they will sell 2,300 fewer copies of the software.     If is the number of days the company delays the release, write a model for , the price charged for the product.    If is the number of days the company will delay the release, write a model for , the number of copies they will sell.    If is the number of days the company will delay the release, write a model for , the revenue generated from the sale of the product.    How many days should the company delay the release in order to maximize revenue? What is the maximum possible revenue?          "
 }
 ]
 
