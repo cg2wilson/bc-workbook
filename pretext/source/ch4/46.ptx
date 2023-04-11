@@ -7,10 +7,25 @@
 		<title>Strategy for Optimization</title>
 
 		<p>
-			<ol marker="a">
+			<ol>
 				<li>
 					<p>
-						
+						Step 1: Identify the quantity to be optimized (the output) and the quantities on which the output quantity depends (the input).
+					</p>
+				</li>
+				<li>
+					<p>
+						Step 2: Sketch and label a diagram of the situation.
+					</p>
+				</li>
+				<li>
+					<p>
+						Step 3: Construct a model with a single input variable.
+					</p>
+				</li>
+				<li>
+					<p>
+						Step 4: Locate the optimal point (minimum/maximum) for the model.
 					</p>
 				</li>
 			</ol>
@@ -23,7 +38,184 @@
 		<example>
 			<statement>
 				<p>
+					In 2009, airlines had a 45-inch restriction on the maximum linear measurement (length + width + height) of carry-on luggage with the height restricted to 10 inches.  Passengers concerned with keeping their travel costs down seek to maximize the capacity of their carry-on bag; what are the optimal measurements to maximize capacity?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Step 1: We want to maximize capacity of the carry-on, so we want to maximize volume.  Because volume is given by <m>V = lwh</m>, our input variables are <m>l</m>, <m>w</m>, and <m>h</m>.  In particular, we're told that <m>h = 10</m>; thus, <m>V = 10lw</m>. 
+				</p>
+				<p>
+					Step 2: Fill in the sketch below: NEED TO FILL IN SKETCH HERE
+				</p>
+				<p>
+					Step 3: In order to write the model with a single input variable, we need a second equation to eliminate one of the variables.  We know that <m>V = 10lw</m>.  But, we are also told that the maximum linear measurement is given by <m>l + w + h = 45</m>.  Since <m>h = 10</m>, this becomes <m>l + w + 10 = 45</m>, so <m>l + w = 35</m>.  Now we can solve for either <m>l</m> or <m>w</m>.  Choose to solve for length.  Thus, <m>l = 35 - w</m>.  We can substitute this into the equation for volume:
+					<md>
+						<mrow>V \amp 10lw</mrow>
+						<mrow> \amp 10(35-w)w </mrow>
+						<mrow> \amp -10w^2+350w</mrow>
+					</md>
+					This gives us an equation in terms of a single variable, one which we can optimize.
+				</p>
+				<p>
+					Step 4: In order to optimize the equation, we want to find the max or min.  Since we want the most volume, we're going to find the maximum.  We also have an interval, since <m>0 \lt l \gt 35</m> (from the maximum linear measurement).  Then,
+					<me>
+						V' = -20w + 350
+					</me>
+					Solving for <m>w</m> gives <m>w = 17.5</m>.  Plugging this in to the linear measurement, we have <m>l + 17.5 = 35</m>, so <m>l = 17.5</m>.  This means that our maximum dimensions are <m>17.5"\times17.5"\times10"</m>, and the maximized volume is <m>V = (17.5)(17.5)(10) = 3062.5</m> in<m>^3</m>.
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					A rectangular-shaped garden has one side along the side of a house.  The other three sides are to be enclosed with 60 feet of fencing.  What is the largest possible area of such a garden?
+				</p>
+			</statement>
+			<solution>
+				<p>
 					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					A mason has enough brick to build a 46 foot wall.  The homeowners want to use the wall to enclose an outdoor patio.  The patio will be along the side of the house and will include a 4-foot opening for a door.  What dimensions will maximize the area of the patio?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					A cylindrical can is made to hold one liter of oil.  Find the dimensions that will minimize the cost of the metal to manufacture the can, accurate to the nearest hundredth.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					A certain orchard in Florida has found that when 14 orange trees are planted, their yield is 80 oranges per tree.  For each tree added to the orchard, each tree's yield decreases by 2 oranges per tree.  For example, if there are 15 trees planted in the orchard, the yield per tree drops to 78 oranges per tree.  Find the number of trees needed to maximize the total number of oranges produced.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					During one calendar year, a year-round elementary school cafeteria uses 42,000 styrofoam plates/packets, each containing a fork, spoon, and napkin.  The smallest amount the cafeteria can order from the supplier is one case containing 1000 plates and packets.  Each order costs $12, and the cost to store a case for the whole year is $4. Use <m>x</m> to represent the number of cases ordered at one time in the following:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write equations for: (1) the number of times the manager will need to order during one calendar year, and (2) the annual cost to the cafeteria.
+							</p>
+						</li>
+						<li>
+							<p>
+								Assume that the average number of cases stored throughout the year is half the number of cases in each order.  Write an equation for the total storage cost for 1 year.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write a model for the combined ordering and storage costs for 1 year.
+							</p>
+						</li>
+						<li>
+							<p>
+								What order size minimizes the total yearly cost?  How many times a year should the manager order?  What will the minimum total ordering and storage costs be for the year?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					A student organization is planning a bus trip to the Cotton Bowl to cheer on OU football in the playoffs.  The bus they charter seats 44 and charges a flat rate of $350 plus $35 per person.  However, for ever empty seat on the bus, the charge per person is increased by $2.  There is a minimum of 10 passengers.  The organization decides that each person going on the trip will pay $35; the organization will pay the flat rate and any additional amount about $35 per person.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Construct a model for the revenue made by the bus company as a function of the number of passengers.
+							</p>
+						</li>
+						<li>
+							<p>
+								Construct a model for the amount the organization pays as a function of the number of passengers.
+							</p>
+						</li>
+						<li>
+							<p>
+								For what number of passengers will the bus company's revenue be greatest?  For what number of passengers will the bus company's revenue be least?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					A software developer is planning the launch of a new program.  The current version of the program could be sold for $100.  Delaying the release will allow the developers to package add-ons with the program that will increase the selling price by $2 for each day of delay.  However, for each day of delay, the company will lose customers.  The company could sell 400,000 copies now, but for each day that release is delayed, they will sell 2,300 fewer copies of the software.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								If <m>t</m> is the number of days the company delays the release, write a model for <m>P</m>, the price charged for the product.
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>t</m> is the number of days the company will delay the release, write a model for <m>Q</m>, the number of copies they will sell.
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>t</m> is the number of days the company will delay the release, write a model for <m>R</m>, the revenue generated from the sale of the product.
+							</p>
+						</li>
+						<li>
+							<p>
+								How many days should the company delay the release in order to maximize revenue?  What is the maximum possible revenue?
+							</p>
+						</li>
+					</ol>
 				</p>
 			</statement>
 			<solution>

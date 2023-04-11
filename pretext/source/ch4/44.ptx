@@ -11,15 +11,459 @@
 			<idx><h>Inflection Point</h></idx>
 			<statement>
 				<p>
-					
+					An <term>inflection point</term> is the point on the graph of a function where the function changes concavity
 				</p>
 			</statement>
 		</definition>
+		<p>
+			An inflection point gives the point of most/least rapid change of the function.
+		</p>
+
+		<theorem>
+			<title>Properties of the Second Derivative</title>
+			<statement>
+				<p>
+					Let <m>f(x)</m> be a twice-differentiable function defined on input interval <m>[a,b]</m> with <m>a \lt c \lt b</m>
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								<m>f</m> has an inflection point at <m>x=c</m> if and only if <m>f''(c) = 0</m> and changes sign
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f''(c)</m> is positive, then <m>f</m> is concave up
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f''(c)</m> is positive, then <m>f'</m> is increasing
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f''(c)</m> is negative, then <m>f</m> is concave down
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f''(c)</m> is negative, tthen <m>f'</m> is decreasing
+							</p>
+						</li>
+					</ul>
+				</p>
+			</statement>
+		</theorem>
+
+		<theorem>
+			<title>Second Derivative Test</title>
+			<statement>
+				<p>
+					Let <m>f(x)</m> be a twice-differentiable function defined on input interval <m>[a,b]</m> with <m>a\lt c\lt b</m>
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								If <m>f'(c) = 0</m> and <m>f''(c)\gt 0</m>, then <m>f</m> has a relative minimum at <m>c</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f'(c) = 0</m> and <m>f''(c)\lt 0</m>, then <m>f</m> has a relative maximum at <m>c</m>.
+							</p>
+						</li>
+					</ul>
+				</p>
+			</statement>
+		</theorem>
 	</subsection>
 
 	<subsection xml:id="section-44-examples">
 		<title>Examples</title>
 		
-		
+		<example>
+			<statement>
+				<p>
+					The percentage of people living in California in 2007 who were born in the state can be modeled as
+					<me>
+						P(x) = -0.0016x^3 + 0.224x^2-10.577x + 204.8\text{ percent}
+					</me>
+					where <m>x</m> is the age of the resident.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find the inflection point of the function <m>P</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Give a sentence of interpretation for the age between 20 and 70 at which the percentage of California residents who were born in the state was decreasing least rapidly.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					There are several ways of identifying inflection points on a calculator. My opinion is that the easiest (for them) thing to do is to graph the derivative and identify maxes/mins on the derivative graph rather than graphing the second derivative.
+				</p>
+				<p>
+					Whichever method you choose, I suggest showing them one and having them stick with it, in order to minimize confusion between the processes they have to learn in Chapter 4.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								
+							</p>
+						</li>
+						<li>
+							<p>
+								
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					For the function
+					<me>
+						f(t)=-2.1t^2 + 7t
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the first and second derivative
+							</p>
+						</li>
+						<li>
+							<p>
+								Identify any inflection points, and label them as the point of least rapid or most rapid change.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The percentage of new material that an average college student will retain after studying for <m>t</m> hours without a break can be modeled as
+					<me>
+						p(t) = \dfrac{83}{1+5.94e^{-0.969t}}\text{ percent}
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find when the retention rate is increasing most rapidly.
+							</p>
+						</li>
+						<li>
+							<p>
+								Determine the rate of change of retention as well as the percentage of retention at the input found in item (a).
+							</p>
+						</li>
+						<li>
+							<p>
+								Describe the difference between the direction of <m>p</m> and <m>p'</m> to the right of the input found in item (a).
+							</p>
+						</li>
+						<li>
+							<p>
+								Explain what happens to the student's retention rate after the input found in item (a)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					For the function
+					<me>
+						g(s) = 32s^3 + 2.1s^2 + 7s
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the first and second derivative.
+							</p>
+						</li>
+						<li>
+							<p>
+								Identify any inflection points, and label them as the point of least rapid or most rapid change.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					For the function
+					<me>
+						h(x) = e^{3x} - \ln 3x
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the first and second derivative.
+							</p>
+						</li>
+						<li>
+							<p>
+								Identify any inflection points, and label them as the point of least rapid or most rapid change.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					For the function
+					<me>
+						k(t) =  \dfrac{16}{1+2.1e^{3.9t}}
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the first and second derivative.
+							</p>
+						</li>
+						<li>
+							<p>
+								Identify any inflection points, and label them as the point of least rapid or most rapid change.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					For the function
+					<me>
+						f(x) = -x^3+12x^2 + 36x + 45
+					</me>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the first and second derivative.
+							</p>
+						</li>
+						<li>
+							<p>
+								Identify any inflection points, and label them as the point of least rapid or most rapid change.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The table below shows the monthly revenue levels associated with various monthly levels of advertising by a furniture store.
+				</p>
+				<tabular>
+					<row>
+						<cell>Advertising (in hundreds of dollars)</cell>
+						<cell>1</cell>
+						<cell>4</cell>
+						<cell>7</cell>
+						<cell>10</cell>
+						<cell>13</cell>
+						<cell>16</cell>
+						<cell>19</cell>
+					</row>
+					<row>
+						<cell>Revenue (in thousands of dollars)</cell>
+						<cell>114</cell>
+						<cell>210</cell>
+						<cell>265</cell>
+						<cell>299</cell>
+						<cell>338</cell>
+						<cell>449</cell>
+						<cell>632</cell>
+					</row>
+				</tabular>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Find the complete cubic model <m>R(x)</m> for the data (do not align the input).
+							</p>
+						</li>
+						<li>
+							<p>
+								Write the complete rate of change model for <m>R(x)</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find <m>R''(x)</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find the inflection point of <m>R(x)</m> on the interval <m>[0,19]</m>.  Round both coordinates to the hundredths place and be sure to label them with units.
+							</p>
+						</li>
+						<li>
+							<p>
+								Find the rate of change at the inflection point.  Round to the hundredths place and include units in your answer.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the following graphs:
+				</p>
+				<sidebyside widths="30% 30% 30%">
+					<image source="44-1.png"/>
+					<image source="44-3.png"/>
+					<image source="44-2.png"/>
+				</sidebyside>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write "True" or "False" to the left of the following statements:
+							</p>
+							<p>
+								<ul>
+									<li>
+										<p>
+											The graph of the derivative of A will have no <m>x-</m>intercepts
+										</p>
+									</li>
+									<li>
+										<p>
+											The graph of the derivative of B will have exactly one <m>x-</m>intercept
+										</p>
+									</li>
+									<li>
+										<p>
+											The graph of the second derivaive of C will have exactly two <m>x-</m>intercepts
+										</p>
+									</li>
+									<li>
+										<p>
+											The graph of the second derivative of A will always be negative
+										</p>
+									</li>
+								</ul>
+							</p>
+						</li>
+						<li>
+							<p>
+								Which of the following describes the relationship between these three graphs? Mark an X to the left of your choice.
+							</p>
+							<p>
+								<ul>
+									<li>
+										<p>
+											B is <m>f(x)</m>, C is <m>f'(x)</m>, and A is <m>f''(x)</m>
+										</p>
+									</li>
+									<li>
+										<p>
+											A is <m>f(x)</m>, C is <m>f'(x)</m>, and B is <m>f''(x)</m>
+										</p>
+									</li>
+									<li>
+										<p>
+											C is <m>f(x)</m>, A is <m>f'(x)</m>, and B is <m>f''(x)</m>
+										</p>
+									</li>
+									<li>
+										<p>
+											B is <m>f(x)</m>, A is <m>f'(x)</m>, and C is <m>f''(x)</m>
+										</p>
+									</li>
+								</ul>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>

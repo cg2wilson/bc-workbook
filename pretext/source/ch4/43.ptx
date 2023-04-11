@@ -10,24 +10,249 @@
 			<idx><h>Absolute Minimum</h></idx>
 			<statement>
 				<p>
-					
+					A function <m>f</m> has an <term>absolute maximum</term> at input <m>c</m> if <m>f(c)</m> is greater than or equal to all other outputs. Similarly, <m>f</m> has an <term>absolute minmium</term> at <m>c</m> if <m>f(c)</m> is less than or equal to all other outputs.
 				</p>
 			</statement>
 		</definition>
+
+		<p>
+			In practice, there is very little distinction between what we did in 4.2 and what we do here in 4.3; the key difference is determining whether or not the particular max/min is the greatest or the least output value.
+		</p>
 	</introduction>
 	<subsection xml:id="section-43-examples">
 		<title>Examples</title>
 
-		<definition>
-			<title>Relative Extrema</title>
-			<idx><h>Relative Maximum</h></idx>
-			<idx><h>Relative Minimum</h></idx>			
+		<example>
 			<statement>
+				<p>
+					Consider the function <m>f(x) = 6x^4-6x^3-5x^2+5x-1</m>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Locate any extreme values of the function on the interval <m>-2\leq x\leq 2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								Classify the extreme values you found in part (a)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					In this question (and in this section), students will confuse the procedure in Section 4.2 with the procedure in this section. Be very clear about setting the input interval/viewing window appropriately in the calculator.
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the function <m>g(t) = -0.37t^3 + 5.34t^2 -9.66t + 96.93</m>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Locate any extreme values of the function on the interval <m>0\leq x\leq 11</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Classify the extreme values you found in part (a)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
 				<p>
 					
 				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the function <m>h(p) = (e^{2-p})(3^p-p^2)</m>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Locate any extreme values of the function on the interval <m>-1\leq p\leq 4</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Classify the extreme values you found in part (a)
+							</p>
+						</li>
+					</ol>
+				</p>
 			</statement>
-		</definition>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Consider the function <m>y(x) = 0.75x^4-3.86x^2+10.18x + 22.186</m>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Locate any extreme values of the function on the interval <m>(-\infty,\infty)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								Classify the extreme values you found in part (a)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find and classify the absolute and relative maxima/minima for the function <m>f(x) = 3x^4-16x^3+18x^2</m> on <m>[-1,4]</m>.  If necessary, round to the nearest hundredth.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the absolute and relative extrema for the function <m>f(x) = x^3-3x^2 + 1</m> on <m>-\dfrac{1}{2}\leq x\leq 4</m>.  If necessary, round to the nearest hundredth.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find and classify all extrema of the function <m>f(x) = 12 + 4x - x^2</m> on <m>[0,5]</m>.  If necessary, round to the nearest hundredth.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find and classify all extrema of the function <m>f(t) = (t^2-4)^3</m> on <m>[-2,3]</m>.  If necessary, round to the nearest hundredth.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the relative and absolute maxima and minima of the function <m>g(x) = \dfrac{x}{x^2-x+1}</m> on <m>[0,3]</m>.  If necessary, round to the nearest hundredth.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The sales of a new Starbucks drink are approximated by the function <m>S(x) =  -.002 x^4 + .093 x^3 - 1.38 x^2 + 6.573 x + 5.393</m> thousand dollars, <m>x</m> months after its introduction.  Round your answers to the nearest hundredth.  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								The absolute maximum of drink sales between month 1 and month 15 was BLANK and occurred BLANK months after release.
+							</p>
+						</li>
+						<li>
+							<p>
+								The absolute minimum of drink sales between month 1 and month 15 was BLANK and occurred BLANK months after release.
+							</p>
+						</li>
+						<li>
+							<p>
+								Calculate the percent rate of change 4 months after introduction, to the nearest hundredth as a percent.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The exam often has questions phrased like this; ensuring that they are used to the phrasing should help them when it comes to the exam.
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The quantity of a drug in the bloodstream <m>t</m> hours after a tablet is swallowed is given by <m>q(t) = 20(e^{-t}-e^{-3t})</m> <m>\mu g</m>.  
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								How much of the drug is in the bloodstream at time <m>t = 0</m>?
+							</p>
+						</li>
+						<li>
+							<p>
+								Over the first twelve hours, at what time is the amount of drug in the bloodstream at its highest?  What is the maximum amount?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 </section>
