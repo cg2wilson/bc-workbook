@@ -119,12 +119,12 @@
 					<ol marker="a">
 						<li>
 							<p>
-								
+								<m>(46.67,36.42)</m>
 							</p>
 						</li>
 						<li>
 							<p>
-								
+								The percentage of people living in California was decreasing least rapidly for those aged 46.67 years old and was decreasing by 0.128% per year
 							</p>
 						</li>
 					</ol>
@@ -157,7 +157,18 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f'(t) = -4.2t + 7</m> and <m>f''(t) = -4.2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								There are no inflection points
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -197,7 +208,28 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>t=1.84</m> hours
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>p'(1.84) = 20.11</m> % per hour, and <m>p(1.84) = 41.50%</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>p</m> is increasing, but <m>p'</m> starts to decrease
+							</p>
+						</li>
+						<li>
+							<p>
+								After 1.84 hours of studying, the retention percentage is increasing at a decreasing rate
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -227,7 +259,18 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>g'(s) = 96s^2+4.2s+7</m> and <m>g''(s) = 192s+4.2</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(-0.02,-0.15)</m> is a point of least rapid change.
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -257,7 +300,21 @@
 			</statement>
 			<solution>
 				<p>
-					
+					This problem can probably be skipped.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>h'(x) = 3e^{3x}  - \dfrac{1}{x}</m> and <m>h''(x) = 9e^{3x} + \dfrac{1}{x^2}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								There are none
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -287,7 +344,21 @@
 			</statement>
 			<solution>
 				<p>
-					
+					The difficulty in this problem is in finding the second derivative of a logistic. They will probably never have to do it on a test, but it's good (I think) to make them practice all the rules together in service of some goal.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>k'(t) = -16(1+2.1e^{3.9t})^{-2}(2.1e^{3.9t}\cdot 3.9)</m> and <m>k''(t) = (32(1+2.1e^{3.9t})^{-3})(2.1e^{3.9t}\cdot 3.9)(2.1e^{3.9t}\cdot 3.9) + (-16(1+2.1e^{3.9t})^{-2})(2.1e^{3.9t}\cdot 3.9\cdot 3.9)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(0.19,8)</m> is a point of most rapid change
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -317,7 +388,18 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>f'(x) = -3x^2+24x+36</m> and <m>f''(x) = -6x + 24</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(4,317)</m> is a point of most rapid change
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -381,7 +463,33 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>R(x) = 0.212x^3-5.399x^2+56.108x + 61.936</m> thousand dollars revenue for a furniture store when <m>x</m> hundred dollars are spent on advertising
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>R'(x) = 0.626x^2-10.798x+56.108</m> thousand dollars (revenue) per hundred dollars (advertising), rate of change of revenue for a furniture store when <m>x</m> hundred dollars are spent on advertising
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>R''(x) = 1.272x-10.798</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>x = 8.49</m> hundred dollars and <m>R(8.49) = 278.82</m> thousand dollars
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>R'(8.49) = 10.26</m> thousand dollars per hundred dollars
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -416,7 +524,7 @@
 									</li>
 									<li>
 										<p>
-											The graph of the second derivaive of C will have exactly two <m>x-</m>intercepts
+											The graph of the second derivative of C will have exactly two <m>x-</m>intercepts
 										</p>
 									</li>
 									<li>
@@ -461,7 +569,39 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<ul>
+									<li>
+										<p>
+											True
+										</p>
+									</li>
+									<li>
+										<p>
+											False
+										</p>
+									</li>
+									<li>
+										<p>
+											True
+										</p>
+									</li>
+									<li>
+										<p>
+											False
+										</p>
+									</li>
+								</ul>
+							</p>
+						</li>
+						<li>
+							<p>
+								Option 2 is the correct one.
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>

@@ -46,7 +46,7 @@
 					Step 1: We want to maximize capacity of the carry-on, so we want to maximize volume.  Because volume is given by <m>V = lwh</m>, our input variables are <m>l</m>, <m>w</m>, and <m>h</m>.  In particular, we're told that <m>h = 10</m>; thus, <m>V = 10lw</m>. 
 				</p>
 				<p>
-					Step 2: Fill in the sketch below: NEED TO FILL IN SKETCH HERE
+					Step 2: Fill in the sketch below: (a box of front length <m>\ell</m>, depth <m>w</m> and height 10)
 				</p>
 				<p>
 					Step 3: In order to write the model with a single input variable, we need a second equation to eliminate one of the variables.  We know that <m>V = 10lw</m>.  But, we are also told that the maximum linear measurement is given by <m>l + w + h = 45</m>.  Since <m>h = 10</m>, this becomes <m>l + w + 10 = 45</m>, so <m>l + w = 35</m>.  Now we can solve for either <m>l</m> or <m>w</m>.  Choose to solve for length.  Thus, <m>l = 35 - w</m>.  We can substitute this into the equation for volume:
@@ -75,7 +75,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					450 square feet
 				</p>
 			</solution>
 		</example>
@@ -88,7 +88,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					Let <m>x</m> be the length of the patio (with the 4-foot opening) and <m>y</m> be the sides. Then, <m>x = 25</m> feet and <m>y = 12.5</m> feet.
 				</p>
 			</solution>
 		</example>
@@ -101,7 +101,10 @@
 			</statement>
 			<solution>
 				<p>
-					
+					This one has crazy numbers, so it's fine to get skipped. There's plenty of practice otherwise.
+				</p>
+				<p>
+					<m>r = 0.54</m> and <m>h = 1.09</m> (I think the units are centimeters?)
 				</p>
 			</solution>
 		</example>
@@ -114,7 +117,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					27 trees
 				</p>
 			</solution>
 		</example>
@@ -151,7 +154,28 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>O(x) = \dfrac{42}{x}</m> and <m>C(x) = 12\cdot \dfrac{42}{x}=\dfrac{504}{x}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>C_s(x) = 2x</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>C(x) = \dfrac{504}{x} + 2x</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								15 orders minimizes the cost, and <m>C(15) = $63.60</m>
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -183,7 +207,23 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>R(x) = 350 + x(35+2(44-x))</m> dollars gives the revenue for the company when <m>x</m> passengers go
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>f(x) = x(2(44-x)) = 350</m> dollars gives the cost to the organization when <m>x</m> passengers go
+							</p>
+						</li>
+						<li>
+							<p>
+								Max revenue occurs at <m>x=31</m> tickets and minimum revenue occurs at <m>x=10</m> tickets
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -220,7 +260,28 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								<m>P(t) = 100 + 2t</m> dollars is the price charged for the product when delay is released by <m>t</m> days
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>Q(t) = 400000=2300t</m> copies gives the amount of product sold when delay is released by <m>t</m> days
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>R(t) = (PQ)(t) = 40000000+570000t-4600t^2</m> dollars gives the revenue when release is delayed by <m>t</m> days
+							</p>
+						</li>
+						<li>
+							<p>
+								Delay should be released by 62 days, earning a revenue of $57,657,600
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>

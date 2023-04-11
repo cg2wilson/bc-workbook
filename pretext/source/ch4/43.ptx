@@ -46,6 +46,23 @@
 				<p>
 					In this question (and in this section), students will confuse the procedure in Section 4.2 with the procedure in this section. Be very clear about setting the input interval/viewing window appropriately in the calculator.
 				</p>
+				<p>
+					I'm also not a fan of the phrasing "classify the extreme values" that currently exists in the workbook, since you aren't actually doing that. I would say try to make the process clear independent of my bad phrasing.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								The critical numbers are <m>x=-0.58,0.38,0.96</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The absolute max is <m>(-2,113)</m> and the absolute min is <m>(-0.58,-3.73)</m>
+							</p>
+						</li>
+					</ol>
+				</p>
 			</solution>
 		</example>
 
@@ -71,7 +88,18 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								The critical points are <m>(1.01,92.24)</m> and <m>(8.61,173.46)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The absolute max is at <m>(8.61,173.46)</m> and the absolute min is at <m>(1.01,92.24)</m>
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -98,7 +126,18 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								The critical points are at <m>(0.05,7.41)</m> and <m>(1.64,4.83)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The absolute min is at <m>(-1,-13.39)</m> and the absolute max is at <m>(4,8.8)</m>
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -125,7 +164,24 @@
 			</statement>
 			<solution>
 				<p>
-					
+					The interval will be weird for them because they're not given a closed interval (hence you can't use the Extreme Value Theorem, like the other questions sort of expect). Remind the students that they know the shape/end behavior of the function because it's a quartic with positive leading coefficient.
+				</p>
+				<p>
+					The window may be hard to figure, but starting with <m>[-10,10]</m> is a good starting point.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								The only critical number is at <m>(-2.06,-1.66)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The absolute minimum is at <m>(-2.06,-1.66)</m>; there is no absolute maximum.
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -138,7 +194,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					The absolute max is at <m>(-1,37)</m>, the absolute min is at <m>(3,-27)</m>. <m>(0,0)</m> and <m>(3,-27)</m> are relative mins, and <m>(1,5)</m> is a relative max.
 				</p>
 			</solution>
 		</example>
@@ -151,7 +207,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<m>(0,1)</m> is a relative max, <m>(2,-3)</m> is an absolute and local min, and <m>(4,17)</m> is an absolute max
 				</p>
 			</solution>
 		</example>
@@ -164,7 +220,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					The absolute and local max is at <m>(2,14)</m>, with an absolute min at <m>(5,7)</m>
 				</p>
 			</solution>
 		</example>
@@ -177,7 +233,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<m>(0,-64)</m> is an absolute/local min, <m>(3,125)</m> is the absolute max
 				</p>
 			</solution>
 		</example>
@@ -190,7 +246,7 @@
 			</statement>
 			<solution>
 				<p>
-					
+					The absolute min is at <m>(0,0)</m> and the absolute/local max is at <m>(1,1)</m>
 				</p>
 			</solution>
 		</example>
@@ -222,7 +278,26 @@
 			</statement>
 			<solution>
 				<p>
-					The exam often has questions phrased like this; ensuring that they are used to the phrasing should help them when it comes to the exam.
+					The exam often has questions phrased like this; ensuring that they are used to the phrasing should help them when it comes to the exam. Be sure to emphasize the rounding AND the units on the answers.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								The absolute maximum of drink sales between month 1 and month 15 was 15.18 thousand dollars and occurred 3.49 months after release.
+							</p>
+						</li>
+						<li>
+							<p>
+								The absolute minimum of drink sales between month 1 and month 15 was 4.74 thousand dollars and occurred 12.41 months after release.
+							</p>
+						</li>
+						<li>
+							<p>
+								-3.46% per month
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
@@ -249,7 +324,18 @@
 			</statement>
 			<solution>
 				<p>
-					
+					<ol marker="a">
+						<li>
+							<p>
+								0 <m>\mu g</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The max occurs at <m>(0.55\text{ hours},7.70\text{ }\mu g)</m>
+							</p>
+						</li>
+					</ol>
 				</p>
 			</solution>
 		</example>
