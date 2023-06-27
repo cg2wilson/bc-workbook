@@ -309,16 +309,13 @@
 						</li>
 						<li>
 							<p>
-								Write a sentence which interprets the derivative of the metabolic rate model of a 26-year-old male.  Round your answer to the nearest whole number.  
+								Write a sentence which interprets the derivative of the metabolic rate model of a typical 18- to 30-year-old male.  Round your answer to the nearest whole number.  
 							</p>
 						</li>
 					</ol>
 				</p>
 			</statement>
 			<solution>
-				<p>
-					Part c is not written correctly; it gives an age, not a weight. Fill it in with whatever you'd prefer.
-				</p>
 				<p>
 					<ol marker="a">
 						<li>
@@ -333,7 +330,7 @@
 						</li>
 						<li>
 							<p>
-								FIXED IN NEXT EDITION
+								The metabolic rate of a typical 18- to 30-year-old male is increasing by 6.930 kCal/day per pound weight.
 							</p>
 						</li>
 					</ol>
