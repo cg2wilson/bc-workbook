@@ -1645,7 +1645,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Simple Rate of Change Formulas",
-  "body": " Simple Rate of Change Formulas   The Formulas  Instead of calculating derivatives by hand every time, we can develop sets of rules which will help us more easily calculate them. These are given below; let be a constant, and be functions:    Name  Function  Derivative    Constant Rule      Power Rule      Constant Multiplier Rule      Sum Rule      Difference Rule        Examples    Write the formula for the derivative of the function.                                                                                                                                                  Find the derivative of            The temperature (in ) of Norman on Wednesday can be modeled by degrees Fahrenheit, hours after 6 A.M.     Write the complete rate of change model for the temperature.    By how much is the temperature changing at 10 A.M.? Round your answer to the nearest hundredth.    Compute and interpret . Round your answer to the nearest tenth.    Compute the percent rate of change of temperature at 4:00pm. Round your answer to the nearest hundredth.           degrees Fahrenheit per hour, rate of change of temperature in Norman on Wednesday, hours after 6am.    5.2 \/hour    10 hours after 6am, the temperature is decreasing by 4.4 \/hour    -5.93% per hour         The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:    Weight (lbs)  88  110  125  140  155  170  185  200    Metabolic Rate (kCal\/day)  1291  1444  1551  1658  1750  1857  1964  2071       Find a complete linear model for the metabolic rate of a typical 18- to 30-year-old male.    Write the derivative model for the formula in part (a).    Write a sentence which interprets the derivative of the metabolic rate model of a 26-year-old male. Round your answer to the nearest whole number.       Part c is not written correctly; it gives an age, not a weight. Fill it in with whatever you'd prefer.      kCal\/day, metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.     kCal\/day per pound, rate of change of metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.    FIXED IN NEXT EDITION        "
+  "body": " Simple Rate of Change Formulas   The Formulas  Instead of calculating derivatives by hand every time, we can develop sets of rules which will help us more easily calculate them. These are given below; let be a constant, and be functions:    Name  Function  Derivative    Constant Rule      Power Rule      Constant Multiplier Rule      Sum Rule      Difference Rule        Examples    Write the formula for the derivative of the function.                                                                                                                                                  Find the derivative of            The temperature (in ) of Norman on Wednesday can be modeled by degrees Fahrenheit, hours after 6 A.M.     Write the complete rate of change model for the temperature.    By how much is the temperature changing at 10 A.M.? Round your answer to the nearest hundredth.    Compute and interpret . Round your answer to the nearest tenth.    Compute the percent rate of change of temperature at 4:00pm. Round your answer to the nearest hundredth.           degrees Fahrenheit per hour, rate of change of temperature in Norman on Wednesday, hours after 6am.    5.2 \/hour    10 hours after 6am, the temperature is decreasing by 4.4 \/hour    -5.93% per hour         The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:    Weight (lbs)  88  110  125  140  155  170  185  200    Metabolic Rate (kCal\/day)  1291  1444  1551  1658  1750  1857  1964  2071       Find a complete linear model for the metabolic rate of a typical 18- to 30-year-old male.    Write the derivative model for the formula in part (a).    Write a sentence which interprets the derivative of the metabolic rate model of a typical 18- to 30-year-old male. Round your answer to the nearest whole number.           kCal\/day, metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.     kCal\/day per pound, rate of change of metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.    The metabolic rate of a typical 18- to 30-year-old male is increasing by 6.930 kCal\/day per pound weight.        "
 },
 {
   "id": "example-125",
@@ -1681,7 +1681,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.1.4",
   "title": "",
-  "body": "  The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:    Weight (lbs)  88  110  125  140  155  170  185  200    Metabolic Rate (kCal\/day)  1291  1444  1551  1658  1750  1857  1964  2071       Find a complete linear model for the metabolic rate of a typical 18- to 30-year-old male.    Write the derivative model for the formula in part (a).    Write a sentence which interprets the derivative of the metabolic rate model of a 26-year-old male. Round your answer to the nearest whole number.       Part c is not written correctly; it gives an age, not a weight. Fill it in with whatever you'd prefer.      kCal\/day, metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.     kCal\/day per pound, rate of change of metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.    FIXED IN NEXT EDITION      "
+  "body": "  The table shows the metabolic rate of a typical 18- to 30-year-old male according to his weight:    Weight (lbs)  88  110  125  140  155  170  185  200    Metabolic Rate (kCal\/day)  1291  1444  1551  1658  1750  1857  1964  2071       Find a complete linear model for the metabolic rate of a typical 18- to 30-year-old male.    Write the derivative model for the formula in part (a).    Write a sentence which interprets the derivative of the metabolic rate model of a typical 18- to 30-year-old male. Round your answer to the nearest whole number.           kCal\/day, metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.     kCal\/day per pound, rate of change of metabolic rate of a typical 18- to 30-year-old male when his weight is lbs.    The metabolic rate of a typical 18- to 30-year-old male is increasing by 6.930 kCal\/day per pound weight.      "
 },
 {
   "id": "section-32",
@@ -1765,9 +1765,9 @@ var ptx_lunr_docs = [
   "body": "  Identify the functions which make up the composite functions given below.                                                        If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and     If , we'll pick and       "
 },
 {
-  "id": "p-1330",
+  "id": "p-1329",
   "level": "2",
-  "url": "section-3334.html#p-1330",
+  "url": "section-3334.html#p-1329",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1999,9 +1999,9 @@ var ptx_lunr_docs = [
   "body": " Rate of Change of Product Functions   Product Rule  The product rule allows us to take derivatives of product functions, i.e. functions that look like . The product rule is     Find the derivative of , where            Find the derivative of .           Compute the derivative of the function            Let , and . Find .           The profit from the supply of a certain commodity is modeled by dollars, when units are produced.     Write the complete rate of change model for profit.    At what production level(s) is the rate of change of profit zero? If necessary, round your answer to two decimal places.    What is profit at the production level for the value in part (b)?           dollars per unit, rate of change of profit from supply of a commodity, when units are produced.     units    132.44 dollars         Quotient Rule  Alternately, for a quotient function, we may employ the quotient rule . If , then This can be remembered as     Use the quotient rule to find the derivative of            Examples    The production level at a plant manufacturing radios can be modeled as thousand radios, where thousand dollars has been spent on modernizing plant technology.     Identify two functions and that, when multiplied, form the production model- one of the functions will need the chain rule    Using function notation, write the notation for the production model and for the rate of change of the production model.    Write a model for the rate of change of production          Choose and     The production model is and the rate of change model is      thousand radios per thousand dollars, rate of change of production, where thousand dollars has been spent on modernizing plant technology.         Write the product function and rate-of-change function for the given functions.      and      and            and      and          Find the derivatives of the following functions.                                                                                                A store has determined that the number of cookies sold monthly is approximately cookies, where is the average price of a cookie (in dollars).     Write a model for revenue as a function of price.    If each cookie costs the store $1, write a model for profit as a function of price.    Write the complete rate of change model for revenue as a function of price.           dollars, revenue from cookie sales, where is the average price of a cookie (in dollars).     dollars, profit from cookie sales, where is the average price of a cookie (in dollars).     dollars revenue per dollar cookie price, rate of change of revenue from cookie sales, where is the average price of a cookie (in dollars).         Find the derivative of .          "
 },
 {
-  "id": "p-1388",
+  "id": "p-1387",
   "level": "2",
-  "url": "section-3536.html#p-1388",
+  "url": "section-3536.html#p-1387",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2053,9 +2053,9 @@ var ptx_lunr_docs = [
   "body": "  The profit from the supply of a certain commodity is modeled by dollars, when units are produced.     Write the complete rate of change model for profit.    At what production level(s) is the rate of change of profit zero? If necessary, round your answer to two decimal places.    What is profit at the production level for the value in part (b)?           dollars per unit, rate of change of profit from supply of a commodity, when units are produced.     units    132.44 dollars      "
 },
 {
-  "id": "p-1406",
+  "id": "p-1405",
   "level": "2",
-  "url": "section-3536.html#p-1406",
+  "url": "section-3536.html#p-1405",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2143,9 +2143,9 @@ var ptx_lunr_docs = [
   "body": " Relative Extrema  Relative Maximum  Relative Minimum  Relative Extremum   Let be a function defined on an input interval . Let .  We say that has a relative maximum at if the output is bigger than any other output in some interval around . Likewise, has a relative minimum at if the output is smaller than any other output in some interval around .   "
 },
 {
-  "id": "p-1459",
+  "id": "p-1458",
   "level": "2",
-  "url": "section-42.html#p-1459",
+  "url": "section-42.html#p-1458",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
